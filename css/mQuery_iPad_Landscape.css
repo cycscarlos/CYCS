@@ -1,0 +1,224 @@
+/* ------------------------------------ */
+/*  Responsive for iPad Horizontal view */
+/* ------------------------------------ */
+
+@media screen and (max-width: 1024px) {
+  /* --  "Estilos Generales" -- */
+  section {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+  .scroll-title {
+    background: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 3.5em;
+    font-weight: 700;
+    text-align: center;
+  }
+  .mainBox {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  .cards {
+    min-height: 500px;
+  }
+  .servicios {
+    min-height: 500px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+  .security {
+    min-height: 500px;
+    padding-bottom: 0;
+  }
+  .ctrlAcceso {
+    min-height: 500px;
+    padding-bottom: 0;
+  }
+  .telco {
+    min-height: 500px;
+    padding-bottom: 0;
+  }
+  .clients {
+    min-height: 500px;
+  }
+  .galeria {
+    min-height: 500px;
+  }
+  .aboutUs {
+    min-height: 500px;
+  }
+  .nosotros {
+    padding-top: 0;
+    min-height: 500px;
+  }
+  .footerSection {
+    min-height: 100vh;
+  }
+
+  /* --  "Inicio section" -- */
+
+  .logo_Titulo {
+    font-size: 2.5em;
+  }
+  .logo_Subtitulo,
+  .contactInfo_Phone {
+    font-size: 1em;
+  }
+  .menu_Nav .fas.fa-bars {
+    visibility: visible;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 15px;
+    background: rgb(28, 54, 67);
+  }
+  .menu_Nav .fas.fa-bars:hover {
+    background: #fff;
+  }
+  .menu_Box {
+    position: absolute;
+    top: 0px;
+    left: -200px;
+    width: 17%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    background: rgba(28, 54, 67, 0.7);
+    /* background: rgba(255, 73, 0, 0.7); */
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: 1s;
+    z-index: 101;
+  }
+  .menu_Box.active {
+    left: 0;
+  }
+  .menu_li {
+    margin-left: 10px;
+    padding: 5px 8px 5px 8px;
+    opacity: 0.4;
+    cursor: pointer;
+  }
+  .botonLight:hover {
+    box-shadow: 0 0 6px 0 rgba(28, 54, 67, 1);
+  }
+  .social_Icon {
+    top: 130px;
+    left: 95.5%;
+    z-index: 10;
+  }
+  .banner_Icon {
+    top: 355px;
+    left: 95%;
+    z-index: 10;
+  }
+  .whatsapp_Texto span {
+    top: 400px;
+    left: 75%;
+    z-index: 10;
+  }
+  .slideshow1 {
+    height: 600px;
+  }
+  .swiper-container.slideshow1 {
+    height: 550px;
+    padding-bottom: 50px;
+  }
+  .swiper-container.slideshow1.swiper-container-horizontal
+    > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 0px;
+  }
+  /* --  "Cards section" -- */
+  .cards .title h2 {
+    width: 30%;
+    font-size: 30px;
+  }
+  .cards .cardsBx .card {
+    margin: auto 10px;
+    width: 350px;
+    height: 300px;
+  }
+  .cards .cardsBx .card h3 {
+    font-size: 1.4em;
+  }
+  .cards .cardsBx .card .boton_mostrar {
+    width: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* --  "Servicios section" -- */
+  .servicios .title .fas.fa-arrow-right {
+    top: 70%;
+    transform: translateY(-70%);
+    left: 120px;
+  }
+  .servicios .title h3 {
+    top: 70%;
+    transform: translateY(-70%);
+    left: 50px;
+    font-size: 14px;
+  }
+  .lightbox {
+    top: 220px;
+    right: 150px;
+  }
+  /* --  "Security section" -- */
+  .security .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 180px;
+  }
+  .security .row .col50 .secondaryUL {
+    margin-left: 200px;
+  }
+  /* --  "CtrlAcceso section" -- */
+  .ctrlAcceso .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 250px;
+  }
+  .ctrlAcceso .row .col50 .secondaryUL {
+    margin-left: 100px;
+  }
+  /* --  "Telco section" -- */
+  .telco .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 180px;
+  }
+  .telco .row .col50 .secondaryUL {
+    margin-left: 100px;
+  }
+  /* --  "AboutUs section" -- */
+  .aboutUs .subtitulo h3 {
+    top: 150px;
+  }
+
+  /* --  "Nosotros section" -- */
+  .box_Nosotros {
+    width: 600px;
+    height: 300px;
+  }
+  .nosotros-subtitulo {
+    font-size: 1.8em;
+  }
+  .nosotros-parrafo {
+    font-size: 0.8em;
+    margin: 0;
+    line-height: 1px;
+    letter-spacing: 0.1px;
+  }
+  .nosotros-parrafo2 {
+    font-size: 2em;
+  }
+}

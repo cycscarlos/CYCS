@@ -1,0 +1,366 @@
+/* ---------------------------------- */
+/*  Responsive for iPad Vertical view */
+/* ---------------------------------- */
+
+@media screen and (max-width: 768px) {
+  section {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+  .scroll-title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+  }
+  /* --  "Inicio" Section -- */
+  .mainBox {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  .logo_Titulo {
+    font-size: 1.5em;
+  }
+  .logo_Subtitulo,
+  .contactInfo_Phone {
+    font-size: 0.8em;
+  }
+  .menu_Nav .fas.fa-bars {
+    visibility: visible;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 15px;
+    background: rgb(28, 54, 67);
+  }
+  .menu_Nav .fas.fa-bars:hover {
+    background: #fff;
+  }
+  .menu_Box {
+    position: absolute;
+    top: 0px;
+    left: -200px;
+    width: 17%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    background: rgba(28, 54, 67, 0.7);
+    /* background: rgba(255, 73, 0, 0.7); */
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: 1s;
+    z-index: 101;
+  }
+  .menu_Box.active {
+    left: 0;
+  }
+  .menu_li {
+    margin-left: 10px;
+    padding: 5px 8px 5px 8px;
+    opacity: 0.4;
+    cursor: pointer;
+  }
+  .botonLight:hover {
+    box-shadow: 0 0 6px 0 rgba(28, 54, 67, 1);
+  }
+  .social_Icon {
+    top: 100px;
+    left: 90%;
+    z-index: 10;
+  }
+  .banner_Icon {
+    top: 355px;
+    left: 680px;
+    z-index: 10;
+  }
+  .whatsapp_Texto span {
+    top: 415px;
+    left: 500px;
+    z-index: 10;
+  }
+  .slideshow1 {
+    height: 600px;
+  }
+
+  /* -- "Que Hacemos?" Section -- */
+  .cards {
+    min-height: 400px;
+  }
+  .cards .title h2 {
+    width: 40%;
+    font-size: 25px;
+  }
+  .cards .cardsBx {
+    display: flex;
+  }
+  .cards .cardsBx .card {
+    margin: auto 10px;
+    width: 250px;
+    height: 250px;
+  }
+  .cards .cardsBx .card img {
+    width: 250px;
+    height: 250px;
+  }
+  .cards .cardsBx .card h3 {
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  .cards .cardsBx .card .boton_mostrar {
+    width: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* -- "Servicios" Section -- */
+  .servicios {
+    min-height: 500px;
+    padding-top: 60px;
+  }
+  .servicios .title h2 {
+    margin-top: 0;
+  }
+  .servicios .title .fas.fa-arrow-left {
+    display: none;
+  }
+  .servicios .title h3 {
+    position: absolute;
+    top: 200px;
+    left: 347px;
+    font-size: 14px;
+  }
+  .lightbox {
+    width: 28%;
+    top: 200px;
+    left: 0;
+  }
+
+  /* -- "Security" Section -- */
+  .security {
+    padding-top: 40px;
+    min-height: 500px;
+  }
+  /* .security .title h2 {
+    font-size: 2.5em;
+  } */
+  .security .row .col50 h3 {
+    font-size: 1.3em;
+  }
+  .security .row .col50 h3 span {
+    font-size: 1.3em;
+  }
+  .security .row .col50 ul {
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+  .security .row .col50 ul li span {
+    font-size: 1.2em;
+  }
+  .security .row .col50 p {
+    font-size: 1.2em;
+  }
+  .security .row .col50 p span {
+    font-size: 0.8em;
+  }
+  .security .row .col50 .secondaryUL {
+    margin-left: 100px;
+    font-size: 1em;
+    line-height: 15px;
+  }
+  .security .row .col50 .secondaryUL li span {
+    font-size: 1em;
+  }
+  .security .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 30px;
+  }
+
+  /* -- "Control de Acceso" Section -- */
+  .ctrlAcceso {
+    min-height: 500px;
+  }
+
+  .ctrlAcceso .row .col50 h3 {
+    font-size: 1.3em;
+  }
+  .ctrlAcceso .row .col50 h3 span {
+    font-size: 1.3em;
+  }
+  .ctrlAcceso .row .col50 ul {
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+  .ctrlAcceso .row .col50 ul li span {
+    font-size: 1.2em;
+  }
+  .ctrlAcceso .row .col50 .secondaryUL {
+    margin-left: 80px;
+    font-size: 0.75em;
+  }
+  .ctrlAcceso .row .col50 .secondaryUL li span {
+    font-size: 1em;
+    line-height: 20px;
+  }
+  .ctrlAcceso .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 140px;
+  }
+
+  /* -- "Telecomunicaciones" Section -- */
+  .telco {
+    /* margin: 0;
+    padding: 0;
+    padding: 60px 0 60px 0; */
+    min-height: 500px;
+  }
+  /* .telco .title h2 {
+    font-size: 2.5em;
+  } */
+  .telco .row .col50 h3 {
+    font-size: 1.3em;
+  }
+  .telco .row .col50 h3 span {
+    font-size: 1.3em;
+  }
+  .telco .row .col50 .mainUL {
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+  .telco .row .col50 .mainUL li span {
+    font-size: 1.2em;
+  }
+  .telco .row .col50 .secondaryUL {
+    margin-left: 80px;
+    font-size: 0.75em;
+  }
+  .telco .row .col50 .secondaryUL li span {
+    font-size: 1em;
+    line-height: 20px;
+  }
+  .telco .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 90px;
+  }
+
+  /* -- "Clientes" Section -- */
+  /* .clients {
+    margin: 0;
+    padding: 0;
+    padding: 60px 0 0 0;
+  } */
+
+  .clients .title h2 span {
+    font-size: 0.6em;
+  }
+  .clientes {
+    /* margin: 0;
+    padding: 0;
+    padding: 0 0 60px 0; */
+    min-height: 500px;
+  }
+
+  .clientes .card {
+    margin: 5px 10px 5px 5px;
+  }
+
+  /* -- "Galería de Obras" Section -- */
+  .galeria {
+    /* margin: 0;
+    padding: 0;
+    padding: 60px 0 0 0; */
+    min-height: 500px;
+  }
+  /* .galeria-titulo {
+    font-size: 2.5em;
+  } */
+  .galeria-titulo span {
+    font-size: 0.6em;
+  }
+  .container_Galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container_Galeria .gallery-container:nth-child(7) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .container_Galeria .gallery-container:nth-child(15) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  /* Quienes somos? Section   */
+  .aboutUs {
+    min-height: 500px;
+    background-image: url(./../img/CYCS_iPad.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* background-position: center center; */
+    background-position: bottom;
+    background-size: 100%;
+  }
+  .aboutUs .titulo h2 {
+    margin-top: 0px;
+  }
+  .aboutUs .subtitulo h3 {
+    top: 150px;
+    font-size: 20px;
+  }
+
+  /* Nosotros - Oficina de Proyectos Section */
+  .nosotros {
+    min-height: 500px;
+  }
+  .box_Nosotros {
+    width: 600px;
+    height: 300px;
+  }
+  .nosotros-subtitulo {
+    font-size: 1.5em;
+  }
+  .nosotros-parrafo {
+    font-size: 0.7em;
+    margin: 0;
+    line-height: 1px;
+    letter-spacing: 0.1px;
+  }
+  .nosotros-parrafo2 {
+    font-size: 1.5em;
+  }
+
+  /* -- "Footer" Section -- */
+  .footerSection {
+    background: url(../img/footer/avila_iPad.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  footer {
+    height: auto;
+    padding: 40px;
+
+    background: none;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .sec {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  footer .container .sec.aboutus,
+  .quicklinks,
+  .contact {
+    width: 100%;
+  }
+  .copyrightText {
+    padding: 8px 40px;
+  }
+}

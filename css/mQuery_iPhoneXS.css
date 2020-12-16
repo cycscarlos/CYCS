@@ -1,0 +1,407 @@
+/* -------------------------------- */
+/*  Responsive Design for iPhone XS */
+/* -------------------------------- */
+
+@media screen and (max-width: 414px) {
+  section {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  .scroll-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5em;
+  }
+  .title {
+    font-size: 16px;
+    height: 16px;
+  }
+  /* -- "Inicio" Section -- */
+  .swiperPage-title {
+    font-size: 30px;
+    font-family: "Dancing Script", cursive;
+  }
+
+  .menu_Nav .fas.fa-bars {
+    margin-top: 70px;
+    margin-right: 15px;
+  }
+  .menu_Box {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 30%;
+  }
+  .social_Icon {
+    top: 120px;
+    left: 90%;
+    z-index: 10;
+  }
+  .banner_Icon {
+    top: 250px;
+    left: 320px;
+    z-index: 10;
+  }
+  .banner_Icon [class*="fa-"] {
+    font-size: 2.6em;
+    color: var(--color-whatsapp);
+  }
+  .whatsapp_Texto span {
+    top: 290px;
+    left: 180px;
+    width: 150px;
+    font-size: 10px;
+    z-index: 10;
+  }
+  .swiper-container.slideshow1.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal.swiper-container-ios {
+    padding-top: 150px;
+    padding-bottom: 0px;
+  }
+
+  /* -- "Cards" Section -- */
+  .cards {
+    padding-top: 60px;
+    min-height: 400px;
+  }
+  .cards .title h2 {
+    width: 70%;
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  .cards .cardsBx {
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  .cards .cardsBx .card {
+    width: 300px;
+    height: 250px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  .cards .cardsBx .card img {
+    width: 300px;
+    height: 250px;
+  }
+  .cards .cardsBx .card .boton_mostrar {
+    width: 90px;
+    left: 32%;
+    transform: translateY(-32%);
+  }
+
+  /* -- "Servicios" Section -- */
+  .servicios {
+    min-height: 400px;
+    overflow: hidden;
+  }
+
+  .servicios .container-all {
+    perspective: 3000px;
+    width: 210px;
+    /* margin-top: 70px;
+    margin-left: 0; */
+  }
+  .servicios .title .fas.fa-arrow-right {
+    display: none;
+  }
+  .servicios .title h3 {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /* left: 210px; */
+    font-size: 12px;
+  }
+  .lightbox {
+    /* width: 28%; */
+    top: 120px;
+    left: 0;
+  }
+  .close {
+    position: absolute;
+    top: -30px;
+    left: 5px;
+    z-index: 2;
+  }
+  /* .lightbox {
+    position: fixed;
+    top: 350px;
+    left: 5px;
+    transition: transform 1.5s ease-in-out;
+    transform: scale(0);
+    z-index: 100;
+  } */
+  /* .box-texto {
+    position: relative;
+    width: 405px;
+    height: 150px;
+  }
+  .box-texto h3 {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 5px 0 7px 0;
+  }
+  .box-texto p {
+    padding: 0 10px;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+  }
+  .box-texto p span {
+    color: var(--color-pagina);
+    font-size: 4em;
+    text-align: center;
+  } */
+
+  /* .box-texto .alarma,
+  .box-texto .torniquete {
+    padding: 5px 5px;
+    text-align: justify;
+    line-height: 1.1em;
+  } */
+
+  /* -- "Security" Section -- */
+  .security {
+    padding-top: 80px;
+    min-height: 500px;
+  }
+  .security .title h2 {
+    font-size: 1.5em;
+  }
+  .security .row .col50 h3 {
+    font-size: 0.8em;
+  }
+  .security .row .col50 h3 span {
+    font-size: 1.3em;
+  }
+  .security .row .col50 ul {
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+  .security .row .col50 ul li span {
+    font-size: 1.2em;
+  }
+  .security .row .col50 p {
+    font-size: 0.8em;
+  }
+  .security .row .col50 p span {
+    font-size: 1em;
+  }
+  .security .row .col50 .secondaryUL {
+    margin-left: 50px;
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+  .security .row .col50 .secondaryUL li span {
+    font-size: 1.2em;
+  }
+  .swiper-container.slideshow2 .swiper-wrapper .swiper-slide img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+  }
+  .security .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 100px;
+  }
+
+  /* -- "Control de Acceso" Section -- */
+  .ctrlAcceso {
+    min-height: 500px;
+    padding-top: 80px;
+  }
+  .ctrlAcceso .row .col50 h3 {
+    font-size: 0.8em;
+  }
+  .ctrlAcceso .row .col50 h3 span {
+    font-size: 1.3em;
+  }
+  .ctrlAcceso .row .col50 ul {
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+  .ctrlAcceso .row .col50 ul li span {
+    font-size: 1.2em;
+  }
+  .ctrlAcceso .row .col50 .secondaryUL {
+    margin-left: 30px;
+    font-size: 1em;
+    line-height: 15px;
+  }
+  .ctrlAcceso .row .col50 .secondaryUL li span {
+    font-size: 1em;
+    /* line-height: 15px; */
+  }
+  .ctrlAcceso .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 180px;
+  }
+
+  /* -- "Telecomunicaciones" Section -- */
+  .telco {
+    min-height: 400px;
+    padding-top: 80px;
+  }
+  .telco .row .col50 h3 {
+    font-size: 0.8em;
+  }
+  .telco .row .col50 h3 span {
+    font-size: 1.3em;
+  }
+  .telco .row .col50 .mainUL {
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+  .telco .row .col50 .mainUL li span {
+    font-size: 1.2em;
+  }
+  .telco .row .col50 .secondaryUL {
+    margin-left: 30px;
+    font-size: 1em;
+    line-height: 15px;
+  }
+  .telco .row .col50 .secondaryUL li span {
+    font-size: 1em;
+  }
+  .telco .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 140px;
+  }
+
+  /* -- "Clientes" Section -- */
+  .clients {
+    min-height: 500px;
+    padding-top: 80px;
+    margin-top: 0;
+  }
+  .clients .title h2 {
+    margin-bottom: 30px;
+  }
+
+  /* -- "Obras" Section -- */
+  .galeria {
+    padding-top: 60px;
+  }
+  .galeria-titulo {
+    margin: 0;
+  }
+  .galeria-titulo span {
+    font-size: 0.5em;
+  }
+
+  .container_Galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container_Galeria .gallery-container:nth-child(6) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .container_Galeria .gallery-container:nth-child(7) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .container_Galeria .gallery-container:nth-child(9) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .container_Galeria .gallery-container:nth-child(13) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .container_Galeria .gallery-container:nth-child(15) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  /* -- "About Us o Nosotros" Section -- */
+  .aboutUs {
+    min-height: 400px;
+    background-image: url(./../img/CYCS_iPhone.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    /* background-position: bottom; */
+    background-size: 100%;
+  }
+  .aboutUs .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aboutUs .titulo h2 {
+    margin: 20px;
+    font-size: 1.2em;
+  }
+  .aboutUs .titulo h2 span {
+    font-size: 20px;
+  }
+  .aboutUs .subtitulo h3 {
+    top: 120px;
+    font-size: 12px;
+  }
+
+  /* -- "Quienes Somos?" Section -- */
+  .nosotros {
+    width: 100vw;
+    min-height: 400px;
+  }
+
+  .box_Nosotros {
+    /* left: 50%;
+    top: 50%; */
+    width: 380px;
+    height: 270px;
+    /* margin-left: -190px; 
+    margin-top: -150px;  */
+  }
+  .nosotros-subtitulo {
+    padding: 5px;
+    margin: 5px;
+  }
+  .nosotros-parrafo {
+    font-size: 10px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 0px;
+    letter-spacing: 0px;
+  }
+  .nosotros-parrafo span {
+    font-size: 1em;
+    line-height: 15px;
+  }
+
+  /* -- "Footer" Section -- */
+  .footerSection {
+    background: url(../img/footer/avila_iPhone.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  footer {
+    height: auto;
+    padding: 40px;
+    background: none;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .sec {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  footer .container .sec.aboutus,
+  .quicklinks,
+  .contact {
+    width: 100%;
+  }
+  .copyrightText {
+    padding: 8px 40px;
+    font-size: 6px;
+  }
+}
