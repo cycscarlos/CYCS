@@ -22,6 +22,10 @@
   font-weight: 400;
   src: url(../fonts/DancingScript-Medium.ttf);
 }
+@font-face {
+  font-family: "Bailey";
+  src: url(../fonts/Bailey.otf);
+}
 
 /* ----------------------- */
 /* Estilos Generales       */
@@ -45,6 +49,7 @@
   --font-logo: "Times New Roman";
   --font-titulo: "Montserrat", sans-serif;
   --font-cards: "Poppins", sans-serif;
+  --font-board: "Bailey", sans-serif;
 }
 section {
   padding-top: 120px;
@@ -1413,7 +1418,7 @@ section {
 .nosotros-parrafo2 {
   color: var(--color-pagina);
   font-size: 2.5em;
-  font-family: bailey;
+  font-family: var(--font-board);
 }
 
 /* .fas.fa-arrow-circle-down {

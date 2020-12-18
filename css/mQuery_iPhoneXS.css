@@ -34,13 +34,13 @@
     width: 30%;
   }
   .social_Icon {
-    top: 120px;
+    top: 150px;
     left: 90%;
     z-index: 10;
   }
   .banner_Icon {
-    top: 250px;
-    left: 320px;
+    top: 300px;
+    left: 90%;
     z-index: 10;
   }
   .banner_Icon [class*="fa-"] {
@@ -48,8 +48,8 @@
     color: var(--color-whatsapp);
   }
   .whatsapp_Texto span {
-    top: 290px;
-    left: 180px;
+    top: 340px;
+    left: 220px;
     width: 150px;
     font-size: 10px;
     z-index: 10;
