@@ -86,7 +86,7 @@ section {
   width: 100%;
   z-index: 10;
   background: var(--color-azulObscuro);
-  /* background: rgba(28, 54, 67, 0.8); */
+  /* background: #000; */
 }
 .section_Box {
   width: 100%;
@@ -104,7 +104,7 @@ section {
 .logo_Titulo {
   font: var(--font-logo);
   color: var(--color-pagina);
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 100;
   padding: 10px 0 0 20px;
 }
@@ -115,11 +115,14 @@ section {
 }
 .logo_Subtitulo {
   font: var(--font-logo);
-  color: var(--color-pagina);
-  font-size: 1.2em;
+  color: var(--color-blanco);
+  opacity: 0.8;
+  font-size: 0.8em;
+  text-align: center;
   font-weight: 100;
   font-style: italic;
   padding: 0 0 0 20px;
+
 }
 .contactInfo_Box {
   position: relative;
@@ -127,8 +130,18 @@ section {
 .contactInfo_Phone {
   color: var(--color-pagina);
   font-size: 1em;
+  font-weight: 100;
   margin: 0;
   padding: 10px;
+}
+.contactInfo_Box h6 {
+  color: var(--color-blanco);
+  opacity: 0.8;
+  font-size: 0.7em;
+  text-align: end;
+  padding-right: 10px;
+  font-weight: 100;
+  font-style: italic;
 }
 
 /* --------------------------- */
@@ -155,7 +168,7 @@ section {
 }
 .menu_Nav .fas.fa-bars {
   visibility: hidden;
-  color: #fff;
+  color: var(--color-blanco);
   margin-left: 17px;
   font-size: 1em;
   width: 25px;
@@ -170,33 +183,47 @@ section {
   color: var(--color-pagina);
 }
 .menu_Box {
-  padding: 0;
+  padding: 0 150px 0 0;
 }
 .menu_li {
   display: inline-block;
   list-style: none;
   padding: 0 8px 5px 8px;
-  opacity: 0.2;
+  border: 1.5px solid rgba(30, 83, 114, 0.5);
+  border-radius: 10px;
   cursor: pointer;
 }
 .menu_li_a {
-  color: #fff;
+  color: var(--color-pagina);
   font-size: 0.8em;
   text-decoration: none;
-}
-.menu_li:hover {
-  opacity: 1;
-}
-.botonLight {
-  border-color: #1c3643;
+  opacity: 0.7;
   transition: all 150ms ease-in-out;
 }
-.botonLight:hover {
-  border-radius: 5px;
-  color: var(--color-pagina);
-  box-shadow: 0 0 6px 0 rgb(30, 83, 114);
-  /* box-shadow: 0 0 6px 0#fff inset; */
+.menu_li_a:hover {
+  color: var(--color-blanco);
+  opacity: 1;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 1);
+  background: linear-gradient(
+    50deg,
+    rgba(30, 83, 114, 0.9),
+    rgba(30, 83, 114, 0.7),
+    rgba(255, 255, 255, 0.5)
+  );
 }
+/* .botonLight {
+  border-color: #1c3643;
+  transition: all 150ms ease-in-out;
+} */
+
+/* .botonLight:hover {
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgb(30, 83, 114);
+  color: var(--color-pagina);
+  box-shadow: 0 0 6px 0#fff inset;
+} */
+
+/* Navigation submenu for responsive design   */
 .submenu_Box {
   position: absolute;
   top: 23px;
