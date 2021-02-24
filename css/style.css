@@ -122,7 +122,6 @@ section {
   font-weight: 100;
   font-style: italic;
   padding: 0 0 0 20px;
-
 }
 .contactInfo_Box {
   position: relative;
@@ -179,7 +178,7 @@ section {
   cursor: pointer;
 }
 .menu_Nav .fas.fa-bars:hover {
-  box-shadow: 0 0 6px 0 rgb(30, 83, 114);
+  box-shadow: 0 0 6px 0 var(--color-azulMedio);
   color: var(--color-pagina);
 }
 .menu_Box {
@@ -189,8 +188,7 @@ section {
   display: inline-block;
   list-style: none;
   padding: 0 8px 5px 8px;
-  border: 1.5px solid rgba(30, 83, 114, 0.5);
-  border-radius: 10px;
+
   cursor: pointer;
 }
 .menu_li_a {
@@ -201,6 +199,13 @@ section {
   transition: all 150ms ease-in-out;
 }
 .menu_li_a:hover {
+  color: #fff;
+  opacity: 1;
+  border-radius: 3px;
+  border: 2px solid var(--color-azulObscuro);
+  box-shadow: 0 0 0 1px #1c3643, 0 0 0 1px grey, 0 10px 10px 2.5px #000;
+}
+/* .menu_li_a:hover {
   color: var(--color-blanco);
   opacity: 1;
   box-shadow: 0 0 6px 0 rgba(255, 255, 255, 1);
@@ -210,17 +215,6 @@ section {
     rgba(30, 83, 114, 0.7),
     rgba(255, 255, 255, 0.5)
   );
-}
-/* .botonLight {
-  border-color: #1c3643;
-  transition: all 150ms ease-in-out;
-} */
-
-/* .botonLight:hover {
-  border-radius: 5px;
-  box-shadow: 0 0 6px 0 rgb(30, 83, 114);
-  color: var(--color-pagina);
-  box-shadow: 0 0 6px 0#fff inset;
 } */
 
 /* Navigation submenu for responsive design   */
