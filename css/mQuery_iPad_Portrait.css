@@ -65,6 +65,9 @@
     opacity: 0.4;
     cursor: pointer;
   }
+  .menu_li_a {  
+    font-size: 0.8em;
+  }
   .botonLight:hover {
     box-shadow: 0 0 6px 0 rgba(28, 54, 67, 1);
   }

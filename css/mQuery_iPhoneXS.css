@@ -33,6 +33,9 @@
     left: -200px;
     width: 30%;
   }
+  .menu_li_a {  
+    font-size: 0.8em;
+  }
   .social_Icon {
     top: 150px;
     left: 90%;
