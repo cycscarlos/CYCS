@@ -1356,90 +1356,6 @@ section {
   transition: 0.7s ease-in-out;
 }
 
-/* ------------------------ */
-/* Quienes somos?  BANNER   */
-/* ------------------------ */
-
-.aboutUs {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  max-width: 1370px;
-  margin: auto;
-  background-image: url(./../img/CYCS_about.png);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: bottom;
-  background-size: 90% 60%;
-  /* padding: 0 0 160px 0; */
-}
-
-.aboutUs .titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.aboutUs .titulo h2 {
-  position: relative;
-  /* margin-top: 120px;
-  margin-bottom: 10px;
-  padding: 0;
-  text-align: center;
-  font-size: 3em;
-  font-weight: 700; */
-  font-family: var(--font-titulos);
-  color: var(--color-pagina);
-}
-
-.aboutUs .titulo span {
-  font-size: 0.5em;
-  color: var(--color-pagina);
-}
-
-.aboutUs .subtitulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.aboutUs .subtitulo h3 {
-  position: relative;
-  top: 200px;
-  font-size: 40px;
-  letter-spacing: 6px;
-  color: rgba(255, 73, 0, 0.5);
-  -webkit-text-stroke: 0.3vw rgba(28, 54, 67, 0.2);
-  text-transform: uppercase;
-  /* font-family: var(--font-subtitulos); */
-}
-
-.aboutUs .subtitulo h3::before {
-  content: attr(data-text);
-  position: absolute;
-  left: 0;
-  width: 0;
-  height: 100%;
-  color: #fff;
-  -webkit-text-stroke: 0vw rgba(28, 54, 67, 0.2);
-  border-right: 4px solid rgb(255, 73, 0);
-  overflow: hidden;
-  animation: textAnimate 6s linear infinite;
-}
-
-@keyframes textAnimate {
-  0%,
-  10%,
-  100% {
-    width: 0;
-  }
-  70%,
-  90% {
-    width: 100%;
-  }
-}
-
 /* -------------------------------------- */
 /* Quienes somos? OFICINA DE PROYECTOS    */
 /* -------------------------------------- */
@@ -1511,6 +1427,89 @@ section {
   color: rgba(255, 76, 0, 1);
 } */
 
+/* ---------------------------------- */
+/* Quienes somos?  Mosaico de Fotos   */
+/* ---------------------------------- */
+
+.aboutUs {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1370px;
+  margin: auto;
+  background-image: url(./../img/CYCS_about.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  display: flex;
+  padding: 60px 0 0 0;
+}
+
+.aboutUs .titulo {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUs .titulo h2 {
+  flex-direction: column;
+  font-family: var(--font-titulos);
+  /* color: var(--color-pagina); */
+  color: #fff;
+  background: transparent;
+  letter-spacing: 2.5px;
+}
+
+.aboutUs .titulo span {
+  font-size: 0.5em;
+  color: var(--color-pagina);
+}
+
+/* Sub-rutina para colocar un Titulo centrado al medio de la página con animación aparecer/desaparecer */
+
+/* .aboutUs .subtitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUs .subtitulo h3 {
+  position: relative;
+  top: 200px;
+  font-size: 40px;
+  letter-spacing: 6px;
+  color: rgba(255, 73, 0, 0.5);
+  -webkit-text-stroke: 0.3vw rgba(28, 54, 67, 0.2);
+  text-transform: uppercase;  
+}
+
+.aboutUs .subtitulo h3::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #fff;
+  -webkit-text-stroke: 0vw rgba(28, 54, 67, 0.2);
+  border-right: 4px solid rgb(255, 73, 0);
+  overflow: hidden;
+  animation: textAnimate 6s linear infinite;
+}
+
+@keyframes textAnimate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+} */
+
 /* ----------*/
 /* FOOTER    */
 /* ----------*/
@@ -1553,7 +1552,7 @@ footer .container .sec.aboutus {
 footer .container h2 {
   position: relative;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -1665,7 +1664,7 @@ footer p {
   color: rgb(236, 240, 11);
 }
 .quicklinks ul li a:hover {
-  border-bottom: 3px solid var(--color-pagina);
+  border-bottom: 2px solid var(--color-pagina);
 }
 .contact {
   width: calc(35% - 60px);
@@ -1693,19 +1692,25 @@ footer p {
   font-size: 13px;
 }
 .contact .info li a:hover {
-  border-bottom: 3px solid var(--color-pagina);
+  border-bottom: 2px solid var(--color-pagina);
 }
 .copyrightText {
   position: absolute;
   bottom: 0;
   width: 100%;
-
-  padding: 8px 100px;
+  padding: 18px 100px;
   text-align: center;
   color: #fff;
-  background: rgba(39, 59, 71, 1);
+  /* background: rgba(39, 59, 71, 0.8); */
+  background: rgba(28, 54, 67, 1);
   font-size: 11px;
   letter-spacing: 0.5px;
+}
+.copyrightText p {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .copyrightText span {
   font-weight: bold;
