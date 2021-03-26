@@ -7,25 +7,14 @@
   font-weight: 400;
   src: url(../fonts/DancingScript-Medium.ttf);
 }
-/* @font-face {
-  font-family: "MontserratBold";
-  font-weight: bold;
-  src: url(../fonts/Montserrat-Bold.ttf);
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 @font-face {
-  font-family: "Montserrat";
-  src: url(../fonts/Montserrat-Regular.ttf);
-} */
-/* @font-face {
-  font-family: "PoppinsLighter";
-  font-weight: 200;
-  src: url(../fonts/Poppins-ExtraLight.ttf);
+  font-family: "RobotoBold";
+  src: url(../fonts/Roboto-Medium.ttf);
 }
-@font-face {
-  font-family: "PoppinsLight";
-  font-weight: 300;
-  src: url(../fonts/Poppins-Light.ttf);
-} */
 
 /* --> Star of general resets & variables definitions <-- */
 
@@ -53,15 +42,11 @@
   --color-linkedin: #0a66c2;
 
   /* Specific page's Fonts */
-  /* --font-subtitulos: "Montserrat", sans-serif; */
-  /* --font-subtitulos: "Lato", sans-serif; */
-  /* --font-subtitulos: "Roboto", sans-serif; */
-  /* --font-cards: "Poppins", sans-serif; */
 
   --font-titulos: "DancingScript", cursive;
   --font-parrafos: "Roboto", sans-serif;
+  --font-parrafos2: "RobotoBold", sans-serif;
   --font-logo: "Times New Roman";
-  
   --font-board: "Bailey", sans-serif;
 }
 html {
@@ -103,7 +88,6 @@ section {
   width: 100%;
   z-index: 10;
   background: var(--color-azulObscuro);
-  /* background: #000; */
 }
 .section_Box {
   width: 100%;
@@ -214,27 +198,19 @@ section {
   cursor: pointer;
 }
 .menu_li_a {
-  /* color: var(--color-pagina); */
   color: #fff;
   font-size: 0.9em;
   text-decoration: none;
-  /* opacity: 0.7; */
   transition: all 150ms ease-in-out;
 }
-/* .menu_Box li:first-child{
-  color: #fff;
-  border-radius: 3px;
-  border: 2px solid var(--color-azulObscuro);
-  box-shadow: 0 0 0 1px #1c3643, 0 0 0 1px grey, 0 10px 10px 2.5px #000;
-} */
 .menu_li_a:hover {
-  /* color: #fff; */
   color: var(--color-pagina);
   opacity: 1;
   border-radius: 3px;
   border: 2px solid var(--color-azulObscuro);
   box-shadow: 0 0 0 1px #1c3643, 0 0 0 1px grey, 0 10px 10px 2.5px #000;
 }
+
 /* .menu_li_a:hover {
   color: var(--color-blanco);
   opacity: 1;
@@ -286,13 +262,10 @@ section {
   z-index: 10;
 }
 .social_Icon [class*="fa-"] {
-  /* margin: 0px 15px 20px 5px; */
   margin: 0px 15px 40px 5px;
-  /* font-size: 1em; */
   font-size: 2em;
   width: 25px;
   height: 25px;
-  /* border-radius: 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,13 +274,9 @@ section {
   text-decoration: none;
 }
 .social_Icon .fab.fa-twitter {
-  /* background: var(--color-twitter);
-  color: #fff; */
   color: var(--color-twitter);
 }
 .social_Icon .fab.fa-instagram {
-  /* background: var(--color-instagram);
-  color: #fff; */
   font-size: 2.5em;
   width: 35px;
   height: 35px;
@@ -325,20 +294,15 @@ section {
   );
 }
 .social_Icon .fab.fa-linkedin-in {
-  /* background: var(--color-linkedin);
-  color: #fff; */
   color: var(--color-linkedin);
 }
 .social_Icon .fab.fa-twitter:hover {
-  /* background: var(--color-pagina); */
   transform: scale(1.4);
 }
 .social_Icon .fab.fa-instagram:hover {
-  /* background: var(--color-pagina); */
   transform: scale(1.4);
 }
 .social_Icon .fab.fa-linkedin-in:hover {
-  /* background: var(--color-pagina); */
   transform: scale(1.4);
 }
 
@@ -364,9 +328,7 @@ section {
   position: fixed;
   top: 78%;
   left: 78%;
-  /* width: 190px; */
   width: 200px;
-  /* background-color: var(--color-azulObscuro); */
   background-color: var(--color-pagina);
   color: #fff;
   padding: 5px 3px 5px 3px;
@@ -381,14 +343,17 @@ section {
   visibility: hidden;
   z-index: 10;
 }
+
 /* Hover sobre el icono de Whatsapp */
 /* .banner_Icon [class*="fa-"]:hover {
   color: var(--color-pagina);
 } */
+
 .whatsapp_Texto:hover span {
   opacity: 1;
   visibility: visible;
 }
+
 /* ------------------------*/
 /* Swiper's sliders        */
 /* ------------------------*/
@@ -536,7 +501,6 @@ section {
   color: #fff;
   cursor: pointer;
 }
-
 .cards .cardsBx .card .boton_mostrar:hover {
   background-image: linear-gradient(to top, #ff4900 0%, #ffb199 100%);
 }
@@ -603,7 +567,6 @@ section {
 }
 .servicios .container-carrousel figure h6 {
   color: var(--color-pagina);
-  /* font-family: var(--font-subtitulos); */
   font-weight: 300;
   text-align: center;
 }
@@ -662,7 +625,6 @@ section {
   position: absolute;
   font-size: 16px;
   font-weight: 600;
-  /* font-family: var(--font-subtitulos); */
   color: var(--color-pagina);
   top: 70%;
   left: 190px;
@@ -700,20 +662,16 @@ section {
   text-align: center;
   text-transform: uppercase;
   color: var(--color-pagina);
-
-  /* font-family: "arial bold"; */
 }
 
 .box-texto p {
   position: relative;
   top: 0px;
-  /* padding: 0 10px; */
   padding: 0;
   font-size: 10px;
   line-height: 0.5em;
   letter-spacing: 0.5px;
   color: #fff;
-  /* font-family: acaslonpro; */
   font-family: var(--font-parrafos);
   font-weight: 300;
 }
@@ -934,6 +892,7 @@ section {
 .security .swiper-button-prev::after {
   font-size: 1.5em;
 }
+
 /* .swiper-container.slideshow2 .swiper-wrapper .swiper-slide img {
   width: 412px;
   height: 243px;
@@ -1138,6 +1097,7 @@ section {
   font-weight: 700;
   font-size: 1em;
 }
+
 /* -----------------------------------*/
 /* Telecommunication Swiper Effect    */
 /* -----------------------------------*/
@@ -1170,13 +1130,9 @@ section {
   align-items: center;
   flex-wrap: wrap;
   transform-style: preserve-3d;
-  /* width: 1100px; */
   margin: auto;
   min-height: 100vh;
   width: 100%;
-  /* padding: 160px 0 20px 0; */
-  /* ¡OJoooo! Se modificó esta instrucción */
-  /* padding: 20px 0 60px 0; */
 }
 .clients .title {
   display: flex;
@@ -1196,9 +1152,6 @@ section {
   margin: 20px 30px 20px 5px;
   transform-style: preserve-3d;
   perspective: 1000px;
-  /* width: 320px;
-  height: 320px; */
-  /* ¡OJoooo! Se modificaron estas dos instrucciones */
   width: 160px;
   height: 160px;
 }
@@ -1255,19 +1208,16 @@ section {
   background: linear-gradient(45deg, #ff4400, #ffeb3b);
   transform: translateZ(100px);
 
-  /* ¡OJoooo! Estas dos son nuevas -No existian */
+  /* ¡OJoooo! Estas dos instrucciones son nuevas -No existian */
   width: 100%;
   height: 75%;
-  /* --------------------------- */
 }
 
 .clientes .card .box .contentBx div h2 {
   margin-bottom: 2px;
-  /* color: #fff; */
   color: #000;
   letter-spacing: 1px;
   text-align: center;
-  /* font-family: var(--font-subtitulos); */
   font-weight: 900;
   font-size: 10px;
 }
@@ -1276,8 +1226,7 @@ section {
   padding: 3px;
   letter-spacing: 0.4px;
   color: #000;
-  /* font-family: var(--font-cards); */
-  font-family: var(--font-parrafos);
+  font-family: var(--font-parrafos2);
   font-weight: 500;
   text-transform: none;
   line-height: 1.4em;
@@ -1293,15 +1242,11 @@ section {
   width: 100%;
   min-height: 100vh;
   margin: auto;
-  /* padding-bottom: 0; */
   background: #fff;
 }
 
 .galeria-titulo {
-  /* margin-top: 18px;
-  margin-bottom: 30px; */
   text-align: center;
-  /* font-size: 4em; */
   font-weight: 700;
   font-family: var(--font-titulos);
   color: var(--color-pagina);
@@ -1341,9 +1286,11 @@ section {
   height: 100%;
   position: relative;
 }
+
 /* .container_Galeria .gallery-container .gallery-item:hover .image img {
   transform: scale(1.2);
 } */
+
 .container_Galeria .gallery-container .gallery-item .image {
   width: 100%;
   height: 100%;
@@ -1357,9 +1304,9 @@ section {
   transition: 0.7s ease-in-out;
 }
 
-/* -------------------------------------- */
-/* Quienes somos? OFICINA DE PROYECTOS    */
-/* -------------------------------------- */
+/* -------------------------------- */
+/* AboutUs  -Muro de presentación   */
+/* -------------------------------- */
 
 .nosotros {
   position: relative;
@@ -1457,7 +1404,6 @@ section {
 .aboutUs .titulo h2 {
   flex-direction: column;
   font-family: var(--font-titulos);
-  /* color: var(--color-pagina); */
   color: #fff;
   background: transparent;
   letter-spacing: 2.5px;
@@ -1526,8 +1472,8 @@ section {
   background: url(../img/footer/avila.png);
   background-size: cover;
   background-repeat: no-repeat;
-  /* font-family: "PoppinsLight", sans-serif; */
 }
+
 footer {
   width: 100%;
   height: auto;
@@ -1537,19 +1483,23 @@ footer {
   flex-wrap: wrap;
   background: rgba(28, 54, 67, 0.8);
 }
+
 footer .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
 }
+
 footer .container .sec {
   margin-right: 30px;
 }
+
 footer .container .sec.aboutus {
   width: 38%;
   text-align: justify;
 }
+
 footer .container h2 {
   position: relative;
   color: #fff;
@@ -1557,6 +1507,7 @@ footer .container h2 {
   font-weight: 500;
   margin-bottom: 15px;
 }
+
 footer .container h2:before {
   content: "";
   position: absolute;
@@ -1566,19 +1517,23 @@ footer .container h2:before {
   height: 2px;
   background: #ff4900;
 }
+
 footer p {
   color: #fff;
   width: 60%;
   font-size: 12px;
   letter-spacing: 0.5px;
 }
+
 .sci {
   margin-top: 5px;
   display: flex;
 }
+
 .sci li {
   list-style: none;
 }
+
 .sci li a {
   display: inline-block;
   font-size: 1.5em;
@@ -1596,9 +1551,11 @@ footer p {
   color: #fff;
   font-size: 16px;
 }
+
 .sci li a .fab.fa-twitter {
   color: var(--color-twitter);
 }
+
 .sci li a .fab.fab.fa-instagram {
   border-radius: 50px;
   color: #fff;
@@ -1612,9 +1569,11 @@ footer p {
     #285aeb 90%
   );
 }
+
 .sci li a .fab.fab.fa-linkedin-in {
   color: var(--color-linkedin);
 }
+
 .sci li a .fab.fa-whatsapp {
   font-size: 20px;
   color: var(--color-whatsapp);
@@ -1623,13 +1582,16 @@ footer p {
 .sci li a:hover {
   background: #fff;
 }
+
 .quicklinks {
   position: relative;
   width: 25%;
 }
+
 .quicklinks ul li {
   list-style: none;
 }
+
 .quicklinks ul li a {
   color: #fff;
   text-decoration: none;
@@ -1638,63 +1600,78 @@ footer p {
   font-size: 13px;
   line-height: 2.1em;
 }
+
 .quicklinks ul li a:before {
   content: "|";
   position: absolute;
   left: -15px;
   font-size: 20px;
 }
+
 .quicklinks ul li a.uno:before {
   top: 35px;
   color: rgb(38, 233, 13);
 }
+
 .quicklinks ul li a.dos:before {
   top: 60px;
   color: rgb(255, 73, 0);
 }
+
 .quicklinks ul li a.tres:before {
   top: 85px;
   color: aqua;
 }
+
 .quicklinks ul li a.cuatro:before {
   top: 110px;
   color: rgb(255, 192, 203);
 }
+
 .quicklinks ul li a.cinco:before {
   top: 135px;
   color: rgb(236, 240, 11);
 }
+
 .quicklinks ul li a:hover {
   border-bottom: 2px solid var(--color-pagina);
 }
+
 .contact {
   width: calc(35% - 60px);
   margin-right: 0 !important;
 }
+
 .contact .info {
   position: relative;
 }
+
 .contact .info li {
   display: flex;
   margin-bottom: 16px;
 }
+
 .contact .info li span:nth-child(1) {
   color: #fff;
   margin-right: 10px;
   font-size: 14px;
 }
+
 .contact .info li span {
   color: #fff;
   font-size: 13px;
 }
+
 .contact .info li a {
   color: #fff;
   text-decoration: none;
   font-size: 13px;
 }
+
 .contact .info li a:hover {
   border-bottom: 2px solid var(--color-pagina);
 }
+
 .copyrightText {
   position: absolute;
   bottom: 0;
@@ -1702,26 +1679,27 @@ footer p {
   padding: 18px 100px;
   text-align: center;
   color: #fff;
-  /* background: rgba(39, 59, 71, 0.8); */
   background: rgba(28, 54, 67, 1);
   font-size: 11px;
   letter-spacing: 0.5px;
 }
+
 .copyrightText p {
   position: absolute;
   top: 5px;
   left: 50%;
   transform: translateX(-50%);
 }
+
 .copyrightText span {
   font-weight: bold;
   color: var(--color-pagina);
   font-style: italic;
 }
 
-/* ------------------------ */
-/* Sliders de Servicios     */
-/* ------------------------ */
+/* -------------------------------------------------------------------- */
+/* Sub-rutina para crea un Sliders de Servicios (cinta transportadora)  */
+/* -------------------------------------------------------------------- */
 
 /* Animacion */
 /* @keyframes scroll {
