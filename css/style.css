@@ -16,7 +16,7 @@
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-Regular.ttf);
 } */
-@font-face {
+/* @font-face {
   font-family: "PoppinsLighter";
   font-weight: 200;
   src: url(../fonts/Poppins-ExtraLight.ttf);
@@ -25,7 +25,7 @@
   font-family: "PoppinsLight";
   font-weight: 300;
   src: url(../fonts/Poppins-Light.ttf);
-}
+} */
 
 /* --> Star of general resets & variables definitions <-- */
 
@@ -56,11 +56,12 @@
   /* --font-subtitulos: "Montserrat", sans-serif; */
   /* --font-subtitulos: "Lato", sans-serif; */
   /* --font-subtitulos: "Roboto", sans-serif; */
+  /* --font-cards: "Poppins", sans-serif; */
 
   --font-titulos: "DancingScript", cursive;
   --font-parrafos: "Roboto", sans-serif;
   --font-logo: "Times New Roman";
-  --font-cards: "Poppins", sans-serif;
+  
   --font-board: "Bailey", sans-serif;
 }
 html {
