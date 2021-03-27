@@ -33,8 +33,21 @@
     left: -200px;
     width: 30%;
   }
-  .menu_li_a {  
+  .menu_li {
+    width: 150px;
+    opacity: 1;
+  }
+  .menu_li_a {
+    width: 300px;
     font-size: 0.8em;
+  }
+  .menu_li_a:hover {
+    color: #fff;
+    opacity: inherit;
+    border-radius: inherit;
+    border: 0px;
+    box-shadow: none;
+    border-bottom: 2px solid var(--color-pagina);
   }
   .social_Icon {
     top: 150px;

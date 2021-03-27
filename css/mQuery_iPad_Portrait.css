@@ -43,7 +43,8 @@
     position: absolute;
     top: 0px;
     left: -200px;
-    width: 17%;
+    width: 25%;
+    /* height: 300px; */
     height: auto;
     display: flex;
     justify-content: left;
@@ -60,13 +61,23 @@
     left: 0;
   }
   .menu_li {
+    width: 200px;
     margin-left: 10px;
-    padding: 5px 8px 5px 8px;
-    opacity: 0.4;
+    padding: 5px 8px 15px 8px;
+    opacity: 1;
     cursor: pointer;
   }
-  .menu_li_a {  
-    font-size: 0.8em;
+  .menu_li_a {
+    width: 300px;
+    font-size: 1.1em;
+  }
+  .menu_li_a:hover {
+    color: #fff;
+    opacity: inherit;
+    border-radius: inherit;
+    border: 0px;
+    box-shadow: none;
+    border-bottom: 2px solid var(--color-pagina);
   }
   .botonLight:hover {
     box-shadow: 0 0 6px 0 rgba(28, 54, 67, 1);
