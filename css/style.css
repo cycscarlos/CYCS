@@ -1,14 +1,17 @@
 @font-face {
   font-family: "Bailey";
+  font-display: swap;
   src: url(../fonts/Bailey.otf);
 }
 @font-face {
   font-family: "DancingScript";
+  font-display: swap;
   font-weight: 400;
   src: url(../fonts/DancingScript-Medium.ttf);
 }
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url(../fonts/Roboto-Regular.ttf);
 }
 /* @font-face {
@@ -45,7 +48,6 @@
 
   --font-titulos: "DancingScript", cursive;
   --font-parrafos: "Roboto", sans-serif;
-  /* --font-parrafos2: "RobotoBold", sans-serif; */
   --font-logo: "Times New Roman";
   --font-board: "Bailey", sans-serif;
 }
