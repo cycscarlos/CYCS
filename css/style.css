@@ -1700,6 +1700,1021 @@ footer p {
   font-style: italic;
 }
 
+/* -------------------------------- */
+/*  Responsive Design for iPhone XS */
+/* -------------------------------- */
+
+/* @media screen and (max-width: 414px) {
+  section {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  .scroll-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5em;
+  }
+  .title {
+    font-size: 16px;
+    height: 16px;
+  }
+
+  .swiperPage-title {
+    font-size: 30px;
+    font-family: "Dancing Script", cursive;
+  }
+
+  .menu_Nav .fas.fa-bars {
+    margin-top: 70px;
+    margin-right: 15px;
+  }
+  .menu_Box {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 30%;
+  }
+  .menu_li {
+    width: 150px;
+    opacity: 1;
+  }
+  .menu_li_a {
+    width: 300px;
+    font-size: 0.8em;
+  }
+  .menu_li_a:hover {
+    color: #fff;
+    opacity: inherit;
+    border-radius: inherit;
+    border: 0px;
+    box-shadow: none;
+    border-bottom: 2px solid var(--color-pagina);
+  }
+  .social_Icon {
+    top: 150px;
+    left: 90%;
+    z-index: 10;
+  }
+  .banner_Icon {
+    top: 300px;
+    left: 90%;
+    z-index: 10;
+  }
+  .banner_Icon [class*="fa-"] {
+    font-size: 2.6em;
+    color: var(--color-whatsapp);
+  }
+  .whatsapp_Texto span {
+    top: 340px;
+    left: 220px;
+    width: 150px;
+    font-size: 10px;
+    z-index: 10;
+  }
+  .swiper-container.slideshow1.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal.swiper-container-ios {
+    padding-top: 150px;
+    padding-bottom: 0px;
+  }
+
+
+  .cards {
+    padding-top: 60px;
+    min-height: 400px;
+  }
+  .cards .title h2 {
+    width: 70%;
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  .cards .cardsBx {
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  .cards .cardsBx .card {
+    width: 300px;
+    height: 250px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  .cards .cardsBx .card img {
+    width: 300px;
+    height: 250px;
+  }
+  .cards .cardsBx .card .boton_mostrar {
+    width: 90px;
+    left: 32%;
+    transform: translateY(-32%);
+  }
+
+
+  .servicios {
+    min-height: 400px;
+    overflow: hidden;
+  }
+
+  .servicios .container-all {
+    perspective: 3000px;
+    width: 210px;
+
+  }
+  .servicios .title .fas.fa-arrow-right {
+    display: none;
+  }
+  .servicios .title h3 {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+    font-size: 12px;
+  }
+  .lightbox {
+ 
+    top: 120px;
+    left: 0;
+  }
+  .close {
+    position: absolute;
+    top: -30px;
+    left: 5px;
+    z-index: 2;
+  } */
+
+/*  Ojoooo! aqui comienza area comentadaa con anterioridad */
+/* .lightbox {
+    position: fixed;
+    top: 350px;
+    left: 5px;
+    transition: transform 1.5s ease-in-out;
+    transform: scale(0);
+    z-index: 100;
+  } */
+/* .box-texto {
+    position: relative;
+    width: 405px;
+    height: 150px;
+  }
+  .box-texto h3 {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 5px 0 7px 0;
+  }
+  .box-texto p {
+    padding: 0 10px;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+  }
+  .box-texto p span {
+    color: var(--color-pagina);
+    font-size: 4em;
+    text-align: center;
+  } */
+
+/* .box-texto .alarma,
+  .box-texto .torniquete {
+    padding: 5px 5px;
+    text-align: justify;
+    line-height: 1.1em;
+  } */
+/*  Ojoooo! aqui termina area comentadaa con anterioridad */
+
+/* .security {
+    padding-top: 80px;
+    min-height: 500px;
+  }
+  .security .title h2 {
+    font-size: 1.5em;
+  }
+  .security .row .col50 h3 {
+    font-size: 0.8em;
+  }
+  .security .row .col50 h3 span {
+    font-size: 1.3em;
+  }
+  .security .row .col50 ul {
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+  .security .row .col50 ul li span {
+    font-size: 1.2em;
+  }
+  .security .row .col50 p {
+    font-size: 0.8em;
+  }
+  .security .row .col50 p span {
+    font-size: 1em;
+  }
+  .security .row .col50 .secondaryUL {
+    margin-left: 50px;
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+  .security .row .col50 .secondaryUL li span {
+    font-size: 1.2em;
+  }
+  .swiper-container.slideshow2 .swiper-wrapper .swiper-slide img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+  }
+  .security .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 100px;
+  }
+
+
+  .ctrlAcceso {
+    min-height: 500px;
+    padding-top: 80px;
+  }
+  .ctrlAcceso .row .col50 h3 {
+    font-size: 0.8em;
+  }
+  .ctrlAcceso .row .col50 h3 span {
+    font-size: 1.3em;
+  }
+  .ctrlAcceso .row .col50 ul {
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+  .ctrlAcceso .row .col50 ul li span {
+    font-size: 1.2em;
+  }
+  .ctrlAcceso .row .col50 .secondaryUL {
+    margin-left: 30px;
+    font-size: 1em;
+    line-height: 15px;
+  }
+  .ctrlAcceso .row .col50 .secondaryUL li span {
+    font-size: 1em;
+  
+  }
+  .ctrlAcceso .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 180px;
+  }
+
+
+  .telco {
+    min-height: 400px;
+    padding-top: 80px;
+  }
+  .telco .row .col50 h3 {
+    font-size: 0.8em;
+  }
+  .telco .row .col50 h3 span {
+    font-size: 1.3em;
+  }
+  .telco .row .col50 .mainUL {
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+  .telco .row .col50 .mainUL li span {
+    font-size: 1.2em;
+  }
+  .telco .row .col50 .secondaryUL {
+    margin-left: 30px;
+    font-size: 1em;
+    line-height: 15px;
+  }
+  .telco .row .col50 .secondaryUL li span {
+    font-size: 1em;
+  }
+  .telco .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 140px;
+  }
+
+
+  .clients {
+    min-height: 500px;
+    padding-top: 80px;
+    margin-top: 0;
+  }
+  .clients .title h2 {
+    margin-bottom: 30px;
+  }
+
+
+  .galeria {
+    padding-top: 60px;
+  }
+  .galeria-titulo {
+    margin: 0;
+  }
+  .galeria-titulo span {
+    font-size: 0.5em;
+  }
+
+  .container_Galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container_Galeria .gallery-container:nth-child(6) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .container_Galeria .gallery-container:nth-child(7) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .container_Galeria .gallery-container:nth-child(9) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .container_Galeria .gallery-container:nth-child(13) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .container_Galeria .gallery-container:nth-child(15) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+
+  .aboutUs {
+    min-height: 400px;
+    background-image: url(./../img/CYCS_iPhone.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+ 
+    background-size: 100%;
+  }
+  .aboutUs .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aboutUs .titulo h2 {
+    margin: 20px;
+    font-size: 1.2em;
+  }
+  .aboutUs .titulo h2 span {
+    font-size: 20px;
+  }
+  .aboutUs .subtitulo h3 {
+    top: 120px;
+    font-size: 12px;
+  }
+
+
+  .nosotros {
+    width: 100vw;
+    min-height: 400px;
+  }
+
+  .box_Nosotros {
+
+    width: 380px;
+    height: 270px;
+
+  .nosotros-subtitulo {
+    padding: 5px;
+    margin: 5px;
+  }
+  .nosotros-parrafo {
+    font-size: 10px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 0px;
+    letter-spacing: 0px;
+  }
+  .nosotros-parrafo span {
+    font-size: 1em;
+    line-height: 15px;
+  }
+
+
+  .footerSection {
+    background: url(../img/footer/avila_iPhone.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  footer {
+    height: auto;
+    padding: 40px;
+    background: none;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .sec {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  footer .container .sec.aboutus,
+  .quicklinks,
+  .contact {
+    width: 100%;
+  }
+  .copyrightText {
+    padding: 8px 40px;
+    font-size: 6px;
+  }
+} */
+
+/* ---------------------------------- */
+/*  Responsive for iPad Vertical view */
+/* ---------------------------------- */
+
+/* @media screen and (max-width: 768px) {
+  section {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+  .scroll-title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+  }
+
+  .mainBox {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  .logo_Titulo {
+    font-size: 1.5em;
+  }
+  .logo_Subtitulo,
+  .contactInfo_Phone {
+    font-size: 0.8em;
+  }
+  .menu_Nav .fas.fa-bars {
+    visibility: visible;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 15px;
+    background: rgb(28, 54, 67);
+  }
+  .menu_Nav .fas.fa-bars:hover {
+    background: #fff;
+  }
+  .menu_Box {
+    position: absolute;
+    top: 0px;
+    left: -200px;
+    width: 25%;
+  
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    background: rgba(28, 54, 67, 0.7);
+ 
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: 1s;
+    z-index: 101;
+  }
+  .menu_Box.active {
+    left: 0;
+  }
+  .menu_li {
+    width: 200px;
+    margin-left: 10px;
+    padding: 5px 8px 15px 8px;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .menu_li_a {
+    width: 300px;
+    font-size: 1.1em;
+  }
+  .menu_li_a:hover {
+    color: #fff;
+    opacity: inherit;
+    border-radius: inherit;
+    border: 0px;
+    box-shadow: none;
+    border-bottom: 2px solid var(--color-pagina);
+  }
+  .botonLight:hover {
+    box-shadow: 0 0 6px 0 rgba(28, 54, 67, 1);
+  }
+  .social_Icon {
+    top: 100px;
+    left: 90%;
+    z-index: 10;
+  }
+  .banner_Icon {
+    top: 355px;
+    left: 680px;
+    z-index: 10;
+  }
+  .whatsapp_Texto span {
+    top: 415px;
+    left: 500px;
+    z-index: 10;
+  }
+  .slideshow1 {
+    height: 600px;
+  }
+
+
+  .cards {
+    min-height: 400px;
+  }
+  .cards .title h2 {
+    width: 40%;
+    font-size: 25px;
+  }
+  .cards .cardsBx {
+    display: flex;
+  }
+  .cards .cardsBx .card {
+    margin: auto 10px;
+    width: 250px;
+    height: 250px;
+  }
+  .cards .cardsBx .card img {
+    width: 250px;
+    height: 250px;
+  }
+  .cards .cardsBx .card h3 {
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  .cards .cardsBx .card .boton_mostrar {
+    width: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  .servicios {
+    min-height: 500px;
+    padding-top: 60px;
+  }
+  .servicios .title h2 {
+    margin-top: 0;
+  }
+  .servicios .title .fas.fa-arrow-left {
+    display: none;
+  }
+  .servicios .title h3 {
+    position: absolute;
+    top: 200px;
+    left: 347px;
+    font-size: 14px;
+  }
+  .lightbox {
+    width: 28%;
+    top: 200px;
+    left: 0;
+  }
+
+ 
+  .security {
+    padding-top: 40px;
+    min-height: 500px;
+  }
+ 
+  .security .row .col50 h3 {
+    font-size: 1.3em;
+  }
+  .security .row .col50 h3 span {
+    font-size: 1.3em;
+  }
+  .security .row .col50 ul {
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+  .security .row .col50 ul li span {
+    font-size: 1.2em;
+  }
+  .security .row .col50 p {
+    font-size: 1.2em;
+  }
+  .security .row .col50 p span {
+    font-size: 0.8em;
+  }
+  .security .row .col50 .secondaryUL {
+    margin-left: 100px;
+    font-size: 1em;
+    line-height: 15px;
+  }
+  .security .row .col50 .secondaryUL li span {
+    font-size: 1em;
+  }
+  .security .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 30px;
+  }
+
+
+  .ctrlAcceso {
+    min-height: 500px;
+  }
+
+  .ctrlAcceso .row .col50 h3 {
+    font-size: 1.3em;
+  }
+  .ctrlAcceso .row .col50 h3 span {
+    font-size: 1.3em;
+  }
+  .ctrlAcceso .row .col50 ul {
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+  .ctrlAcceso .row .col50 ul li span {
+    font-size: 1.2em;
+  }
+  .ctrlAcceso .row .col50 .secondaryUL {
+    margin-left: 80px;
+    font-size: 0.75em;
+  }
+  .ctrlAcceso .row .col50 .secondaryUL li span {
+    font-size: 1em;
+    line-height: 20px;
+  }
+  .ctrlAcceso .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 140px;
+  }
+
+
+  .telco {
+
+    min-height: 500px;
+  }
+
+  .telco .row .col50 h3 {
+    font-size: 1.3em;
+  }
+  .telco .row .col50 h3 span {
+    font-size: 1.3em;
+  }
+  .telco .row .col50 .mainUL {
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+  .telco .row .col50 .mainUL li span {
+    font-size: 1.2em;
+  }
+  .telco .row .col50 .secondaryUL {
+    margin-left: 80px;
+    font-size: 0.75em;
+  }
+  .telco .row .col50 .secondaryUL li span {
+    font-size: 1em;
+    line-height: 20px;
+  }
+  .telco .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 90px;
+  }
+
+
+
+  .clients .title h2 span {
+    font-size: 0.6em;
+  }
+  .clientes {
+
+    min-height: 500px;
+  }
+
+  .clientes .card {
+    margin: 5px 10px 5px 5px;
+  }
+
+
+  .galeria {
+
+    min-height: 500px;
+  }
+
+  .galeria-titulo span {
+    font-size: 0.6em;
+  }
+  .container_Galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container_Galeria .gallery-container:nth-child(7) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .container_Galeria .gallery-container:nth-child(15) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+
+  .aboutUs {
+    min-height: 500px;
+    background-image: url(./../img/CYCS_iPad.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    background-position: bottom;
+    background-size: 100%;
+  }
+  .aboutUs .titulo h2 {
+    margin-top: 0px;
+  }
+  .aboutUs .subtitulo h3 {
+    top: 150px;
+    font-size: 20px;
+  }
+
+
+    .nosotros {
+    min-height: 500px;
+  }
+  .box_Nosotros {
+    width: 600px;
+    height: 300px;
+  }
+  .nosotros-subtitulo {
+    font-size: 1.5em;
+  }
+  .nosotros-parrafo {
+    font-size: 0.7em;
+    margin: 0;
+    line-height: 1px;
+    letter-spacing: 0.1px;
+  }
+  .nosotros-parrafo2 {
+    font-size: 1.5em;
+  }
+
+
+  .footerSection {
+    background: url(../img/footer/avila_iPad.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  footer {
+    height: auto;
+    padding: 40px;
+
+    background: none;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .sec {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  footer .container .sec.aboutus,
+  .quicklinks,
+  .contact {
+    width: 100%;
+  }
+  .copyrightText {
+    padding: 8px 40px;
+  }
+} */
+
+/* ------------------------------------ */
+/*  Responsive for iPad Horizontal view */
+/* ------------------------------------ */
+
+/* @media screen and (max-width: 1024px) {
+
+  section {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+  .scroll-title {
+    background: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 3.5em;
+    font-weight: 700;
+    text-align: center;
+  }
+  .mainBox {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  .cards {
+    min-height: 500px;
+  }
+  .servicios {
+    min-height: 500px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+  .security {
+    min-height: 500px;
+    padding-bottom: 0;
+  }
+  .ctrlAcceso {
+    min-height: 500px;
+    padding-bottom: 0;
+  }
+  .telco {
+    min-height: 500px;
+    padding-bottom: 0;
+  }
+  .clients {
+    min-height: 500px;
+  }
+  .galeria {
+    min-height: 500px;
+  }
+  .aboutUs {
+    min-height: 500px;
+  }
+  .nosotros {
+    padding-top: 0;
+    min-height: 500px;
+  }
+  .footerSection {
+    min-height: 100vh;
+  }
+
+
+  .logo_Titulo {
+    font-size: 2.5em;
+  }
+  .logo_Subtitulo,
+  .contactInfo_Phone {
+    font-size: 1em;
+  }
+  .menu_Nav .fas.fa-bars {
+    visibility: visible;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 15px;
+    background: rgb(28, 54, 67);
+  }
+  .menu_Nav .fas.fa-bars:hover {
+    background: #fff;
+  }
+  .menu_Box {
+    position: absolute;
+    top: 0px;
+    left: -215px;
+    width: 21%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    background: rgba(28, 54, 67, 0.7);
+
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: 1s;
+    z-index: 101;
+  }
+  .menu_Box.active {
+    left: 0;
+  }
+  .menu_li {
+    width: 200px;
+    margin-left: 10px;
+    padding: 5px 8px 15px 8px;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .menu_li_a {
+    width: 300px;
+    font-size: 1.3em;
+  }
+  .botonLight:hover {
+    box-shadow: 0 0 6px 0 rgba(28, 54, 67, 1);
+  }
+  .social_Icon {
+    top: 130px;
+    left: 95.5%;
+    z-index: 10;
+  }
+  .banner_Icon {
+    top: 355px;
+    left: 95%;
+    z-index: 10;
+  }
+  .whatsapp_Texto span {
+    top: 400px;
+    left: 75%;
+    z-index: 10;
+  }
+  .slideshow1 {
+    height: 600px;
+  }
+  .swiper-container.slideshow1 {
+    height: 550px;
+    padding-bottom: 50px;
+  }
+  .swiper-container.slideshow1.swiper-container-horizontal
+    > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 0px;
+  }
+
+  .cards .title h2 {
+    width: 30%;
+    font-size: 30px;
+  }
+  .cards .cardsBx .card {
+    margin: auto 10px;
+    width: 350px;
+    height: 300px;
+  }
+  .cards .cardsBx .card h3 {
+    font-size: 1.4em;
+  }
+  .cards .cardsBx .card .boton_mostrar {
+    width: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .servicios .title .fas.fa-arrow-right {
+    top: 70%;
+    transform: translateY(-70%);
+    left: 120px;
+  }
+  .servicios .title h3 {
+    top: 70%;
+    transform: translateY(-70%);
+    left: 50px;
+    font-size: 14px;
+  }
+  .lightbox {
+    top: 220px;
+    right: 150px;
+  }
+
+  .security .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 180px;
+  }
+  .security .row .col50 .secondaryUL {
+    margin-left: 200px;
+  }
+
+  .ctrlAcceso .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 250px;
+  }
+  .ctrlAcceso .row .col50 .secondaryUL {
+    margin-left: 100px;
+  }
+
+  .telco .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 180px;
+  }
+  .telco .row .col50 .secondaryUL {
+    margin-left: 100px;
+  }
+ 
+  .aboutUs .subtitulo h3 {
+    top: 150px;
+  }
+
+ 
+  .box_Nosotros {
+    width: 600px;
+    height: 300px;
+  }
+  .nosotros-subtitulo {
+    font-size: 1.8em;
+  }
+  .nosotros-parrafo {
+    font-size: 0.8em;
+    margin: 0;
+    line-height: 1px;
+    letter-spacing: 0.1px;
+  }
+  .nosotros-parrafo2 {
+    font-size: 2em;
+  }
+} */
+
 /* -------------------------------------------------------------------- */
 /* Sub-rutina para crea un Sliders de Servicios (cinta transportadora)  */
 /* -------------------------------------------------------------------- */
