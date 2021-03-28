@@ -11,10 +11,10 @@
   font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf);
 }
-@font-face {
+/* @font-face {
   font-family: "RobotoBold";
   src: url(../fonts/Roboto-Medium.ttf);
-}
+} */
 
 /* --> Star of general resets & variables definitions <-- */
 
@@ -45,7 +45,7 @@
 
   --font-titulos: "DancingScript", cursive;
   --font-parrafos: "Roboto", sans-serif;
-  --font-parrafos2: "RobotoBold", sans-serif;
+  /* --font-parrafos2: "RobotoBold", sans-serif; */
   --font-logo: "Times New Roman";
   --font-board: "Bailey", sans-serif;
 }
@@ -1226,7 +1226,8 @@ section {
   padding: 3px;
   letter-spacing: 0.4px;
   color: #000;
-  font-family: var(--font-parrafos2);
+  /* font-family: var(--font-parrafos2); */
+  font-family: var(--font-parrafos);
   font-weight: 500;
   text-transform: none;
   line-height: 1.4em;
