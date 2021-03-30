@@ -318,25 +318,32 @@
     background-repeat: no-repeat;
     background-attachment: scroll;
     /* background-position: center center; */
-    background-position: bottom;
-    background-size: 100%;
+    /* background-position: bottom; */
+    /* background-size: 100%; */
+  }
+  .aboutUs .titulo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
   }
   .aboutUs .titulo h2 {
     margin-top: 0px;
   }
-  .aboutUs .subtitulo h3 {
+  /* .aboutUs .subtitulo h3 {
     top: 150px;
     font-size: 20px;
-  }
+  } */
 
   /* Nosotros - Oficina de Proyectos Section */
-  .nosotros {
+  /* .nosotros {
     min-height: 500px;
   }
   .box_Nosotros {
     width: 600px;
     height: 300px;
-  }
+  } */
   .nosotros-subtitulo {
     font-size: 1.5em;
   }

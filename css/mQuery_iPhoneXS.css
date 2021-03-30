@@ -334,35 +334,8 @@
     grid-row: span 1;
   }
 
-  /* -- "About Us o Nosotros" Section -- */
-  .aboutUs {
-    min-height: 400px;
-    background-image: url(./../img/CYCS_iPhone.png);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    /* background-position: bottom; */
-    background-size: 100%;
-  }
-  .aboutUs .titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .aboutUs .titulo h2 {
-    margin: 20px;
-    font-size: 1.2em;
-  }
-  .aboutUs .titulo h2 span {
-    font-size: 20px;
-  }
-  .aboutUs .subtitulo h3 {
-    top: 120px;
-    font-size: 12px;
-  }
+  /* -- AboutUs  -Muro de presentación -- */
 
-  /* -- "Quienes Somos?" Section -- */
   .nosotros {
     width: 100vw;
     min-height: 400px;
@@ -392,6 +365,38 @@
     font-size: 1em;
     line-height: 15px;
   }
+
+  /* -- Quienes somos?  Mosaico de Fotos -- */
+  .aboutUs {
+    /* min-height: 400px; */
+    background-image: url(./../img/CYCS_iPhone.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* background-position: center center; */
+    /* background-position: top; */
+    /* background-size: 100%; */
+  }
+  .aboutUs .titulo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+  }
+  .aboutUs .titulo h2 {
+    color: var(--color-pagina);
+    margin: 0;
+    font-size: 1.2em;
+  }
+  .aboutUs .titulo h2 span {
+    font-size: 20px;
+  }
+  /* .aboutUs .subtitulo h3 {
+    top: 120px;
+    font-size: 12px;
+  } */
 
   /* -- "Footer" Section -- */
   .footerSection {

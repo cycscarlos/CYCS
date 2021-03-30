@@ -205,15 +205,18 @@
     margin-left: 100px;
   }
   /* --  "AboutUs section" -- */
-  .aboutUs .subtitulo h3 {
-    top: 150px;
+  .aboutUs .titulo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutUs .titulo h2 {
+    margin-top: 0px;
   }
 
   /* --  "Nosotros section" -- */
-  .box_Nosotros {
-    width: 600px;
-    height: 300px;
-  }
   .nosotros-subtitulo {
     font-size: 1.8em;
   }
