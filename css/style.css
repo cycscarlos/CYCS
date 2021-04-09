@@ -63,7 +63,7 @@ section {
 }
 .scroll-title {
   background: #fff;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 30px;
   font-size: 3.5em;
   font-weight: 700;
@@ -115,22 +115,40 @@ section {
 .logo_Subtitulo {
   font: var(--font-logo);
   color: var(--color-blanco);
-  opacity: 0.8;
+  /* opacity: 0.8; */
   font-size: 0.8em;
   text-align: center;
   font-weight: 100;
   font-style: italic;
   padding: 0 0 0 20px;
+  letter-spacing: 0.05em;
 }
-.contactInfo_Box {
+.contactInfo_Box,
+.subtitleBox {
   position: relative;
 }
 .contactInfo_Phone {
   color: var(--color-pagina);
+  font-size: 0.9em;
+  font-weight: 100;
+  margin: 0;
+  padding: 10px;
+}
+.subtitleBox .contactInfo_subTitle h6 {
+  color: #fff;
+  font: var(--font-board);
+  font-style: italic;
   font-size: 1em;
   font-weight: 100;
   margin: 0;
   padding: 10px;
+  letter-spacing: 0.05em;
+  border: 2px solid var(--color-azulObscuro);
+  box-shadow: 0 0 0 1px #1c3643, 0 0 0 1px grey, 0px 10px 8px 1.5px #000;
+}
+.contactInfo_subTitle h6 span {
+  color: var(--color-pagina);
+  font-size: 1.5em;
 }
 .contactInfo_Phone .fas.fa-phone {
   color: #fff;
@@ -148,9 +166,9 @@ section {
   font-style: italic;
 }
 
-/* --------------------------- */
-/* figura iconos de contacto   */
-/* --------------------------- */
+/* ----------------------- */
+/* Iconos del teléfono     */
+/* ----------------------- */
 
 .contactInfo_Box [class*="fas fa-"]:before {
   color: var(--color-pagina);
@@ -187,7 +205,8 @@ section {
   color: var(--color-pagina);
 }
 .menu_Box {
-  padding: 0 150px 0 0;
+  /* padding: 0 150px 0 0; */
+  padding: 20px 0 0 0;
 }
 .menu_li {
   display: inline-block;
@@ -197,7 +216,8 @@ section {
 }
 .menu_li_a {
   color: #fff;
-  font-size: 0.9em;
+  /* font-size: 0.9em; */
+  font-size: 0.8em;
   text-decoration: none;
   transition: all 150ms ease-in-out;
 }
@@ -1512,7 +1532,7 @@ footer .container h2:before {
   position: absolute;
   bottom: -5px;
   left: 0;
-  width: 30px;
+  width: 35px;
   height: 2px;
   background: #ff4900;
 }
@@ -1607,33 +1627,40 @@ footer p {
   font-size: 20px;
 }
 
-.quicklinks ul li a.uno:before {
+/* .quicklinks ul li a.uno:before {
   top: 35px;
   color: rgb(38, 233, 13);
-}
+} */
 
 .quicklinks ul li a.dos:before {
-  top: 60px;
+  /* top: 60px; */
+  top: 35px;
   color: rgb(255, 73, 0);
 }
 
 .quicklinks ul li a.tres:before {
-  top: 85px;
+  /* top: 85px; */
+  top: 60px;
   color: aqua;
 }
 
 .quicklinks ul li a.cuatro:before {
-  top: 110px;
+  /* top: 110px; */
+  top: 85px;
   color: rgb(255, 192, 203);
 }
 
 .quicklinks ul li a.cinco:before {
-  top: 135px;
+  /* top: 135px; */
+  top: 110px;
   color: rgb(236, 240, 11);
 }
 
 .quicklinks ul li a:hover {
-  border-bottom: 2px solid var(--color-pagina);
+  color: var(--color-pagina);
+  border: 1px solid var(--color-azulObscuro);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 1px grey, 0px 5px 4px 1.5px #000;
+  /* box-shadow: 0 0 0 1px #1c3643, 0 0 0 1px grey, 0px 5px 4px 1.5px #000; */
 }
 
 .contact {
@@ -1668,7 +1695,9 @@ footer p {
 }
 
 .contact .info li a:hover {
-  border-bottom: 2px solid var(--color-pagina);
+  color: var(--color-pagina);
+  border: 1px solid var(--color-azulObscuro);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 1px grey, 0px 5px 4px 1.5px #000;
 }
 
 .copyrightText {
