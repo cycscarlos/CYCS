@@ -3,6 +3,9 @@
 /* -------------------------------- */
 
 @media screen and (max-width: 414px) {
+  [id] {
+    scroll-margin-top: 20ex;
+  }
   section {
     padding-top: 0;
     padding-bottom: 0;
@@ -11,27 +14,44 @@
   .scroll-title {
     margin-top: 0;
     margin-bottom: 0;
+    /* margin-top: 40px;
+    margin-bottom: 30px; */
     font-size: 1.5em;
   }
+
   .title {
     font-size: 16px;
     height: 16px;
   }
   /* -- "Inicio" Section -- */
+
+  .subtitleBox .contactInfo_subTitle h6 {
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .contactInfo_Box .contactInfo_Phone {
+    display: none;
+  }
   .swiperPage-title {
     font-size: 30px;
     font-family: "Dancing Script", cursive;
   }
 
   .menu_Nav .fas.fa-bars {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     margin-top: 70px;
-    margin-right: 15px;
+    margin-right: 10px;
   }
   .menu_Box {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: -200px;
-    width: 30%;
+    width: 40%;
+    background: rgba(28, 54, 67, 0.95);
   }
   .menu_li {
     width: 150px;
@@ -50,13 +70,19 @@
     border-bottom: 2px solid var(--color-pagina);
   }
   .social_Icon {
-    top: 150px;
-    left: 90%;
+    top: 300px;
+    left: 87.5%;
     z-index: 10;
   }
+  .social_Icon [class*="fa-"] {
+    margin: 0px 15px 45px 5px;
+    font-size: 2em;
+    width: 25px;
+    height: 25px;
+  }
   .banner_Icon {
-    top: 300px;
-    left: 90%;
+    top: 520px;
+    left: 87.5%;
     z-index: 10;
   }
   .banner_Icon [class*="fa-"] {
@@ -64,10 +90,10 @@
     color: var(--color-whatsapp);
   }
   .whatsapp_Texto span {
-    top: 340px;
-    left: 220px;
-    width: 150px;
-    font-size: 10px;
+    top: 560px;
+    left: 170px;
+    width: 160px;
+    font-size: 14px;
     z-index: 10;
   }
   .swiper-container.slideshow1.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal.swiper-container-ios {
@@ -118,9 +144,15 @@
     /* margin-top: 70px;
     margin-left: 0; */
   }
+  .servicios .title h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  /* Click arrow */
   .servicios .title .fas.fa-arrow-right {
     display: none;
   }
+  /* Click */
   .servicios .title h3 {
     position: absolute;
     top: 180px;
@@ -296,7 +328,11 @@
     margin-top: 0;
   }
   .clients .title h2 {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    margin: 0;
+  }
+  .clients .title h2 span {
+    font-size: 0.7em;
   }
 
   /* -- "Obras" Section -- */
@@ -307,7 +343,7 @@
     margin: 0;
   }
   .galeria-titulo span {
-    font-size: 0.5em;
+    font-size: 0.9em;
   }
 
   .container_Galeria {
@@ -353,7 +389,7 @@
     padding: 5px;
     margin: 5px;
   }
-  .nosotros-parrafo {
+  /* .nosotros-parrafo {
     font-size: 10px;
     font-family: sans-serif;
     margin: 0;
@@ -364,7 +400,7 @@
   .nosotros-parrafo span {
     font-size: 1em;
     line-height: 15px;
-  }
+  } */
 
   /* -- Quienes somos?  Mosaico de Fotos -- */
   .aboutUs {
@@ -404,6 +440,7 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   footer {
     height: auto;
     padding: 40px;
@@ -420,6 +457,16 @@
   .quicklinks,
   .contact {
     width: 100%;
+  }
+  footer .velo {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+    top: 0;
+    left: 0;
   }
   .copyrightText {
     padding: 8px 40px;

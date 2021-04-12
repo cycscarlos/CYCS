@@ -100,7 +100,7 @@ section {
 .logo_Box {
   position: relative;
 }
-.logo_Titulo {
+.logo_Box .logo_Titulo {
   font: var(--font-logo);
   color: var(--color-pagina);
   font-size: 2.5em;
