@@ -195,20 +195,13 @@
   .servicios .textBx .clicText .fas.fa-arrow-right {
     left: 9.5rem;
   }
-  /* .servicios .title .fas.fa-arrow-right {
-    top: 70%;
-    transform: translateY(-70%);
-    left: 120px;
-  } */
-  /* .servicios .title h3 {
-    top: 70%;
-    transform: translateY(-70%);
-    left: 50px;
-    font-size: 14px;
-  } */
-  .lightbox {
+  .servicios .container-all .container-carrousel .lightbox {
+    /* top: 4rem;
+    right: 9.5rem; */
+    width: 100%;
+    height: 100%;
     top: 0;
-    right: 9.5rem;
+    right: 0;
   }
   /* --  "Security section" -- */
   .security .swiper-container-horizontal > .swiper-pagination-bullets,
