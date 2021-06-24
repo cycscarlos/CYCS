@@ -140,7 +140,7 @@
   .servicios .title h2 {
     margin-top: 0;
   }
-  .servicios .title .fas.fa-arrow-left {
+  /* .servicios .title .fas.fa-arrow-left {
     display: none;
   }
   .servicios .title h3 {
@@ -153,7 +153,7 @@
     width: 28%;
     top: 200px;
     left: 0;
-  }
+  } */
 
   /* -- "Security" Section -- */
   .security {

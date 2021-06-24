@@ -503,6 +503,7 @@ section {
   position: absolute;
   top: 14rem;
   left: 5rem;
+  color: var(--color-pagina);
 }
 .servicios .textBx .clicText .fas.fa-arrow-right {
   color: var(--color-pagina);
@@ -519,6 +520,7 @@ section {
 .servicios .textBx .clicText h3 span {
   font-size: 0.8em;
   font-style: italic;
+  color: var(--color-pagina);
 }
 
 .servicios .container-all {

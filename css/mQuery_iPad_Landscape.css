@@ -188,17 +188,12 @@
   }
   /*# --  "Servicios section" -- */
   .servicios .textBx .clicText {
-    position: absolute;
-    top: 14rem;
-    left: 0;
-  }
-  .servicios .textBx .clicText .fas.fa-arrow-right {
-    left: 9.5rem;
+    pointer-events: none;
+    display: none;
   }
 
   .servicios .lightbox {
-    top: 14rem;
-    right: 9.5rem;
+    display: none;
   }
   /* --  "Security section" -- */
   .security .swiper-container-horizontal > .swiper-pagination-bullets,
