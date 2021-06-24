@@ -186,21 +186,29 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  /* --  "Servicios section" -- */
-  .servicios .title .fas.fa-arrow-right {
+  /*# --  "Servicios section" -- */
+  .servicios .textBx .clicText {
+    position: absolute;
+    top: 14rem;
+    left: 0;
+  }
+  .servicios .textBx .clicText .fas.fa-arrow-right {
+    left: 9.5rem;
+  }
+  /* .servicios .title .fas.fa-arrow-right {
     top: 70%;
     transform: translateY(-70%);
     left: 120px;
-  }
-  .servicios .title h3 {
+  } */
+  /* .servicios .title h3 {
     top: 70%;
     transform: translateY(-70%);
     left: 50px;
     font-size: 14px;
-  }
+  } */
   .lightbox {
-    top: 220px;
-    right: 150px;
+    top: 13.75rem;
+    right: 9.5rem;
   }
   /* --  "Security section" -- */
   .security .swiper-container-horizontal > .swiper-pagination-bullets,

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+
 @font-face {
   font-family: "Bailey";
   font-display: swap;
@@ -46,6 +48,7 @@
   --font-parrafos: "Roboto", sans-serif;
   --font-logo: "Times New Roman";
   --font-board: "Bailey", sans-serif;
+  --font-lightbox: "Open Sans Condensed", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -55,7 +58,7 @@ html {
 }
 /* --> End of general resets & variables definitions <-- */
 
-/* Start of CSS style for website */
+/*# Start of CSS style for website */
 
 section {
   padding-top: 120px;
@@ -78,7 +81,7 @@ section {
 }
 
 /* ------------ */
-/* Header       */
+/*# Header       */
 /* ------------ */
 
 .header_Box {
@@ -115,7 +118,6 @@ section {
 .logo_Subtitulo {
   font: var(--font-logo);
   color: var(--color-blanco);
-  /* opacity: 0.8; */
   font-size: 0.8em;
   text-align: center;
   font-weight: 100;
@@ -144,8 +146,6 @@ section {
   padding: 10px;
   letter-spacing: 0.05em;
   border: 2px solid var(--color-azulObscuro);
-  /* box-shadow: 0 0 0 1px #1c3643, 0 0 0 1px grey,
-    0px 10px 8px 1.5px rgba(0, 0, 0, 0.5); */
   box-shadow: 0 5px 0 1px #1c3643, 0 5px 0 1px grey,
     10px -2px 8px 1.5px rgba(0, 0, 0, 0.6);
 }
@@ -165,7 +165,6 @@ section {
 
 /* Esta clase opcional, fue diseñada para colocar un subtitulo debajo de la información de contacto de teléfono */
 .contactInfo_Box .contactInfo_Phone h6 {
-  /* position: absolute; */
   width: 100%;
   padding: 0;
   margin: 0;
@@ -185,7 +184,7 @@ section {
 }
 
 /* ------------------ */
-/* Menu de Navegación */
+/*# Menu de Navegación */
 /* ------------------ */
 
 .menu_Nav {
@@ -212,7 +211,6 @@ section {
   color: var(--color-pagina);
 }
 .menu_Box {
-  /* padding: 0 150px 0 0; */
   padding: 20px 0 0 0;
 }
 .menu_li {
@@ -223,7 +221,6 @@ section {
 }
 .menu_li_a {
   color: #fff;
-  /* font-size: 0.9em; */
   font-size: 0.8em;
   text-decoration: none;
   transition: all 150ms ease-in-out;
@@ -236,47 +233,8 @@ section {
   box-shadow: 0 0 0 1px #1c3643, 0 0 0 1px grey, 0 10px 10px 2.5px #000;
 }
 
-/* .menu_li_a:hover {
-  color: var(--color-blanco);
-  opacity: 1;
-  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 1);
-  background: linear-gradient(
-    50deg,
-    rgba(30, 83, 114, 0.9),
-    rgba(30, 83, 114, 0.7),
-    rgba(255, 255, 255, 0.5)
-  );
-} */
-
-/* Navigation submenu for responsive design   */
-/* .submenu_Box {
-  position: absolute;
-  top: 23px;
-  right: 70px;
-  width: 75px;
-  height: 55px;
-  text-align: center;
-  background-color: var(--color-azulObscuro);
-  border-radius: 0 0 3px 3px;
-  display: none;
-}
-.menu_li:hover .submenu_Box {
-  display: block;
-}
-.submenu_Box .menu_li {
-  opacity: 1;
-}
-.submenu_Box .menu_li_a {
-  color: var(--color-pagina);
-}
-.submenu_Box .menu_li_a:hover {
-  color: #fff;
-}
-.ocultarMenu {
-  height: 0px;
-} */
 /* ---------------------- */
-/* Iconos redes sociales  */
+/*# Iconos redes sociales  */
 /* ---------------------- */
 
 .social_Icon {
@@ -369,11 +327,6 @@ section {
   z-index: 10;
 }
 
-/* Hover sobre el icono de Whatsapp */
-/* .banner_Icon [class*="fa-"]:hover {
-  color: var(--color-pagina);
-} */
-
 .whatsapp_Texto:hover span {
   opacity: 1;
   visibility: visible;
@@ -462,7 +415,6 @@ section {
   95% {
     color: var(--color-pagina);
     flutter: blur(0px);
-    /* text-shadow: 0 0 10px none; */
     text-shadow: none;
   }
 }
@@ -530,9 +482,9 @@ section {
   background-image: linear-gradient(to top, #ff4900 0%, #ffb199 100%);
 }
 
-/* -------------------------- */
-/* Carrousel de Servicios     */
-/* -------------------------- */
+/* --------------------------- */
+/*# Carrousel de Servicios     */
+/* --------------------------- */
 
 .servicios {
   position: relative;
@@ -544,14 +496,37 @@ section {
   font-family: var(--font-titulos);
   color: var(--color-pagina);
 }
+.servicios .textBx {
+  position: relative;
+}
+.servicios .textBx .clicText {
+  position: absolute;
+  top: 14rem;
+  left: 5rem;
+}
+.servicios .textBx .clicText .fas.fa-arrow-right {
+  color: var(--color-pagina);
+  position: absolute;
+  font-size: 20px;
+  top: 1rem;
+  left: 12rem;
+}
+.servicios .textBx .clicText h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-pagina);
+}
+.servicios .textBx .clicText h3 span {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
 .servicios .container-all {
   position: absolute;
   width: 210px;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  /* margin-top: 50px;
-  margin-left: 350px; */
   perspective: 1000px;
 }
 
@@ -638,32 +613,15 @@ section {
   transition: all 1000ms;
   box-shadow: 0 0 0 1px #000, 0 0 0 1px grey, 0 10px 10px 2.5px #000;
 }
-.servicios .title .fas.fa-arrow-right {
-  color: var(--color-pagina);
-  position: absolute;
-  font-size: 14px;
-  top: 70%;
-  left: 270px;
-  transform: translateY(-70%);
-}
-.servicios .title h3 {
-  position: absolute;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--color-pagina);
-  top: 70%;
-  left: 190px;
-  transform: translateY(-70%);
-}
 
-/* -------------------------------------------- */
-/* Lightbox texto de cada imagen en el carrousel   */
-/* -------------------------------------------- */
+/* ---------------------------------------------- */
+/*# Lightbox texto de cada imagen en el carrousel */
+/* ---------------------------------------------- */
 
 .lightbox {
   position: fixed;
-  top: 280px;
-  right: 200px;
+  top: 17.5rem;
+  right: 12.5rem;
   transition: transform 1.5s ease-in-out;
   transform: scale(0);
   z-index: 10;
@@ -693,11 +651,12 @@ section {
   position: relative;
   top: 0px;
   padding: 0;
-  font-size: 10px;
+  font-size: 0.7em;
   line-height: 0.5em;
   letter-spacing: 0.5px;
   color: #fff;
-  font-family: var(--font-parrafos);
+  /* font-family: var(--font-parrafos); */
+  font-family: var(--font-lightbox);
   font-weight: 300;
 }
 
@@ -760,7 +719,7 @@ section {
   z-index: 20;
 }
 
-/* Esta sentencia activa el lightbox sobre cada imagen */
+/*! Esta sentencia activa el lightbox sobre cada imagen */
 
 .lightbox:target {
   transform: scale(1);
@@ -799,7 +758,7 @@ section {
 }
 
 /* -------------*/
-/* Security     */
+/*# Security     */
 /* -------------*/
 
 .security {
@@ -890,7 +849,7 @@ section {
 }
 
 /* --------------------------*/
-/* Security Swiper Effect    */
+/*# Security Swiper Effect    */
 /* --------------------------*/
 
 .security .slideshow2 {
@@ -918,12 +877,6 @@ section {
   font-size: 1.5em;
 }
 
-/* .swiper-container.slideshow2 .swiper-wrapper .swiper-slide img {
-  width: 412px;
-  height: 243px;
-  object-fit: cover;
-} */
-
 .security .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -931,7 +884,7 @@ section {
 }
 
 /* --------------------*/
-/* Access Control      */
+/*# Access Control      */
 /* --------------------*/
 
 .ctrlAcceso {
@@ -1022,7 +975,7 @@ section {
 }
 
 /* --------------------------------*/
-/* Access Control Swiper Effect    */
+/*# Access Control Swiper Effect    */
 /* --------------------------------*/
 
 .ctrlAcceso .slideshow2 {
@@ -1044,7 +997,7 @@ section {
 }
 
 /* ----------------------*/
-/* Telecommunication     */
+/*# Telecommunication     */
 /* ----------------------*/
 
 .telco {
@@ -1124,7 +1077,7 @@ section {
 }
 
 /* -----------------------------------*/
-/* Telecommunication Swiper Effect    */
+/*# Telecommunication Swiper Effect    */
 /* -----------------------------------*/
 
 .telco .slideshow2 {
@@ -1146,7 +1099,7 @@ section {
 }
 
 /* --------------------------*/
-/* CLIENTES y PROYECTOS      */
+/*# CLIENTES y PROYECTOS      */
 /* -------------------------*/
 
 .clientes {
@@ -1261,7 +1214,7 @@ section {
 }
 
 /* --------------------------------*/
-/* GALERÍA Fotos Obras Realizadas  */
+/*# GALERÍA Fotos Obras Realizadas  */
 /* --------------------------------*/
 
 .galeria {
@@ -1313,10 +1266,6 @@ section {
   position: relative;
 }
 
-/* .container_Galeria .gallery-container .gallery-item:hover .image img {
-  transform: scale(1.2);
-} */
-
 .container_Galeria .gallery-container .gallery-item .image {
   width: 100%;
   height: 100%;
@@ -1331,7 +1280,7 @@ section {
 }
 
 /* -------------------------------- */
-/* AboutUs  -Muro de presentación   */
+/*# AboutUs  -Muro de presentación   */
 /* -------------------------------- */
 
 .nosotros {
@@ -1402,7 +1351,7 @@ section {
 } */
 
 /* ---------------------------------- */
-/* Quienes somos?  Mosaico de Fotos   */
+/*# Quienes somos?  Mosaico de Fotos   */
 /* ---------------------------------- */
 
 .aboutUs {
@@ -1484,7 +1433,7 @@ section {
 } */
 
 /* ----------*/
-/* FOOTER    */
+/*# FOOTER    */
 /* ----------*/
 
 .footerSection {
@@ -1634,11 +1583,6 @@ footer p {
   font-size: 20px;
 }
 
-/* .quicklinks ul li a.uno:before {
-  top: 35px;
-  color: rgb(38, 233, 13);
-} */
-
 .quicklinks ul li a.dos:before {
   /* top: 60px; */
   top: 35px;
@@ -1667,7 +1611,6 @@ footer p {
   color: var(--color-pagina);
   border: 1px solid var(--color-azulObscuro);
   box-shadow: 0 0 0 1px #fff, 0 0 0 1px grey, 0px 5px 4px 1.5px #000;
-  /* box-shadow: 0 0 0 1px #1c3643, 0 0 0 1px grey, 0px 5px 4px 1.5px #000; */
 }
 
 .contact {
@@ -1731,96 +1674,3 @@ footer p {
   color: var(--color-pagina);
   font-style: italic;
 }
-
-/* -------------------------------------------------------------------- */
-/* Sub-rutina para crea un Sliders de Servicios (cinta transportadora)  */
-/* -------------------------------------------------------------------- */
-
-/* Animacion */
-/* @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(
-      calc(-250px * 6.5)
-        
-    );
-  }
-}
-.slider {
-  background: var(--color-pagina);
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 40px; 
-  margin: auto;
-  overflow: hidden;
-  position: absolute;
-  top: 550px;
-  left: 0px;
-  width: 1350px; 
-  z-index: 1;
-}
-.slider::before,
-.slider::after {
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  content: "";
-  height: 50px; 
-  position: absolute;
-  width: 100px; 
-  z-index: 1;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg); 
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-.slider .slide-track {
-  animation: scroll 35s linear infinite;
-  display: flex;
-  width: calc(250px * 14);
-}
-.slider .slide {
-  height: 100px;
-  width: 250px; 
-}
-.slide img {
-  border: 1.5px solid rgba(255, 255, 255, 0.08);
-} */
-
-/* -------------------------- */
-/* Responsive Design - iPAD   */
-/* -------------------------- */
-
-/* @media screen and (max-width: 768px) {
-  .slider {
-    top: 530px;
-  } */
-
-/* -------------------------------------- */
-/* Responsive Design - iPHONE 10 o Mayor  */
-/* -------------------------------------- */
-
-/* @media only screen and (max-width: 414px) {
-  .slider {
-    top: 450px; */
-/* Ancho banda */
-/* height: 30px; 
-  } */
-/* .slide img {
-    height: 25px;
-    width: 60px;
-  } */
-/* .slider .slide {
-    height: 100px; */
-/* Gap entre imagenes */
-/* width: 100px; 
-  }
-} */
