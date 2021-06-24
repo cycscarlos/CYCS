@@ -195,15 +195,14 @@
   .servicios .textBx .clicText .fas.fa-arrow-right {
     left: 9.5rem;
   }
-  .servicios {
+
+  .servicios .lightboxBx {
     position: relative;
-    border: 1px solid red;
   }
+
   .servicios .lightbox {
-    position: fixed;
     top: 14rem;
     right: 9.5rem;
-    z-index: 10;
   }
   /* --  "Security section" -- */
   .security .swiper-container-horizontal > .swiper-pagination-bullets,
