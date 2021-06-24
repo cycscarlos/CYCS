@@ -153,25 +153,29 @@ section {
   color: var(--color-pagina);
   font-size: 1.5em;
 }
-.contactInfo_Phone .fas.fa-phone {
-  color: #fff;
+
+.contactInfo_Box {
+  position: relative;
 }
-.contactInfo_Box .contactInfo_Phone h6 {
-  position: absolute;
-  right: 0;
-  margin-top: 5px;
-  color: var(--color-blanco);
-  opacity: 0.8;
-  font-size: 0.7em;
-  /* text-align: right; */
-  padding-right: 10px;
-  font-weight: 100;
-  font-style: italic;
+.contactInfo_Phone span {
+  color: #fff;
+  font-family: var(--font-logo);
+  font-size: 0.9em;
 }
 
-/* ----------------------- */
-/* Iconos del teléfono     */
-/* ----------------------- */
+/* Esta clase opcional, fue diseñada para colocar un subtitulo debajo de la información de contacto de teléfono */
+.contactInfo_Box .contactInfo_Phone h6 {
+  /* position: absolute; */
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+  color: var(--color-blanco);
+  font-size: 0.7em;
+  font-weight: 100;
+  font-style: italic;
+  text-align: right;
+}
 
 .contactInfo_Box [class*="fas fa-"]:before {
   color: var(--color-pagina);
