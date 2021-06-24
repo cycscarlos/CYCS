@@ -206,10 +206,10 @@
     left: 50px;
     font-size: 14px;
   } */
-  /* .lightbox {
-    top: 13.75rem;
+  .lightbox {
+    top: 5rem;
     right: 9.5rem;
-  } */
+  }
   /* --  "Security section" -- */
   .security .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom,
