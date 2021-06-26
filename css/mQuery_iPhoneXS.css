@@ -372,12 +372,12 @@
 
   /* -- AboutUs  -Muro de presentación -- */
 
-  .nosotros {
+  .muro {
     width: 100vw;
     min-height: 400px;
   }
 
-  .box_Nosotros {
+  .box_muro {
     /* left: 50%;
     top: 50%; */
     width: 380px;
@@ -385,11 +385,11 @@
     /* margin-left: -190px; 
     margin-top: -150px;  */
   }
-  .nosotros-subtitulo {
+  .muro-subtitulo {
     padding: 5px;
     margin: 5px;
   }
-  /* .nosotros-parrafo {
+  /* .muro-parrafo {
     font-size: 10px;
     font-family: sans-serif;
     margin: 0;
@@ -397,7 +397,7 @@
     line-height: 0px;
     letter-spacing: 0px;
   }
-  .nosotros-parrafo span {
+  .muro-parrafo span {
     font-size: 1em;
     line-height: 15px;
   } */

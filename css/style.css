@@ -52,6 +52,7 @@
 }
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 [id] {
   scroll-margin-top: 2ex;
@@ -193,6 +194,7 @@ section {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 11;
 }
 .menu_Nav .fas.fa-bars {
   visibility: hidden;
@@ -232,6 +234,30 @@ section {
   border: 2px solid var(--color-azulObscuro);
   box-shadow: 0 0 0 1px #1c3643, 0 0 0 1px grey, 0 10px 10px 2.5px #000;
 }
+.submenu {
+  position: absolute;
+  top: 2.7rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  visibility: hidden;
+}
+.submenu .menu_li {
+  padding: 5px 0px;
+  color: var(--color-blanco);
+  background: var(--color-azulObscuro);
+  border-radius: 0 0 3px 3px;
+}
+.submenu .menu_li .menu_li_a {
+  display: block;
+  margin: 10px 0px 0px 5px;
+  width: 4.5rem;
+}
+
+.menu_li:hover .submenu {
+  visibility: visible;
+}
 
 /* ---------------------- */
 /*# Iconos redes sociales  */
@@ -240,7 +266,7 @@ section {
 .social_Icon {
   position: fixed;
   display: block;
-  top: 155px;
+  top: 225px;
   left: 1250px;
   z-index: 10;
 }
@@ -1185,7 +1211,8 @@ section {
 .clientes .card .box .contentBx div {
   transform-style: preserve-3d;
   padding: 3px;
-  background: linear-gradient(45deg, #ff4400, #ffeb3b);
+  /* background: linear-gradient(45deg, #ff4400, #ffeb3b); */
+  background: linear-gradient(45deg, #83c2c7, #fff);
   transform: translateZ(100px);
 
   /* ¡OJoooo! Estas dos instrucciones son nuevas -No existian */
@@ -1206,7 +1233,6 @@ section {
   padding: 3px;
   letter-spacing: 0.4px;
   color: #000;
-  /* font-family: var(--font-parrafos2); */
   font-family: var(--font-parrafos);
   font-weight: 500;
   text-transform: none;
@@ -1282,39 +1308,38 @@ section {
 }
 
 /* -------------------------------- */
-/*# AboutUs  -Muro de presentación   */
+/*# Muro de presentación   */
 /* -------------------------------- */
 
-.nosotros {
+.muro {
   position: relative;
   width: 100%;
   min-height: 100vh;
   max-width: 1370px;
   margin: auto;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.box_Nosotros {
+.box_muro {
   width: 750px;
   height: 400px;
   background-color: var(--color-azulObscuro);
   box-shadow: 0 0 0 10px #1c3643, 0 0 0 11px #1e5372, 0 20px 20px 5px #1c3643;
 }
 
-.box_textos_nosotros {
+.box_textos_muro {
   text-align: center;
 }
 
-.nosotros-subtitulo {
+.muro-subtitulo {
   color: var(--color-pagina);
   font-size: 2em;
   margin: 10px;
   padding: 10px 10px 30px 10px;
 }
 
-.nosotros-parrafo {
+.muro-parrafo {
   color: #fff;
   font-size: 1em;
   margin: 5px;
@@ -1323,20 +1348,20 @@ section {
   margin-bottom: 10px;
 }
 
-.nosotros-parrafo span {
-  color: var(--color-azulClaro);
+.muro-parrafo span {
+  color: var(--color-blanco);
   font-size: 1em;
   line-height: 7px;
   text-align: center;
 }
-.nosotros-parrafo-span span {
+.muro-parrafo-span span {
   color: var(--color-pagina);
   font-size: 1em;
   line-height: 24px;
   text-align: center;
 }
 
-.nosotros-parrafo2 {
+.muro-parrafo2 {
   color: var(--color-pagina);
   font-size: 2.5em;
   font-family: var(--font-board);
@@ -1381,15 +1406,16 @@ section {
 .aboutUs .titulo h2 {
   flex-direction: column;
   font-family: var(--font-titulos);
-  color: #fff;
+  color: var(--color-pagina);
   background: transparent;
   letter-spacing: 2.5px;
+  padding-top: 30px;
 }
 
-.aboutUs .titulo span {
-  font-size: 0.5em;
-  color: var(--color-pagina);
-}
+/* .aboutUs .titulo span {
+  font-size: 0.6em; 
+  color: var(--color-blanco);
+} */
 
 /* Sub-rutina para colocar un Titulo centrado al medio de la página con animación aparecer/desaparecer */
 

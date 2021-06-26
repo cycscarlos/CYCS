@@ -336,24 +336,24 @@
     font-size: 20px;
   } */
 
-  /* Nosotros - Oficina de Proyectos Section */
-  /* .nosotros {
+  /* muro - Oficina de Proyectos Section */
+  /* .muro {
     min-height: 500px;
   }
-  .box_Nosotros {
+  .box_muro {
     width: 600px;
     height: 300px;
   } */
-  .nosotros-subtitulo {
+  .muro-subtitulo {
     font-size: 1.5em;
   }
-  .nosotros-parrafo {
+  .muro-parrafo {
     font-size: 0.7em;
     margin: 0;
     line-height: 1px;
     letter-spacing: 0.1px;
   }
-  .nosotros-parrafo2 {
+  .muro-parrafo2 {
     font-size: 1.5em;
   }
 
