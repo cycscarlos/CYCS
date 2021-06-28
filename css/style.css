@@ -33,6 +33,7 @@
   --color-azulMedio: rgb(39, 59, 71);
   --color-azulClaro: rgb(30, 83, 114);
   --color-blanco: #fff;
+  --yellow-color: #f7c331;
 
   /* Social Media colors */
 
@@ -1460,9 +1461,73 @@ section {
   }
 } */
 
-/* ----------*/
+/* --------------*/
+/*# Profile CEO  */
+/* --------------*/
+section[id="profile"] {
+  scroll-margin-top: 140px;
+}
+
+.profile {
+  text-align: justify;
+  max-width: 100wv;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+}
+
+.profile-info {
+  margin-bottom: 25px;
+}
+
+.profile-title {
+  font-size: 35px;
+  margin: 20px 0;
+  font-weight: bold;
+  /* color: var(--logo-color);
+  font-family: var(--font-profile); */
+  text-align: left;
+}
+
+.profile-title .name {
+  padding-top: 0.5em;
+}
+
+.profile-details {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: normal;
+  max-width: 450px;
+  margin: 20px 0;
+  /* color: var(--text-color); */
+}
+
+.profile-img-section {
+  position: relative;
+  /*: Convertir el width de la línea de bloque a inline para que abarque solo el size de la foto */
+  display: inline;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 288px;
+}
+
+.profile-img-line {
+  background-color: var(--color-pagina);
+  height: 15px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+/* -----------*/
 /*# FOOTER    */
-/* ----------*/
+/* -----------*/
 
 .footerSection {
   position: relative;

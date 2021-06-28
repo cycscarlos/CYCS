@@ -16,6 +16,7 @@
     font-weight: 700;
     text-align: center;
   }
+  /*# --  "Estilos del Header" -- */
   .logo_Box .logo_Titulo {
     font-size: 2em;
     font-weight: 100;
@@ -63,9 +64,9 @@
   .clients {
     min-height: 500px;
   }
-  .galeria {
+  /* .galeria {
     min-height: 500px;
-  }
+  } */
   .muro {
     padding-top: 0;
     min-height: 500px;
@@ -78,7 +79,7 @@
     /* min-height: 100vh; */
   }
 
-  /*# --  "Inicio section" -- */
+  /*# --  "Estilos del Menu de Navegación" -- */
 
   .logo_Titulo {
     font-size: 2.5em;
@@ -134,6 +135,8 @@
   .submenu {
     display: none;
   }
+
+  /*# --  "Estilos Iconos Redes Sociales" -- */
   .botonLight:hover {
     box-shadow: 0 0 6px 0 rgba(28, 54, 67, 1);
   }
@@ -159,6 +162,8 @@
     left: 75%;
     z-index: 10;
   }
+
+  /*# --  "Estilos del Carousel de inicio" -- */
   .slideshow1 {
     height: 600px;
   }
@@ -172,6 +177,7 @@
   .swiper-pagination-fraction {
     bottom: 0px;
   }
+
   /*# --  "Cards section" -- */
   .cards .title h2 {
     width: 30%;
@@ -210,6 +216,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-40%);
   }
+
   /*# --  "Security section" -- */
   .security .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom,
@@ -228,6 +235,7 @@
   .ctrlAcceso .row .col50 .secondaryUL {
     margin-left: 100px;
   }
+
   /*# --  "Telco section" -- */
   .telco .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom,
@@ -257,6 +265,7 @@
   .muro-parrafo2 {
     font-size: 2em;
   }
+
   /*# --  "AboutUs section" -- */
   .aboutUs {
     margin: 3rem 0;
@@ -269,6 +278,7 @@
   .aboutUs .titulo h2 {
     margin: 0px;
   }
+
   /*# --  "Footer section" -- */
   [id="contacto"] {
     scroll-margin-top: 0ex;
