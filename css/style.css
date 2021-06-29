@@ -1488,8 +1488,7 @@ section[id="profile"] {
   font-size: 35px;
   margin: 20px 0;
   font-weight: bold;
-  /* color: var(--logo-color);
-  font-family: var(--font-profile); */
+  color: var(--color-azulObscuro);
   text-align: left;
 }
 
@@ -1504,7 +1503,7 @@ section[id="profile"] {
   letter-spacing: normal;
   max-width: 450px;
   margin: 20px 0;
-  /* color: var(--text-color); */
+  color: var(--color-azulClaro);
 }
 
 .profile-img-section {

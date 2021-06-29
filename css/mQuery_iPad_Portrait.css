@@ -331,9 +331,6 @@
     background-image: url(./../img/CYCS_iPad.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    /* background-position: center center; */
-    /* background-position: bottom; */
-    /* background-size: 100%; */
   }
   .aboutUs .titulo {
     position: relative;
@@ -343,21 +340,9 @@
     align-items: center;
   }
   .aboutUs .titulo h2 {
-    margin-top: 0px;
+    padding-top: 60px;
   }
-  /* .aboutUs .subtitulo h3 {
-    top: 150px;
-    font-size: 20px;
-  } */
 
-  /* muro - Oficina de Proyectos Section */
-  /* .muro {
-    min-height: 500px;
-  }
-  .box_muro {
-    width: 600px;
-    height: 300px;
-  } */
   .muro-subtitulo {
     font-size: 1.5em;
   }
@@ -370,17 +355,24 @@
   .muro-parrafo2 {
     font-size: 1.5em;
   }
+  /*# -- "Profile CEO" Section -- */
+  .profile-title {
+    font-size: 30px;
+  }
+  .profile-details {
+    padding: 0 20px;
+  }
 
-  /* -- "Footer" Section -- */
+  /*# -- "Footer" Section -- */
   .footerSection {
     background: url(../img/footer/avila_iPad.png);
     background-size: cover;
     background-repeat: no-repeat;
+    justify-content: center;
   }
   footer {
     height: auto;
     padding: 40px;
-
     background: none;
   }
   footer .container {
@@ -393,9 +385,32 @@
   footer .container .sec.aboutus,
   .quicklinks,
   .contact {
-    width: 100%;
+    width: 50%;
+  }
+  footer .container h2 {
+    font-size: 24px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  .quicklinks ul li a {
+    font-size: 16px;
+  }
+  .contact .info li span:nth-child(1) {
+    font-size: 16px;
+  }
+  .contact .info li span {
+    font-size: 16px;
+  }
+  .contact .info li a {
+    font-size: 16px;
   }
   .copyrightText {
-    padding: 8px 40px;
+    height: 40px;
+    padding: 0;
+  }
+  .copyrightText p {
+    width: 100%;
+    font-size: 16px;
   }
 }
