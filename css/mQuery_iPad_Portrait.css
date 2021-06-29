@@ -3,6 +3,16 @@
 /* ---------------------------------- */
 
 @media screen and (max-width: 768px) {
+  .logo_Box {
+    border: transparent;
+  }
+  .subtitleBox {
+    border: transparent;
+  }
+  .contactInfo_Box {
+    display: none;
+    border: 1px solid white;
+  }
   section {
     padding-top: 60px;
     padding-bottom: 0px;
@@ -21,17 +31,19 @@
   .logo_Titulo {
     font-size: 1.5em;
   }
-  .logo_Subtitulo,
-  .contactInfo_Phone {
+  .logo_Subtitulo {
     font-size: 0.8em;
   }
+
   .menu_Nav .fas.fa-bars {
     visibility: visible;
     position: absolute;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    right: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    /* right: 0; */
+    top: 0;
+    left: 90%;
     margin-top: 30px;
     margin-right: 15px;
     background: rgb(28, 54, 67);
@@ -83,13 +95,15 @@
     box-shadow: 0 0 6px 0 rgba(28, 54, 67, 1);
   }
   .social_Icon {
-    top: 100px;
-    left: 90%;
+    top: 200px;
+    left: 92%;
     z-index: 10;
   }
   .banner_Icon {
-    top: 355px;
-    left: 680px;
+    /* top: 355px;
+    left: 680px; */
+    top: 450px;
+    left: 92%;
     z-index: 10;
   }
   .whatsapp_Texto span {

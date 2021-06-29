@@ -131,13 +131,7 @@ section {
 .subtitleBox {
   position: relative;
 }
-.contactInfo_Phone {
-  color: var(--color-pagina);
-  font-size: 0.9em;
-  font-weight: 100;
-  margin: 0;
-  padding: 10px;
-}
+
 .subtitleBox .contactInfo_subTitle h6 {
   color: #fff;
   font: var(--font-board);
@@ -156,8 +150,16 @@ section {
   font-size: 1.5em;
 }
 
-.contactInfo_Box {
+/* .contactInfo_Box {
   position: relative;
+} */
+
+.contactInfo_Phone {
+  color: var(--color-pagina);
+  font-size: 0.9em;
+  font-weight: 100;
+  margin: 0;
+  padding: 10px;
 }
 .contactInfo_Phone span {
   color: var(--color-blanco);
