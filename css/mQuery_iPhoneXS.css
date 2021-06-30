@@ -3,7 +3,7 @@
 /* -------------------------------- */
 
 @media screen and (max-width: 414px) {
-  [id] {
+  /* [id] {
     scroll-margin-top: 20ex;
   }
   section {
@@ -14,44 +14,69 @@
   .scroll-title {
     margin-top: 0;
     margin-bottom: 0;
-    /* margin-top: 40px;
-    margin-bottom: 30px; */
     font-size: 1.5em;
   }
 
   .title {
     font-size: 16px;
     height: 16px;
-  }
+  } */
   /* -- "Inicio" Section -- */
 
+  .flex_Box {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: left;
+  }
+
+  .logo_Box .logo_Titulo {
+    font-size: 1.5rem;
+    padding: 10px 0 0 20px;
+  }
+  .logo_Box .logo_Titulo span {
+    font-size: 0.8rem;
+  }
+  .logo_Box .logo_Subtitulo {
+    font-size: 0.6rem;
+  }
+
   .subtitleBox .contactInfo_subTitle h6 {
-    font-size: 0.9em;
+    font-size: 0.7rem;
     text-align: center;
     margin-top: 15px;
   }
 
   .contactInfo_Box .contactInfo_Phone {
-    display: none;
+    font-size: 0.8rem;
+    padding: 20px;
   }
+
   .swiperPage-title {
     font-size: 30px;
     font-family: "Dancing Script", cursive;
   }
 
   .menu_Nav .fas.fa-bars {
+    visibility: visible;
+    position: absolute;
     width: 40px;
     height: 40px;
     line-height: 40px;
     margin-top: 70px;
     margin-right: 10px;
+    /* top: 0; */
+    left: 300px;
   }
   .menu_Box {
     position: absolute;
-    top: -1px;
+    /* top: -1px; */
+    top: 20px;
     left: -200px;
-    width: 40%;
-    background: rgba(28, 54, 67, 0.95);
+    width: 20%;
+    background: rgba(28, 54, 67, 0.7);
+    transition: 0.5s;
+    z-index: 101;
   }
   .menu_li {
     width: 150px;

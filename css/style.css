@@ -141,9 +141,13 @@ section {
   margin: 0;
   padding: 10px;
   letter-spacing: 0.05em;
-  border: 2px solid var(--color-azulObscuro);
+  /* border: 2px solid var(--color-azulObscuro);
   box-shadow: 0 5px 0 1px #1c3643, 0 5px 0 1px grey,
+    10px -2px 8px 1.5px rgba(0, 0, 0, 0.6); */
+  /* border: 2px solid var(--color-azulObscuro); */
+  box-shadow: 5px 5px 5px 1px #1c3643, 5px 5px 5px 1px rgba(0, 0, 0, 1),
     10px -2px 8px 1.5px rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
 }
 .contactInfo_subTitle h6 span {
   color: var(--color-pagina);

@@ -29,6 +29,7 @@
     font-size: 0.8em;
     padding: 0 0 0 20px;
     letter-spacing: 0.05em;
+    text-align: center;
   }
   .subtitleBox .contactInfo_subTitle h6 {
     font-size: 0.9em;
@@ -280,7 +281,58 @@
   }
 
   /*# --  "Footer section" -- */
-  [id="contacto"] {
+  .footerSection {
+    background: url(../img/footer/avila_iPad.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
+  footer {
+    height: auto;
+    padding: 40px;
+    background: none;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .sec {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  footer .container .sec.aboutus,
+  .quicklinks,
+  .contact {
+    width: 50%;
+  }
+  footer .container h2 {
+    font-size: 24px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  .quicklinks ul li a {
+    font-size: 16px;
+  }
+  .contact .info li span:nth-child(1) {
+    font-size: 16px;
+  }
+  .contact .info li span {
+    font-size: 16px;
+  }
+  .contact .info li a {
+    font-size: 16px;
+  }
+  .copyrightText {
+    height: 40px;
+    padding: 0;
+  }
+  .copyrightText p {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+/* [id="contacto"] {
     scroll-margin-top: 0ex;
   }
   .footerSection {
@@ -305,4 +357,4 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
-}
+} */
