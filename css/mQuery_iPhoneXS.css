@@ -3,9 +3,9 @@
 /* -------------------------------- */
 
 @media screen and (max-width: 414px) {
-  /* [id] {
+  [id] {
     scroll-margin-top: 20ex;
-  } */
+  }
 
   section {
     padding-top: 0;
@@ -70,15 +70,15 @@
     line-height: 40px;
     margin-top: 70px;
     margin-right: 10px;
-    /* top: 0; */
-    left: 300px;
+    top: 0;
+    left: 80%;
   }
   .menu_Box {
     position: absolute;
     /* top: -1px; */
     top: 20px;
     left: -200px;
-    width: 20%;
+    width: 35%;
     background: rgba(28, 54, 67, 0.7);
     transition: 0.5s;
     z-index: 101;
@@ -100,8 +100,8 @@
     border-bottom: 2px solid var(--color-pagina);
   }
   .social_Icon {
-    top: 300px;
-    left: 87.5%;
+    top: 330px;
+    left: 84.5%;
     z-index: 10;
   }
   .social_Icon [class*="fa-"] {
@@ -111,8 +111,8 @@
     height: 25px;
   }
   .banner_Icon {
-    top: 520px;
-    left: 87.5%;
+    top: 550px;
+    left: 84.5%;
     z-index: 10;
   }
   .banner_Icon [class*="fa-"] {
@@ -163,6 +163,9 @@
   }
 
   /*# -- "Servicios" Section -- */
+  /* [id="services"] {
+    scroll-margin-top: 60ex;
+  } */
   .servicios {
     min-height: 400px;
     overflow: hidden;
@@ -171,8 +174,6 @@
   .servicios .container-all {
     perspective: 3000px;
     width: 210px;
-    /* margin-top: 70px;
-    margin-left: 0; */
   }
   .servicios .title h2 {
     margin-top: 0;
@@ -182,13 +183,12 @@
   .servicios .title .fas.fa-arrow-right {
     display: none;
   }
-  /* Click */
+  /* Palabra Click */
   .servicios .title h3 {
     position: absolute;
     top: 180px;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    /* left: 210px; */
     font-size: 12px;
   }
   .lightbox {
@@ -411,12 +411,8 @@
   }
 
   .box_muro {
-    /* left: 50%;
-    top: 50%; */
     width: 380px;
     height: 270px;
-    /* margin-left: -190px; 
-    margin-top: -150px;  */
   }
   .muro-subtitulo {
     padding: 5px;
@@ -436,17 +432,16 @@
   } */
 
   /*# -- Quienes somos?  Mosaico de Fotos -- */
-  .aboutUs {  
+  .aboutUs {
     background-image: url(./../img/CYCS_iPhone.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    padding:0;
+    padding: 0;
   }
   .aboutUs .titulo {
     position: relative;
     width: 100%;
     height: auto;
-
   }
   .aboutUs .titulo h2 {
     color: var(--color-pagina);
@@ -456,7 +451,6 @@
   .aboutUs .titulo h2 span {
     font-size: 20px;
   }
-
 
   /*# -- Profile CEO  Section -- */
   .profile {
@@ -489,8 +483,9 @@
     font-size: 16px;
   }
   footer .container .sec {
-    margin-right: 0;
-    margin-bottom: 40px;
+    margin: 20px 0 40px 20px;
+    /* margin-right: 0;
+    margin-bottom: 40px; */
   }
   footer .container .sec.aboutus,
   .quicklinks,
@@ -518,6 +513,9 @@
     margin-right: 0 !important;
   }
   .contact .info li span {
+    font-size: 13px;
+  }
+  .contact .info li a {
     font-size: 13px;
   }
   .copyrightText {
