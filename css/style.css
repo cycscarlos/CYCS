@@ -1492,12 +1492,18 @@ section[id="profile"] {
   font-size: 35px;
   margin: 20px 0;
   font-weight: bold;
-  color: var(--color-azulObscuro);
+  color: var(--color-pagina);
   text-align: left;
+}
+
+.profile-title span {
+  font-size: 14px;
+  color: var(--color-azulObscuro);
 }
 
 .profile-title .name {
   padding-top: 0.5em;
+  font-style: italic;
 }
 
 .profile-details {

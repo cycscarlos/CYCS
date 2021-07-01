@@ -23,14 +23,10 @@
     height: 16px;
   }
   /*# -- "Inicio" Section -- */
-
   .flex_Box {
     flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: left;
+    flex-wrap: wrap;
   }
-
   .logo_Box .logo_Titulo {
     font-size: 1.5rem;
     padding: 10px 0 0 20px;
@@ -40,19 +36,14 @@
   }
   .logo_Subtitulo {
     font-size: 0.6rem;
-    justify-self: center;
   }
-
   .subtitleBox .contactInfo_subTitle h6 {
     font-size: 0.7rem;
-    text-align: center;
     margin-top: 15px;
   }
-
-  .contactInfo_Phone {
+  contactInfo_Box .contactInfo_Phone span {
     font-size: 0.8rem;
     padding: 20px;
-    justify-self: flex-end;
   }
 
   .swiperPage-title {
@@ -373,7 +364,7 @@
     padding-top: 60px;
   }
   .galeria-titulo {
-    margin: 0;
+    margin-bottom: 20px;
   }
   .galeria-titulo span {
     font-size: 0.9em;
@@ -465,9 +456,10 @@
   }
   /*# -- "Footer" Section -- */
   .footerSection {
-    background: url(../img/footer/avila_iPhone.png);
+    background: var(--color-azulObscuro);
+    /* background: url(../img/footer/avila_iPhone.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
   }
 
   footer {
