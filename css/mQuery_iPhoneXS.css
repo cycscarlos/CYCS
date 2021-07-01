@@ -5,7 +5,7 @@
 @media screen and (max-width: 414px) {
   /* [id] {
     scroll-margin-top: 20ex;
-  }
+  } */
   section {
     padding-top: 0;
     padding-bottom: 0;
@@ -20,8 +20,8 @@
   .title {
     font-size: 16px;
     height: 16px;
-  } */
-  /* -- "Inicio" Section -- */
+  }
+  /*# -- "Inicio" Section -- */
 
   .flex_Box {
     flex-direction: column;
@@ -56,6 +56,8 @@
     font-size: 30px;
     font-family: "Dancing Script", cursive;
   }
+
+  /* # Navigation Menu */
 
   .menu_Nav .fas.fa-bars {
     visibility: visible;
@@ -126,7 +128,7 @@
     padding-bottom: 0px;
   }
 
-  /* -- "Cards" Section -- */
+  /*# -- "Cards" Section -- */
   .cards {
     padding-top: 60px;
     min-height: 400px;
@@ -157,7 +159,7 @@
     transform: translateY(-32%);
   }
 
-  /* -- "Servicios" Section -- */
+  /*# -- "Servicios" Section -- */
   .servicios {
     min-height: 400px;
     overflow: hidden;
@@ -235,7 +237,7 @@
     line-height: 1.1em;
   } */
 
-  /* -- "Security" Section -- */
+  /*# -- "Security" Section -- */
   .security {
     padding-top: 80px;
     min-height: 500px;
@@ -281,7 +283,7 @@
     bottom: 100px;
   }
 
-  /* -- "Control de Acceso" Section -- */
+  /*# -- "Control de Acceso" Section -- */
   .ctrlAcceso {
     min-height: 500px;
     padding-top: 80px;
@@ -314,7 +316,7 @@
     bottom: 180px;
   }
 
-  /* -- "Telecomunicaciones" Section -- */
+  /*# -- "Telecomunicaciones" Section -- */
   .telco {
     min-height: 400px;
     padding-top: 80px;
@@ -345,8 +347,11 @@
   .swiper-pagination-fraction {
     bottom: 140px;
   }
+  .telco .title h2 {
+    font-size: 1.5em;
+  }
 
-  /* -- "Clientes" Section -- */
+  /*# -- "Clientes" Section -- */
   .clients {
     min-height: 500px;
     padding-top: 80px;
@@ -360,7 +365,7 @@
     font-size: 0.7em;
   }
 
-  /* -- "Obras" Section -- */
+  /*# -- "Obras" Section -- */
   .galeria {
     padding-top: 60px;
   }
@@ -395,7 +400,7 @@
     grid-row: span 1;
   }
 
-  /* -- AboutUs  -Muro de presentación -- */
+  /*# -- AboutUs  -Muro de presentación -- */
 
   .muro {
     width: 100vw;
@@ -449,7 +454,7 @@
   .aboutUs .titulo h2 {
     color: var(--color-pagina);
     margin: 0;
-    font-size: 1.2em;
+    font-size: 24px;
   }
   .aboutUs .titulo h2 span {
     font-size: 20px;
@@ -459,7 +464,16 @@
     font-size: 12px;
   } */
 
-  /* -- "Footer" Section -- */
+  /*# -- Profile CEO  Section -- */
+  .profile {
+    flex-direction: column;
+  }
+  .profile-title {
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+
+  /*# -- "Footer" Section -- */
   .footerSection {
     background: url(../img/footer/avila_iPhone.png);
     background-size: cover;
@@ -473,6 +487,9 @@
   }
   footer .container {
     flex-direction: column;
+  }
+  footer .container h2 {
+    font-size: 16px;
   }
   footer .container .sec {
     margin-right: 0;
@@ -493,8 +510,19 @@
     top: 0;
     left: 0;
   }
+  footer p {
+    font-size: 12px;
+  }
+  .quicklinks ul li a {
+    font-size: 13px;
+  }
+  .contact .info li span {
+    font-size: 13px;
+  }
   .copyrightText {
-    padding: 8px 40px;
-    font-size: 6px;
+    bottom: 0;
+  }
+  .copyrightText p {
+    font-size: 0.5rem;
   }
 }

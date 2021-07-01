@@ -1550,7 +1550,7 @@ section[id="profile"] {
 footer {
   width: 100%;
   height: auto;
-  padding: 10px 100px 25px 100px;
+  padding: 10px 100px 45px 100px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1750,9 +1750,10 @@ footer p {
 
 .copyrightText {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   width: 100%;
-  padding: 18px 100px;
+  height: 40px;
+  padding: 0 100px;
   text-align: center;
   color: #fff;
   background: rgba(28, 54, 67, 1);
@@ -1762,9 +1763,9 @@ footer p {
 
 .copyrightText p {
   position: absolute;
-  top: 5px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .copyrightText span {
