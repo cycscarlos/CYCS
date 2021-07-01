@@ -1,11 +1,12 @@
 /* -------------------------------- */
-/*  Responsive Design for iPhone XS */
+/*#  Responsive Design for iPhone XS */
 /* -------------------------------- */
 
 @media screen and (max-width: 414px) {
   /* [id] {
     scroll-margin-top: 20ex;
   } */
+
   section {
     padding-top: 0;
     padding-bottom: 0;
@@ -25,7 +26,7 @@
 
   .flex_Box {
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: flex-start;
     justify-content: left;
   }
@@ -34,11 +35,12 @@
     font-size: 1.5rem;
     padding: 10px 0 0 20px;
   }
-  .logo_Box .logo_Titulo span {
+  .logo_Titulo span {
     font-size: 0.8rem;
   }
-  .logo_Box .logo_Subtitulo {
+  .logo_Subtitulo {
     font-size: 0.6rem;
+    justify-self: center;
   }
 
   .subtitleBox .contactInfo_subTitle h6 {
@@ -47,9 +49,10 @@
     margin-top: 15px;
   }
 
-  .contactInfo_Box .contactInfo_Phone {
+  .contactInfo_Phone {
     font-size: 0.8rem;
     padding: 20px;
+    justify-self: flex-end;
   }
 
   .swiperPage-title {
@@ -515,6 +518,10 @@
   }
   .quicklinks ul li a {
     font-size: 13px;
+  }
+  .contact {
+    width: 100%;
+    margin-right: 0 !important;
   }
   .contact .info li span {
     font-size: 13px;
