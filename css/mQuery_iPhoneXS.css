@@ -435,24 +435,18 @@
     line-height: 15px;
   } */
 
-  /* -- Quienes somos?  Mosaico de Fotos -- */
-  .aboutUs {
-    /* min-height: 400px; */
+  /*# -- Quienes somos?  Mosaico de Fotos -- */
+  .aboutUs {  
     background-image: url(./../img/CYCS_iPhone.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    /* background-position: center center; */
-    /* background-position: top; */
-    /* background-size: 100%; */
+    padding:0;
   }
   .aboutUs .titulo {
     position: relative;
     width: 100%;
     height: auto;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
+
   }
   .aboutUs .titulo h2 {
     color: var(--color-pagina);
@@ -462,10 +456,7 @@
   .aboutUs .titulo h2 span {
     font-size: 20px;
   }
-  /* .aboutUs .subtitulo h3 {
-    top: 120px;
-    font-size: 12px;
-  } */
+
 
   /*# -- Profile CEO  Section -- */
   .profile {
@@ -475,7 +466,9 @@
     font-size: 1.5rem;
     margin: 20px;
   }
-
+  .profile-details {
+    font-size: 13px;
+  }
   /*# -- "Footer" Section -- */
   .footerSection {
     background: url(../img/footer/avila_iPhone.png);
@@ -484,7 +477,8 @@
   }
 
   footer {
-    height: auto;
+    /* height: auto; */
+    height: 100vh;
     padding: 40px;
     background: none;
   }
