@@ -1314,9 +1314,9 @@ section {
   transition: 0.7s ease-in-out;
 }
 
-/* -------------------------------- */
-/*# Muro de presentación   */
-/* -------------------------------- */
+/* ---------------------------------- */
+/*# -- Muro "Oficina de Proyectos" -- */
+/* ---------------------------------- */
 
 .muro {
   position: relative;
@@ -1334,18 +1334,15 @@ section {
   background-color: var(--color-azulObscuro);
   box-shadow: 0 0 0 10px #1c3643, 0 0 0 11px #1e5372, 0 20px 20px 5px #1c3643;
 }
-
 .box_textos_muro {
   text-align: center;
 }
-
 .muro-subtitulo {
   color: var(--color-pagina);
   font-size: 2em;
   margin: 10px;
   padding: 10px 10px 30px 10px;
 }
-
 .muro-parrafo {
   color: #fff;
   font-size: 1em;
@@ -1354,7 +1351,6 @@ section {
   letter-spacing: 0.2px;
   margin-bottom: 10px;
 }
-
 .muro-parrafo span {
   color: var(--color-blanco);
   font-size: 1em;
@@ -1367,7 +1363,6 @@ section {
   line-height: 24px;
   text-align: center;
 }
-
 .muro-parrafo2 {
   color: var(--color-pagina);
   font-size: 2.5em;

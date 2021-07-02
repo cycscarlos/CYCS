@@ -1,18 +1,8 @@
 /* ---------------------------------- */
-/*  Responsive for iPad Vertical view */
+/*#  Responsive for iPad Vertical view */
 /* ---------------------------------- */
 
 @media screen and (max-width: 768px) {
-  /* .logo_Box {
-    border: transparent;
-  }
-  .subtitleBox {
-    border: transparent;
-  }
-  .contactInfo_Box {
-    display: none;
-    border: 1px solid white;
-  } */
   section {
     padding-top: 60px;
     padding-bottom: 0px;
@@ -22,28 +12,44 @@
     margin-bottom: 30px;
     font-size: 2.5em;
   }
-  /* --  "Inicio" Section -- */
+  /*# -- Inicio Section -- */
   .mainBox {
     margin: 0;
     padding: 0;
     height: auto;
   }
-  .logo_Titulo {
+  .flex_Box {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .logo_Box,
+  .subtitleBox,
+  .contactInfo_Box {
+    position: relative;
+    padding: 0 0 20px 0;
+  }
+  /* .flex_Box div:nth-child(3) {
+    padding: 0;
+  } */
+
+  .logo_Box .logo_Titulo {
     font-size: 1.5em;
+  }
+  .logo_Titulo span {
+    font-size: 0.8rem;
   }
   .logo_Subtitulo {
     font-size: 0.8em;
   }
-
+  /*# -- Menu de Navegación -- */
   .menu_Nav .fas.fa-bars {
     visibility: visible;
     position: absolute;
     width: 30px;
     height: 30px;
     line-height: 30px;
-    /* right: 0; */
     top: 0;
-    left: 90%;
+    left: 85%;
     margin-top: 30px;
     margin-right: 15px;
     background: rgb(28, 54, 67);
@@ -63,7 +69,6 @@
     align-items: left;
     flex-direction: column;
     background: rgba(28, 54, 67, 0.7);
-    /* background: rgba(255, 73, 0, 0.7); */
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     transition: 1s;
@@ -98,19 +103,17 @@
     box-shadow: 0 0 6px 0 rgba(28, 54, 67, 1);
   }
   .social_Icon {
-    top: 200px;
-    left: 92%;
+    top: 300px;
+    left: 87%;
     z-index: 10;
   }
   .banner_Icon {
-    /* top: 355px;
-    left: 680px; */
-    top: 450px;
-    left: 92%;
+    top: 530px;
+    left: 87%;
     z-index: 10;
   }
   .whatsapp_Texto span {
-    top: 415px;
+    top: 555px;
     left: 500px;
     z-index: 10;
   }
@@ -118,7 +121,7 @@
     height: 600px;
   }
 
-  /* -- "Que Hacemos?" Section -- */
+  /*# -- "Que Hacemos?" Section -- */
   .cards {
     min-height: 400px;
   }
@@ -149,7 +152,7 @@
     transform: translateX(-50%);
   }
 
-  /* -- "Servicios" Section -- */
+  /*# -- "Servicios" Section -- */
   .servicios {
     min-height: 500px;
     padding-top: 60px;
@@ -172,7 +175,7 @@
     left: 0;
   } */
 
-  /* -- "Security" Section -- */
+  /*# -- "Security" Section -- */
   .security {
     padding-top: 40px;
     min-height: 500px;
@@ -213,7 +216,7 @@
     bottom: 30px;
   }
 
-  /* -- "Control de Acceso" Section -- */
+  /*# -- "Control de Acceso" Section -- */
   .ctrlAcceso {
     min-height: 500px;
   }
@@ -245,7 +248,7 @@
     bottom: 140px;
   }
 
-  /* -- "Telecomunicaciones" Section -- */
+  /*# -- "Telecomunicaciones" Section -- */
   .telco {
     /* margin: 0;
     padding: 0;
@@ -282,7 +285,7 @@
     bottom: 90px;
   }
 
-  /* -- "Clientes" Section -- */
+  /*# -- "Clientes" Section -- */
   /* .clients {
     margin: 0;
     padding: 0;
@@ -303,7 +306,7 @@
     margin: 5px 10px 5px 5px;
   }
 
-  /* -- "Galería de Obras" Section -- */
+  /*# -- "Galería de Obras" Section -- */
   .galeria {
     /* margin: 0;
     padding: 0;
@@ -328,12 +331,51 @@
     grid-row: span 1;
   }
 
-  /* Quienes somos? Section   */
+  /* # -- Muro "Oficina de Proyectos" -- */
+  .muro {
+    padding: 0;
+    margin: 0;
+  }
+  .box_muro {
+    width: 80%;
+  }
+  .muro-parrafo {
+    color: #fff;
+    font-size: 1em;
+    margin: 5px;
+    line-height: 1px;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+  }
+  .muro-parrafo span {
+    color: var(--color-blanco);
+    font-size: 1em;
+    line-height: 7px;
+    text-align: center;
+  }
+  .muro-parrafo-span span {
+    color: var(--color-pagina);
+    font-size: 1em;
+    line-height: 24px;
+    text-align: center;
+  }
+  .muro-parrafo2 {
+    color: var(--color-pagina);
+    font-size: 2.5em;
+    font-family: var(--font-board);
+  }
+
+  /*# -- Quienes somos? Foto en campo -- */
+  .aboutBx {
+    position: relative;
+  }
   .aboutUs {
+    width: 100%;
     min-height: 500px;
     background-image: url(./../img/CYCS_iPad.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background-position: center;
   }
   .aboutUs .titulo {
     position: relative;
@@ -343,21 +385,9 @@
     align-items: center;
   }
   .aboutUs .titulo h2 {
-    padding-top: 60px;
+    padding-top: 0;
   }
 
-  .muro-subtitulo {
-    font-size: 1.5em;
-  }
-  .muro-parrafo {
-    font-size: 0.7em;
-    margin: 0;
-    line-height: 1px;
-    letter-spacing: 0.1px;
-  }
-  .muro-parrafo2 {
-    font-size: 1.5em;
-  }
   /*# -- "Profile CEO" Section -- */
   .profile-title {
     font-size: 30px;
@@ -389,12 +419,23 @@
   .quicklinks,
   .contact {
     width: 50%;
+    padding-left: 20px;
   }
   footer .container h2 {
     font-size: 24px;
   }
   footer p {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  footer .velo {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+    top: 0;
+    left: 0;
   }
   .quicklinks ul li a {
     font-size: 16px;
@@ -411,6 +452,7 @@
   .copyrightText {
     height: 40px;
     padding: 0;
+    bottom: 0;
   }
   .copyrightText p {
     width: 100%;

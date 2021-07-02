@@ -29,7 +29,7 @@
   }
   .logo_Box .logo_Titulo {
     font-size: 1.5rem;
-    padding: 10px 0 0 20px;
+    padding: 5px 0 0 20px;
   }
   .logo_Titulo span {
     font-size: 0.8rem;
@@ -37,13 +37,17 @@
   .logo_Subtitulo {
     font-size: 0.6rem;
   }
+  .logo_Box,
+  .subtitleBox,
+  .contactInfo_Box {
+    padding: 5px 0;
+  }
   .subtitleBox .contactInfo_subTitle h6 {
     font-size: 0.7rem;
-    margin-top: 15px;
+    margin-top: 5px;
   }
-  contactInfo_Box .contactInfo_Phone span {
+  .contactInfo_Phone span {
     font-size: 0.8rem;
-    padding: 20px;
   }
 
   .swiperPage-title {
@@ -59,7 +63,6 @@
     width: 40px;
     height: 40px;
     line-height: 40px;
-    margin-top: 70px;
     margin-right: 10px;
     top: 0;
     left: 80%;
@@ -406,44 +409,63 @@
     height: 270px;
   }
   .muro-subtitulo {
+    font-size: 1.5em;
     padding: 5px;
     margin: 5px;
   }
-  /* .muro-parrafo {
-    font-size: 10px;
-    font-family: sans-serif;
+  .muro-parrafo {
+    font-size: 12px;
+    /* font-family: sans-serif; */
     margin: 0;
     padding: 0;
-    line-height: 0px;
-    letter-spacing: 0px;
+    line-height: 1px;
+    letter-spacing: 0.2px;
   }
   .muro-parrafo span {
     font-size: 1em;
     line-height: 15px;
-  } */
+  }
+  .muro-parrafo-span span {
+    font-size: 1em;
+    line-height: 24px;
+  }
+  .muro-parrafo2 {
+    font-size: 1.5em;
+  }
 
   /*# -- Quienes somos?  Mosaico de Fotos -- */
+  .aboutBx {
+    position: relative;
+  }
+
   .aboutUs {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 300px;
     background-image: url(./../img/CYCS_iPhone.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    padding: 0;
+    background-position: center;
   }
   .aboutUs .titulo {
     position: relative;
-    width: 100%;
-    height: auto;
+    height: 0;
   }
   .aboutUs .titulo h2 {
+    position: relative;
+    width: 100%;
+    height: 0;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
     color: var(--color-pagina);
     margin: 0;
     font-size: 24px;
   }
-  .aboutUs .titulo h2 span {
-    font-size: 20px;
-  }
 
   /*# -- Profile CEO  Section -- */
+
   .profile {
     flex-direction: column;
   }
@@ -476,23 +498,11 @@
   }
   footer .container .sec {
     margin: 20px 0 40px 20px;
-    /* margin-right: 0;
-    margin-bottom: 40px; */
   }
   footer .container .sec.aboutus,
   .quicklinks,
   .contact {
     width: 100%;
-  }
-  footer .velo {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 0;
-    top: 0;
-    left: 0;
   }
   footer p {
     font-size: 12px;
