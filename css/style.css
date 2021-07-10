@@ -29,9 +29,9 @@
   /* CYCS & Co. used colors */
 
   --color-pagina: #ff4c00;
-  --color-azulObscuro: rgb(28, 54, 67);
-  --color-azulMedio: rgb(39, 59, 71);
-  --color-azulClaro: rgb(30, 83, 114);
+  --color-azulObscuro: #1c3643;
+  --color-azulMedio: #273b47;
+  --color-azulClaro: #1e5372;
   --color-blanco: #fff;
   --yellow-color: #f7c331;
 
@@ -536,24 +536,25 @@ section {
   position: absolute;
   top: 14rem;
   left: 5rem;
-  color: var(--color-pagina);
 }
+
 .servicios .textBx .clicText .fas.fa-arrow-right {
   color: var(--color-pagina);
   position: absolute;
-  font-size: 20px;
-  top: 1rem;
+  /* top: 1rem; */
+  top: 0;
   left: 12rem;
+  font-size: 20px;
 }
 .servicios .textBx .clicText h3 {
   font-size: 16px;
-  font-weight: 600;
-  color: var(--color-pagina);
+  background: rgba(39, 59, 71, 0.3);
+  color: var(--color-azulObscuro);
 }
 .servicios .textBx .clicText h3 span {
   font-size: 0.8em;
   font-style: italic;
-  color: var(--color-pagina);
+  color: var(--color-azulObscuro);
 }
 
 .servicios .container-all {
@@ -1487,7 +1488,7 @@ section[id="profile"] {
   font-size: 35px;
   margin: 20px 0;
   font-weight: bold;
-  color: var(--color-pagina);
+  color: var(--color-azulObscuro);
   text-align: left;
 }
 
