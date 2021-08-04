@@ -29,9 +29,9 @@
   /* CYCS & Co. used colors */
 
   --color-pagina: #ff4c00;
-  --color-azulObscuro: #1c3643;
-  --color-azulMedio: #273b47;
-  --color-azulClaro: #1e5372;
+  --color-azulObscuro: hsl(200, 52%, 32%);
+  --color-azulMedio: hsl(203, 29%, 22%);
+  --color-azulClaro: hsl(202, 58%, 28%);
   --color-blanco: #fff;
   --yellow-color: #f7c331;
 
