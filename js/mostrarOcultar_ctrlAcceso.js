@@ -1,4 +1,4 @@
-function muestra_oculta_security(id) {
+function mostrarOcultar_ctrlAcceso(id) {
   if (document.getElementById) {
     //se obtiene el id
     var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
@@ -7,7 +7,7 @@ function muestra_oculta_security(id) {
 }
 window.onload = function () {
   /*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
-  muestra_oculta_security(
-    "security"
+  mostrarOcultar_ctrlAcceso(
+    "ctrlAcceso"
   ); /* "contenido_a_mostrar" es el nombre que le dimos al DIV */
 };
