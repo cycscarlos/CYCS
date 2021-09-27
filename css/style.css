@@ -66,6 +66,7 @@
   --font-muro: "Bailey", sans-serif;
   --font-lightbox: "Open Sans Condensed", sans-serif;
   --font-texto: "Raleway", sans-serif;
+  --font-menu: "Font Awesome 5 Free", "Times New Roman";
   /* --font-body: "Open Sans", sans-serif; */
 
   /*========== z index ==========*/
@@ -271,7 +272,8 @@ header {
 
 .menuNav {
   grid-area: menuNav;
-  justify-self: center;
+  /* justify-self: center; */
+  justify-self: flex-end;
 }
 
 /* Logo area styles */
@@ -322,15 +324,23 @@ header .header-grid-container .menuNav {
 }
 
 header .header-grid-container .menuNav a {
-  font-size: 0.8em;
+  /* font-size: 0.8em; */
+  font-size: 0.9em;
   margin: 0 10px;
   color: var(--color-blanco);
   text-decoration: none;
   cursor: pointer;
+  font-family: var(--font-menu);
+}
+header .header-grid-container .menuNav a:last-child {
+  margin: 0;
 }
 
 header .header-grid-container .menuNav a:hover {
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  color: var(--color-pagina);
+  box-shadow: 0 0 0 1px transparent, 0 0 0 1px transparent,
+    0px 5px 4px 1.5px #000;
 }
 
 /*todo Finaliza la configuración del Header */
@@ -590,6 +600,10 @@ h2.elegantshadow {
 .scroll-header {
   background-color: var(--color-blanco);
   box-shadow: 0 0 2px var(--color-texto);
+}
+
+.scroll-header .header-grid-container .logo h2 {
+  font-size: 2.7em;
 }
 
 .scroll-header .header-grid-container .menuNav a,
@@ -1907,10 +1921,9 @@ footer p {
 .quicklinks ul li a {
   color: var(--color-blanco);
   text-decoration: none;
-  margin-bottom: 0px;
+  margin: 0.6em 0;
   display: inline-block;
   font-size: 13px;
-  line-height: 2.1em;
 }
 
 .quicklinks ul li a:before {
@@ -1926,27 +1939,28 @@ footer p {
 }
 
 .quicklinks ul li a.dos:before {
-  top: 60px;
+  top: 67.5px;
   color: #00ffff;
 }
 
 .quicklinks ul li a.tres:before {
-  top: 85px;
+  top: 98.5px;
   color: #ffc0cb;
 }
 
 .quicklinks ul li a.cuatro:before {
-  top: 112.5px;
+  top: 132.5px;
   color: #ecf00b;
 }
 
 .quicklinks ul li a.cinco:before {
-  top: 140px;
+  top: 162.5px;
   color: #008000;
 }
 
 .quicklinks ul li a.seis:before {
-  top: 167.5px;
+  /* top: 167.5px; */
+  top: 195px;
   color: #691111;
 }
 
