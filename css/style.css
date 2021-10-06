@@ -28,16 +28,97 @@
     url(../fonts/Raleway-Bold.ttf);
 }
 
-/* --> Star of general resets & variables definitions <-- */
+:root {
+  /*_ Header size */
+  --header-height: 3rem;
+
+  /*_ Sections height size */
+  --section-height: 100vh;
+
+  /*_ Colors */
+  --hue-color: 200;
+  --body-color: hsl(var(--hue-color), 100%, 99%);
+  --title-color: hsl(var(--hue-color), 100%, 18%);
+  --text-color: hsl(var(--hue-color), 24%, 35%);
+  --text-color-light: hsl(var(--hue-color), 8%, 60%);
+  --white-color: #fff;
+
+  /*_ Font weight */
+  --font-regular: 300;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*_ Tag sizes */
+  --biggest-font-size: 2.5rem;
+  --exception-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.79rem;
+  --minimal-font-size: 0.715rem;
+
+  /*_ Margenes Bottom */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-25: 1.25rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mt-2-5: 2.5rem;
+
+  /*_ z-index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  /*_ Hover overlay */
+  --img-transition: 0.3s;
+  --img-hidden: hidden;
+  --img-scale: scale(1.1);
+}
+
+/*: Sizes to Desktop viewport */
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/*: Variables Dark theme */
+body.dark-theme {
+  --first-color-second: hsl(var(--hue-color), 54%, 12%);
+  --title-color: hsl(var(--hue-color), 24%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 29%, 12%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --box-shadow-slider: none;
+  --background-slider: hsl(var(--hue-color), 29%, 12%);
+  --background-slider-gradient: linear-gradient(
+    to right,
+    rgba(22, 34, 39, 1) 0%,
+    rgba(22, 34, 39, 0) 100%
+  );
+}
+
+/*: General styles */
 
 * {
-  /* General reset */
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  /* CYCS & Co. used colors */
+  /* CYCS & Co website colors */
 
   --color-pagina: #ff4c00;
   --color-azulObscuro: #27607c;
@@ -46,9 +127,6 @@
   --color-blanco: #fff;
   --color-header: #284150;
   --color-texto: #27607c;
-  /* --yellow-color: #f7c331; */
-  /* --text-color: #131313; */
-  /* --color-texto: #273b47; */
 
   /* Social Media colors */
 
@@ -58,7 +136,7 @@
   --color-instagram: #833ab4;
   --color-linkedin: #0a66c2;
 
-  /* Specific page's Fonts */
+  /* Fonts */
 
   --font-titulos: "DancingScript", cursive;
   --font-proyectos: "Roboto", sans-serif;
@@ -67,31 +145,129 @@
   --font-lightbox: "Open Sans Condensed", sans-serif;
   --font-texto: "Raleway", sans-serif;
   --font-menu: "Font Awesome 5 Free", "Times New Roman";
-  /* --font-body: "Open Sans", sans-serif; */
-
-  /*========== z index ==========*/
-  --z-tooltip: 10;
-  --z-fixed: 100;
 }
-
-html {
-  scroll-behavior: smooth;
-  font-size: 16px;
-}
+/*: Base styles  */
 
 [id] {
   scroll-margin-top: 2ex;
 }
-/* --> End of general resets & variables definitions <-- */
-
-/*# Start of CSS style for website */
 
 section {
-  /* padding-top: 120px; */
-  padding-top: 80px;
+  /* padding-top: 80px; */
+  padding-top: 60px;
   padding-bottom: 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  font-family: var(--title-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+/*: Reusable CSS classes */
+/* .section {
+  padding: 4.5rem 0 2.5rem;
+} */
+
+.section__title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: var(--mb-2);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  /* margin-left: var(--mb-1);
+  margin-right: var(--mb-1); */
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*: Button Dark/Light theme */
+.nav__dark {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  position: absolute;
+  left: 3rem;
+  bottom: 4rem;
+}
+
+.change-theme,
+.change-theme-name {
+  color: var(--text-color);
+}
+
+.change-theme {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.change-theme-name {
+  font-size: var(--small-font-size);
+}
+
+/*: Scrollreveals JS function */
+.main {
+  overflow-x: hidden;
+}
+
+.ri-arrow-right-line {
+  color: var(--white-color);
+}
+
+/*: Website's specfic and internals classes */
 .scroll-title {
   background: var(--color-blanco);
   margin-top: 40px;
@@ -111,18 +287,6 @@ section {
   position: relative;
 }
 
-/* ------------ */
-/*# Header       */
-/* ------------ */
-
-/* .header_Box {
-  position: fixed;
-  place-items: center;
-  width: 100%;
-  z-index: 10;
-  background: #273b47;
-} */
-
 .section_Box {
   width: 100%;
   margin: 0 auto;
@@ -135,105 +299,9 @@ section {
   flex-wrap: wrap;
 }
 
-/* Header */
-/* .logo_Box {
-  position: relative;
-}
-.logo_Box .logo_Titulo {
-  font-family: var(--font-logo);
-  color: var(--color-pagina);
-  font-size: 3.5em;
-  font-weight: 100;
-  padding: 10px 0 0 20px;
-}
-.logo_Titulo span {
-  color: var(--color-blanco);
-  font-size: 0.5em;
-  font-style: italic;
-} */
+/*: HEADER */
 
-/** .logo_Subtitulo {
-  font: var(--font-logo);
-  color: var(--color-blanco);
-  font-size: 0.8em;
-  text-align: center;
-  font-weight: 100;
-  font-style: italic;
-  padding: 0 0 0 20px;
-  letter-spacing: 0.05em;
-} */
-
-/** .contactInfo_Box,
-.subtitleBox  { 
-  position: relative;
-} */
-
-/* .contactInfo_Box {
-  position: relative;
-} */
-
-/** .subtitleBox .contactInfo_subTitle h6 {
-  color: #fff;
-  font: var(--font-board);
-  font-style: italic;
-  font-size: 1em;
-  font-weight: 100;
-  margin: 0;
-  padding: 10px;
-  letter-spacing: 0.05em;
-  box-shadow: 5px 5px 5px 1px #1c3643, 5px 5px 5px 1px rgba(0, 0, 0, 1),
-    10px -2px 8px 1.5px rgba(0, 0, 0, 0.6);
-  border-radius: 3px;
-} */
-
-/* .contactInfo_subTitle h6 span {
-  color: var(--color-pagina);
-  font-size: 2.5em;
-} */
-
-/* .contactInfo_Box {
-  position: relative;
-} */
-
-/* .contactInfo_Phone {
-  color: var(--color-pagina);
-  font-size: 0.9em;
-  font-weight: 100;
-  margin: 0;
-  padding: 10px;
-}
-
-.contactInfo_Phone span {
-  color: var(--color-blanco);
-  font-family: var(--font-logo);
-  font-size: 1em;
-} */
-
-/** Esta clase opcional, fue diseñada para colocar un subtitulo debajo de la información de contacto de teléfono */
-/** .contactInfo_Box .contactInfo_Phone h6 {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  margin-top: 5px;
-  color: var(--color-blanco);
-  font-size: 0.7em;
-  font-weight: 100;
-  font-style: italic;
-  text-align: right;
-} */
-
-/* .contactInfo_Box [class*="fas fa-"]:before {
-  position: relative;
-  color: var(--color-pagina);
-  top: 2px;
-  right: 5px;
-} */
-
-/* Finaliza header */
-
-/*todo Header GRID styles */
-
-header {
+.header {
   width: 100%;
   position: fixed;
   top: 0;
@@ -242,228 +310,203 @@ header {
   background-color: var(--color-header);
 }
 
-.header-grid-container {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  padding: 0 50px;
-  display: grid;
-  grid-template-areas:
-    "logo phone"
-    ". menuNav";
+/*: NAV */
+.nav {
+  height: var(--header-height);
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
 }
 
-.logo {
-  grid-area: logo;
-  justify-self: start;
-  align-self: flex-end;
-  padding: 15px 0 0 0;
-}
-
-.phone {
-  grid-area: phone;
-  justify-self: flex-end;
-  align-self: center;
-  padding: 0;
-}
-
-.menuNav {
-  grid-area: menuNav;
-  /* justify-self: center; */
-  justify-self: flex-end;
-}
-
-/* Logo area styles */
-header .header-grid-container .logo h2 {
-  font-size: 2.5rem;
-  font-weight: 400;
-  text-align: center;
+.nav__logo {
   color: var(--color-pagina);
+  text-transform: uppercase;
+  font-size: var(--exception-font-size);
 }
-
-header .header-grid-container .logo h2 span {
-  font-size: 1.2rem;
+.nav__logo span {
+  color: var(--color-blanco);
+  font-size: var(--normal-font-size);
   font-style: italic;
-  color: var(--color-blanco);
 }
-
-header .header-grid-container .logo p {
-  font-size: 0.7em;
-  font-style: italic;
-  text-align: center;
-  color: var(--color-blanco);
-}
-
-/* Phone area styles */
-header .header-grid-container .phone {
-  font-size: 0.9em;
-  color: var(--color-blanco);
-}
-
-header .header-grid-container .phone [class*="fa fa-"]:before {
-  color: var(--color-pagina);
+.nav__menu {
   position: relative;
-  top: 2px;
-  right: 5px;
 }
-
-/* header .header-grid-container .phone p {
-  margin: 5px 0;
-  font-size: 0.8em;
-  font-style: italic;
-  text-align: center;
-  color: var(--color-blanco);
-} */
-
-/* Menu links area styles */
-header .header-grid-container .menuNav {
-  margin: 10px 0;
+.nav__list {
+  display: flex;
+  height: 100%;
 }
-
-header .header-grid-container .menuNav a {
-  /* font-size: 0.8em; */
-  font-size: 0.9em;
+.nav__link {
+  font-size: var(--smaller-font-size);
   margin: 0 10px;
   color: var(--color-blanco);
   text-decoration: none;
   cursor: pointer;
-  font-family: var(--font-menu);
+  font-family: var(--font-texto);
 }
-header .header-grid-container .menuNav a:last-child {
-  margin: 0;
-}
-
-header .header-grid-container .menuNav a:hover {
-  /* opacity: 0.5; */
+.nav__link:hover {
+  opacity: 0.5;
   color: var(--color-pagina);
-  box-shadow: 0 0 0 1px transparent, 0 0 0 1px transparent,
-    0px 5px 4px 1.5px #000;
+}
+.nav__toggle,
+.nav__close {
+  display: none;
 }
 
-/*todo Finaliza la configuración del Header */
+/*: Mobile responsive design styles */
+@media screen and (max-width: 768px) {
+  .nav__logo {
+    font-size: var(--h2-font-size);
+  }
+  .nav__logo span {
+    font-size: var(--minimal-font-size);
+  }
+  .nav__menu {
+    position: fixed;
+    background-color: var(--white-color);
+    top: 0;
+    width: 65%;
+    height: 100%;
+    box-shadow: -1px 0 4px hsla(var(--hue-color), 64%, 15%, 0.15);
+    padding: 3rem;
+    transition: 1s;
+    /*# Configuración temporal, solo al inicio*/
+    /*right: 0; */
+    /*# Ocultamos el menu y se manipula con JS en conjunto con la clase "show-menu" */
+    right: -100%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+  }
+  .nav {
+    padding: 0 20px;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    row-gap: 2.5rem;
+  }
+  .nav__close {
+    display: block;
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--color-texto);
+    cursor: pointer;
+  }
+  .nav__toggle {
+    display: block;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: var(--h2-font-size);
+    cursor: pointer;
+  }
+  .show-menu {
+    right: 0;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+  .nav__link {
+    color: var(--color-texto);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+  }
+  .nav__link:hover {
+    opacity: 0.65;
+    color: var(--color-texto);
+  }
+}
 
-/* ------------------ */
-/*# Menu de Navegación */
-/* ------------------ */
+/*: Change background header JS function */
 
-/* .menu_Nav {
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, 0.15);
+}
+.scroll-header .nav__logo {
+  color: var(--color-pagina);
+}
+.scroll-header .nav__logo span {
+  color: var(--color-texto);
+}
+.scroll-header .nav__toggle {
+  color: var(--color-texto);
+}
+.scroll-header .nav__link {
+  color: var(--color-texto);
+}
+.scroll-header .nav__link:hover {
+  opacity: 0.65;
+}
+
+/* Marca el navegador activo en un momento dado */
+
+/* Active link */
+/* .active-link {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  z-index: 11;
-} */
-
-.menuNav .fas.fa-bars {
-  /* visibility: hidden; */
-  color: var(--color-blanco);
-  margin-left: 17px;
-  font-size: 1em;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-  border-radius: 3px;
-  text-align: center;
-  cursor: pointer;
+  color: var(--title-color);
 }
 
-.menuNav .fas.fa-bars:hover {
-  box-shadow: 0 0 6px 0 var(--color-azulMedio);
-  color: var(--color-pagina);
-}
-
-/* .menu_Box {
-  padding: 20px 0 0 0;
-}
-.menu_li {
-  display: inline-block;
-  list-style: none;
-  padding: 0 10px 10px 10px;
-  cursor: pointer;
-}
-.menu_li_a {
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
-    "AppleGothic", sans-serif;
-  color: var(--color-blanco);
-  background: transparent;
-  font-size: 0.8em;
-  text-decoration: none;
-  transition: all 150ms ease-in-out;
-} */
-
-/** .menu_li_a:hover {
-  background: transparent;
-  color: var(--color-blanco);
-  opacity: 1;
-  border-radius: 3px;
-  border: 2px solid var(--color-azulObscuro);
-  box-shadow: 0 0 0 1px #1c3643, 0 0 0 1px grey,
-    0 10px 10px 1.5px var(--color-azulObscuro);
-} */
-
-/* .menu_li_a:hover {
-  background: transparent;
-  color: var(--color-pagina);
-  font-size: 0.7em;
-  opacity: 1;
-  box-shadow: 0 10px 10px 1.5px var(--color-azulObscuro); */
-
-/** border-radius: 3px;
-  border: 2px solid var(--color-azulObscuro);
-  box-shadow: 0 0 0 1px #1c3643, 0 0 0 1px grey,
-    0 10px 10px 1.5px var(--color-azulObscuro); 
-}*/
-
-/* .submenu {
+.active-link::before {
+  content: "";
   position: absolute;
-  top: 2.7rem;
-  display: flex;
-  flex-direction: column;
+  background-color: var(--title-color);
   width: 100%;
-  padding: 0;
-  visibility: hidden;
-}
-.submenu .menu_li {
-  padding: 5px 0px;
-  color: var(--color-blanco);
-  background: var(--color-azulObscuro);
-  border-radius: 0 0 3px 3px;
-}
-.submenu .menu_li .menu_li_a {
-  display: block;
-  margin: 10px 0px 0px 5px;
-  width: 4.5rem;
-}
-
-.menu_li:hover .submenu {
-  visibility: visible;
+  height: 2px;
+  bottom: -0.75rem;
+  left: 0;
 } */
 
-/* ---------------------- */
-/*# Iconos redes sociales  */
-/* ---------------------- */
+/*: Button Dark/Light theme styles */
+.nav__dark {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  position: absolute;
+  left: 3rem;
+  bottom: 4rem;
+}
+
+.change-theme,
+.change-theme-name {
+  color: var(--text-color);
+}
+
+.change-theme {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.change-theme-name {
+  font-size: var(--small-font-size);
+}
+
+/* ----------------------- */
+/*: Iconos redes sociales  */
+/* ----------------------- */
 
 .social_Icon {
   position: fixed;
   display: block;
   top: 225px;
-  right: 10px;
-  /* left: 1250px; */
+  left: 20px;
   z-index: 10;
 }
 .social_Icon [class*="fa-"] {
-  margin: 0px 15px 40px 5px;
-  font-size: 2em;
+  margin: 0 0 40px 0;
   width: 25px;
   height: 25px;
+  font-size: 2em;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .social_Icon_Link {
   text-decoration: none;
 }
@@ -471,11 +514,11 @@ header .header-grid-container .menuNav a:hover {
   color: var(--color-twitter);
 }
 .social_Icon .fab.fa-instagram {
-  font-size: 2.5em;
+  font-size: 2em;
   width: 35px;
   height: 35px;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 60px;
   color: #fff;
   background: #d6249f;
   background: radial-gradient(
@@ -487,45 +530,45 @@ header .header-grid-container .menuNav a:hover {
     #285aeb 90%
   );
 }
-.social_Icon .fab.fa-linkedin-in {
-  color: var(--color-linkedin);
-}
-.social_Icon .fab.fa-twitter:hover {
+
+.social_Icon [class*="fa-"]:hover {
   transform: scale(1.4);
-}
-.social_Icon .fab.fa-instagram:hover {
-  transform: scale(1.4);
-}
-.social_Icon .fab.fa-linkedin-in:hover {
-  transform: scale(1.4);
+  transition: all 0.75s;
 }
 
-/* ---------------------*/
-/* Icono de whatsapp    */
-/* ---------------------*/
+/* ----------------------*/
+/*: Icono de whatsapp    */
+/* ----------------------*/
 
 .banner_Icon {
   position: fixed;
   top: 72%;
-  /* left: 1250px; */
-  right: 20px;
+  left: 20px;
   display: flex;
   justify-content: flex-end;
   z-index: 10;
 }
 
 .banner_Icon [class*="fa-"] {
-  font-size: 3em;
+  margin: 0 0 40px 0;
+  width: 25px;
+  height: 25px;
+  font-size: 2em;
   color: var(--color-whatsapp);
+}
+
+.banner_Icon [class*="fa-"]:hover {
+  transform: scale(1.4);
+  transition: all 0.75s;
 }
 
 .whatsapp_Texto span {
   position: fixed;
-  top: 78%;
-  left: 78%;
+  top: 80%;
+  left: 20px;
   width: 200px;
   background-color: var(--color-pagina);
-  color: #fff;
+  color: var(--color-blanco);
   padding: 5px 3px 5px 3px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -544,15 +587,15 @@ header .header-grid-container .menuNav a:hover {
   visibility: visible;
 }
 
-/* ------------------------*/
-/* Swiper's sliders        */
-/* ------------------------*/
+/* -------------------------*/
+/*: Swiper's sliders        */
+/* -------------------------*/
 
 .slideshow1 {
   max-width: 1200px;
   width: 100%;
   height: 100%;
-  padding-top: 157px;
+  padding-top: 120px;
   padding-bottom: 50px;
   transition: 1.5s;
 }
@@ -576,13 +619,12 @@ h2.elegantshadow {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
     "AppleGothic", sans-serif;
   font-size: 2rem;
+  font-size: var(exception-font-size);
   margin-top: 10px;
   padding: 40px;
   text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
-
-  /* color: #131313; */
   color: var(--color-header);
   background-color: #e7e5e4;
   letter-spacing: 0.15em;
@@ -595,36 +637,15 @@ h2.elegantshadow {
     -18px 36px 1px #e2e0df, -19px 38px 1px #e4e3e2, -20px 40px 1px #e4e3e2;
 }
 
-/*# Change background header */
-
-.scroll-header {
-  background-color: var(--color-blanco);
-  box-shadow: 0 0 2px var(--color-texto);
-}
-
-.scroll-header .header-grid-container .logo h2 {
-  font-size: 2.7em;
-}
-
-.scroll-header .header-grid-container .menuNav a,
-.scroll-header .header-grid-container .logo span,
-.scroll-header .header-grid-container .phone {
-  color: var(--color-texto);
-}
-
-.scroll-header .header-grid-container .menuNav a:hover {
-  color: var(--color-pagina);
-}
-
-/* -------------*/
-/* Cards        */
-/* -------------*/
+/* --------------*/
+/*: Cards        */
+/* --------------*/
 
 .cards {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  min-height: 100vh;
+  min-height: var(--section-height);
   margin: auto;
 }
 .cards .title {
@@ -637,13 +658,12 @@ h2.elegantshadow {
   width: 30%;
   color: #fff;
   font-size: 35px;
-  /* background: var(--color-azulObscuro); */
-  background: var(--color-header);
+  background: var(--color-texto);
   font-family: var(--font-titulos);
 }
-/* -------------------------------- */
-/* Card title animation routine     */
-/* -------------------------------- */
+/* --------------------------------- */
+/*: Card title animation routine     */
+/* --------------------------------- */
 
 .cards .title h2 span {
   /* display: table-cell; */
@@ -676,9 +696,7 @@ h2.elegantshadow {
     text-shadow: none;
   }
 }
-/* --------------------------------- */
-/* Ends Card title animation routine */
-/* --------------------------------- */
+/*: Ends Card title animation routine */
 
 .cards .cardsBx {
   display: flex;
@@ -688,10 +706,11 @@ h2.elegantshadow {
 .cards .cardsBx .card {
   position: relative;
   width: 400px;
-  height: 350px;
-  margin: 0 40px;
+  height: 300px;
+  margin: 40px 40px;
   transition: all 1.5s ease-in-out;
   box-shadow: 6px 6px 5px grey;
+
   display: grid;
   place-items: start center;
   overflow: hidden;
@@ -700,6 +719,7 @@ h2.elegantshadow {
   content: "";
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(39, 59, 71, 0.2);
@@ -733,27 +753,31 @@ h2.elegantshadow {
   text-align: center;
   border-radius: 5px;
   background: rgba(39, 59, 71, 0.3);
-  color: #fff;
+  color: var(--color-blanco);
   cursor: pointer;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 .cards .cardsBx .card .boton_mostrar:hover {
   background-image: linear-gradient(to top, #ff4900 0%, #ffb199 100%);
 }
 
 /* --------------------------- */
-/*# Carrousel de Servicios     */
+/*: Carrousel de Servicios     */
 /* --------------------------- */
 
 .servicios {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  min-height: 100vh;
+  min-height: var(--section-height);
   margin: auto;
 }
 .servicios .title h2 {
   font-family: var(--font-titulos);
-  color: var(--color-pagina);
+  color: var(--color-texto);
 }
 .servicios .textBx {
   position: relative;
@@ -763,14 +787,6 @@ h2.elegantshadow {
   bottom: 2em;
   left: 1em;
 }
-
-/* .servicios .textBx .clicText .fas.fa-arrow-right {
-  color: var(--color-pagina);
-  position: absolute;
-  top: 0;
-  left: 12rem;
-  font-size: 20px;
-} */
 
 .servicios .clicText h6 {
   font-size: 0.7em;
@@ -877,7 +893,7 @@ h2.elegantshadow {
 }
 
 /* ---------------------------------------------- */
-/*# Lightbox texto de cada imagen en el carrousel */
+/*: Lightbox texto de cada imagen en el carrousel */
 /* ---------------------------------------------- */
 
 .lightbox {
@@ -980,7 +996,7 @@ h2.elegantshadow {
   z-index: 20;
 }
 
-/*! Esta sentencia activa el lightbox sobre cada imagen */
+/*: Esta sentencia activa el lightbox sobre cada imagen */
 
 .lightbox:target {
   transform: scale(1);
@@ -1018,15 +1034,15 @@ h2.elegantshadow {
   transform: scale(1);
 }
 
-/* -------------*/
-/*# Security     */
-/* -------------*/
+/* --------------*/
+/*: Security     */
+/* --------------*/
 
 .security {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  min-height: 100vh;
+  min-height: var(--section-height);
   margin: auto;
 }
 .security .title {
@@ -1037,7 +1053,7 @@ h2.elegantshadow {
 }
 .security .title h2 {
   font-family: var(--font-titulos);
-  color: var(--color-pagina);
+  color: var(--color-texto);
 }
 .security .row {
   position: relative;
@@ -1050,11 +1066,11 @@ h2.elegantshadow {
   width: 48%;
 }
 .security .row .col50 h3 {
-  /* color: #111; */
   color: var(--color-texto);
   font-size: 1.5em;
   font-weight: 300;
   text-align: center;
+  line-height: 1.5;
 }
 .security .row .col50 h3 span {
   color: var(--color-pagina);
@@ -1064,7 +1080,6 @@ h2.elegantshadow {
 .security .row .col50 ul {
   text-align: center;
   font-size: 1.5em;
-  /* color: #111; */
   color: var(--color-texto);
   text-decoration: none;
   list-style: none;
@@ -1078,7 +1093,6 @@ h2.elegantshadow {
 .security .row .col50 p {
   text-align: center;
   font-size: 1.3em;
-  /* color: #111; */
   color: var(--color-texto);
 }
 .security .row .col50 p span {
@@ -1088,9 +1102,8 @@ h2.elegantshadow {
 }
 .security .row .col50 .secondaryUL {
   text-align: left;
-  margin-left: 250px;
+  margin-left: 220px;
   font-size: 1.2em;
-  /* color: #111; */
   color: var(--color-texto);
   list-style: square;
   line-height: 30px;
@@ -1114,9 +1127,9 @@ h2.elegantshadow {
   object-fit: cover;
 }
 
-/* --------------------------*/
-/*# Security Swiper Effect    */
-/* --------------------------*/
+/* ---------------------------*/
+/*: Security Swiper Effect    */
+/* ---------------------------*/
 
 .security .slideshow2 {
   position: absolute;
@@ -1128,7 +1141,7 @@ h2.elegantshadow {
 .security .slideshow2 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: var(--color-blanco);
 }
 .security .slideshow2 .swiper-slide img {
   border-radius: 5px;
@@ -1149,15 +1162,15 @@ h2.elegantshadow {
   bottom: 120px;
 }
 
-/* --------------------*/
-/*# Access Control      */
-/* --------------------*/
+/* ---------------------*/
+/*: Access Control      */
+/* ---------------------*/
 
 .ctrlAcceso {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  min-height: 100vh;
+  min-height: var(--section-height);
   margin: auto;
 }
 .ctrlAcceso .title {
@@ -1168,7 +1181,7 @@ h2.elegantshadow {
 }
 .ctrlAcceso .title h2 {
   font-family: var(--font-titulos);
-  color: var(--color-pagina);
+  color: var(--color-texto);
 }
 .ctrlAcceso .row {
   position: relative;
@@ -1181,11 +1194,11 @@ h2.elegantshadow {
   width: 48%;
 }
 .ctrlAcceso .row .col50 h3 {
-  /* color: #111; */
   color: var(--color-texto);
   font-size: 1.5em;
   font-weight: 300;
   text-align: center;
+  line-height: 1.5;
 }
 .ctrlAcceso .row .col50 h3 span {
   color: var(--color-pagina);
@@ -1205,21 +1218,20 @@ h2.elegantshadow {
   height: 100%;
   object-fit: cover;
 }
-.ctrlAcceso .row .col50 .subtitle {
+.ctrlAcceso .row .col50 h2 {
   text-align: center;
   margin-left: 10px;
   font-size: 3em;
 }
+
 .ctrlAcceso .row .col50 p {
   text-align: center;
   font-size: 2em;
-  /* color: #111; */
   color: var(--color-texto);
 }
 .ctrlAcceso .row .col50 ul {
   text-align: center;
   font-size: 1.5em;
-  /* color: #111; */
   color: var(--color-texto);
   text-decoration: none;
   list-style: none;
@@ -1232,9 +1244,8 @@ h2.elegantshadow {
 }
 .ctrlAcceso .row .col50 .secondaryUL {
   text-align: left;
-  margin-left: 200px;
+  margin-left: 150px;
   font-size: 0.8em;
-  /* color: #111; */
   color: var(--color-texto);
   list-style: square;
   line-height: 30px;
@@ -1245,9 +1256,9 @@ h2.elegantshadow {
   font-size: 1em;
 }
 
-/* --------------------------------*/
-/*# Access Control Swiper Effect    */
-/* --------------------------------*/
+/* ---------------------------------*/
+/*: Access Control Swiper Effect    */
+/* ---------------------------------*/
 
 .ctrlAcceso .slideshow2 {
   position: absolute;
@@ -1268,14 +1279,14 @@ h2.elegantshadow {
 }
 
 /* ----------------------*/
-/*# Telecommunication     */
+/*: Telecommunication    */
 /* ----------------------*/
 
 .telco {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  min-height: 100vh;
+  min-height: var(--section-height);
   margin: auto;
 }
 .telco .title {
@@ -1286,7 +1297,7 @@ h2.elegantshadow {
 }
 .telco .title h2 {
   font-family: var(--font-titulos);
-  color: var(--color-pagina);
+  color: var(--color-texto);
 }
 .telco .row {
   position: relative;
@@ -1299,11 +1310,11 @@ h2.elegantshadow {
   width: 48%;
 }
 .telco .row .col50 h3 {
-  /* color: #111; */
   color: var(--color-texto);
   font-size: 1.5em;
   font-weight: 300;
   text-align: center;
+  line-height: 1.5;
 }
 .telco .row .col50 h3 span {
   color: var(--color-pagina);
@@ -1326,7 +1337,6 @@ h2.elegantshadow {
 .telco .row .col50 .mainUL {
   text-align: center;
   font-size: 1.5em;
-  /* color: #111; */
   color: var(--color-texto);
   list-style: none;
   line-height: 45px;
@@ -1338,9 +1348,8 @@ h2.elegantshadow {
 }
 .telco .row .col50 .secondaryUL {
   text-align: left;
-  margin-left: 200px;
+  margin-left: 160px;
   font-size: 0.8em;
-  /* color: #111; */
   color: var(--color-texto);
   list-style: square;
   line-height: 30px;
@@ -1352,7 +1361,7 @@ h2.elegantshadow {
 }
 
 /* -----------------------------------*/
-/*# Telecommunication Swiper Effect    */
+/*: Telecommunication Swiper Effect   */
 /* -----------------------------------*/
 
 .telco .slideshow2 {
@@ -1374,8 +1383,8 @@ h2.elegantshadow {
 }
 
 /* --------------------------*/
-/*# CLIENTES y PROYECTOS      */
-/* -------------------------*/
+/*: CLIENTES y PROYECTOS     */
+/* --------------------------*/
 
 .clientes {
   display: flex;
@@ -1384,7 +1393,7 @@ h2.elegantshadow {
   flex-wrap: wrap;
   transform-style: preserve-3d;
   margin: auto;
-  min-height: 100vh;
+  min-height: var(--section-height);
   width: 100%;
   max-width: 1200px;
 }
@@ -1396,7 +1405,7 @@ h2.elegantshadow {
 }
 .clients .title h2 {
   font-family: var(--font-titulos);
-  color: var(--color-pagina);
+  color: var(--color-texto);
 }
 .clients .title h2 span {
   font-size: 0.5em;
@@ -1459,11 +1468,10 @@ h2.elegantshadow {
 .clientes .card .box .contentBx div {
   transform-style: preserve-3d;
   padding: 3px;
-  /* background: linear-gradient(45deg, #ff4400, #ffeb3b); */
   background: linear-gradient(45deg, #83c2c7, #fff);
   transform: translateZ(100px);
 
-  /* ¡OJoooo! Estas dos instrucciones son nuevas -No existian */
+  /*: ¡OJoooo! Estas dos instrucciones son nuevas -No existian */
   width: 100%;
   height: 75%;
 }
@@ -1490,27 +1498,27 @@ h2.elegantshadow {
 }
 
 /* --------------------------------*/
-/*# GALERÍA Fotos Obras Realizadas  */
+/*: GALERÍA Fotos Obras Realizadas */
 /* --------------------------------*/
 
 .galeria {
   width: 100%;
   max-width: 1200px;
-  min-height: 100vh;
+  min-height: var(--section-height);
   margin: auto;
-  background: #fff;
+  background: var(--color-blanco);
 }
 
 .galeria-titulo {
   text-align: center;
   font-weight: 700;
   font-family: var(--font-titulos);
-  color: var(--color-pagina);
+  color: var(--color-texto);
 }
 
 .galeria-titulo span {
   font-size: 0.5em;
-  color: var(--color-pagina);
+  color: var(--color-texto);
 }
 
 .container_Galeria {
@@ -1556,14 +1564,14 @@ h2.elegantshadow {
   transition: 0.7s ease-in-out;
 }
 
-/* ---------------------------------- */
-/*# -- Muro "Oficina de Proyectos" -- */
-/* ---------------------------------- */
+/* ------------------------------*/
+/*: Muro "Oficina de Proyectos"  */
+/* ------------------------------*/
 
 .muro {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: var(--section-height);
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -1574,8 +1582,8 @@ h2.elegantshadow {
   width: 750px;
   height: 400px;
   background-color: #273b47;
-  box-shadow: -1rem 0 3rem #000;
-  /* box-shadow: 12px 15px 6px 3px rgba(0, 0, 0, 0.4); */
+  /* box-shadow: -1rem 0 3rem #000; */
+  box-shadow: -0.5rem 0 1.5rem #273b47;
 }
 .box_textos_muro {
   text-align: center;
@@ -1606,31 +1614,32 @@ h2.elegantshadow {
   line-height: 24px;
   text-align: center;
 }
-.muro-parrafo2 {
+.muro-lema {
   color: var(--color-pagina);
   font-size: 2.5em;
   font-family: var(--font-muro);
 }
 
-/* .fas.fa-arrow-circle-down {
+.muro .fas.fa-arrow-circle-down {
   position: absolute;
-  right: 50%;
-  bottom: 8%;
+  right: 17.5%;
+  bottom: 9%;
   margin: auto;
-  font-size: 45px;
+  font-size: 35px;
   background: transparent;
-  color: rgba(255, 76, 0, 1);
-} */
+  color: var(--color-texto);
+  border-radius: 50%;
+}
 
 /* ---------------------------------- */
-/*# Quienes somos?  Mosaico de Fotos   */
+/*: Quienes somos?  Mosaico de Fotos  */
 /* ---------------------------------- */
 
 .aboutUs {
   position: relative;
   width: 100%;
-  min-height: 100vh;
   max-width: 1200px;
+  min-height: var(--section-height);
   margin: auto;
   background-image: url(./../img/about.png);
   background-repeat: no-repeat;
@@ -1643,7 +1652,6 @@ h2.elegantshadow {
 .aboutUs .titulo {
   position: relative;
   width: 100%;
-  height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -1651,16 +1659,27 @@ h2.elegantshadow {
 .aboutUs .titulo h2 {
   flex-direction: column;
   font-family: var(--font-titulos);
-  color: var(--color-pagina);
+  color: var(--color-blanco);
   background: transparent;
   letter-spacing: 2.5px;
   padding-top: 30px;
 }
 
-/* .aboutUs .titulo span {
-  font-size: 0.6em; 
+.aboutUs .titulo span {
   color: var(--color-blanco);
-} */
+  opacity: 0.5;
+}
+
+.aboutUs .fas.fa-arrow-circle-down {
+  position: absolute;
+  right: 47.2%;
+  bottom: 8.5%;
+  margin: auto;
+  font-size: 35px;
+  background: transparent;
+  color: var(--color-texto);
+  border-radius: 50%;
+}
 
 /* Sub-rutina para colocar un Titulo centrado al medio de la página con animación aparecer/desaparecer */
 
@@ -1706,11 +1725,8 @@ h2.elegantshadow {
 } */
 
 /* --------------*/
-/*# Profile CEO  */
+/*: Profile CEO  */
 /* --------------*/
-/* section[id="profile"] {
-  scroll-margin-top: 140px;
-} */
 
 .profile {
   text-align: justify;
@@ -1745,7 +1761,7 @@ h2.elegantshadow {
 }
 
 .profile-details {
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 100;
   line-height: 1.6;
   letter-spacing: normal;
@@ -1763,7 +1779,6 @@ h2.elegantshadow {
 
 .profile-img {
   width: 100%;
-  /* max-width: 288px; */
   max-width: 200px;
   max-height: 300px;
   margin-top: 70px;
@@ -1779,20 +1794,21 @@ h2.elegantshadow {
 }
 
 /* -----------*/
-/*# FOOTER    */
+/*: FOOTER    */
 /* -----------*/
 [id="contacto"] {
   scroll-margin-top: 1ex;
 }
 
 .footerSection {
+  width: 100%;
   max-width: 1200px;
+  min-height: var(--section-height);
   margin: 0 auto;
   position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  min-height: 100vh;
   flex-direction: column;
   background-color: #ede7f6;
   background: url(../img/footer/avila.png);
@@ -1801,9 +1817,6 @@ h2.elegantshadow {
 }
 
 footer {
-  width: 100%;
-  height: auto;
-  padding: 10px 100px 45px 100px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1811,6 +1824,7 @@ footer {
 }
 
 footer .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1818,12 +1832,8 @@ footer .container {
 }
 
 footer .container .sec {
-  margin-right: 30px;
-}
-
-footer .container .sec.aboutus {
-  width: 38%;
-  text-align: justify;
+  margin: 0 auto;
+  padding: 20px 0 50px 20px;
 }
 
 footer .container h2 {
@@ -1846,14 +1856,26 @@ footer .container h2:before {
 
 footer p {
   color: #fff;
-  width: 60%;
+  width: 100%;
   font-size: 12px;
   letter-spacing: 0.5px;
+}
+
+footer .container .sec.aboutus {
+  width: 38%;
+  text-align: justify;
+}
+
+footer .container .sec.aboutus p {
+  width: 60%;
+  line-height: 1.5;
 }
 
 .sci {
   margin-top: 5px;
   display: flex;
+  justify-content: center;
+  width: 60%;
 }
 
 .sci li {
@@ -1871,6 +1893,7 @@ footer p {
   margin-right: 10px;
   text-decoration: none;
   border-radius: 4px;
+  margin: 0 10px;
 }
 
 .sci li a .fab {
@@ -1906,7 +1929,8 @@ footer p {
 }
 
 .sci li a:hover {
-  background: #fff;
+  transform: scale(1.4);
+  transition: all 0.5s;
 }
 
 .quicklinks {
@@ -1929,51 +1953,49 @@ footer p {
 .quicklinks ul li a:before {
   content: "|";
   position: absolute;
-  left: -15px;
+  left: 0;
   font-size: 20px;
 }
 
 .quicklinks ul li a.uno:before {
-  top: 35px;
+  top: 55px;
   color: #ff4900;
 }
 
 .quicklinks ul li a.dos:before {
-  top: 67.5px;
+  top: 87.5px;
   color: #00ffff;
 }
 
 .quicklinks ul li a.tres:before {
-  top: 98.5px;
+  top: 118.5px;
   color: #ffc0cb;
 }
 
 .quicklinks ul li a.cuatro:before {
-  top: 132.5px;
+  top: 152.5px;
   color: #ecf00b;
 }
 
 .quicklinks ul li a.cinco:before {
-  top: 162.5px;
+  top: 182.5px;
   color: #008000;
 }
 
 .quicklinks ul li a.seis:before {
-  /* top: 167.5px; */
-  top: 195px;
-  color: #691111;
+  top: 215px;
+  color: #d6249f;
 }
 
 .quicklinks ul li a:hover {
   color: var(--color-pagina);
-  box-shadow: 0 0 0 1px transparent, 0 0 0 1px transparent,
-    0px 5px 4px 1.5px #000;
+  opacity: 0.5;
 }
 
-.contact {
+/* .contact {
   width: calc(35% - 60px);
   margin-right: 0 !important;
-}
+} */
 
 .contact .info {
   position: relative;
@@ -1984,15 +2006,16 @@ footer p {
   margin-bottom: 16px;
 }
 
+.contact .info li span {
+  color: var(--color-blanco);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .contact .info li span:nth-child(1) {
   color: var(--color-blanco);
   margin-right: 10px;
   font-size: 14px;
-}
-
-.contact .info li span {
-  color: var(--color-blanco);
-  font-size: 13px;
 }
 
 .contact .info li a {

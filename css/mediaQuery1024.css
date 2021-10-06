@@ -1,0 +1,405 @@
+/* -------------------------------------- */
+/*: Responsive styles iPad Pro -landscape */
+/* -------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+  .mainBox {
+    max-width: 968px;
+    height: 100vh;
+  }
+
+  .scroll-title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+  .header {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .nav__logo {
+    font-size: var(--h2-font-size);
+    margin-left: 30px;
+  }
+  .nav__logo span {
+    font-size: var(--smaller-font-size);
+  }
+  .nav__link {
+    font-size: var(--smaller-font-size);
+    margin: 0 10px;
+  }
+
+  /*: --  "Estilos Iconos Redes Sociales" -- */
+
+  .social_Icon {
+    top: 160px;
+    left: 5px;
+  }
+  .social_Icon [class*="fa-"] {
+    font-size: 1.5em;
+  }
+
+  .social_Icon .fab.fa-instagram {
+    font-size: 1.5em;
+    width: 25px;
+    height: 25px;
+    border-radius: 45px;
+  }
+
+  .banner_Icon {
+    top: 420px;
+    left: 5px;
+  }
+
+  .banner_Icon [class*="fa-"] {
+    font-size: 1.5em;
+  }
+
+  .whatsapp_Texto span {
+    top: 90%;
+    left: 5px;
+  }
+
+  /*: --  "Estilos del Carousel de inicio" -- */
+  .slideshow1 {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+    margin: auto;
+  }
+
+  .swiper-container.slideshow1.swiper-container-horizontal
+    > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 45px;
+  }
+
+  h2.elegantshadow {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateY(-80%) translateX(-50%);
+    font-size: 1.8rem;
+    padding-top: 0;
+  }
+
+  /*: --  "Cards section" -- */
+  .cards {
+    max-width: 968px;
+  }
+  .cards .title h2 {
+    font-size: 30px;
+  }
+  .cards .cardsBx .card {
+    width: 350px;
+    height: 300px;
+    margin: auto 10px;
+  }
+  .cards .cardsBx .card h3 {
+    font-size: 1.4em;
+  }
+  .cards .cardsBx .card .boton_mostrar {
+    width: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /*: --  Sección Carrousel de Servicios -- */
+
+  .servicios {
+    padding-bottom: 20px;
+  }
+  .servicios {
+    padding: 40px;
+  }
+
+  .servicios .title h2 {
+    font-style: normal;
+    font-family: var(--font-titulos);
+    font-weight: 500;
+    margin-top: 0;
+  }
+
+  .servicios .textBx .clicText {
+    pointer-events: none;
+    display: none;
+  }
+  .servicios .lightbox {
+    display: none;
+  }
+  .servicios .container-all {
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+  }
+
+  /*: -- Clases comunes a security, crtlAcceso y telco" -- */
+
+  .col50 {
+    padding: 0 20px;
+  }
+
+  /*: --  "Security section" -- */
+
+  .security {
+    padding-bottom: 0;
+  }
+
+  .security .title h2 {
+    font-style: normal;
+    font-family: var(--font-titulos);
+    font-weight: 500;
+  }
+
+  .security .row .col50 h3,
+  .security .row .col50 h3 span {
+    font-size: 1.2em;
+  }
+
+  .security .row .col50 .mainUL,
+  .security .row .col50 .mainUL span {
+    font-size: 1.2em;
+  }
+
+  .security .row .col50 p {
+    font-size: 1.2em;
+  }
+
+  .security .row .col50 p span {
+    font-size: 0.9em;
+  }
+
+  .security .row .col50 .secondaryUL {
+    font-size: 1em;
+  }
+  .security .row .col50 .secondaryUL span {
+    font-size: 0.8em;
+  }
+  .security .row .col50 .secondaryUL {
+    margin-left: 150px;
+  }
+
+  .security .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 180px;
+  }
+
+  /*: --  "CtrlAcceso section" -- */
+
+  .ctrlAcceso {
+    padding-bottom: 0;
+  }
+
+  .ctrlAcceso .title h2 {
+    font-style: normal;
+    font-family: var(--font-titulos);
+    font-weight: 500;
+  }
+
+  .ctrlAcceso .row .col50 h3,
+  .ctrlAcceso .row .col50 h3 span {
+    font-size: 1.2em;
+  }
+
+  .ctrlAcceso .row .col50 ul,
+  .ctrlAcceso .row .col50 ul span {
+    font-size: 1.2em;
+  }
+
+  .ctrlAcceso .row .col50 ul li span {
+    font-size: 1em;
+  }
+
+  .ctrlAcceso .row .col50 .secondaryUL,
+  .ctrlAcceso .row .col50 .secondaryUL span {
+    font-size: 0.8em;
+  }
+
+  .ctrlAcceso .row .col50 .secondaryUL {
+    margin-left: 100px;
+  }
+
+  .ctrlAcceso .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 250px;
+  }
+
+  /*: --  "Telco section" -- */
+  .telco {
+    padding-bottom: 0;
+  }
+
+  .telco .title h2 {
+    font-style: normal;
+    font-family: var(--font-titulos);
+    font-weight: 500;
+  }
+
+  .telco .row .col50 h3,
+  .telco .row .col50 h3 span {
+    font-size: 1.2em;
+  }
+
+  .telco .row .col50 .mainUL,
+  .telco .row .col50 .mainUL span {
+    font-size: 1.2em;
+  }
+
+  .telco .row .col50 .mainUL li span {
+    font-size: 1em;
+  }
+
+  .telco .row .col50 .secondaryUL {
+    font-size: 0.8em;
+  }
+
+  .telco .row .col50 .secondaryUL {
+    margin-left: 150px;
+  }
+
+  .telco .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 180px;
+  }
+
+  /*: GALERÍA Fotos Obras Realizadas  */
+
+  .galeria {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container_Galeria {
+    margin: auto 20px;
+  }
+
+  /*: --  "muro section" -- */
+
+  .muro {
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .box_muro {
+    width: 650px;
+    height: 380px;
+  }
+
+  .muro-subtitulo {
+    color: var(--color-pagina);
+    font-size: 1.5em;
+    margin: 10px;
+    padding: 10px 10px 30px 10px;
+  }
+  .muro-parrafo {
+    color: #fff;
+    font-size: 0.75em;
+    margin: 5px;
+    line-height: 1px;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+  }
+  .muro-parrafo span {
+    color: var(--color-blanco);
+    font-size: 0.75em;
+    line-height: 7px;
+    text-align: center;
+  }
+  .muro-parrafo-span span {
+    color: var(--color-pagina);
+    font-size: 0.75em;
+    line-height: 24px;
+    text-align: center;
+  }
+  .muro-lema {
+    color: var(--color-pagina);
+    font-size: 2em;
+    font-family: var(--font-muro);
+  }
+  .muro .fas.fa-arrow-circle-down {
+    right: 15.5%;
+    bottom: 9%;
+  }
+
+  /*: --  "AboutUs section" -- */
+
+  .aboutUs {
+    max-width: 968px;
+    min-height: 90vh;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .aboutUs .titulo h2 {
+    margin: 0px;
+  }
+
+  .aboutUs .fas.fa-arrow-circle-down {
+    right: 46.5%;
+    bottom: 0;
+  }
+
+  /*: --  "Footer section" -- */
+
+  .footerSection {
+    max-width: 968px;
+  }
+
+  footer {
+    background: rgba(28, 54, 67, 0.8);
+    margin: 0 auto;
+  }
+
+  footer .container .sec {
+    margin: 0 auto;
+    padding: 20px 0 50px 20px;
+  }
+
+  footer .container .sec.aboutus {
+    width: 30%;
+  }
+
+  footer .container .sec.aboutus p {
+    width: 80%;
+  }
+
+  .sci {
+    width: 80%;
+  }
+
+  footer .container .sec.quicklinks {
+    width: 25%;
+    margin-left: 100px;
+  }
+
+  .quicklinks ul li a:before {
+    content: "|";
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+  }
+
+  footer .container .sec.contact {
+    width: 25%;
+  }
+
+  .copyrightText {
+    padding: 0;
+  }
+
+  .copyrightText p {
+    width: 100%;
+  }
+}

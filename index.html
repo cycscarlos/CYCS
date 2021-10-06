@@ -79,19 +79,20 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
-    <!--_ Swiper Library loaded from inside project-->
+    <!-- REMIX ICONS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper Library loaded from inside project-->
     <link rel="stylesheet" href="Swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="Swiper/swiper-bundle.min.css" />
 
     <!-- CSS General Styles -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="css/iPad_Landscape.css" />
-    <link rel="stylesheet" href="css/iPad_Portrait.css" />
-    <link rel="stylesheet" href="css/iPhoneXS.css" /> -->
-
-    <!-- JQuery Library -->
-    <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
+    <link rel="stylesheet" href="css/mediaQuery1024.css" />
   </head>
   <body>
     <div class="mainBox" id="home">
@@ -99,77 +100,45 @@
       <!-- HEADER & LOGO  -->
       <!-------------------->
 
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#" class="nav__logo">CYCS <span>& Co.</span></a>
 
-        <!-- <header class="header_Box" id="header">
-          <div class="section_Box flex_Box">
-            <div class="logo_Box">
-              <h1 class="logo_Titulo">CYCS<span> & Co.</span></h1>
-             </div>
-  
-            <div class="contactInfo_Box">
-              <div class="contactInfo_Phone">
-                <span
-                  ><i class="fas fa-phone" aria-hidden="true"></i>+58 0414 324 63
-                  96</span
-                >          
-              </div>
-            </div>
-          </div> -->
-
-
-      <header id="header">
-        <div class="section_Box flex_Box">
-          <div class="header-grid-container">
-            <div class="logo">
-              <h2>CYCS<span> & Co.</span></h2>
-              <!-- <p>Ingeniería e Instalaciones</p> -->
-            </div>
-
-            <div class="phone">
-              <i class="fa fa-phone" aria-hidden="true">0414.324.63.96</i>
-              <!-- <span class="fas fa-phone">0414.324.63.96</span> -->
-              <!-- <p>Carlos Colmenares A.</p> -->
-            </div>
-
-            <!-- --------------------->
-            <!-- Navegation Menu    -->
-            <!-- --------------------->
-
-            <!-- <nav class="menu_Nav">
-            <span class="fas fa-bars menu-icon" id="botonMenu"></span>
-            <ul class="menu_Box" id="menu_UL">
-              <li class="menu_li">
-                <a href="#home" class="menu_li_a">Inicio</a>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">Inicio</a>
               </li>
-
-              <li class="menu_li">
-                <a href="#cards" class="menu_li_a">Servicios</a>
+              <li class="nav__item">
+                <a href="#cards" class="nav__link">Servicios</a>
               </li>
-
-              <li class="menu_li">
-                <a href="#clients" class="menu_li_a">Clientes y Proyectos</a>
+              <li class="nav__item">
+                <a href="#clients" class="nav__link">Clientes & Proyectos</a>
               </li>
-
-              <li class="menu_li">
-                <a href="#galeria" class="menu_li_a">Obras en foto</a>
+              <li class="nav__item">
+                <a href="#galeria" class="nav__link">Fotos de Obras</a>
               </li>
-
-              <li class="menu_li">
-                <a href="#contacto" class="menu_li_a">Contacto</a>
+              <li class="nav__item">
+                <a href="#contacto" class="nav__link">Contacto</a>
               </li>
             </ul>
-          </nav> -->
 
-            <nav class="menuNav">
-              <span class="fas fa-bars menu-icon" id="botonMenu"></span>
-              <a href="#home">Inicio</a>
-              <a href="#cards">Servicios</a>
-              <a href="#clients">Clientes y Proyectos</a>
-              <a href="#galeria">Muestra Fotográfica de Obras</a>
-              <a href="#contacto">Contacto</a>
-            </nav>
+            <!-- Theme change button -->
+
+            <div class="nav__dark">
+              <span class="change-theme-name">Modo Obscuro</span>
+              <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+
+            <!-- Responsive close (X) button -->
+            <i class="ri-close-line nav__close" id="nav-close"></i>
           </div>
-        </div>
+
+          <!-- Responsive navigation menu button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </nav>
       </header>
 
       <!--------------------------->
@@ -374,7 +343,7 @@
     <section class="servicios" id="services">
       <div class="textBx">
         <div class="title">
-          <h2 class="scroll-title">Áreas de Competencia</h2>
+          <h2 class="scroll-title">Servicios Específicos</h2>
         </div>
       </div>
 
@@ -651,7 +620,7 @@
 
     <section id="security" class="security">
       <div class="title">
-        <h2 class="subtitle scroll-title">
+        <h2 class="scroll-title">
           <span>P</span>rotegemos su empresa, su oficina...su Hogar
         </h2>
         <br /><br />
@@ -659,16 +628,16 @@
       <div class="row">
         <div class="col50">
           <br />
-          <h3><span>I</span>NSTALAMOS POTENTES SISTEMAS DE SEGURIDAD</h3>
+          <h3>
+            INSTALAMOS POTENTES<br />
+            SISTEMAS DE <span>S</span>EGURIDAD
+          </h3>
           <br /><br />
           <ul class="mainUL">
-            <li>
-              Sistemas de <span>A</span>larmas y Detección de
-              <span>I</span>ntrusos
-            </li>
-            <li>Vídeo <span>C</span>ámaras de Seguridad</li>
-            <li><span>C</span>ercos Eléctricos</li>
-            <li>Vídeo <span>P</span>orteros</li>
+            <li>Vídeo Porteros</li>
+            <li>Cercos Eléctricos</li>
+            <li>Vídeo Cámaras de Seguridad</li>
+            <li>Sistemas de Alarmas y Detección de Intrusos</li>
           </ul>
           <br /><br />
 
@@ -679,7 +648,7 @@
           <p><br /></p>
           <ul class="secondaryUL">
             <li><span>I</span>nternet</li>
-            <li><span>R</span>edes LAN privadas</li>
+            <li>Redes LAN <span>P</span>rivadas</li>
             <li>Plataformas <span>C</span>elulares (Android o Iphone)</li>
           </ul>
         </div>
@@ -773,7 +742,7 @@
 
     <section class="ctrlAcceso" id="ctrlAcceso">
       <div class="title">
-        <h2 class="subtitle scroll-title">
+        <h2 class="scroll-title">
           Controlamos ferreamente sus <span>A</span>ccesos
         </h2>
         <br /><br />
@@ -782,17 +751,16 @@
         <div class="col50">
           <br />
           <h3>
-            <span>I</span>NSTALAMOS ROBUSTOS SISTEMAS DE CONTROL DE ACCESO PARA
-            PERSONAS y VEHICULOS
+            INSTALAMOS ROBUSTOS<br />
+            SISTEMAS DE CONTROL DE <span>A</span>CCESO
           </h3>
           <br /><br />
-          <ul>
-            <li><span>T</span>orniquetes</li>
-            <li><span>B</span>arreras Vehiculares</li>
-            <li>Sistemas de Identificación <span>B</span>iométrica</li>
+          <ul class="mainUL">
+            <li>Torniquetes</li>
+            <li>Barreras Vehiculares</li>
+            <li>Sistemas de Identificación Biométrica</li>
             <li>
-              Sistemas de Identificación por <span>R</span>adio Frecuencia o
-              RFid:<br /><br />
+              Sistemas de Identificación por Radio Frecuencia o RFid:<br /><br />
               <ul class="secondaryUL">
                 <li>
                   Manos libres para identificación de <span>P</span>ersonas
@@ -904,7 +872,7 @@
 
     <section class="telco" id="telco">
       <div class="title">
-        <h2 class="subtitle scroll-title">
+        <h2 class="scroll-title">
           <span>T</span>orres, Antenas, Wireless.... Enlaces por Aire
         </h2>
         <br /><br />
@@ -912,16 +880,22 @@
       <div class="row">
         <div class="col50">
           <br />
-          <h3><span>E</span>SPECIALISTAS EN TELECOMUNICACIONES y REDES</h3>
+          <h3>
+            SOMOS ESPECIALISTAS EN<br />
+            <span>T</span>ELECOMUNICACIONES y <span>R</span>EDES
+          </h3>
           <br /><br />
           <ul class="mainUL">
-            <li><span>S</span>ite Survey y Barridos de Frecuencia</li>
-            <li><span>F</span>actibilidad e Ingeniería de Detalle</li>
-            <li>Radio <span>B</span>ases y Enlaces de Última Milla</li>
+            <li>Site Survey y Barridos de Frecuencia</li>
+            <li>Factibilidad e Ingeniería de Detalle</li>
             <li>
-              Enlaces <span>W</span>ireless para:<br /><br />
+              Radio Bases y Enlaces wireless de <br />
+              última milla para:
+            </li>
+            <li>
+              <br />
               <ul class="secondaryUL">
-                <li>Propagación de señal de <span>I</span>nternet</li>
+                <li>Propagación de <span>S</span>eñal de internet</li>
 
                 <li>Conformación de Spots <span>W</span>iFi</li>
 
@@ -934,6 +908,10 @@
                 </li>
               </ul>
             </li>
+            <br />
+            <li>Instalación de redes en Fibra Óptica</li>
+
+            <li>Instalación de redes en cableado UTP</li>
           </ul>
           <br /><br />
         </div>
@@ -1771,51 +1749,57 @@
 
           <p class="muro-parrafo">
             <span>* </span
-            ><i> Suministramos, instalamos y proveemos mantenimiento a...</i>
+            ><i>
+              Suministramos, instalamos y proveemos mantenimiento a sistemas
+              de...</i
+            >
+          </p>
+          <br />
+          <p class="muro-parrafo muro-parrafo-span">
+            <span>I. </span>Seguridad Electrónica
+          </p>
+
+          <p class="muro-parrafo muro-parrafo-span">
+            <span>II. </span>Control de Accesos peatonal y vehicular
+          </p>
+
+          <p class="muro-parrafo muro-parrafo-span">
+            <span>III. </span>Telecomunicaciones y Redes Microondas
           </p>
           <br />
 
-          <p class="muro-parrafo muro-parrafo-span">
-            <span>I. </span>Sistemas IT y Seguridad Electrónica
-          </p>
-
-          <p class="muro-parrafo muro-parrafo-span">
-            <span>II. </span>Sistemas de Control de Accesos peatonal y vehicular
-          </p>
-
-          <p class="muro-parrafo muro-parrafo-span">
-            <span>III. </span>Sistemas de Telecomunicaciones y Redes Microondas
-          </p>
-          <br />
-
-          <p class="muro-parrafo">
+          <!-- <p class="muro-parrafo">
             <span>* </span>Nuestra misión y privelegio es coadyuvar en el éxito
             de su gestión!!!
-          </p>
+          </p> -->
 
-          <p class="muro-parrafo2">Excelencia, Seriedad, Responsabilidad</p>
+          <p class="muro-lema">Excelencia, Seriedad, Responsabilidad</p>
         </div>
       </div>
-      <!-- <i class="fas fa-arrow-circle-down"></i> -->
+      <i class="fas fa-arrow-circle-down"></i>
     </section>
 
     <!---------------------------------------->
     <!--  QUIENES SOMOS?  Mosaico de Fotos  -->
     <!---------------------------------------->
 
-    <div class="aboutBx">
-      <section class="aboutUs" id="aboutUs">
-        <div class="titulo">
-          <h2 class="scroll-title">Somos... Trabajo y Responsabilidad.!</h2>
-        </div>
+    <!-- <div class="aboutBx"> -->
+    <section class="aboutUs" id="aboutUs">
+      <div class="titulo">
+        <h2 class="scroll-title">
+          <span>.........</span>Equipo y Responsabilidad.!
+        </h2>
+      </div>
 
-        <!-- <div class="subtitulo">
+      <!-- <div class="subtitulo">
                 <h3 data-text="con calidad y excelencia..!!">
                   CON CALIDAD y EXCELENCIA..!!
                 </h3>
               </div> -->
-      </section>
-    </div>
+      <i class="fas fa-arrow-circle-down"></i>
+    </section>
+
+    <!-- </div> -->
 
     <section class="profile" id="profile">
       <div class="profile-info">
@@ -1824,24 +1808,23 @@
           <div class="name">Carlos Colmenares A.</div>
         </h1>
         <p class="profile-details">
-          Profesional de ciencias de la computación y las telecomunicaciones. He
-          trabajado por más de 30 años como system programmer (o ingeniero de
-          software) en sistemas IBM Mainframe (s/370, s/390, z/Series). Durante
-          ese tiempo presté servicios de consultoría técnica para el desarrollo
-          e implementación de complejos proyectos técnicos en el área de system
-          programming y telecomunicaciones, en más de 25 empresas, entre las
-          cuales, se incluyen 12 bancos, tanto en el área nacional como
-          internacional. En paralelo y durante los últimos 20 años, he
-          desarrollado una exitosa carrera como ingeniero de proyectos;
-          diseñando e implementando sistemas de seguridad electrónica y redes de
-          microondas en el área de telecomunicaciones, de alto nivel y calidad
-          industrial, en más de 30 empresas corporativas; algunas de la talla de
-          PDVSA, Cargill de Venezuela, Metro de Caracas, CANTV, Movistar, entre
-          muchas otras. Recientemente (desde principios del 2020), y como
-          complemento profesional, he comenzado a formarme en una exitante y
+          Profesional de las ciencias de la computación y las
+          telecomunicaciones. Ingeniero electrónico, 1981. Ha trabajado por más
+          de 30 años como system programmer (o ingeniero de software) en
+          sistemas IBM Mainframe. Durante ese tiempo ha prestado servicios de
+          consultoría técnica para el desarrollo e implementación de complejos
+          proyectos técnicos en el área de system programming y
+          telecomunicaciones, en más de 25 empresas, entre las cuales, se
+          incluyen 12 bancos, tanto nacionales como internacionales. En paralelo
+          y durante los últimos 20 años, ha desarrollado una exitosa carrera
+          como ingeniero de proyectos; diseñando e implementando sistemas de
+          seguridad electrónica y redes microondas de telecomunicaciones, en más
+          de 30 empresas corporativas; algunas de la talla de PDVSA, Cargill de
+          Venezuela, Metro de Caracas, CANTV, Movistar, entre muchas otras.
+          Desde principios del 2020, se ha venido formando en una nueva y
           dinámica carrera como web software developer; diseñando y
-          desarrollando websites, backend systems y aplicaciones para
-          smartphones.
+          desarrollando websites y aplicaciones (o backend systems) para
+          ecosistemas de servidores y celulares.
         </p>
       </div>
       <div class="profile-img-section">
@@ -1915,10 +1898,10 @@
                 <a class="dos" href="#aboutUs">Nuestro Equipo</a>
               </li>
               <li>
-                <a class="tres" href="#services">Nuestros Servicios</a>
+                <a class="tres" href="#services">Servicios Específicos</a>
               </li>
               <li>
-                <a class="cuatro" href="#security">Seguridad Electrónica</a>
+                <a class="cuatro" href="#security">Sistemas de Seguridad</a>
               </li>
               <li>
                 <a class="cinco" href="#ctrlAcceso">Control de Acceso</a>
@@ -1962,9 +1945,8 @@
       </footer>
       <div class="copyrightText">
         <p>
-          Copyright &COPY;2020 CYCS Web Design |
-          <span>Ing. Carlos Colmenares A.</span> | Todos los derechos
-          reservados.
+          Copyright &COPY;2020 Diseñado por |
+          <span>Carlos Colmenares A.</span> | Todos los derechos reservados.
         </p>
       </div>
     </section>
@@ -1988,17 +1970,7 @@
     <!-- Change header background color when scroll -->
     <script src="js/scrollHeader.js"></script>
 
-    <!-- Mostrar/esconder menu de navegación en Responsive Design -->
-    <!-- <script type="text/javascript">
-      $(document).ready(function () {
-        $(".menu-icon").click(function () {
-          $(".menu-icon").toggleClass("active");
-        });
-
-        $(".menu-icon").click(function () {
-          $(".menu_Box").toggleClass("active");
-        });
-      });
-    </script> -->
+    <!-- Menu navegation for responsive design -->
+    <script src="js/menuNav.js"></script>
   </body>
 </html>
