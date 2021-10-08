@@ -12,10 +12,12 @@ var swiper = new Swiper(".slideshow1", {
   },
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
   loop: true,
   autoplay: {
-    delay: 800,
+    // delay: 2000,
+    delay: 2000,
     disableOnInteraction: false,
   },
 });

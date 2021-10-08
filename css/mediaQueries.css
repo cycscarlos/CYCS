@@ -2,10 +2,9 @@
 /*: Responsive styles iPad Pro -landscape */
 /* -------------------------------------- */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 991px) {
   .mainBox {
-    max-width: 968px;
-    height: 100vh;
+    height: 100%;
   }
 
   .scroll-title {
@@ -66,22 +65,22 @@
   }
 
   /*: --  "Estilos del Carousel de inicio" -- */
-  .slideshow1 {
+  /* .slideshow1 {
     position: relative;
     max-width: 1200px;
     width: 100%;
     height: 100vh;
     padding-top: 40px;
     margin: auto;
-  }
+  } */
 
-  .swiper-container.slideshow1.swiper-container-horizontal
+  /* .swiper-container.slideshow1.swiper-container-horizontal
     > .swiper-pagination-bullets,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
     bottom: 45px;
-  }
-
+  } */
+  /* 
   h2.elegantshadow {
     width: 100%;
     position: absolute;
@@ -90,7 +89,7 @@
     transform: translateY(-80%) translateX(-50%);
     font-size: 1.8rem;
     padding-top: 0;
-  }
+  } */
 
   /*: --  "Cards section" -- */
   .cards {
@@ -116,11 +115,13 @@
   /*: --  Sección Carrousel de Servicios -- */
 
   .servicios {
-    padding-bottom: 20px;
+    height: 100%;
+    min-height: 40vh;
+    border: 2px solid red;
   }
-  .servicios {
+  /* .servicios {
     padding: 40px;
-  }
+  } */
 
   .servicios .title h2 {
     font-style: normal;
@@ -133,13 +134,13 @@
     pointer-events: none;
     display: none;
   }
-  .servicios .lightbox {
+  /* .servicios .lightbox {
     display: none;
-  }
+  } */
   .servicios .container-all {
-    top: 40%;
+    top: 25%;
     left: 50%;
-    transform: translateX(-50%) translateY(-40%);
+    transform: translateY(-25%) translateX(-50%);
   }
 
   /*: -- Clases comunes a security, crtlAcceso y telco" -- */
