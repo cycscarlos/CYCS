@@ -1515,6 +1515,7 @@ h2.elegantshadow {
   max-width: 1200px;
   min-height: var(--section-height);
   margin: auto;
+  padding: 10px;
   background: var(--color-blanco);
 }
 
@@ -1655,6 +1656,7 @@ h2.elegantshadow {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
+  background-size: cover;
   display: flex;
   padding: 60px 0 0 0;
 }

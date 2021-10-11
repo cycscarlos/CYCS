@@ -1,0 +1,113 @@
+/* -------------------------------------- */
+/*: Responsive styles iPad Pro -landscape */
+/* -------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .scroll-title {
+    font-size: 2em;
+  }
+
+  /*: --  "Cards section" -- */
+
+  .cards .title h2 {
+    width: 50%;
+    font-size: 30px;
+  }
+  .cards .cardsBx {
+    margin: 0 auto;
+  }
+
+  /*: --  Sección Carrousel de Servicios -- */
+
+  .servicios {
+    min-height: 650px;
+  }
+
+  /*: -- Clases comunes a security, crtlAcceso y telco" -- */
+
+  .col50 {
+    padding: 0 20px;
+  }
+
+  /*: --  "Security section" -- */
+
+  .security .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 210px;
+  }
+
+  /*: --  "CtrlAcceso section" -- */
+
+  .ctrlAcceso .row .col50 .secondaryUL {
+    margin-left: 20px;
+  }
+
+  .ctrlAcceso .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 350px;
+  }
+
+  /*: --  "Telco section" -- */
+
+  .telco .row .col50 .secondaryUL {
+    margin-left: 20px;
+  }
+
+  .telco .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 300px;
+  }
+
+  /*: CLIENTES y PROYECTOS     */
+
+  .clientes {
+    margin: 0 auto;
+  }
+
+  /*: GALERÍA Fotos Obras Realizadas  */
+
+  .galeria {
+    max-width: 968px;
+    margin: 0 auto;
+  }
+
+  .container_Galeria {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /*: --  "muro section" -- */
+
+  .muro-parrafo {
+    font-size: 1em;
+  }
+
+  .muro-parrafo span {
+    font-size: 1em;
+  }
+  .muro-parrafo-span span {
+    font-size: 1em;
+  }
+
+  .muro-lema {
+    font-size: 2.5em;
+  }
+  .muro .fas.fa-arrow-circle-down {
+    right: 15.5%;
+    bottom: 12%;
+  }
+
+  /*: --  "AboutUs section" -- */
+
+  /* --------------*/
+  /*: Profile CEO  */
+  /* --------------*/
+
+  .profile {
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
