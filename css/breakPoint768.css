@@ -3,6 +3,11 @@
 /* -------------------------------------- */
 
 @media screen and (max-width: 768px) {
+  .mainBox {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 10px;
+  }
   .scroll-title {
     font-size: 2em;
   }
@@ -14,6 +19,7 @@
     font-size: 30px;
   }
   .cards .cardsBx {
+    flex-direction: column;
     margin: 0 auto;
   }
 
@@ -31,6 +37,10 @@
 
   /*: --  "Security section" -- */
 
+  .security .row .col50 .secondaryUL {
+    margin-left: 50px;
+  }
+
   .security .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
@@ -40,25 +50,25 @@
   /*: --  "CtrlAcceso section" -- */
 
   .ctrlAcceso .row .col50 .secondaryUL {
-    margin-left: 20px;
+    margin-left: 50px;
   }
 
   .ctrlAcceso .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    bottom: 350px;
+    bottom: 300px;
   }
 
   /*: --  "Telco section" -- */
 
   .telco .row .col50 .secondaryUL {
-    margin-left: 20px;
+    margin-left: 50px;
   }
 
   .telco .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    bottom: 300px;
+    bottom: 330px;
   }
 
   /*: CLIENTES y PROYECTOS     */
