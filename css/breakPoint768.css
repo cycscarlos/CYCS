@@ -17,16 +17,17 @@
 
   /*: --  "Cards section" -- */
 
+  .cards {
+    max-width: 768px;
+    min-height: 100vh;
+  }
   .cards .title h2 {
     width: 50%;
     font-size: 30px;
   }
   .cards .cardsBx {
     flex-direction: column;
-  }
-
-  .cards .cardsBx .card {
-    padding: 30px;
+    justify-content: space-evenly;
   }
 
   /*: --  Sección Carrousel de Servicios -- */
