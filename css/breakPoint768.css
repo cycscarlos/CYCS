@@ -23,6 +23,7 @@
   }
   .cards .cardsBx {
     flex-direction: column;
+    padding: 30px;
   }
 
   /*: --  Sección Carrousel de Servicios -- */
@@ -127,6 +128,5 @@
   footer {
     background: rgba(28, 54, 67, 0.5);
     margin: 0 auto;
-    padding: 10px;
   }
 }
