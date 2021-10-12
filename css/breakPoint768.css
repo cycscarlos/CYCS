@@ -20,7 +20,6 @@
   }
   .cards .cardsBx {
     flex-direction: column;
-    margin: 0 auto;
   }
 
   /*: --  Sección Carrousel de Servicios -- */
@@ -38,7 +37,7 @@
   /*: --  "Security section" -- */
 
   .security .row .col50 .secondaryUL {
-    margin-left: 50px;
+    margin-left: 100px;
   }
 
   .security .swiper-container-horizontal > .swiper-pagination-bullets,
@@ -56,7 +55,7 @@
   .ctrlAcceso .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    bottom: 300px;
+    bottom: 280px;
   }
 
   /*: --  "Telco section" -- */
@@ -68,7 +67,7 @@
   .telco .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    bottom: 330px;
+    bottom: 350px;
   }
 
   /*: CLIENTES y PROYECTOS     */
