@@ -23,6 +23,9 @@
   }
   .cards .cardsBx {
     flex-direction: column;
+  }
+
+  .cards .cardsBx .card {
     padding: 30px;
   }
 
