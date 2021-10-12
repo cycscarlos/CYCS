@@ -3,6 +3,9 @@
 /* -------------------------------------- */
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .mainBox {
     max-width: 768px;
     margin: 0 auto;
@@ -25,7 +28,7 @@
   /*: --  Sección Carrousel de Servicios -- */
 
   .servicios {
-    min-height: 650px;
+    min-height: 550px;
   }
 
   /*: -- Clases comunes a security, crtlAcceso y telco" -- */
@@ -37,7 +40,7 @@
   /*: --  "Security section" -- */
 
   .security .row .col50 .secondaryUL {
-    margin-left: 100px;
+    margin-left: 120px;
   }
 
   .security .swiper-container-horizontal > .swiper-pagination-bullets,
@@ -118,5 +121,12 @@
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 10px;
+  }
+
+  /*: --  "Footer section" -- */
+  footer {
+    background: rgba(28, 54, 67, 0.5);
+    margin: 0 auto;
+    padding: 10px;
   }
 }
