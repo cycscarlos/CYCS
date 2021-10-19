@@ -1,0 +1,58 @@
+/* -------------------------------------- */
+/*: Responsive styles smartphone */
+/* -------------------------------------- */
+@media screen and (max-width: 1024px) {
+  body {
+    max-width: 1024px;
+  }
+  .cards,
+  .servicios,
+  .security,
+  .ctrlAcceso,
+  .telco,
+  .clientes,
+  .galeria,
+  .muro,
+  .aboutUs,
+  .profile,
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 1024px;
+  }
+  .cards,
+  .servicios,
+  .security,
+  .ctrlAcceso,
+  .telco,
+  .clientes,
+  .galeria,
+  .muro,
+  .aboutUs,
+  .profile,
+  .footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 414px) {
+  body {
+    max-width: 414px;
+  }
+  .cards,
+  .servicios,
+  .security,
+  .ctrlAcceso,
+  .telco,
+  .clientes,
+  .galeria,
+  .muro,
+  .aboutUs,
+  .profile,
+  .footer {
+    display: none;
+  }
+}
