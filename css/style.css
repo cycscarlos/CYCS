@@ -153,8 +153,6 @@ body.dark-theme {
 } */
 
 section {
-  /* padding-top: 80px; */ /* 1ra version */
-  /* padding-top: 60px; */ /* 2da versión */
   padding-top: 4.5rem; /* 72px */
   padding-bottom: 1.25rem; /* 20px */
 }
@@ -553,8 +551,8 @@ input {
 
 .banner_Icon [class*="fa-"] {
   margin: 0 0 40px 0;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   font-size: 2em;
   color: var(--color-whatsapp);
 }
@@ -1509,6 +1507,9 @@ h2.elegantshadow {
 /* --------------------------------*/
 /*: GALERÍA Fotos Obras Realizadas */
 /* --------------------------------*/
+[id="galeria"] {
+  scroll-margin-top: 7ex;
+}
 
 .galeria {
   width: 100%;
@@ -1651,30 +1652,46 @@ h2.elegantshadow {
   width: 100%;
   max-width: 1200px;
   min-height: var(--section-height);
-  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  /* margin: auto;
   background-image: url(./../img/about.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
   display: flex;
-  padding: 60px 0 0 0;
+  flex-direction: column;
+  padding: 60px 0 0 0; */
+}
+
+.aboutUs .imgBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutUs .titulo {
   position: relative;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .aboutUs .titulo h2 {
   flex-direction: column;
   font-family: var(--font-titulos);
-  color: var(--color-blanco);
-  background: transparent;
   letter-spacing: 2.5px;
-  padding-top: 30px;
+  /* color: var(--color-blanco);
+  background: transparent;
+  padding-top: 30px; */
+
+  color: var(--color-texto);
+  padding: 0;
 }
 
 .aboutUs .titulo span {
@@ -1812,16 +1829,16 @@ h2.elegantshadow {
   scroll-margin-top: 1ex;
 } */
 
-.footerSection {
+.footer {
   width: 100%;
   max-width: 1200px;
   min-height: var(--section-height);
-  margin: 0 auto;
   position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
   background-color: #ede7f6;
   background: url(../img/footer/avila.png);
   background-size: cover;
@@ -1846,6 +1863,7 @@ footer .container {
 footer .container .sec {
   margin: 0 auto;
   padding: 20px 0 50px 20px;
+  z-index: 1;
 }
 
 footer .container h2 {

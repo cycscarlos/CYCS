@@ -3,9 +3,9 @@
 /* -------------------------------- */
 
 @media screen and (max-width: 414px) {
-  [id] {
+  /* [id] {
     scroll-margin-top: 20ex;
-  }
+  } */
 
   section {
     padding-top: 0;
