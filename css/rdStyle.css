@@ -47,6 +47,10 @@
     display: none;
   }
 
+  [id="home"] {
+    scroll-margin-top: 7ex;
+  }
+
   /*: Titulo Principal  */
 
   h2.elegantshadow {
@@ -58,8 +62,7 @@
     margin-top: 0;
     color: var(--color-texto);
     background-color: rgba(231, 229, 228, 0.5);
-    text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,
-      -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d;
+    text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474;
   }
 
   /*: Iconos redes sociales  */
@@ -96,19 +99,26 @@
   /*: Cientes y Proyectos     */
 
   .clients .title h2 {
-    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
-    /* font-family: Helvetica, Arial, sans-serif; */
-    font-family: Nunito, sans-serif;
+    font-family: var(--font-titulos);
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: var(--biggest-font-size);
     line-height: 40px;
     color: var(--color-texto);
+    align-self: center;
   }
   .clients .title h2 span {
-    font-size: 1rem;
-    line-height: 40px;
-    font-weight: 400;
+    display: none;
+    /* font-size: 0.75rem;
+    line-height: 40px; */
+  }
+  .clients .title {
+    margin: 0;
+  }
+  .clients .scroll-title {
+    margin: 0;
+  }
+  .clientes .card {
+    margin: 0 30px 20px 5px;
   }
 
   /*: Galería     */
@@ -118,22 +128,145 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .galeria-titulo {
-    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
-    /* font-family: Helvetica, Arial, sans-serif; */
-    font-family: Nunito, sans-serif;
+    font-family: var(--font-titulos);
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: var(--biggest-font-size);
     line-height: 40px;
     color: var(--color-texto);
   }
   .galeria-titulo span {
-    font-size: 1rem;
-    line-height: 40px;
-    font-weight: 400;
+    display: none;
+    /* font-size: 0.75rem;
+    line-height: 40px; */
   }
 
   /*: Footer     */
+  [id="contacto"] {
+    scroll-margin-top: 7ex;
+  }
+  .footer {
+    font-family: var(--font-footer);
+  }
+  .socialIcons {
+    display: none;
+  }
+  .main .contenedor h2 {
+    font-size: var(--small-font-size);
+  }
+  .main .contenedor .nosotros p {
+    font-size: var(--smaller-font-size);
+  }
+  .linkSecundarios {
+    display: none;
+  }
+  /* .linkSecundarios ul li a {
+    font-size: var(--smaller-font-size);
+  }
 
- 
+  .linkSecundarios ul li a.uno::before {
+    top: 45px;
+  }
+
+  .linkSecundarios ul li a.dos::before {
+    top: 80px;
+  }
+
+  .linkSecundarios ul li a.tres::before {
+    top: 120px;
+  }
+
+  .linkSecundarios ul li a.cuatro::before {
+    top: 160px;
+  }
+
+  .linkSecundarios ul li a.cinco::before {
+    top: 195px;
+  }
+
+  .linkSecundarios ul li a.seis::before {
+    top: 230px;
+  } */
+  .contactos .informacion li span:nth-child(1) {
+    /* font-size: 20px; */
+    font-size: var(--normal-font-size);
+  }
+  .contactos .informacion li span {
+    font-size: var(--smaller-font-size);
+  }
+  .contactos .informacion li a {
+    font-size: var(--smaller-font-size);
+  }
+  .copyrightTexto {
+    font-size: var(--minimal-font-size);
+  }
+
+  /** Responsive Design -Services      */
+
+  .servicesRD {
+    position: relative;
+    width: 100%;
+    min-height: var(--section-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .servicesRD .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .servicesRD .title h2 {
+    font-family: var(--font-titulos);
+    color: var(--color-texto);
+  }
+
+  .servicesRD h3 {
+    color: var(--color-texto);
+    font-size: var(--h3-font-size);
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .servicesRD span {
+    color: var(--color-pagina);
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .servicesRD ul {
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--color-texto);
+    text-decoration: none;
+    list-style: none;
+    line-height: 45px;
+  }
+  .servicesRD ul li span {
+    color: var(--color-pagina);
+    font-weight: 700;
+    font-size: var(--normal-font-size);
+  }
+  .servicesRD p {
+    text-align: center;
+    font-size: var(--normal-font-size);
+    color: var(--color-texto);
+  }
+  .servicesRD p span {
+    color: var(--color-pagina);
+    font-weight: 700;
+    font-size: 1em;
+  }
+  .servicesRD .secondaryUL {
+    text-align: center;
+    font-size: var(--normal-font-size);
+    color: var(--color-texto);
+    list-style: square;
+    line-height: 30px;
+  }
+  .servicesRD .secondaryUL li span {
+    color: var(--color-pagina);
+    font-weight: 700;
+    font-size: var(--normal-font-size);
+  }
 }
