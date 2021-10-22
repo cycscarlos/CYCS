@@ -145,6 +145,8 @@ body.dark-theme {
   --font-lightbox: "Open Sans Condensed", sans-serif;
   --font-texto: "Raleway", sans-serif;
   --font-menu: "Font Awesome 5 Free", "Times New Roman";
+  --font-main: "Nunito", sans-serif;
+  --font-main-parrafos: -apple-system, Nunito, BlinkMacSystemFont, sans-serif;
 }
 /*: Base styles  */
 
@@ -615,6 +617,9 @@ input {
   background: var(--color-pagina);
 }
 
+.mainTitle {
+  display: none;
+}
 h2.elegantshadow {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
     "AppleGothic", sans-serif;
@@ -1825,11 +1830,258 @@ h2.elegantshadow {
 /* -----------*/
 /*: FOOTER    */
 /* -----------*/
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+
+  /* background-color: rgba(30, 82, 113, 0.8); */
+  /* background-color: #ede7f6; */
+  background-color: var(--color-header);
+  /* font-family: "Poppins", sans-serif; */
+  font-family: var(--font-texto);
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  background: url(../img/footer/avila.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main .contenedor {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* background-color: rgb(40, 60, 72, 0.5); */
+}
+.main .contenedor .comun {
+  margin-right: 30px;
+}
+.main .contenedor .comun.nosotros {
+  width: 30%;
+}
+.main .contenedor h2 {
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.main .contenedor h2:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #f00;
+}
+.main .contenedor .nosotros p {
+  text-align: justify;
+  line-height: 24px;
+  font-size: 12px;
+}
+.main p {
+  color: #fff;
+}
+.socialIcons {
+  margin-top: 20px;
+  display: flex;
+}
+.socialIcons li {
+  list-style: none;
+}
+.socialIcons li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.socialIcons li a .fab {
+  color: #fff;
+  font-size: 20px;
+}
+.socialIcons li a .fab.fa-twitter {
+  color: var(--color-twitter);
+}
+.socialIcons li a .fab.fab.fa-instagram {
+  border-radius: 50px;
+  color: #fff;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+.socialIcons li a .fab.fa-whatsapp {
+  font-size: 20px;
+  color: var(--color-whatsapp);
+}
+.socialIcons li a:hover {
+  transform: scale(1.4);
+  transition: all 0.5s;
+}
+.linkSecundarios {
+  position: relative;
+  width: 25%;
+  padding-left: 50px;
+}
+.linkSecundarios ul li {
+  list-style: none;
+}
+.linkSecundarios ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-size: 12px;
+}
+.linkSecundarios ul li a:hover {
+  color: #999;
+}
+.linkSecundarios ul li a.uno {
+  margin-top: 20px;
+}
+.linkSecundarios ul li a::before {
+  content: "|";
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+}
+
+.linkSecundarios ul li a.uno::before {
+  top: 50px;
+  color: #ff4900;
+}
+
+.linkSecundarios ul li a.dos::before {
+  top: 85px;
+  color: #00ffff;
+}
+
+.linkSecundarios ul li a.tres::before {
+  top: 125px;
+  color: #ffc0cb;
+}
+
+.linkSecundarios ul li a.cuatro::before {
+  top: 165px;
+  color: #ecf00b;
+}
+
+.linkSecundarios ul li a.cinco::before {
+  top: 200px;
+  color: #008000;
+}
+
+.linkSecundarios ul li a.seis::before {
+  top: 235px;
+  color: #ff0000;
+}
+
+.contactos {
+  width: calc(35% - 60px);
+  margin-right: 0 !important;
+}
+.contactos .informacion {
+  position: relative;
+}
+.contactos .informacion li {
+  display: flex;
+  margin-bottom: 16px;
+}
+.contactos .informacion li span:nth-child(1) {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.contactos .informacion li span {
+  color: #fff;
+  line-height: 24px;
+  font-size: 12px;
+}
+.contactos .informacion li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.contactos .informacion li a:hover {
+  color: #fff;
+}
+.copyrightTexto {
+  width: 100%;
+  padding: 8px 100px;
+  text-align: center;
+  color: #999;
+  /* background-color: rgba(30, 82, 113, 1); */
+  background-color: var(--color-header);
+  font-size: 12px;
+}
+.copyrightTexto span {
+  font-weight: 100;
+  color: #ff4900;
+  font-style: italic;
+}
+
+/*: Responsive Design */
+
+@media (max-width: 991px) {
+  .main {
+    padding: 40px;
+  }
+  .main .contenedor {
+    flex-direction: column;
+  }
+  .main .contenedor .comun {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .main .contenedor .comun.nosotros,
+  .linkSecundarios,
+  .contactos {
+    width: 100%;
+  }
+  .linkSecundarios {
+    padding-left: 0;
+  }
+  .linkSecundarios ul li a {
+    padding-left: 20px;
+  }
+  .linkSecundarios ul li a.uno {
+    margin-top: 20px;
+  }
+  .linkSecundarios ul li a:before {
+    left: 0px;
+  }
+  .copyrightTexto {
+    padding: 8px 40px;
+  }
+}
+
 /* [id="contacto"] {
   scroll-margin-top: 1ex;
 } */
 
-.footer {
+/* .footer {
   width: 100%;
   max-width: 1200px;
   min-height: var(--section-height);
@@ -2022,11 +2274,6 @@ footer .container .sec.aboutus p {
   opacity: 0.5;
 }
 
-/* .contact {
-  width: calc(35% - 60px);
-  margin-right: 0 !important;
-} */
-
 .contact .info {
   position: relative;
 }
@@ -2084,4 +2331,4 @@ footer .container .sec.aboutus p {
   font-weight: bold;
   color: var(--color-pagina);
   font-style: italic;
-}
+} */
