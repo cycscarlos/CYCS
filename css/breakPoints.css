@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 768px) {
   body {
-    max-width: 1024px;
+    max-width: 768px;
   }
   .cards,
   .servicios,
@@ -105,6 +105,7 @@
     line-height: 40px;
     color: var(--color-texto);
     align-self: center;
+    background-color: transparent;
   }
   .clients .title h2 span {
     display: none;
@@ -133,6 +134,7 @@
     font-size: var(--biggest-font-size);
     line-height: 40px;
     color: var(--color-texto);
+    background-color: transparent;
   }
   .galeria-titulo span {
     display: none;
@@ -147,6 +149,20 @@
   .footer {
     font-family: var(--font-footer);
   }
+  .main .contenedor {
+    background-color: var(--footer-bg-color);
+  }
+  .main .contenedor h2:before {
+    left: 5px;
+  }
+  .main .contenedor h2,
+  .main .contenedor .nosotros p,
+  .contactos .informacion li span:nth-child(1),
+  .contactos .informacion li span,
+  .contactos .informacion li a {
+    padding: 5px;
+    color: var(--footer-text-color);
+  }
   .socialIcons {
     display: none;
   }
@@ -159,33 +175,7 @@
   .linkSecundarios {
     display: none;
   }
-  /* .linkSecundarios ul li a {
-    font-size: var(--smaller-font-size);
-  }
 
-  .linkSecundarios ul li a.uno::before {
-    top: 45px;
-  }
-
-  .linkSecundarios ul li a.dos::before {
-    top: 80px;
-  }
-
-  .linkSecundarios ul li a.tres::before {
-    top: 120px;
-  }
-
-  .linkSecundarios ul li a.cuatro::before {
-    top: 160px;
-  }
-
-  .linkSecundarios ul li a.cinco::before {
-    top: 195px;
-  }
-
-  .linkSecundarios ul li a.seis::before {
-    top: 230px;
-  } */
   .contactos .informacion li span:nth-child(1) {
     /* font-size: 20px; */
     font-size: var(--normal-font-size);
@@ -220,6 +210,7 @@
   .servicesRD .title h2 {
     font-family: var(--font-titulos);
     color: var(--color-texto);
+    background-color: transparent;
   }
 
   .servicesRD h3 {
@@ -270,3 +261,78 @@
     font-size: var(--normal-font-size);
   }
 }
+
+/*: Navigation Menu & Dark Theme MEDIA QUERIES  */
+
+/* Estilos para dispositivos mayores a 768px -iPads y Desktops */
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav__link {
+    color: var(--white-color);
+    text-transform: initial;
+  }
+  .nav__link:hover {
+    color: #999;
+    opacity: 0.7;
+  }
+  .nav__dark {
+    position: initial;
+  }
+  .nav__menu {
+    display: flex;
+    column-gap: 1rem;
+  }
+  .nav__list {
+    flex-direction: row;
+    /* column-gap: 4rem; */
+    column-gap: 1.5rem; /* Espacio entre los enlaces del Menu Nav */
+  }
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+  .change-theme-name {
+    display: none;
+  }
+  .change-theme {
+    color: var(--white-color);
+  }
+}
+
+/*# For large devices */
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/*# For tall screens on mobiles y desktop*/
+@media screen and (min-height: 721px) {
+  body {
+    margin: 0;
+  }
+}
+
+/** Hidden styles for video on mobiles*/
+/*# --------------------------------- */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .nav__logo,
+  .nav__toggle {
+    color: var(--white-color);
+  }
+}
+

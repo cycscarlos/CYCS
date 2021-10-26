@@ -41,6 +41,8 @@
   --title-color: hsl(var(--hue-color), 100%, 18%);
   --text-color: hsl(var(--hue-color), 24%, 35%);
   --text-color-light: hsl(var(--hue-color), 8%, 60%);
+  --footer-text-color: #fff;
+  --footer-bg-color: rgba(40, 60, 72, 0.5);
   --white-color: #fff;
 
   /*_ Font weight */
@@ -109,6 +111,8 @@ body.dark-theme {
     rgba(22, 34, 39, 1) 0%,
     rgba(22, 34, 39, 0) 100%
   );
+  --footer-text-color: hsl(200, 52%, 32%);
+  --footer-bg-color: rgba(0, 0, 0, 0.9);
 }
 
 /*: General styles */
@@ -225,8 +229,6 @@ input {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  /* margin-left: var(--mb-1);
-  margin-right: var(--mb-1); */
 }
 
 .grid {
@@ -244,10 +246,11 @@ input {
   bottom: 4rem;
 }
 
-.change-theme,
+/* .change-theme,
 .change-theme-name {
   color: var(--text-color);
-}
+  color: white;
+} */
 
 .change-theme {
   cursor: pointer;
@@ -342,12 +345,21 @@ input {
 }
 .nav__link:hover {
   opacity: 0.5;
-  /* color: var(--color-pagina); */
 }
 .nav__toggle,
 .nav__close {
   display: none;
 }
+.nav-dark {
+  position: initial;
+}
+/* .change-theme-name {
+  display: none;
+} */
+.change-theme {
+  color: white;
+}
+
 .oculto__servicesRD {
   display: none;
 }
@@ -369,23 +381,20 @@ input {
     box-shadow: -1px 0 4px hsla(var(--hue-color), 64%, 15%, 0.15);
     padding: 3rem;
     transition: 1s;
-    /*# Configuración temporal, solo al inicio*/
-    /*right: 0; */
-    /*# Ocultamos el menu y se manipula con JS en conjunto con la clase "show-menu" */
+    /** Configuración temporal, solo al inicio*/
+    /* right: 0; */
+    /** Ocultamos el menu y se manipula con JS en conjunto con la clase "show-menu" */
     right: -100%;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
+    transition: 0.4s;
   }
   .nav {
     padding: 0 20px;
   }
-  .nav__list {
+  /* .nav__list {
     display: flex;
     flex-direction: row;
     row-gap: 2.5rem;
-  }
+  } */
   .nav__close {
     display: block;
     position: absolute;
@@ -419,6 +428,9 @@ input {
     opacity: 0.65;
     color: var(--color-texto);
   }
+  /* .nav__dark {
+    position: initial;
+  } */
   .oculto__services {
     visibility: hidden;
   }
@@ -788,6 +800,7 @@ h2.elegantshadow {
 .servicios .title h2 {
   font-family: var(--font-titulos);
   color: var(--color-texto);
+  background-color: transparent;
 }
 .servicios .textBx {
   position: relative;
@@ -1078,6 +1091,7 @@ h2.elegantshadow {
 .security .title h2 {
   font-family: var(--font-titulos);
   color: var(--color-texto);
+  background-color: transparent;
 }
 .security .row {
   position: relative;
@@ -1206,6 +1220,7 @@ h2.elegantshadow {
 .ctrlAcceso .title h2 {
   font-family: var(--font-titulos);
   color: var(--color-texto);
+  background-color: transparent;
 }
 .ctrlAcceso .row {
   position: relative;
@@ -1322,6 +1337,7 @@ h2.elegantshadow {
 .telco .title h2 {
   font-family: var(--font-titulos);
   color: var(--color-texto);
+  background-color: transparent;
 }
 .telco .row {
   position: relative;
@@ -1430,6 +1446,7 @@ h2.elegantshadow {
 .clients .title h2 {
   font-family: var(--font-titulos);
   color: var(--color-texto);
+  background-color: transparent;
 }
 .clients .title h2 span {
   font-size: 0.5em;
@@ -1542,6 +1559,7 @@ h2.elegantshadow {
   font-weight: 700;
   font-family: var(--font-titulos);
   color: var(--color-texto);
+  background-color: transparent;
 }
 
 .galeria-titulo span {
@@ -1709,10 +1727,11 @@ h2.elegantshadow {
 
   color: var(--color-texto);
   padding: 0;
+  background-color: transparent;
 }
 
 .aboutUs .titulo span {
-  color: var(--color-blanco);
+  color: var(--color-texto);
   opacity: 0.5;
 }
 
@@ -1870,7 +1889,7 @@ h2.elegantshadow {
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
-  /* background-color: rgb(40, 60, 72, 0.5); */
+  background-color: var(--footer-bg-color);
 }
 .main .contenedor .comun {
   margin-right: 30px;
@@ -1898,9 +1917,7 @@ h2.elegantshadow {
   text-align: justify;
   line-height: 24px;
   font-size: 12px;
-}
-.main p {
-  color: #fff;
+  color: var(--footer-text-color);
 }
 .socialIcons {
   margin-top: 20px;
@@ -1957,7 +1974,7 @@ h2.elegantshadow {
   list-style: none;
 }
 .linkSecundarios ul li a {
-  color: #fff;
+  color: var(--footer-text-color);
   text-decoration: none;
   margin-bottom: 20px;
   display: inline-block;
@@ -2018,22 +2035,22 @@ h2.elegantshadow {
   margin-bottom: 16px;
 }
 .contactos .informacion li span:nth-child(1) {
-  color: #fff;
+  color: var(--footer-text-color);
   margin-right: 10px;
   font-size: 20px;
 }
 .contactos .informacion li span {
-  color: #fff;
+  color: var(--footer-text-color);
   line-height: 24px;
   font-size: 12px;
 }
 .contactos .informacion li a {
-  color: #fff;
+  color: var(--footer-text-color);
   text-decoration: none;
   font-size: 14px;
 }
 .contactos .informacion li a:hover {
-  color: #fff;
+  color: var(--footer-text-color);
 }
 .copyrightTexto {
   width: 100%;
@@ -2050,7 +2067,7 @@ h2.elegantshadow {
   font-style: italic;
 }
 
-/*: Responsive Design */
+/*: Footer Responsive Design */
 
 @media (max-width: 991px) {
   /** Footer */
