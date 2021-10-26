@@ -99,8 +99,8 @@
 body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 54%, 12%);
   --title-color: hsl(var(--hue-color), 24%, 95%);
-  --text-color: #999;
-  /* --text-color: hsl(var(--hue-color), 8%, 75%); */
+  /* --text-color: #999; */
+  --text-color: hsl(var(--hue-color), 8%, 75%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
   --body-color: hsl(var(--hue-color), 29%, 12%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
@@ -154,9 +154,9 @@ body.dark-theme {
 }
 /*: Base styles  */
 
-/* [id] {
+[id] {
   scroll-margin-top: 2ex;
-} */
+}
 
 section {
   padding-top: 4.5rem; /* 72px */
@@ -246,12 +246,11 @@ input {
   left: 3rem;
   bottom: 4rem;
 }
-
-/* .change-theme,
+/* No se si hace falta esta definición... Ha estado comentada muchas veces! */
+.change-theme,
 .change-theme-name {
   color: var(--text-color);
-  color: white;
-} */
+}
 
 .change-theme {
   cursor: pointer;
@@ -343,7 +342,6 @@ input {
   text-decoration: none;
   cursor: pointer;
   font-family: var(--font-texto);
-  /* border: 1px solid red; */
 }
 .nav__link:hover {
   opacity: 0.5;
@@ -359,7 +357,7 @@ input {
   display: none;
 } */
 .change-theme {
-  color: white;
+  color: var(--text-color);
 }
 
 .oculto__servicesRD {
@@ -463,6 +461,9 @@ input {
 }
 .scroll-header .nav__link:hover {
   opacity: 0.65;
+}
+.scroll-header .change-theme {
+  color: var(--text-color);
 }
 
 /* Marca el navegador activo en un momento dado */
@@ -1183,7 +1184,8 @@ h2.elegantshadow {
 .security .slideshow2 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: var(--color-blanco);
+  /* background: var(--color-blanco); */
+  background: transparent;
 }
 .security .slideshow2 .swiper-slide img {
   border-radius: 5px;
@@ -1313,7 +1315,8 @@ h2.elegantshadow {
 .ctrlAcceso .slideshow2 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  /* background: #fff; */
+  background: transparent;
 }
 .ctrlAcceso .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
@@ -1418,7 +1421,8 @@ h2.elegantshadow {
 .telco .slideshow2 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: transparent;
+  /* background: #fff; */
 }
 .telco .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
