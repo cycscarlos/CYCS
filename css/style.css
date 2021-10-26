@@ -342,6 +342,7 @@ input {
   text-decoration: none;
   cursor: pointer;
   font-family: var(--font-texto);
+  /* border: 1px solid red; */
 }
 .nav__link:hover {
   opacity: 0.5;
@@ -364,7 +365,7 @@ input {
   display: none;
 }
 
-/*: Mobile responsive design styles */
+/*: Estilos Responsive Design para disposivos "Smartphone o iPad" solamente!!! */
 @media screen and (max-width: 768px) {
   .nav__logo {
     font-size: var(--h2-font-size);
@@ -423,6 +424,8 @@ input {
     color: var(--color-texto);
     font-weight: var(--font-semi-bold);
     text-transform: uppercase;
+    margin: 0 10px;
+    /* border: 1px solid black; */
   }
   .nav__link:hover {
     opacity: 0.65;
@@ -1551,10 +1554,10 @@ h2.elegantshadow {
   min-height: var(--section-height);
   margin: auto;
   padding: 10px;
-  background: var(--color-blanco);
+  /* background: var(--color-blanco); */
 }
 
-.galeria-titulo {
+/* .galeria-titulo {
   text-align: center;
   font-weight: 700;
   font-family: var(--font-titulos);
@@ -1565,6 +1568,21 @@ h2.elegantshadow {
 .galeria-titulo span {
   font-size: 0.5em;
   color: var(--color-texto);
+} */
+
+.galeria .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.galeria .title h2 {
+  font-family: var(--font-titulos);
+  color: var(--color-texto);
+  background-color: transparent;
+}
+.galeria .title h2 span {
+  font-size: 0.5em;
 }
 
 .container_Galeria {

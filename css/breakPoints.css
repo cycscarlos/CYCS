@@ -128,7 +128,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .galeria-titulo {
+  /* .galeria-titulo {
     font-family: var(--font-titulos);
     font-weight: 700;
     font-size: var(--biggest-font-size);
@@ -138,8 +138,29 @@
   }
   .galeria-titulo span {
     display: none;
+    font-size: 0.75rem;
+    line-height: 40px;
+  } */
+
+  .galeria .title h2 {
+    font-family: var(--font-titulos);
+    font-weight: 700;
+    font-size: var(--biggest-font-size);
+    line-height: 40px;
+    color: var(--color-texto);
+    align-self: center;
+    background-color: transparent;
+  }
+  .galeria .title h2 span {
+    display: none;
     /* font-size: 0.75rem;
     line-height: 40px; */
+  }
+  .galeria .title {
+    margin: 0;
+  }
+  .galeria .scroll-title {
+    margin: 0;
   }
 
   /*: Footer     */
@@ -335,4 +356,3 @@
     color: var(--white-color);
   }
 }
-
