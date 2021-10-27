@@ -620,6 +620,9 @@
     left: 50px;
     font-size: 20px;
   }
+  .lista ul.secondaryUL li::before {
+    content: "";
+  }
 }
 
 /*# For large devices */
