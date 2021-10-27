@@ -259,7 +259,7 @@
     font-weight: 700;
     font-size: var(--normal-font-size);
   }
-  .servicesRD p {
+  /* .servicesRD p {
     text-align: center;
     font-size: var(--normal-font-size);
     color: var(--color-texto);
@@ -268,18 +268,77 @@
     color: var(--color-pagina);
     font-weight: 700;
     font-size: 1em;
+  } */
+
+  .servicesRD .mainUL {
+    text-align: left;
+    font-size: var(--normal-font-size);
+    color: var(--color-texto);
+    list-style: none;
+    line-height: 30px;
   }
-  .servicesRD .secondaryUL {
-    text-align: center;
+
+  .servicesRD .mainUL .secondaryUL {
+    text-align: left;
+    margin-left: 30px;
     font-size: var(--normal-font-size);
     color: var(--color-texto);
     list-style: square;
     line-height: 30px;
   }
   .servicesRD .secondaryUL li span {
-    color: var(--color-pagina);
     font-weight: 700;
+    color: var(--color-pagina);
     font-size: var(--normal-font-size);
+  }
+
+  .lista ul.mainUL li::before {
+    content: "|";
+    position: absolute;
+    left: 30px;
+    font-size: 20px;
+  }
+  .lista ul.secondaryUL li::before {
+    content: "";
+  }
+
+  .servicesRD .lista li:nth-child(1)::before {
+    color: #ff4900;
+  }
+
+  .servicesRD .lista li:nth-child(2)::before {
+    color: #00ffff;
+  }
+
+  .servicesRD .lista li:nth-child(3)::before {
+    color: #b80070;
+  }
+
+  .servicesRD .lista li:nth-child(4)::before {
+    color: #00b870;
+  }
+
+  .servicesRD .lista li:nth-child(5)::before {
+    color: #7000b8;
+  }
+
+  .servicesRD .lista li:nth-child(6)::before {
+    color: #70b800;
+  }
+
+  .servicesRD .lista li:nth-child(7)::before {
+    color: #ff0000;
+  }
+  .servicesRD .lista li:nth-child(12)::before {
+    color: #ff4900;
+  }
+
+  .servicesRD .lista li:nth-child(13)::before {
+    color: #00ffff;
+  }
+
+  .servicesRD .lista li:nth-child(14)::before {
+    color: #00b870;
   }
 }
 
