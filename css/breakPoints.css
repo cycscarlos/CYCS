@@ -2,9 +2,6 @@
 /*: Responsive styles smartphone */
 /* -------------------------------------- */
 @media screen and (max-width: 1024px) {
-  body {
-    max-width: 1024px;
-  }
   .cards,
   .servicios,
   .security,
@@ -14,13 +11,130 @@
   .aboutUs,
   .profile {
     display: none;
+  }
+  /** Responsive Design -Services      */
+
+  .servicesRD {
+    position: relative;
+    width: 100%;
+    min-height: var(--section-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .servicesRD .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .servicesRD .title h2 {
+    font-family: var(--font-titulos);
+    color: var(--color-texto);
+    background-color: transparent;
+  }
+
+  .servicesRD h3 {
+    color: var(--color-texto);
+    font-size: var(--h3-font-size);
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .servicesRD span {
+    color: var(--color-pagina);
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .servicesRD ul {
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--color-texto);
+    text-decoration: none;
+    list-style: none;
+    line-height: 45px;
+  }
+  .servicesRD ul li span {
+    color: var(--color-pagina);
+    font-weight: 700;
+    font-size: var(--normal-font-size);
+  }
+
+  .servicesRD .mainUL {
+    text-align: left;
+    font-size: var(--normal-font-size);
+    color: var(--color-texto);
+    list-style: none;
+    line-height: 30px;
+  }
+
+  .servicesRD .mainUL .secondaryUL {
+    text-align: left;
+    margin-left: 30px;
+    font-size: var(--normal-font-size);
+    color: var(--color-texto);
+    list-style: square;
+    line-height: 30px;
+  }
+  .servicesRD .secondaryUL li span {
+    font-weight: 700;
+    color: var(--color-pagina);
+    font-size: var(--normal-font-size);
+  }
+
+  .lista ul.mainUL li::before {
+    content: "|";
+    position: absolute;
+    left: 200px;
+    font-size: 20px;
+  }
+  .lista ul.secondaryUL li::before {
+    content: "";
+  }
+
+  .servicesRD .lista li:nth-child(1)::before {
+    color: #ff4900;
+  }
+
+  .servicesRD .lista li:nth-child(2)::before {
+    color: #00ffff;
+  }
+
+  .servicesRD .lista li:nth-child(3)::before {
+    color: #b80070;
+  }
+
+  .servicesRD .lista li:nth-child(4)::before {
+    color: #00b870;
+  }
+
+  .servicesRD .lista li:nth-child(5)::before {
+    color: #7000b8;
+  }
+
+  .servicesRD .lista li:nth-child(6)::before {
+    color: #70b800;
+  }
+
+  .servicesRD .lista li:nth-child(7)::before {
+    color: #ff0000;
+  }
+  .servicesRD .lista li:nth-child(12)::before {
+    color: #ff4900;
+  }
+
+  .servicesRD .lista li:nth-child(13)::before {
+    color: #00ffff;
+  }
+
+  .servicesRD .lista li:nth-child(14)::before {
+    color: #00b870;
   }
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    max-width: 768px;
-  }
   .cards,
   .servicios,
   .security,
@@ -31,11 +145,132 @@
   .profile {
     display: none;
   }
-}
-@media screen and (max-width: 414px) {
-  body {
-    max-width: 414px;
+  /** Responsive Design -Services      */
+
+  .servicesRD {
+    position: relative;
+    width: 100%;
+    min-height: var(--section-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
+
+  .servicesRD .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .servicesRD .title h2 {
+    font-family: var(--font-titulos);
+    color: var(--color-texto);
+    background-color: transparent;
+  }
+
+  .servicesRD h3 {
+    color: var(--color-texto);
+    font-size: var(--h3-font-size);
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .servicesRD span {
+    color: var(--color-pagina);
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .servicesRD ul {
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--color-texto);
+    text-decoration: none;
+    list-style: none;
+    line-height: 45px;
+  }
+  .servicesRD ul li span {
+    color: var(--color-pagina);
+    font-weight: 700;
+    font-size: var(--normal-font-size);
+  }
+
+  .servicesRD .mainUL {
+    text-align: left;
+    font-size: var(--normal-font-size);
+    color: var(--color-texto);
+    list-style: none;
+    line-height: 30px;
+  }
+
+  .servicesRD .mainUL .secondaryUL {
+    text-align: left;
+    margin-left: 30px;
+    font-size: var(--normal-font-size);
+    color: var(--color-texto);
+    list-style: square;
+    line-height: 30px;
+  }
+  .servicesRD .secondaryUL li span {
+    font-weight: 700;
+    color: var(--color-pagina);
+    font-size: var(--normal-font-size);
+  }
+
+  .lista ul.mainUL li::before {
+    content: "|";
+    position: absolute;
+    left: 160px;
+    font-size: 20px;
+  }
+  .lista ul.secondaryUL li::before {
+    content: "";
+  }
+
+  .servicesRD .lista li:nth-child(1)::before {
+    color: #ff4900;
+  }
+
+  .servicesRD .lista li:nth-child(2)::before {
+    color: #00ffff;
+  }
+
+  .servicesRD .lista li:nth-child(3)::before {
+    color: #b80070;
+  }
+
+  .servicesRD .lista li:nth-child(4)::before {
+    color: #00b870;
+  }
+
+  .servicesRD .lista li:nth-child(5)::before {
+    color: #7000b8;
+  }
+
+  .servicesRD .lista li:nth-child(6)::before {
+    color: #70b800;
+  }
+
+  .servicesRD .lista li:nth-child(7)::before {
+    color: #ff0000;
+  }
+  .servicesRD .lista li:nth-child(12)::before {
+    color: #ff4900;
+  }
+
+  .servicesRD .lista li:nth-child(13)::before {
+    color: #00ffff;
+  }
+
+  .servicesRD .lista li:nth-child(14)::before {
+    color: #00b870;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  /* body {
+    max-width: 414px;
+  } */
   .cards,
   .servicios,
   .security,
@@ -215,6 +450,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .servicesRD .title h2 {
     font-family: var(--font-titulos);
     color: var(--color-texto);
@@ -253,7 +489,14 @@
     color: var(--color-texto);
     list-style: none;
     line-height: 30px;
+    padding: 60px;
+    margin-left: 30px;
   }
+
+  /* .servicesRD .mainUL .secondaryUL {
+    padding: 0;
+    margin-left: -10px;
+  } */
 
   .servicesRD .mainUL .secondaryUL {
     text-align: left;
@@ -262,6 +505,8 @@
     color: var(--color-texto);
     list-style: square;
     line-height: 30px;
+    padding: 0;
+    margin-left: -10px;
   }
   .servicesRD .secondaryUL li span {
     font-weight: 700;
@@ -272,7 +517,7 @@
   .lista ul.mainUL li::before {
     content: "|";
     position: absolute;
-    left: 30px;
+    left: 70px;
     font-size: 20px;
   }
   .lista ul.secondaryUL li::before {
@@ -321,23 +566,24 @@
 
 /*: iPhone 6/7/8 devices */
 @media screen and (max-width: 375px) {
+  /* body {
+    max-width: 375px;
+  } */
   .servicesRD .title {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .servicesRD .title2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
   .servicesRD .title h2 {
     margin-left: 0;
     padding: 0;
     text-align: center;
-  }
-
-  .servicesRD h3 {
-    margin-left: 0;
-    padding: 0;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
   }
 
   .servicesRD .mainUL {
@@ -358,6 +604,21 @@
   }
   .lista ul.secondaryUL li::before {
     content: "";
+  }
+  .servicesRD .mainUL h3 {
+    padding: 0;
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+/*: Samsung Galaxy J2 devices */
+@media screen and (max-width: 540px) {
+  .lista ul.mainUL li::before {
+    content: "|";
+    position: absolute;
+    left: 50px;
+    font-size: 20px;
   }
 }
 
