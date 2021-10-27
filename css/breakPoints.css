@@ -128,19 +128,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  /* .galeria-titulo {
-    font-family: var(--font-titulos);
-    font-weight: 700;
-    font-size: var(--biggest-font-size);
-    line-height: 40px;
-    color: var(--color-texto);
-    background-color: transparent;
-  }
-  .galeria-titulo span {
-    display: none;
-    font-size: 0.75rem;
-    line-height: 40px;
-  } */
 
   .galeria .title h2 {
     font-family: var(--font-titulos);
@@ -259,16 +246,6 @@
     font-weight: 700;
     font-size: var(--normal-font-size);
   }
-  /* .servicesRD p {
-    text-align: center;
-    font-size: var(--normal-font-size);
-    color: var(--color-texto);
-  }
-  .servicesRD p span {
-    color: var(--color-pagina);
-    font-weight: 700;
-    font-size: 1em;
-  } */
 
   .servicesRD .mainUL {
     text-align: left;
@@ -342,6 +319,56 @@
   }
 }
 
+/*: iPhone 6/7/8 devices */
+@media screen and (max-width: 375px) {
+  .servicesRD .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .servicesRD .title h2 {
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .servicesRD h3 {
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .servicesRD .mainUL {
+    text-align: left;
+    padding: 60px;
+    margin-left: 30px;
+  }
+  .servicesRD .mainUL .secondaryUL {
+    padding: 0;
+    margin-left: -10px;
+  }
+
+  .lista ul.mainUL li::before {
+    content: "|";
+    position: absolute;
+    left: 70px;
+    font-size: 20px;
+  }
+  .lista ul.secondaryUL li::before {
+    content: "";
+  }
+}
+
+/*# For large devices */
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /*: Navigation Menu & Dark Theme MEDIA QUERIES  */
 
 /* Estilos para dispositivos mayores a 768px -iPads y Desktops */
@@ -383,14 +410,6 @@
   }
   .change-theme {
     color: var(--white-color);
-  }
-}
-
-/*# For large devices */
-@media screen and (min-width: 1024px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 

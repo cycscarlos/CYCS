@@ -516,7 +516,8 @@ input {
   position: fixed;
   display: block;
   top: 225px;
-  left: 20px;
+  /* left: 20px; */
+  right: 10px;
   z-index: 10;
 }
 .social_Icon [class*="fa-"] {
@@ -566,7 +567,8 @@ input {
 .banner_Icon {
   position: fixed;
   top: 72%;
-  left: 20px;
+  /* left: 20px; */
+  right: 5px;
   display: flex;
   justify-content: flex-end;
   z-index: 10;
@@ -588,7 +590,8 @@ input {
 .whatsapp_Texto span {
   position: fixed;
   top: 80%;
-  left: 20px;
+  /* left: 20px; */
+  right: 5px;
   width: 200px;
   background-color: var(--color-pagina);
   color: var(--color-blanco);
