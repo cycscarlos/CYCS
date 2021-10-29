@@ -575,11 +575,15 @@
 /*: iPhone 6/7/8 devices */
 @media screen and (max-width: 375px) {
   .nav__menu {
-    width: 80%;
+    width: 70%;
+    padding: 1rem;
   }
-  .nav__link {
-    margin: 0 20px;
+  /* Espacio entre los enlaces del Menu Nav */
+  .nav__list {
+    row-gap: 2.5rem;
+    column-gap: 2.5rem;
   }
+
   /* h2.elegantshadow,
   .clients .title h2,
   .galeria .title h2,
@@ -679,7 +683,6 @@
   }
   .nav__list {
     flex-direction: row;
-    /* column-gap: 4rem; */
     column-gap: 1.5rem; /* Espacio entre los enlaces del Menu Nav */
   }
   .nav__toggle,
