@@ -584,7 +584,8 @@
   .clients .title h2,
   .galeria .title h2,
   .servicesRD .title h2,
-  .servicesRD .lista,
+  .servicesRD h3,
+  .servicesRD .mainUL,
   .main .contenedor h2,
   .main .contenedor .nosotros p,
   .contactos .informacion li span:nth-child(1),
@@ -592,14 +593,14 @@
   .contactos .informacion li a {
     color: var(--white-color);
   }
+  .servicesRD .mainUL .secondaryUL {
+    color: var(--text-color);
+  }
   .main .contenedor {
-    background-color: transparent;
+    background-color: var(--footer-bg-color);
   }
   .galeria .title {
-    margin: 20px;
-  }
-  .galeria .scroll-title {
-    margin: 0;
+    margin: 30px;
   }
   .servicesRD .title {
     display: flex;
@@ -624,7 +625,7 @@
     margin-left: 30px;
   }
   .servicesRD .mainUL .secondaryUL {
-    padding: 0;
+    padding-left: 30px;
     margin-left: -10px;
   }
 
