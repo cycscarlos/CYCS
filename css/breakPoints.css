@@ -578,14 +578,15 @@
 /*: iPhone 6/7/8 devices */
 @media screen and (max-width: 375px) {
   .nav__logo span {
-    color: var(--color-pagina);
+    color: var(--white-color);
   }
   h2.elegantshadow,
   .clients .title h2,
   .galeria .title h2,
   .servicesRD .title h2,
-  .servicesRD h3,
-  .servicesRD .mainUL,
+  .servicesRD .lista h3,
+  .servicesRD .lista .mainUL li,
+  .servicesRD .lista .title2 h3,
   .main .contenedor h2,
   .main .contenedor .nosotros p,
   .contactos .informacion li span:nth-child(1),
@@ -596,9 +597,7 @@
   .servicesRD .mainUL .secondaryUL {
     color: var(--text-color);
   }
-  .main .contenedor {
-    background-color: var(--footer-bg-color);
-  }
+
   .galeria .title {
     margin: 30px;
   }
@@ -625,7 +624,7 @@
     margin-left: 30px;
   }
   .servicesRD .mainUL .secondaryUL {
-    padding-left: 30px;
+    padding-left: 0;
     margin-left: -10px;
   }
 
