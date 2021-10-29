@@ -99,7 +99,6 @@
 body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 54%, 12%);
   --title-color: hsl(var(--hue-color), 24%, 95%);
-  /* --text-color: #999; */
   --text-color: hsl(var(--hue-color), 8%, 75%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
   --body-color: hsl(var(--hue-color), 29%, 12%);
@@ -112,7 +111,8 @@ body.dark-theme {
     rgba(22, 34, 39, 1) 0%,
     rgba(22, 34, 39, 0) 100%
   );
-  --footer-text-color: hsl(200, 52%, 32%); 
+  --footer-text-color: hsl(200, 52%, 32%);
+  --color-texto-RD: #fff;
 }
 
 /*: General styles */
@@ -438,7 +438,6 @@ input {
   .oculto__servicesRD {
     display: block;
   }
-
 }
 
 /*: Change background header JS function */
