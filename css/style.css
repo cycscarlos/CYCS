@@ -111,7 +111,8 @@ body.dark-theme {
     rgba(22, 34, 39, 1) 0%,
     rgba(22, 34, 39, 0) 100%
   );
-  --footer-text-color: hsl(200, 52%, 32%);
+  /* --footer-text-color: hsl(200, 52%, 32%); */
+  --footer-text-color: #fff;
   --color-texto-RD: #fff;
 }
 

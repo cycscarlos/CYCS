@@ -281,9 +281,6 @@
 }
 
 @media screen and (max-width: 414px) {
-  /* body {
-    max-width: 414px;
-  } */
   .cards,
   .servicios,
   .security,
@@ -577,9 +574,9 @@
 
 /*: iPhone 6/7/8 devices */
 @media screen and (max-width: 375px) {
-  /* .nav__logo span {
-    color: var(--white-color);
-  } */
+  .nav__menu {
+    width: 80%;
+  }
   .nav__link {
     margin: 0 20px;
   }
