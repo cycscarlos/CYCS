@@ -267,6 +267,19 @@
   }
 }
 
+/*: Samsung Galaxy J2 devices */
+@media screen and (max-width: 540px) {
+  .lista ul.mainUL li::before {
+    content: "|";
+    position: absolute;
+    left: 50px;
+    font-size: 20px;
+  }
+  .lista ul.secondaryUL li::before {
+    content: "";
+  }
+}
+
 @media screen and (max-width: 414px) {
   /* body {
     max-width: 414px;
@@ -375,8 +388,6 @@
   }
   .galeria .title h2 span {
     display: none;
-    /* font-size: 0.75rem;
-    line-height: 40px; */
   }
   .galeria .title {
     margin: 0;
@@ -566,9 +577,30 @@
 
 /*: iPhone 6/7/8 devices */
 @media screen and (max-width: 375px) {
-  /* body {
-    max-width: 375px;
-  } */
+  .nav__logo span {
+    color: var(--color-pagina);
+  }
+  h2.elegantshadow,
+  .clients .title h2,
+  .galeria .title h2,
+  .servicesRD .title h2,
+  .servicesRD .lista,
+  .main .contenedor h2,
+  .main .contenedor .nosotros p,
+  .contactos .informacion li span:nth-child(1),
+  .contactos .informacion li span,
+  .contactos .informacion li a {
+    color: var(--white-color);
+  }
+  .main .contenedor {
+    background-color: transparent;
+  }
+  .galeria .title {
+    margin: 20px;
+  }
+  .galeria .scroll-title {
+    margin: 0;
+  }
   .servicesRD .title {
     display: flex;
     justify-content: center;
@@ -609,19 +641,6 @@
     padding: 0;
     margin-left: 0;
     justify-content: center;
-  }
-}
-
-/*: Samsung Galaxy J2 devices */
-@media screen and (max-width: 540px) {
-  .lista ul.mainUL li::before {
-    content: "|";
-    position: absolute;
-    left: 50px;
-    font-size: 20px;
-  }
-  .lista ul.secondaryUL li::before {
-    content: "";
   }
 }
 
