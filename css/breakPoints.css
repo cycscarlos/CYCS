@@ -354,8 +354,6 @@
   }
   .clients .title h2 span {
     display: none;
-    /* font-size: 0.75rem;
-    line-height: 40px; */
   }
   .clients .title {
     margin: 0;
@@ -710,11 +708,18 @@
   }
 }
 
-/** Hidden styles for video on mobiles*/
-/*# --------------------------------- */
 @media screen and (min-width: 0px) and (max-width: 768px) {
+  section {
+    padding-top: 0;
+    padding-bottom: 1.25rem; /* 20px */
+  }
   .nav__logo,
   .nav__toggle {
     color: var(--white-color);
+  }
+  .servicesRD .mainUL {
+    text-align: left;
+    padding: 60px;
+    margin-left: 30px;
   }
 }

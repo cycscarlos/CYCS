@@ -1862,6 +1862,10 @@ h2.elegantshadow {
   font-family: var(--font-texto);
 }
 
+.profile-details a {
+  text-decoration: underline;
+}
+
 .profile-img-section {
   position: relative;
   /*: Convertir el width de la línea de bloque a inline para que abarque solo el size de la foto */
