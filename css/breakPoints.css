@@ -8,8 +8,7 @@
   .ctrlAcceso,
   .telco,
   .muro,
-  .aboutUs,
-  .profile {
+  .aboutUs {
     display: none;
   }
   /** Responsive Design -Services      */
@@ -141,8 +140,7 @@
   .ctrlAcceso,
   .telco,
   .muro,
-  .aboutUs,
-  .profile {
+  .aboutUs {
     display: none;
   }
   /** Responsive Design -Services      */
@@ -278,6 +276,17 @@
   .lista ul.secondaryUL li::before {
     content: "";
   }
+  /*: Profile     */
+  .profile {
+    flex-direction: column;
+  }
+  .profile-title {
+    font-size: 25px;
+    margin: 10px 10px;
+  }
+  .profile-title span {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -287,8 +296,7 @@
   .ctrlAcceso,
   .telco,
   .muro,
-  .aboutUs,
-  .profile {
+  .aboutUs {
     display: none;
   }
 
@@ -389,6 +397,23 @@
   }
   .galeria .scroll-title {
     margin: 0;
+  }
+  /*: Profile     */
+  .profile {
+    flex-direction: column;
+  }
+  .profile-title {
+    font-size: 20px;
+    margin: 10px 10px;
+  }
+  .profile-title span {
+    font-size: 12px;
+  }
+  .profile-details {
+    font-size: 11px;
+    line-height: 1.6;
+    max-width: 450px;
+    margin: 0 20px;
   }
 
   /*: Footer     */
