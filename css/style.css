@@ -1865,6 +1865,10 @@ h2.elegantshadow {
 .profile-details a {
   text-decoration: underline;
 }
+.profile-details span {
+  font-size: 0.8em;
+  font-style: italic;
+}
 
 .profile-img-section {
   position: relative;
