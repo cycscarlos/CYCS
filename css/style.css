@@ -111,7 +111,6 @@ body.dark-theme {
     rgba(22, 34, 39, 1) 0%,
     rgba(22, 34, 39, 0) 100%
   );
-  /* --footer-text-color: hsl(200, 52%, 32%); */
   --footer-text-color: #fff;
   --color-texto-RD: #fff;
 }
@@ -596,9 +595,6 @@ input {
   background-color: var(--color-pagina);
   color: var(--color-blanco);
   padding: 5px 3px 5px 3px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
   border-radius: 15px;
   text-align: center;
   letter-spacing: 0.5px;
@@ -715,14 +711,14 @@ h2.elegantshadow {
   0%,
   100% {
     color: #fff;
-    flutter: blur(2px);
+    filter: blur(2px);
     text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
       0 0 80px #00b3ff;
   }
   5%,
   95% {
     color: var(--color-pagina);
-    flutter: blur(0px);
+    filter: blur(0px);
     text-shadow: none;
   }
 }
@@ -802,8 +798,9 @@ h2.elegantshadow {
   position: relative;
   width: 100%;
   max-width: 1200px;
+  height: 100vh;
   min-height: var(--section-height);
-  margin: auto;
+  margin: 0 auto;
 }
 .servicios .title h2 {
   font-family: var(--font-titulos);
@@ -815,8 +812,9 @@ h2.elegantshadow {
 }
 .servicios .clicText {
   position: absolute;
-  bottom: 2em;
-  left: 1em;
+  /* bottom: 5em; */
+  top: 50%;
+  left: 0.5em;
 }
 
 .servicios .clicText h6 {
@@ -851,13 +849,7 @@ h2.elegantshadow {
 .servicios .container-carrousel {
   width: 100%;
   position: absolute;
-  /* animation: rotar 90s infinite linear; */
-  animation-name: rotar;
-  animation-duration: 45s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-delay: 0.5s;
-  animation-play-state: running;
+  animation: rotar 45s infinite linear;
   transform-style: preserve-3d;
   z-index: 1;
 }
@@ -935,8 +927,8 @@ h2.elegantshadow {
 
 .lightbox {
   position: fixed;
-  top: 17.5rem;
-  right: 12.5rem;
+  top: 250px;
+  right: 100px;
   transition: transform 1.5s ease-in-out;
   transform: scale(0);
   z-index: 10;

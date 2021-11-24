@@ -5,7 +5,7 @@ const sr = ScrollReveal({
   // reset: true,
 });
 
-sr.reveal(`.cards, .security, .muro, .servicios, .footer`, {
+sr.reveal(`.cards, .security, .muro, .footer`, {
   origin: "top",
   interval: 100,
 });
