@@ -690,7 +690,8 @@
     height: calc(var(--header-height) + 1.5rem);
   }
   .nav__link {
-    color: var(--white-color);
+    /* color: var(--white-color); */
+    color: var(--color-logo);
     text-transform: initial;
   }
   .nav__link:hover {
@@ -716,7 +717,8 @@
     display: none;
   }
   .change-theme {
-    color: var(--white-color);
+    /* color: var(--white-color); */
+    color: var(--color-logo);
   }
 }
 
@@ -740,7 +742,8 @@
   }
   .nav__logo,
   .nav__toggle {
-    color: var(--white-color);
+    /* color: var(--white-color); */
+    color: var(--color-logo);
   }
   .servicesRD .mainUL {
     text-align: left;

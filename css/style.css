@@ -125,6 +125,8 @@ body.dark-theme {
   /* CYCS & Co website colors */
 
   --color-pagina: #ff4c00;
+  --color-logo: #9d8d6c;
+  --scroll-link-color: #124f88;
   --color-azulObscuro: #27607c;
   --color-azulMedio: #283c48;
   --color-azulClaro: #1e5271;
@@ -248,7 +250,8 @@ input {
 /* No se si hace falta esta definición... Ha estado comentada muchas veces! */
 .change-theme,
 .change-theme-name {
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: var(--color-logo);
 }
 
 .change-theme {
@@ -318,12 +321,13 @@ input {
 }
 
 .nav__logo {
-  color: var(--color-pagina);
+  color: var(--color-logo);
   text-transform: uppercase;
   font-size: var(--exception-font-size);
 }
 .nav__logo span {
-  color: var(--color-blanco);
+  /* color: var(--color-blanco); */
+  color: var(--color-logo);
   font-size: var(--normal-font-size);
   font-style: italic;
 }
@@ -337,7 +341,8 @@ input {
 .nav__link {
   font-size: var(--smaller-font-size);
   margin: 0 10px;
-  color: var(--color-blanco);
+  /* color: var(--color-blanco); */
+  color: var(--color-logo);
   text-decoration: none;
   cursor: pointer;
   font-family: var(--font-texto);
@@ -367,9 +372,11 @@ input {
 @media screen and (max-width: 768px) {
   .nav__logo {
     font-size: var(--h2-font-size);
+    color: var(--color-logo);
   }
   .nav__logo span {
     font-size: var(--minimal-font-size);
+    color: var(--color-logo);
   }
   .nav__menu {
     position: fixed;
@@ -400,12 +407,14 @@ input {
     top: 0.75rem;
     right: 1rem;
     font-size: 1.5rem;
-    color: var(--color-texto);
+    /* color: var(--color-texto); */
+    color: var(--color-logo);
     cursor: pointer;
   }
   .nav__toggle {
     display: block;
-    color: var(--white-color);
+    /* color: var(--white-color); */
+    color: var(--color-logo);
     text-transform: uppercase;
     font-size: var(--h2-font-size);
     cursor: pointer;
@@ -419,7 +428,8 @@ input {
     row-gap: 2.5rem;
   }
   .nav__link {
-    color: var(--color-texto);
+    /* color: var(--color-texto); */
+    color: var(--color-logo);
     font-weight: var(--font-semi-bold);
     text-transform: uppercase;
     margin: 0 10px;
@@ -427,7 +437,7 @@ input {
   }
   .nav__link:hover {
     opacity: 0.65;
-    color: var(--color-texto);
+    /* color: var(--color-texto); */
   }
   /* .nav__dark {
     position: initial;
@@ -447,22 +457,26 @@ input {
   box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, 0.15);
 }
 .scroll-header .nav__logo {
-  color: var(--color-pagina);
+  /* color: var(--color-pagina); */
+  color: var(--color-logo);
 }
 .scroll-header .nav__logo span {
-  color: var(--color-texto);
+  /* color: var(--color-texto); */
+  color: var(--color-logo);
 }
 .scroll-header .nav__toggle {
   color: var(--color-texto);
 }
 .scroll-header .nav__link {
-  color: var(--color-texto);
+  /* color: var(--color-texto); */
+  color: var(--scroll-link-color);
 }
 .scroll-header .nav__link:hover {
   opacity: 0.65;
 }
 .scroll-header .change-theme {
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: var(--scroll-link-color);
 }
 
 /* Marca el navegador activo en un momento dado */
@@ -495,7 +509,8 @@ input {
 
 .change-theme,
 .change-theme-name {
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: var(--color-logo);
 }
 
 .change-theme {
@@ -1680,7 +1695,8 @@ h2.elegantshadow {
   text-align: center;
 }
 .muro-lema {
-  color: var(--color-pagina);
+  /* color: var(--color-pagina); */
+  color: var(--color-logo);
   font-size: 2.5em;
   font-family: var(--font-muro);
 }
@@ -1848,7 +1864,7 @@ h2.elegantshadow {
   font-weight: 100;
   line-height: 1.6;
   letter-spacing: normal;
-  max-width: 450px;
+  max-width: 550px;
   margin: 20px 0;
   color: var(--color-texto);
   font-family: var(--font-texto);
@@ -1876,7 +1892,8 @@ h2.elegantshadow {
 }
 
 .profile-img-line {
-  background-color: var(--color-pagina);
+  /* background-color: var(--color-pagina); */
+  background-color: var(--color-logo);
   height: 15px;
   position: absolute;
   width: 100%;
@@ -2082,14 +2099,16 @@ h2.elegantshadow {
   width: 100%;
   padding: 8px 100px;
   text-align: center;
-  color: #999;
+  /* color: #999; */
+  color: white;
   /* background-color: rgba(30, 82, 113, 1); */
   background-color: var(--color-header);
   font-size: 12px;
 }
 .copyrightTexto span {
   font-weight: 100;
-  color: #ff4900;
+  /* color: #ff4900; */
+  color: var(--color-logo);
   font-style: italic;
 }
 
