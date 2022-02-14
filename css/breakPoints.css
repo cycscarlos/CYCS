@@ -605,8 +605,8 @@
   .nav__list {
     /* row-gap: 2.5rem;
     column-gap: 2.5rem; */
-    flex-direction: row;
-    column-gap: 2.5rem; /* Espacio entre los enlaces del Menu Nav */
+    flex-direction: column;
+    row-gap: 2.5rem; /* Espacio entre los enlaces del Menu Nav */
   }
 
   /* h2.elegantshadow,
