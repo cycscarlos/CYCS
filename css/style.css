@@ -425,7 +425,7 @@ input {
   .nav__list {
     display: flex;
     flex-direction: column;
-    row-gap: 2.5rem;
+    row-gap: 2.5rem;   
   }
   .nav__link {
     /* color: var(--color-texto); */
