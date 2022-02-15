@@ -615,6 +615,7 @@
   .nav__menu {
     width: 70%;
     padding: 1rem;
+    color: #9d8d6c;
   }
   /* Espacio entre los enlaces del Menu Nav */
   .nav__list {
