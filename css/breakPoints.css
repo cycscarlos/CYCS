@@ -622,7 +622,8 @@
     column-gap: 2.5rem; */
     flex-direction: column;
     row-gap: 2.5rem; /* Espacio entre los enlaces del Menu Nav */
-    border: 1px solid red;
+    color: var(--color-logo);
+    padding: 2.5rem;
   }
 
   .galeria .title {
