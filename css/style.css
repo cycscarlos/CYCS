@@ -376,7 +376,7 @@ input {
   }
   .nav__logo span {
     font-size: var(--minimal-font-size);
-    color: var(--color-logo);
+    color: var(--color-logo); /* dorado */
   }
   .nav__menu {
     position: fixed;
@@ -393,9 +393,11 @@ input {
     right: -100%;
     transition: 0.4s;
   }
+ 
   .nav {
     padding: 0 20px;
   }
+
   /* .nav__list {
     display: flex;
     flex-direction: row;
@@ -425,7 +427,7 @@ input {
   .nav__list {
     display: flex;
     flex-direction: column;
-    row-gap: 2.5rem;   
+    row-gap: 2.5rem;
   }
   .nav__link {
     /* color: var(--color-texto); */

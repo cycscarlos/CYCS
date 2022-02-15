@@ -2,6 +2,10 @@
 /*: Responsive styles smartphone */
 /* -------------------------------------- */
 @media screen and (max-width: 1024px) {
+  /* .container {
+    max-width: 1024px;
+  } */
+
   .cards,
   .servicios,
   .security,
@@ -134,6 +138,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  /* .container {
+    max-width: 768px;
+  } */
   .cards,
   .servicios,
   .security,
@@ -143,7 +150,6 @@
   .aboutUs {
     display: none;
   }
-  /** Responsive Design -Services      */
 
   .servicesRD {
     position: relative;
@@ -267,6 +273,9 @@
 
 /*: Samsung Galaxy J2 devices */
 @media screen and (max-width: 540px) {
+  /* .container {
+    max-width: 540px;
+  } */
   .lista ul.mainUL li::before {
     content: "|";
     position: absolute;
@@ -290,6 +299,9 @@
 }
 
 @media screen and (max-width: 414px) {
+  /* .container {
+    max-width: 414px;
+  } */
   .cards,
   .servicios,
   .security,
@@ -597,6 +609,9 @@
 
 /*: iPhone 6/7/8 devices */
 @media screen and (max-width: 375px) {
+  /* .container {
+    max-width: 375px;
+  } */
   .nav__menu {
     width: 70%;
     padding: 1rem;
@@ -607,23 +622,8 @@
     column-gap: 2.5rem; */
     flex-direction: column;
     row-gap: 2.5rem; /* Espacio entre los enlaces del Menu Nav */
+    border: 1px solid red;
   }
-
-  /* h2.elegantshadow,
-  .clients .title h2,
-  .galeria .title h2,
-  .servicesRD .title h2,
-  .servicesRD .lista h3,
-  .servicesRD .lista .mainUL li,
-  .servicesRD .mainUL .secondaryUL,
-  .servicesRD .lista .title2 h3,
-  .main .contenedor h2,
-  .main .contenedor .nosotros p,
-  .contactos .informacion li span:nth-child(1),
-  .contactos .informacion li span,
-  .contactos .informacion li a {
-    color: var(--white-color);
-  } */
 
   .galeria .title {
     margin: 30px;
@@ -738,13 +738,15 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
+  /* .container {
+    max-width: 768px;
+  } */
   section {
     padding-top: 0;
-    padding-bottom: 1.25rem; /* 20px */
+    padding-bottom: 1.25rem;
   }
   .nav__logo,
   .nav__toggle {
-    /* color: var(--white-color); */
     color: var(--color-logo);
   }
   .servicesRD .mainUL {
