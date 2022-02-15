@@ -622,6 +622,9 @@
     column-gap: 2.5rem; */
     flex-direction: column;
     row-gap: 2.5rem; /* Espacio entre los enlaces del Menu Nav */
+  }
+
+  .nav__item {
     color: var(--color-logo);
     padding: 2.5rem;
   }
