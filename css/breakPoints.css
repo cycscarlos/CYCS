@@ -622,11 +622,12 @@
     column-gap: 2.5rem; */
     flex-direction: column;
     row-gap: 2.5rem; /* Espacio entre los enlaces del Menu Nav */
+    color: #9d8d6c;
   }
 
   .nav__item {
-    color: var(--color-logo);
-    padding: 2.5rem;
+    color: #9d8d6c;
+    padding: 0.75rem;
   }
 
   .galeria .title {
