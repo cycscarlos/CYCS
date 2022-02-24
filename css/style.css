@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Poppins:wght@100;400;500&display=swap");
+
+/* El formato .eot ( Embedded Open Typestar ) fue desarrollado por Microsoft y es el único formato reconocido por los navegadores de tipo IE8 y más antiguos. */
+/* el formato woff ( Web Open Font Formatstar ) soportado por la mayoría de los navegadores modernos incluso IE > 8 */
+/* los formatos .ttf ( TrueType Fontstar ) y .otf ( OpenType Fontstar) muy interesantes sobre todo para los tipógrafos, y el formato .svg ( Scalabe Vector Graphics ) para Safari móvil. */
 
 @font-face {
   font-family: "Bailey";
@@ -126,7 +130,8 @@ body.dark-theme {
 
   --color-pagina: #ff4c00;
   --color-logo: #9d8d6c;
-  --scroll-link-color: #124f88;
+  /* --scroll-link-color: #124f88; */
+  --scroll-link-color: #9d8d6c;
   --color-azulObscuro: #27607c;
   --color-azulMedio: #283c48;
   --color-azulClaro: #1e5271;
@@ -137,19 +142,23 @@ body.dark-theme {
   /* Social Media colors */
 
   --color-social-icons: #000;
-  --color-whatsapp: hsl(134, 100%, 37%);
+  --color-whatsapp: #00bd2c;
   --color-twitter: #1da1f2;
   --color-instagram: #833ab4;
   --color-linkedin: #0a66c2;
 
   /* Fonts */
 
-  --font-titulos: "DancingScript", cursive;
-  --font-proyectos: "Roboto", sans-serif;
-  --font-logo: "Times New Roman";
-  --font-muro: "Bailey", sans-serif;
+  /* --font-titulos: "DancingScript", cursive; */
+  /* --font-proyectos: "Roboto", sans-serif; */
+  /* --font-muro: "Bailey", sans-serif; */
+  /* --font-texto: "Raleway", sans-serif; */
+  --font-titulos: "Times New Roman", "Open Sans Condensed", sans-serif;
+  --font-proyectos: "Poppins", "Roboto", sans-serif;
+  --font-logo: "Times New Roman", "Open Sans Condensed", sans-serif;
+  --font-muro: "DancingScript", sans-serif;
   --font-lightbox: "Open Sans Condensed", sans-serif;
-  --font-texto: "Raleway", sans-serif;
+  --font-texto: "Times New Roman", "Open Sans Condensed", sans-serif;
   --font-menu: "Font Awesome 5 Free", "Times New Roman";
   --font-footer: Helvetica, Arial, sans-serif;
 }
@@ -174,6 +183,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 h1,
@@ -276,7 +286,8 @@ input {
 .scroll-title {
   background: var(--color-blanco);
   margin-bottom: 30px;
-  font-size: 3.5em;
+  /* font-size: 3.5em; */
+  font-size: 3em;
   font-weight: 700;
   text-align: center;
 }
@@ -326,7 +337,6 @@ input {
   font-size: var(--exception-font-size);
 }
 .nav__logo span {
-  /* color: var(--color-blanco); */
   color: var(--color-logo);
   font-size: var(--normal-font-size);
   font-style: italic;
@@ -339,9 +349,8 @@ input {
   height: 100%;
 }
 .nav__link {
-  font-size: var(--smaller-font-size);
+  font-size: var(--normal-font-size);
   margin: 0 10px;
-  /* color: var(--color-blanco); */
   color: var(--color-logo);
   text-decoration: none;
   cursor: pointer;
@@ -393,29 +402,22 @@ input {
     right: -100%;
     transition: 0.4s;
   }
- 
+
   .nav {
     padding: 0 20px;
   }
 
-  /* .nav__list {
-    display: flex;
-    flex-direction: row;
-    row-gap: 2.5rem;
-  } */
   .nav__close {
     display: block;
     position: absolute;
     top: 0.75rem;
     right: 1rem;
-    font-size: 1.5rem;
-    /* color: var(--color-texto); */
+    font-size: 1.5rem;  
     color: var(--color-logo);
     cursor: pointer;
   }
   .nav__toggle {
-    display: block;
-    /* color: var(--white-color); */
+    display: block;  
     color: var(--color-logo);
     text-transform: uppercase;
     font-size: var(--h2-font-size);
@@ -429,21 +431,16 @@ input {
     flex-direction: column;
     row-gap: 2.5rem;
   }
-  .nav__link {
-    /* color: var(--color-texto); */
+  .nav__link {  
     color: var(--color-logo);
     font-weight: var(--font-semi-bold);
     text-transform: uppercase;
-    margin: 0 10px;
-    /* border: 1px solid black; */
+    margin: 0 10px;  
   }
   .nav__link:hover {
-    opacity: 0.65;
-    /* color: var(--color-texto); */
+    opacity: 0.65;   
   }
-  /* .nav__dark {
-    position: initial;
-  } */
+ 
   .oculto__services {
     visibility: hidden;
   }
@@ -471,14 +468,16 @@ input {
 }
 .scroll-header .nav__link {
   /* color: var(--color-texto); */
-  color: var(--scroll-link-color);
+  /* color: var(--scroll-link-color); */
+  color: var(--color-logo);
 }
 .scroll-header .nav__link:hover {
   opacity: 0.65;
 }
 .scroll-header .change-theme {
   /* color: var(--text-color); */
-  color: var(--scroll-link-color);
+  /* color: var(--scroll-link-color); */
+  color: var(--color-logo);
 }
 
 /* Marca el navegador activo en un momento dado */
@@ -658,25 +657,26 @@ input {
   display: none;
 }
 h2.elegantshadow {
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
-    "AppleGothic", sans-serif;
-  font-size: 2rem;
+  /* font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
+    "AppleGothic", sans-serif; */
+  font-size: 2.5rem;
   font-size: var(exception-font-size);
   margin-top: 10px;
   padding: 40px;
   text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
-  color: var(--color-header);
+  /* color: var(--color-header); */
+  color: var(--color-logo);
   background-color: #e7e5e4;
   letter-spacing: 0.15em;
-  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,
+  /* text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,
     -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d,
     -6px 12px 1px #828181, -7px 14px 1px #868585, -8px 16px 1px #8b8a89,
     -9px 18px 1px #8f8e8d, -10px 20px 1px #949392, -11px 22px 1px #999897,
     -12px 24px 1px #cbc9c8, -13px 26px 1px #cfcdcd, -14px 28px 1px #d4d2d1,
     -15px 30px 1px #d8d6d5, -16px 32px 1px #dbdad9, -17px 34px 1px #d4d2d1,
-    -18px 36px 1px #e2e0df, -19px 38px 1px #e4e3e2, -20px 40px 1px #e4e3e2;
+    -18px 36px 1px #e2e0df, -19px 38px 1px #e4e3e2, -20px 40px 1px #e4e3e2; */
 }
 
 /* --------------*/
@@ -703,6 +703,11 @@ h2.elegantshadow {
   font-size: 35px;
   background: var(--color-texto);
   font-family: var(--font-titulos);
+}
+
+.cards__subtitle {
+  font-size: 1.5rem;
+  font-style: italic;
 }
 /* --------------------------------- */
 /*: Card title animation routine     */
@@ -1193,29 +1198,47 @@ h2.elegantshadow {
   width: 100%;
   height: 100%;
 }
+
 .security .slideshow2 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  /* background: var(--color-blanco); */
   background: transparent;
 }
+
 .security .slideshow2 .swiper-slide img {
   border-radius: 5px;
   box-shadow: 2px 2px 2px 2px grey;
 }
+
+.security .swiper-container-horizontal {
+  position: relative;
+}
+
+/* .security .swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 120px;
+} */
+
 .security .swiper-button-next,
 .security .swiper-button-prev {
-  color: var(--color-pagina);
+  color: var(--color-azulObscuro);
+  position: absolute;
+  top: 35%;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 .security .swiper-button-next::after,
 .security .swiper-button-prev::after {
   font-size: 1.5em;
+  font-weight: 700;
 }
 
-.security .swiper-container-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: 120px;
+.security .swiper-container-horizontal > .swiper-pagination-fraction {
+  color: var(--color-azulObscuro);
+  font-weight: 700;
+  position: absolute;
+  bottom: 140px;
 }
 
 /* ---------------------*/
@@ -1324,16 +1347,43 @@ h2.elegantshadow {
   width: 100%;
   height: 100%;
 }
+
 .ctrlAcceso .slideshow2 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  /* background: #fff; */
   background: transparent;
 }
-.ctrlAcceso .swiper-container-horizontal > .swiper-pagination-bullets,
+
+.ctrlAcceso .swiper-container-horizontal {
+  position: relative;
+}
+
+/* .ctrlAcceso .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 170px;
+  bottom: 170px;  
+} */
+
+.ctrlAcceso .swiper-button-next,
+.ctrlAcceso .swiper-button-prev {
+  color: var(--color-azulObscuro);
+  position: absolute;
+  top: 35%;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.ctrlAcceso .swiper-button-next::after,
+.ctrlAcceso .swiper-button-prev::after {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.ctrlAcceso .swiper-container-horizontal > .swiper-pagination-fraction {
+  color: var(--color-azulObscuro);
+  font-weight: 700;
+  position: absolute;
+  bottom: 180px;
 }
 
 /* ----------------------*/
@@ -1430,16 +1480,43 @@ h2.elegantshadow {
   width: 100%;
   height: 100%;
 }
+
 .telco .slideshow2 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: transparent;
-  /* background: #fff; */
 }
-.telco .swiper-container-horizontal > .swiper-pagination-bullets,
+
+.telco .swiper-container-horizontal {
+  position: relative;
+}
+
+/* .telco .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   bottom: 300px;
+} */
+
+.telco .swiper-button-next,
+.telco .swiper-button-prev {
+  color: var(--color-azulObscuro);
+  position: absolute;
+  top: 30%;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.telco .swiper-button-next::after,
+.telco .swiper-button-prev::after {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.telco .swiper-container-horizontal > .swiper-pagination-fraction {
+  color: var(--color-azulObscuro);
+  font-weight: 700;
+  position: absolute;
+  bottom: 320px;
 }
 
 /* --------------------------*/
@@ -1571,6 +1648,7 @@ h2.elegantshadow {
   min-height: var(--section-height);
   margin: auto;
   padding: 10px;
+
   /* background: var(--color-blanco); */
 }
 
@@ -1698,8 +1776,10 @@ h2.elegantshadow {
 }
 .muro-lema {
   /* color: var(--color-pagina); */
+  /* font-size: 2.5em; */
   color: var(--color-logo);
-  font-size: 2.5em;
+  margin-top: 2rem;
+  font-size: 2em;
   font-family: var(--font-muro);
 }
 
@@ -1723,7 +1803,6 @@ h2.elegantshadow {
   width: 100%;
   max-width: 1200px;
   min-height: var(--section-height);
-
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -1835,7 +1914,7 @@ h2.elegantshadow {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0 auto;
+  margin: 30px auto 0;
   padding: 0 0 20px 0;
 }
 
@@ -1862,7 +1941,8 @@ h2.elegantshadow {
 }
 
 .profile-details {
-  font-size: 13px;
+  /* font-size: 13px; */
+  font-size: 1rem;
   font-weight: 100;
   line-height: 1.6;
   letter-spacing: normal;
@@ -1891,16 +1971,24 @@ h2.elegantshadow {
   max-width: 200px;
   max-height: 300px;
   margin-top: 70px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .profile-img-line {
-  /* background-color: var(--color-pagina); */
+  /*background-color: var(--color-pagina);
+  */
   background-color: var(--color-logo);
   height: 15px;
   position: absolute;
   width: 100%;
   left: 0;
   bottom: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 /* -----------*/
@@ -1913,8 +2001,11 @@ h2.elegantshadow {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--color-header);
+  /* background-color: var(--color-header); */
   font-family: var(--font-texto);
+}
+.footer .title {
+  margin-bottom: 4rem;
 }
 .main {
   position: relative;
@@ -1945,7 +2036,8 @@ h2.elegantshadow {
 .main .contenedor h2 {
   position: relative;
   color: #fff;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -1961,10 +2053,10 @@ h2.elegantshadow {
 .main .contenedor .nosotros p {
   text-align: justify;
   line-height: 24px;
-  font-size: 12px;
+  font-size: 0.9rem;
   color: var(--footer-text-color);
 }
-.socialIcons {
+/* .socialIcons {
   margin-top: 20px;
   display: flex;
 }
@@ -1978,13 +2070,14 @@ h2.elegantshadow {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 2rem;
+  padding-left: 4rem;
   text-decoration: none;
   border-radius: 4px;
 }
 .socialIcons li a .fab {
   color: #fff;
-  font-size: 20px;
+  font-size: 2.5rem;
 }
 .socialIcons li a .fab.fa-twitter {
   color: var(--color-twitter);
@@ -2003,17 +2096,18 @@ h2.elegantshadow {
   );
 }
 .socialIcons li a .fab.fa-whatsapp {
-  font-size: 20px;
+  font-size: 2.5rem;
   color: var(--color-whatsapp);
 }
 .socialIcons li a:hover {
   transform: scale(1.4);
   transition: all 0.5s;
-}
+} */
 .linkSecundarios {
   position: relative;
   width: 25%;
   padding-left: 50px;
+  font-size: 0.9rem;
 }
 .linkSecundarios ul li {
   list-style: none;
@@ -2023,7 +2117,6 @@ h2.elegantshadow {
   text-decoration: none;
   margin-bottom: 20px;
   display: inline-block;
-  font-size: 12px;
 }
 .linkSecundarios ul li a:hover {
   color: #999;
@@ -2035,42 +2128,43 @@ h2.elegantshadow {
   content: "|";
   position: absolute;
   left: 20px;
-  font-size: 20px;
 }
 
 .linkSecundarios ul li a.uno::before {
-  top: 50px;
+  top: 55px;
   color: #ff4900;
 }
 
 .linkSecundarios ul li a.dos::before {
-  top: 85px;
+  top: 90px;
   color: #00ffff;
 }
 
 .linkSecundarios ul li a.tres::before {
-  top: 125px;
-  color: #ffc0cb;
+  top: 130px;
+  color: #00bd2c;
 }
 
 .linkSecundarios ul li a.cuatro::before {
-  top: 165px;
+  top: 170px;
   color: #ecf00b;
 }
 
 .linkSecundarios ul li a.cinco::before {
-  top: 200px;
-  color: #008000;
+  top: 205px;
+  /* color: #008000; */
+  color: #ffffff;
 }
 
 .linkSecundarios ul li a.seis::before {
-  top: 235px;
+  top: 240px;
   color: #ff0000;
 }
 
 .contactos {
   width: calc(35% - 60px);
   margin-right: 0 !important;
+  font-size: 0.9rem;
 }
 .contactos .informacion {
   position: relative;
@@ -2082,17 +2176,14 @@ h2.elegantshadow {
 .contactos .informacion li span:nth-child(1) {
   color: var(--footer-text-color);
   margin-right: 10px;
-  font-size: 20px;
 }
 .contactos .informacion li span {
   color: var(--footer-text-color);
   line-height: 24px;
-  font-size: 12px;
 }
 .contactos .informacion li a {
   color: var(--footer-text-color);
   text-decoration: none;
-  font-size: 14px;
 }
 .contactos .informacion li a:hover {
   color: var(--footer-text-color);
@@ -2101,16 +2192,12 @@ h2.elegantshadow {
   width: 100%;
   padding: 8px 100px;
   text-align: center;
-  /* color: #999; */
-  color: white;
-  /* background-color: rgba(30, 82, 113, 1); */
+  color: rgba(255, 255, 255, 0.3);
   background-color: var(--color-header);
-  font-size: 12px;
+  font-size: 0.7rem;
 }
 .copyrightTexto span {
   font-weight: 100;
-  /* color: #ff4900; */
-  color: var(--color-logo);
   font-style: italic;
 }
 
