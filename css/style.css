@@ -32,29 +32,85 @@
     url(../fonts/Raleway-Bold.ttf);
 }
 
-:root {
-  /*_ Header size */
-  --header-height: 3rem;
+/*: General styles */
 
-  /*_ Sections height size */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* CYCS & Co website colors */
+  --color-pagina: #ff4c00;
+  --color-logo: #9d8d6c;
+  --scroll-link-color: #9d8d6c;
+  --color-azulObscuro: #27607c;
+  --color-azulMedio: #283c48;
+  --color-azulClaro: #1e5271;
+  --color-header: #284150;
+
+  /* Social Media colors */
+  --color-social-icons: #000;
+  --color-whatsapp: #00bd2c;
+  --color-twitter: #1da1f2;
+  --color-instagram: #833ab4;
+  --color-linkedin: #0a66c2;
+
+  /* Fonts */
+  --font-titulos: "Times New Roman", "Open Sans Condensed", sans-serif;
+  --font-proyectos: "Poppins", "Roboto", sans-serif;
+  --font-logo: "Times New Roman", "Open Sans Condensed", sans-serif;
+  --font-muro: "DancingScript", sans-serif;
+  --font-lightbox: "Open Sans Condensed", sans-serif;
+  --font-texto: "Times New Roman", "Open Sans Condensed", sans-serif;
+  --font-menu: "Font Awesome 5 Free", "Times New Roman";
+  --font-footer: Helvetica, Arial, sans-serif;
+}
+
+/*: Base styles  */
+
+:root {
+  --header-height: 3rem;
   --section-height: 100vh;
 
-  /*_ Colors */
+  /* Colors */
   --hue-color: 200;
-  --body-color: hsl(var(--hue-color), 100%, 99%);
-  --title-color: hsl(var(--hue-color), 100%, 18%);
-  --text-color: hsl(var(--hue-color), 24%, 35%);
-  --text-color-light: hsl(var(--hue-color), 8%, 60%);
+  --body-color: hsl(var(--hue-color), 100%, 99%); /* Casi blanco #fafdfe */
+  --title-color: hsl(
+    var(--hue-color),
+    100%,
+    18%
+  ); /* Azul muy Obscuro # 003d5c */
+  --text-color: hsl(var(--hue-color), 24%, 35%); /* Azul grisaceo #44606f */
+
+  --swiper-bg-color-show1: hsl(
+    var(--hue-color),
+    100%,
+    99%
+  ); /* Casi blanco #fafdfe */
+  --swiper-bg-color: hsl(
+    var(--hue-color),
+    24%,
+    35%
+  ); /* Azul grisaceo #44606f */
+  --muro-color: hsl(var(--hue-color), 100%, 99%); /* Casi blanco #fafdfe */
+  --muro-bg-color: #273b47;
+  --elegantShadow-bg-color: transparent;
+  --animation-bg-color: hsl(
+    var(--hue-color),
+    24%,
+    35%
+  ); /* Azul grisaceo #44606f */
+  --profile-link-color: #ff4c00;
   --footer-text-color: #fff;
   --footer-bg-color: rgba(40, 60, 72, 0.5);
   --white-color: #fff;
 
-  /*_ Font weight */
+  /* Font weight */
   --font-regular: 300;
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*_ Tag sizes */
+  /* Tag sizes */
   --biggest-font-size: 2.5rem;
   --exception-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -65,7 +121,7 @@
   --smaller-font-size: 0.79rem;
   --minimal-font-size: 0.715rem;
 
-  /*_ Margenes Bottom */
+  /* Margenes Bottom */
   --mb-0-25: 0.25rem;
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
@@ -76,17 +132,18 @@
   --mb-2-5: 2.5rem;
   --mt-2-5: 2.5rem;
 
-  /*_ z-index */
+  /* z-index */
   --z-tooltip: 10;
   --z-fixed: 100;
 
-  /*_ Hover overlay */
+  /* Hover overlay */
   --img-transition: 0.3s;
   --img-hidden: hidden;
   --img-scale: scale(1.1);
 }
 
 /*: Sizes to Desktop viewport */
+
 @media screen and (min-width: 968px) {
   :root {
     --biggest-font-size: 3rem;
@@ -100,69 +157,34 @@
 }
 
 /*: Variables Dark theme */
+
 body.dark-theme {
-  --first-color-second: hsl(var(--hue-color), 54%, 12%);
-  --title-color: hsl(var(--hue-color), 24%, 95%);
-  --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 29%, 12%);
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-  --box-shadow-slider: none;
-  --background-slider: hsl(var(--hue-color), 29%, 12%);
-  --background-slider-gradient: linear-gradient(
-    to right,
-    rgba(22, 34, 39, 1) 0%,
-    rgba(22, 34, 39, 0) 100%
-  );
-  --footer-text-color: #fff;
-  --color-texto-RD: #fff;
+  --body-color: hsl(
+    var(--hue-color),
+    29%,
+    12%
+  ); /* Gris súper obscuro #162227 */
+  --title-color: hsl(var(--hue-color), 24%, 95%); /* Casi blanco #eff3f5 */
+  --text-color: hsl(var(--hue-color), 8%, 75%); /* Gris claro #bac1c4 */
+
+  --swiper-bg-color: hsl(var(--hue-color), 8%, 75%); /* Gris claro #bac1c4 */
+  --muro-color: hsl(var(--hue-color), 8%, 75%); /* Gris claro #bac1c4 */
+  --elegantShadow-color: hsl(
+    var(--hue-color),
+    29%,
+    12%
+  ); /* Gris súper obscuro #162227 */
+  --animation-bg-color: hsl(
+    var(--hue-color),
+    29%,
+    12%
+  ); /* Gris súper obscuro #162227 */
+  --profile-link-color: hsl(
+    var(--hue-color),
+    24%,
+    95%
+  ); /* Casi blanco #eff3f5 */
 }
-
-/*: General styles */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  /* CYCS & Co website colors */
-
-  --color-pagina: #ff4c00;
-  --color-logo: #9d8d6c;
-  /* --scroll-link-color: #124f88; */
-  --scroll-link-color: #9d8d6c;
-  --color-azulObscuro: #27607c;
-  --color-azulMedio: #283c48;
-  --color-azulClaro: #1e5271;
-  --color-blanco: #fff;
-  --color-header: #284150;
-  --color-texto: #27607c;
-
-  /* Social Media colors */
-
-  --color-social-icons: #000;
-  --color-whatsapp: #00bd2c;
-  --color-twitter: #1da1f2;
-  --color-instagram: #833ab4;
-  --color-linkedin: #0a66c2;
-
-  /* Fonts */
-
-  /* --font-titulos: "DancingScript", cursive; */
-  /* --font-proyectos: "Roboto", sans-serif; */
-  /* --font-muro: "Bailey", sans-serif; */
-  /* --font-texto: "Raleway", sans-serif; */
-  --font-titulos: "Times New Roman", "Open Sans Condensed", sans-serif;
-  --font-proyectos: "Poppins", "Roboto", sans-serif;
-  --font-logo: "Times New Roman", "Open Sans Condensed", sans-serif;
-  --font-muro: "DancingScript", sans-serif;
-  --font-lightbox: "Open Sans Condensed", sans-serif;
-  --font-texto: "Times New Roman", "Open Sans Condensed", sans-serif;
-  --font-menu: "Font Awesome 5 Free", "Times New Roman";
-  --font-footer: Helvetica, Arial, sans-serif;
-}
-/*: Base styles  */
 
 [id] {
   scroll-margin-top: 2ex;
@@ -257,10 +279,9 @@ input {
   left: 3rem;
   bottom: 4rem;
 }
-/* No se si hace falta esta definición... Ha estado comentada muchas veces! */
+
 .change-theme,
 .change-theme-name {
-  /* color: var(--text-color); */
   color: var(--color-logo);
 }
 
@@ -284,9 +305,8 @@ input {
 
 /*: Website's specfic and internals classes */
 .scroll-title {
-  background: var(--color-blanco);
+  background: var(--body-color);
   margin-bottom: 30px;
-  /* font-size: 3.5em; */
   font-size: 3em;
   font-weight: 700;
   text-align: center;
@@ -412,12 +432,12 @@ input {
     position: absolute;
     top: 0.75rem;
     right: 1rem;
-    font-size: 1.5rem;  
+    font-size: 1.5rem;
     color: var(--color-logo);
     cursor: pointer;
   }
   .nav__toggle {
-    display: block;  
+    display: block;
     color: var(--color-logo);
     text-transform: uppercase;
     font-size: var(--h2-font-size);
@@ -431,16 +451,16 @@ input {
     flex-direction: column;
     row-gap: 2.5rem;
   }
-  .nav__link {  
+  .nav__link {
     color: var(--color-logo);
     font-weight: var(--font-semi-bold);
     text-transform: uppercase;
-    margin: 0 10px;  
+    margin: 0 10px;
   }
   .nav__link:hover {
-    opacity: 0.65;   
+    opacity: 0.65;
   }
- 
+
   .oculto__services {
     visibility: hidden;
   }
@@ -460,23 +480,18 @@ input {
   color: var(--color-logo);
 }
 .scroll-header .nav__logo span {
-  /* color: var(--color-texto); */
   color: var(--color-logo);
 }
 .scroll-header .nav__toggle {
-  color: var(--color-texto);
+  color: var(--text-color);
 }
 .scroll-header .nav__link {
-  /* color: var(--color-texto); */
-  /* color: var(--scroll-link-color); */
   color: var(--color-logo);
 }
 .scroll-header .nav__link:hover {
   opacity: 0.65;
 }
 .scroll-header .change-theme {
-  /* color: var(--text-color); */
-  /* color: var(--scroll-link-color); */
   color: var(--color-logo);
 }
 
@@ -510,7 +525,6 @@ input {
 
 .change-theme,
 .change-theme-name {
-  /* color: var(--text-color); */
   color: var(--color-logo);
 }
 
@@ -609,7 +623,7 @@ input {
   right: 5px;
   width: 200px;
   background-color: var(--color-pagina);
-  color: var(--color-blanco);
+  color: var(--white-color);
   padding: 5px 3px 5px 3px;
   border-radius: 15px;
   text-align: center;
@@ -649,6 +663,24 @@ input {
 .slideshow1 .swiper-slide img {
   border-radius: 5px;
 }
+
+.slideshow1 .swiper-container-horizontal {
+  position: relative;
+}
+
+.slideshow1 .swiper-button-next,
+.slideshow1 .swiper-button-prev {
+  color: var(--swiper-bg-color-show1);
+  position: absolute;
+  top: 50%;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.slideshow1 .swiper-button-next::after,
+.slideshow1 .swiper-button-prev::after {
+  font-size: 3.5em;
+  font-weight: 900;
+}
 .swiper-pagination-bullet {
   background: var(--color-pagina);
 }
@@ -657,8 +689,6 @@ input {
   display: none;
 }
 h2.elegantshadow {
-  /* font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
-    "AppleGothic", sans-serif; */
   font-size: 2.5rem;
   font-size: var(exception-font-size);
   margin-top: 10px;
@@ -666,17 +696,10 @@ h2.elegantshadow {
   text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
-  /* color: var(--color-header); */
   color: var(--color-logo);
-  background-color: #e7e5e4;
+  /* background-color: #e7e5e4; */
+  background-color: var(--elegantShadow-bg-color);
   letter-spacing: 0.15em;
-  /* text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,
-    -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d,
-    -6px 12px 1px #828181, -7px 14px 1px #868585, -8px 16px 1px #8b8a89,
-    -9px 18px 1px #8f8e8d, -10px 20px 1px #949392, -11px 22px 1px #999897,
-    -12px 24px 1px #cbc9c8, -13px 26px 1px #cfcdcd, -14px 28px 1px #d4d2d1,
-    -15px 30px 1px #d8d6d5, -16px 32px 1px #dbdad9, -17px 34px 1px #d4d2d1,
-    -18px 36px 1px #e2e0df, -19px 38px 1px #e4e3e2, -20px 40px 1px #e4e3e2; */
 }
 
 /* --------------*/
@@ -701,8 +724,9 @@ h2.elegantshadow {
   width: 30%;
   color: #fff;
   font-size: 35px;
-  background: var(--color-texto);
+  background: var(--animation-bg-color);
   font-family: var(--font-titulos);
+  margin-top: 2rem;
 }
 
 .cards__subtitle {
@@ -778,7 +802,7 @@ h2.elegantshadow {
   margin-top: 10px;
   font-size: 1.7em;
   font-weight: 400;
-  color: var(--color-blanco);
+  color: var(--white-color);
   text-align: center;
 }
 .cards .cardsBx .card h3 span {
@@ -801,7 +825,7 @@ h2.elegantshadow {
   text-align: center;
   border-radius: 5px;
   background: rgba(39, 59, 71, 0.3);
-  color: var(--color-blanco);
+  color: var(--white-color);
   cursor: pointer;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -826,29 +850,78 @@ h2.elegantshadow {
 }
 .servicios .title h2 {
   font-family: var(--font-titulos);
-  color: var(--color-texto);
+  color: var(--text-color);
   background-color: transparent;
+  margin-top: 4.5rem;
 }
 .servicios .textBx {
   position: relative;
 }
-.servicios .clicText {
+.servicios .clickText {
   position: absolute;
-  /* bottom: 5em; */
   top: 50%;
   left: 0.5em;
 }
 
-.servicios .clicText h6 {
-  font-size: 0.7em;
-  color: var(--color-texto);
+.servicios .clickText h4 {
+  width: 100%;
+  /* background: var(--text-color); */
+  background: var(--animation-bg-color);
+  font-size: 2em;
+  padding: 0 20px;
+  margin-top: 50%;
 }
 
-.servicios .clicText h6 span {
-  font-size: 1em;
-  font-style: italic;
-  color: var(--color-texto);
+.servicios .clickText h4 span {
+  font-size: 0.75em;
+  color: var(--white-color);
+  letter-spacing: 0.1em;
 }
+.servicios .clickText h4 .fa-arrow-right {
+  /* margin: 0 10px; */
+  font-size: 0.7em;
+  color: var(--white-color);
+}
+
+/* --------------------------------- */
+/*: Click & Arrow animation routine  */
+/* --------------------------------- */
+
+.servicios .clickText h4 span {
+  animation: click 2.25s linear infinite;
+  -webkit-animation: click 2.25s linear infinite;
+}
+.servicios .clickText h4 span:nth-child(1) {
+  animation-delay: 0.25s;
+}
+.servicios .clickText h4 span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.servicios .clickText h4 span:nth-child(3) {
+  animation-delay: 0.75s;
+}
+.servicios .clickText h4 span:nth-child(4) {
+  animation-delay: 1s;
+}
+.servicios .clickText h4 span:nth-child(5) {
+  animation-delay: 1.25s;
+}
+@keyframes click {
+  0%,
+  100% {
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+      0 0 80px #00b3ff;
+  }
+  5%,
+  95% {
+    color: var(--color-pagina);
+    filter: blur(0px);
+    text-shadow: none;
+  }
+}
+/*: Ends Click & Arrow animation routine */
 
 .servicios .container-all {
   position: absolute;
@@ -857,6 +930,10 @@ h2.elegantshadow {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   perspective: 1000px;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
 }
 
 @keyframes rotar {
@@ -895,7 +972,7 @@ h2.elegantshadow {
   transition: all 300ms;
 }
 .servicios .container-carrousel figure h6 {
-  color: var(--color-texto);
+  color: var(--text-color);
   font-weight: 300;
   text-align: center;
 }
@@ -973,17 +1050,18 @@ h2.elegantshadow {
   line-height: 2em;
   text-align: center;
   text-transform: uppercase;
-  color: var(--color-blanco);
+  color: var(--white-color);
 }
 
 .box-texto p {
   position: relative;
   top: 0px;
   padding: 0;
-  font-size: 0.7em;
+  /* font-size: 0.7em; */
+  font-size: 0.6em;
   line-height: 0.5em;
   letter-spacing: 0.5px;
-  color: var(--color-blanco);
+  color: var(--white-color);
   font-family: var(--font-lightbox);
   font-weight: 300;
 }
@@ -1036,7 +1114,7 @@ h2.elegantshadow {
   top: 0px;
   left: 211px;
   background: var(--color-azulObscuro);
-  color: var(--color-blanco);
+  color: var(--white-color);
   text-decoration: none;
   width: 30px;
   height: 30px;
@@ -1112,8 +1190,9 @@ h2.elegantshadow {
 }
 .security .title h2 {
   font-family: var(--font-titulos);
-  color: var(--color-texto);
+  color: var(--text-color);
   background-color: transparent;
+  margin-top: 2rem;
 }
 .security .row {
   position: relative;
@@ -1126,7 +1205,7 @@ h2.elegantshadow {
   width: 48%;
 }
 .security .row .col50 h3 {
-  color: var(--color-texto);
+  color: var(--text-color);
   font-size: 1.5em;
   font-weight: 300;
   text-align: center;
@@ -1140,7 +1219,7 @@ h2.elegantshadow {
 .security .row .col50 ul {
   text-align: center;
   font-size: 1.5em;
-  color: var(--color-texto);
+  color: var(--text-color);
   text-decoration: none;
   list-style: none;
   line-height: 45px;
@@ -1153,7 +1232,7 @@ h2.elegantshadow {
 .security .row .col50 p {
   text-align: center;
   font-size: 1.3em;
-  color: var(--color-texto);
+  color: var(--text-color);
 }
 .security .row .col50 p span {
   color: var(--color-pagina);
@@ -1164,7 +1243,7 @@ h2.elegantshadow {
   text-align: left;
   margin-left: 220px;
   font-size: 1.2em;
-  color: var(--color-texto);
+  color: var(--text-color);
   list-style: square;
   line-height: 30px;
 }
@@ -1222,7 +1301,7 @@ h2.elegantshadow {
 
 .security .swiper-button-next,
 .security .swiper-button-prev {
-  color: var(--color-azulObscuro);
+  color: var(--swiper-bg-color);
   position: absolute;
   top: 35%;
   margin-left: -10px;
@@ -1235,7 +1314,7 @@ h2.elegantshadow {
 }
 
 .security .swiper-container-horizontal > .swiper-pagination-fraction {
-  color: var(--color-azulObscuro);
+  color: var(--swiper-bg-color);
   font-weight: 700;
   position: absolute;
   bottom: 140px;
@@ -1260,8 +1339,9 @@ h2.elegantshadow {
 }
 .ctrlAcceso .title h2 {
   font-family: var(--font-titulos);
-  color: var(--color-texto);
+  color: var(--text-color);
   background-color: transparent;
+  margin-top: 2rem;
 }
 .ctrlAcceso .row {
   position: relative;
@@ -1274,7 +1354,7 @@ h2.elegantshadow {
   width: 48%;
 }
 .ctrlAcceso .row .col50 h3 {
-  color: var(--color-texto);
+  color: var(--text-color);
   font-size: 1.5em;
   font-weight: 300;
   text-align: center;
@@ -1307,12 +1387,12 @@ h2.elegantshadow {
 .ctrlAcceso .row .col50 p {
   text-align: center;
   font-size: 2em;
-  color: var(--color-texto);
+  color: var(--text-color);
 }
 .ctrlAcceso .row .col50 ul {
   text-align: center;
   font-size: 1.5em;
-  color: var(--color-texto);
+  color: var(--text-color);
   text-decoration: none;
   list-style: none;
   line-height: 45px;
@@ -1326,7 +1406,7 @@ h2.elegantshadow {
   text-align: left;
   margin-left: 150px;
   font-size: 0.8em;
-  color: var(--color-texto);
+  color: var(--text-color);
   list-style: square;
   line-height: 30px;
 }
@@ -1366,7 +1446,7 @@ h2.elegantshadow {
 
 .ctrlAcceso .swiper-button-next,
 .ctrlAcceso .swiper-button-prev {
-  color: var(--color-azulObscuro);
+  color: var(--swiper-bg-color);
   position: absolute;
   top: 35%;
   margin-left: -10px;
@@ -1380,7 +1460,7 @@ h2.elegantshadow {
 }
 
 .ctrlAcceso .swiper-container-horizontal > .swiper-pagination-fraction {
-  color: var(--color-azulObscuro);
+  color: var(--swiper-bg-color);
   font-weight: 700;
   position: absolute;
   bottom: 180px;
@@ -1405,8 +1485,9 @@ h2.elegantshadow {
 }
 .telco .title h2 {
   font-family: var(--font-titulos);
-  color: var(--color-texto);
+  color: var(--text-color);
   background-color: transparent;
+  margin-top: 2rem;
 }
 .telco .row {
   position: relative;
@@ -1419,7 +1500,7 @@ h2.elegantshadow {
   width: 48%;
 }
 .telco .row .col50 h3 {
-  color: var(--color-texto);
+  color: var(--text-color);
   font-size: 1.5em;
   font-weight: 300;
   text-align: center;
@@ -1446,7 +1527,7 @@ h2.elegantshadow {
 .telco .row .col50 .mainUL {
   text-align: center;
   font-size: 1.5em;
-  color: var(--color-texto);
+  color: var(--text-color);
   list-style: none;
   line-height: 45px;
 }
@@ -1459,7 +1540,7 @@ h2.elegantshadow {
   text-align: left;
   margin-left: 160px;
   font-size: 0.8em;
-  color: var(--color-texto);
+  color: var(--text-color);
   list-style: square;
   line-height: 30px;
 }
@@ -1499,7 +1580,7 @@ h2.elegantshadow {
 
 .telco .swiper-button-next,
 .telco .swiper-button-prev {
-  color: var(--color-azulObscuro);
+  color: var(--swiper-bg-color);
   position: absolute;
   top: 30%;
   margin-left: -10px;
@@ -1513,7 +1594,7 @@ h2.elegantshadow {
 }
 
 .telco .swiper-container-horizontal > .swiper-pagination-fraction {
-  color: var(--color-azulObscuro);
+  color: var(--swiper-bg-color);
   font-weight: 700;
   position: absolute;
   bottom: 320px;
@@ -1542,8 +1623,9 @@ h2.elegantshadow {
 }
 .clients .title h2 {
   font-family: var(--font-titulos);
-  color: var(--color-texto);
+  color: var(--text-color);
   background-color: transparent;
+  margin-top: 2rem;
 }
 .clients .title h2 span {
   font-size: 0.5em;
@@ -1648,22 +1730,7 @@ h2.elegantshadow {
   min-height: var(--section-height);
   margin: auto;
   padding: 10px;
-
-  /* background: var(--color-blanco); */
 }
-
-/* .galeria-titulo {
-  text-align: center;
-  font-weight: 700;
-  font-family: var(--font-titulos);
-  color: var(--color-texto);
-  background-color: transparent;
-}
-
-.galeria-titulo span {
-  font-size: 0.5em;
-  color: var(--color-texto);
-} */
 
 .galeria .title {
   display: flex;
@@ -1673,8 +1740,9 @@ h2.elegantshadow {
 }
 .galeria .title h2 {
   font-family: var(--font-titulos);
-  color: var(--color-texto);
+  color: var(--text-color);
   background-color: transparent;
+  margin-top: 2rem;
 }
 .galeria .title h2 span {
   font-size: 0.5em;
@@ -1741,21 +1809,22 @@ h2.elegantshadow {
 .box_muro {
   width: 750px;
   height: 400px;
-  background-color: #273b47;
-  /* box-shadow: -1rem 0 3rem #000; */
-  box-shadow: -0.5rem 0 1.5rem #273b47;
+  background-color: var(--muro-bg-color);
+  box-shadow: -0.5rem 0 1.5rem var(--muro-bg-color);
 }
 .box_textos_muro {
   text-align: center;
 }
 .muro-subtitulo {
-  color: var(--color-blanco);
+  /* color: var(--white-color); */
+  color: var(--muro-color);
   font-size: 2em;
   margin: 10px;
   padding: 10px 10px 30px 10px;
 }
 .muro-parrafo {
-  color: var(--color-blanco);
+  /* color: var(--white-color); */
+  color: var(--muro-color);
   font-size: 1em;
   margin: 5px;
   line-height: 1px;
@@ -1763,13 +1832,15 @@ h2.elegantshadow {
   margin-bottom: 10px;
 }
 .muro-parrafo span {
-  color: var(--color-blanco);
+  /* color: var(--white-color); */
+  color: var(--muro-color);
   font-size: 1em;
   line-height: 7px;
   text-align: center;
 }
 .muro-parrafo-span span {
-  color: var(--color-blanco);
+  /* color: var(--white-color); */
+  color: var(--muro-color);
   font-size: 1em;
   line-height: 24px;
   text-align: center;
@@ -1790,8 +1861,12 @@ h2.elegantshadow {
   margin: auto;
   font-size: 35px;
   background: transparent;
-  color: var(--color-texto);
+  color: var(--text-color);
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 /* ---------------------------------- */
@@ -1827,26 +1902,20 @@ h2.elegantshadow {
 .aboutUs .titulo {
   position: relative;
   width: 100%;
-
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .aboutUs .titulo h2 {
   flex-direction: column;
   font-family: var(--font-titulos);
   letter-spacing: 2.5px;
-  /* color: var(--color-blanco);
-  background: transparent;
-  padding-top: 30px; */
 
-  color: var(--color-texto);
+  color: var(--text-color);
   padding: 0;
   background-color: transparent;
 }
 
 .aboutUs .titulo span {
-  color: var(--color-texto);
+  color: var(--text-color);
   opacity: 0.5;
 }
 
@@ -1857,7 +1926,7 @@ h2.elegantshadow {
   margin: auto;
   font-size: 35px;
   background: transparent;
-  color: var(--color-texto);
+  color: var(--text-color);
   border-radius: 50%;
 }
 
@@ -1926,13 +1995,13 @@ h2.elegantshadow {
   font-size: 35px;
   margin: 20px 0;
   font-weight: bold;
-  color: var(--color-texto);
+  color: var(--text-color);
   text-align: left;
 }
 
 .profile-title span {
   font-size: 14px;
-  color: var(--color-texto);
+  color: var(--text-color);
 }
 
 .profile-title .name {
@@ -1941,19 +2010,19 @@ h2.elegantshadow {
 }
 
 .profile-details {
-  /* font-size: 13px; */
   font-size: 1rem;
   font-weight: 100;
   line-height: 1.6;
   letter-spacing: normal;
   max-width: 550px;
   margin: 20px 0;
-  color: var(--color-texto);
+  color: var(--text-color);
   font-family: var(--font-texto);
 }
 
 .profile-details a {
   text-decoration: underline;
+  color: var(--profile-link-color);
 }
 .profile-details span {
   font-size: 0.8em;
@@ -2001,21 +2070,20 @@ h2.elegantshadow {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  /* background-color: var(--color-header); */
   font-family: var(--font-texto);
 }
 .footer .title {
   margin-bottom: 4rem;
+}
+.footer .scroll-title {
+  background: var(--body-color);
+  color: var(--text-color);
 }
 .main {
   position: relative;
   width: 100%;
   height: auto;
   padding: 50px 100px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
   background: url(../img/footer/avila.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -2026,17 +2094,15 @@ h2.elegantshadow {
   flex-wrap: wrap;
   flex-direction: row;
   background-color: var(--footer-bg-color);
+  padding: 0 50px;
 }
-.main .contenedor .comun {
-  margin-right: 30px;
-}
+
 .main .contenedor .comun.nosotros {
   width: 30%;
 }
 .main .contenedor h2 {
   position: relative;
   color: #fff;
-  /* font-size: 16px; */
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 15px;
@@ -2056,53 +2122,7 @@ h2.elegantshadow {
   font-size: 0.9rem;
   color: var(--footer-text-color);
 }
-/* .socialIcons {
-  margin-top: 20px;
-  display: flex;
-}
-.socialIcons li {
-  list-style: none;
-}
-.socialIcons li a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 2rem;
-  padding-left: 4rem;
-  text-decoration: none;
-  border-radius: 4px;
-}
-.socialIcons li a .fab {
-  color: #fff;
-  font-size: 2.5rem;
-}
-.socialIcons li a .fab.fa-twitter {
-  color: var(--color-twitter);
-}
-.socialIcons li a .fab.fab.fa-instagram {
-  border-radius: 50px;
-  color: #fff;
-  background: #d6249f;
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-}
-.socialIcons li a .fab.fa-whatsapp {
-  font-size: 2.5rem;
-  color: var(--color-whatsapp);
-}
-.socialIcons li a:hover {
-  transform: scale(1.4);
-  transition: all 0.5s;
-} */
+
 .linkSecundarios {
   position: relative;
   width: 25%;
@@ -2152,7 +2172,6 @@ h2.elegantshadow {
 
 .linkSecundarios ul li a.cinco::before {
   top: 205px;
-  /* color: #008000; */
   color: #ffffff;
 }
 
@@ -2162,8 +2181,8 @@ h2.elegantshadow {
 }
 
 .contactos {
-  width: calc(35% - 60px);
-  margin-right: 0 !important;
+  /* width: calc(35% - 60px);
+  margin-right: 0 !important; */
   font-size: 0.9rem;
 }
 .contactos .informacion {
@@ -2186,7 +2205,7 @@ h2.elegantshadow {
   text-decoration: none;
 }
 .contactos .informacion li a:hover {
-  color: var(--footer-text-color);
+  color: #999;
 }
 .copyrightTexto {
   width: 100%;

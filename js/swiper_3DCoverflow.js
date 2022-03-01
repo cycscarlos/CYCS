@@ -14,8 +14,12 @@ var swiper = new Swiper(".slideshow1", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   loop: true,
-  autoplay: {  
+  autoplay: {
     delay: 2000,
     disableOnInteraction: false,
   },
