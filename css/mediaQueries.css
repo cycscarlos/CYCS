@@ -34,14 +34,19 @@
     color: var(--color-texto-RD);
     background-color: transparent;
   }
-
-  .servicesRD h3 {
+  .servicesRD .lista h2 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  .servicesRD .lista h3 {
     color: var(--color-texto-RD);
     font-size: var(--h3-font-size);
     font-weight: 300;
     text-align: center;
     line-height: 1.5;
   }
+
   .servicesRD span {
     color: var(--color-pagina);
     font-weight: 700;
@@ -54,14 +59,15 @@
     text-decoration: none;
     list-style: none;
     line-height: 45px;
-  }
+    }
+
   .servicesRD ul li span {
     color: var(--color-pagina);
     font-weight: 700;
     font-size: var(--normal-font-size);
   }
 
-  .servicesRD .mainUL {
+  .servicesRD .firstUL {
     text-align: left;
     font-size: var(--normal-font-size);
     color: var(--color-texto-RD);
@@ -69,27 +75,28 @@
     line-height: 30px;
   }
 
-  .servicesRD .mainUL .secondaryUL {
+  .servicesRD .lista .firstUL .secondUL {
     text-align: left;
-    margin-left: 30px;
+    margin-left: 1.2rem; /* antes: 30px */
+    padding: 0 10px; /* new! */
     font-size: var(--normal-font-size);
     color: var(--color-texto-RD);
     list-style: square;
     line-height: 30px;
   }
-  .servicesRD .secondaryUL li span {
+  .servicesRD .secondUL li span {
     font-weight: 700;
     color: var(--color-pagina);
     font-size: var(--normal-font-size);
   }
 
-  .lista ul.mainUL li::before {
+  .lista ul.firstUL li::before {
     content: "|";
     position: absolute;
     left: 200px;
     font-size: 20px;
   }
-  .lista ul.secondaryUL li::before {
+  .lista ul.secondUL li::before {
     content: "";
   }
 
@@ -142,7 +149,7 @@
   .muro,
   .aboutUs {
     display: none;
-  } 
+  }
 
   .servicesRD {
     position: relative;
@@ -161,13 +168,13 @@
   }
 
   .servicesRD .title h2 {
-    font-family: var(--font-titulos);  
+    font-family: var(--font-titulos);
     color: var(--text-color);
     background-color: transparent;
     margin-top: 4rem;
   }
 
-  .servicesRD h3 {   
+  .servicesRD .lista h3 {
     color: var(--text-color);
     font-size: var(--h3-font-size);
     font-weight: 300;
@@ -181,7 +188,7 @@
   }
   .servicesRD ul {
     text-align: center;
-    font-size: 1.15rem;  
+    font-size: 1.15rem;
     color: var(--text-color);
     text-decoration: none;
     list-style: none;
@@ -193,35 +200,35 @@
     font-size: var(--normal-font-size);
   }
 
-  .servicesRD .mainUL {
+  .servicesRD .firstUL {
     text-align: left;
-    font-size: var(--normal-font-size);  
+    font-size: var(--normal-font-size);
     color: var(--text-color);
     list-style: none;
     line-height: 30px;
   }
 
-  .servicesRD .mainUL .secondaryUL {
+  .servicesRD .firstUL .secondUL {
     text-align: left;
     margin-left: 30px;
-    font-size: var(--normal-font-size); 
+    font-size: var(--normal-font-size);
     color: var(--text-color);
     list-style: square;
     line-height: 30px;
   }
-  .servicesRD .secondaryUL li span {
+  .servicesRD .secondUL li span {
     font-weight: 700;
     color: var(--color-pagina);
     font-size: var(--normal-font-size);
   }
 
-  .lista ul.mainUL li::before {
+  .lista ul.firstUL li::before {
     content: "|";
     position: absolute;
     left: 160px;
     font-size: 20px;
   }
-  .lista ul.secondaryUL li::before {
+  .lista ul.secondUL li::before {
     content: "";
   }
 
@@ -265,15 +272,63 @@
   }
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  section {
+    padding-top: 0;
+    padding-bottom: 1.25rem;
+  }
+
+  .nav__dark {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    position: absolute;
+    left: 3rem;
+    bottom: 18rem;
+  }
+  .nav__dark span {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .nav__dark i {
+    font-size: 1rem;
+  }
+  .change-theme,
+  .change-theme-name {
+    color: var(--color-logo);
+  }
+
+  .nav__menu {
+    padding: 1rem;
+  }
+  .nav__list {
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+  .nav__item {
+    padding: 0.75rem;
+  }
+
+  .nav__logo,
+  .nav__toggle {
+    color: var(--color-logo);
+  }
+  .servicesRD .firstUL {
+    text-align: left;
+    padding: 60px;
+    margin-left: 30px;
+  }
+}
+
 /*: Samsung Galaxy J2 devices */
 @media screen and (max-width: 540px) {
-  .lista ul.mainUL li::before {
+  .lista ul.firstUL li::before {
     content: "|";
     position: absolute;
     left: 50px;
     font-size: 20px;
   }
-  .lista ul.secondaryUL li::before {
+  .lista ul.secondUL li::before {
     content: "";
   }
   /* Profile     */
@@ -486,7 +541,7 @@
     background-color: transparent;
   }
 
-  .servicesRD h3 {
+  .servicesRD .lista h3 {
     color: var(--color-texto-RD);
     font-size: var(--h3-font-size);
     font-weight: 300;
@@ -512,7 +567,7 @@
     font-size: var(--normal-font-size);
   }
 
-  .servicesRD .mainUL {
+  .servicesRD .firstUL {
     text-align: left;
     font-size: var(--normal-font-size);
     color: var(--color-texto-RD);
@@ -522,12 +577,12 @@
     margin-left: 30px;
   }
 
-  /* .servicesRD .mainUL .secondaryUL {
+  /* .servicesRD .firstUL .secondUL {
     padding: 0;
     margin-left: -10px;
   } */
 
-  .servicesRD .mainUL .secondaryUL {
+  .servicesRD .firstUL .secondUL {
     text-align: left;
     margin-left: 30px;
     font-size: var(--normal-font-size);
@@ -537,19 +592,19 @@
     padding: 0;
     margin-left: -10px;
   }
-  .servicesRD .secondaryUL li span {
+  .servicesRD .secondUL li span {
     font-weight: 700;
     color: var(--color-pagina);
     font-size: var(--normal-font-size);
   }
 
-  .lista ul.mainUL li::before {
+  .lista ul.firstUL li::before {
     content: "|";
     position: absolute;
     left: 70px;
     font-size: 20px;
   }
-  .lista ul.secondaryUL li::before {
+  .lista ul.secondUL li::before {
     content: "";
   }
 
@@ -600,16 +655,15 @@
     padding: 1rem;
     color: var(--color-logo);
   }
-  /* Espacio entre los enlaces del Menu Nav */
+
   .nav__list {
     flex-direction: column;
-    row-gap: 0.5rem; /* Espacio entre enlaces */
+    row-gap: 1rem;
     color: var(--color-logo);
   }
 
-  .nav__item {
-    color: var(--color-logo);
-    padding: 0.1rem;
+  .nav__dark {
+    bottom: 10rem;
   }
 
   .galeria .title {
@@ -620,47 +674,43 @@
     justify-content: center;
     align-items: center;
   }
-  .servicesRD .title2 {
+  /* .servicesRD .title2 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-  }
+  } */
   .servicesRD .title h2 {
     margin-left: 0;
     padding: 0;
     text-align: center;
   }
 
-  .servicesRD .mainUL {
+  .servicesRD .firstUL {
     text-align: left;
     padding: 60px;
     margin-left: 30px;
   }
-  .servicesRD .mainUL .secondaryUL {
-    padding-left: 0;
-    margin-left: -10px;
-  }
 
-  .lista ul.mainUL li::before {
+  .lista ul.firstUL li::before {
     content: "|";
     position: absolute;
     left: 70px;
     font-size: 20px;
   }
-  .lista ul.secondaryUL li::before {
+  .lista ul.secondUL li::before {
     content: "";
   }
-  .servicesRD .mainUL h3 {
+  .servicesRD .firstUL .secondUL {
+    padding-left: 0;
+    margin-left: -10px;
+  }
+  .servicesRD .firstUL h3 {
     padding: 0;
     margin-left: 0;
     justify-content: center;
   }
 }
-
-/* Navigation Menu & Dark Theme MEDIA QUERIES  */
-
-/* Estilos para dispositivos mayores a 768px -iPads y Desktops */
 
 @media screen and (min-width: 769px) {
   body {
@@ -671,7 +721,6 @@
     height: calc(var(--header-height) + 1.5rem);
   }
   .nav__link {
-    /* color: var(--white-color); */
     color: var(--color-logo);
     text-transform: initial;
   }
@@ -699,68 +748,6 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-
-/* For tall screens on mobiles y desktop*/
-/* @media screen and (min-height: 721px) {
-  body {
-    margin: 0;
-  }
-} */
-
-@media screen and (min-width: 0px) and (max-width: 768px) {
-  section {
-    padding-top: 0;
-    padding-bottom: 1.25rem;
-  }
-
-  .nav__dark {
-    display: flex;
-    align-items: center;
-    column-gap: 2rem;
-    position: absolute;
-    left: 3rem;
-    bottom: 18rem;
-  }
-  .nav__dark span {
-    padding: 10px;
-    font-size: 1rem;
-  }
-  .nav__dark i {
-    font-size: 1rem;
-  }
-  .change-theme,
-  .change-theme-name {
-    color: var(--color-logo);
-  }
-
-  .nav__menu {
-    padding: 1rem;
-  }
-  .nav__list {
-    flex-direction: column;
-    row-gap: 2.5rem;
-  }
-  .nav__item {
-    padding: 0.75rem;
-  }
-
-  .nav__logo,
-  .nav__toggle {
-    color: var(--color-logo);
-  }
-  .servicesRD .mainUL {
-    text-align: left;
-    padding: 60px;
-    margin-left: 30px;
-  }
-}
-
-/*: For large devices */
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: auto;
@@ -768,5 +755,18 @@
   }
   .nav__dark span {
     padding-right: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* For tall screens on mobiles y desktop*/
+@media screen and (min-height: 721px) {
+  body {
+    margin: 0;
   }
 }

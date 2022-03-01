@@ -483,7 +483,8 @@ input {
   color: var(--color-logo);
 }
 .scroll-header .nav__toggle {
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: var(--color-logo);
 }
 .scroll-header .nav__link {
   color: var(--color-logo);
