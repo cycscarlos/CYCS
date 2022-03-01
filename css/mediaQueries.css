@@ -59,7 +59,7 @@
     text-decoration: none;
     list-style: none;
     line-height: 45px;
-    }
+  }
 
   .servicesRD ul li span {
     color: var(--color-pagina);
@@ -465,7 +465,7 @@
     font-size: 12px;
   }
   .profile-details {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.6;
     max-width: 450px;
     margin: 0 20px;
@@ -476,6 +476,9 @@
   }
   .footer {
     font-family: var(--font-footer);
+  }
+  .footer .scroll-title {
+    margin-top: 2rem;
   }
   .main .contenedor {
     background-color: var(--footer-bg-color);
