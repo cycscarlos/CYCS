@@ -484,9 +484,9 @@
   .footer .scroll-title {
     margin-top: 2rem;
   }
-  .main .contenedor {
+  /* .main .contenedor {
     background-color: var(--footer-bg-color);
-  }
+  } */
   .main .contenedor h2:before {
     left: 5px;
   }
