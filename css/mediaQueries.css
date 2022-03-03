@@ -1,6 +1,3 @@
-/* -------------------------------------- */
-/*: Responsive styles smartphone */
-/* -------------------------------------- */
 @media screen and (max-width: 1024px) {
   .cards,
   .servicios,
@@ -11,8 +8,8 @@
   .aboutUs {
     display: none;
   }
-  /** Responsive Design -Services      */
 
+  /* Responsive Design -Services */
   .servicesRD {
     position: relative;
     width: 100%;
@@ -320,7 +317,7 @@
   }
 }
 
-/*: Samsung Galaxy J2 devices */
+/* Samsung Galaxy J2 devices */
 @media screen and (max-width: 540px) {
   .lista ul.firstUL li::before {
     content: "|";
@@ -341,6 +338,13 @@
   }
   .profile-title span {
     font-size: 14px;
+  }
+  .footer .main {
+    background: none;
+    background-color: none;
+  }
+  .main .contenedor {
+    background-color: var(--body-color);
   }
 }
 
@@ -677,12 +681,7 @@
     justify-content: center;
     align-items: center;
   }
-  /* .servicesRD .title2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  } */
+
   .servicesRD .title h2 {
     margin-left: 0;
     padding: 0;
