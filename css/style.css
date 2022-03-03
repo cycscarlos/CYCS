@@ -2104,7 +2104,7 @@ h2.elegantshadow {
 .main .contenedor h2 {
   position: relative;
   /* color: #fff; */
-  color: var(--text-color);
+  color: var(--muro-color);
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 15px;
@@ -2122,7 +2122,7 @@ h2.elegantshadow {
   text-align: justify;
   line-height: 24px;
   font-size: 0.9rem;
-  color: var(--text-color);
+  color: var(--muro-color);
   /* color: var(--footer-text-color); */
 }
 
@@ -2137,7 +2137,7 @@ h2.elegantshadow {
 }
 .linkSecundarios ul li a {
   /* color: var(--footer-text-color); */
-  color: var(--text-color);
+  color: var(--muro-color);
   text-decoration: none;
   margin-bottom: 20px;
   display: inline-block;
@@ -2198,17 +2198,17 @@ h2.elegantshadow {
 }
 .contactos .informacion li span:nth-child(1) {
   /* color: var(--footer-text-color); */
-  color: var(--text-color);
+  color: var(--muro-color);
   margin-right: 10px;
 }
 .contactos .informacion li span {
   /* color: var(--footer-text-color); */
-  color: var(--text-color);
+  color: var(--muro-color);
   line-height: 24px;
 }
 .contactos .informacion li a {
   /* color: var(--footer-text-color); */
-  color: var(--text-color);
+  color: var(--muro-color);
   text-decoration: none;
 }
 .contactos .informacion li a:hover {
