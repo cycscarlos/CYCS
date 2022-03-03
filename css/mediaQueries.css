@@ -344,7 +344,7 @@
     background-color: none;
   }
   .main .contenedor {
-    background-color: var(--body-color);
+    background-color: rgba(40, 60, 72, 1);
   }
 }
 
@@ -484,9 +484,6 @@
   .footer .scroll-title {
     margin-top: 2rem;
   }
-  /* .main .contenedor {
-    background-color: var(--footer-bg-color);
-  } */
   .main .contenedor h2:before {
     left: 5px;
   }
@@ -496,7 +493,6 @@
   .contactos .informacion li span,
   .contactos .informacion li a {
     padding: 5px;
-    color: var(--footer-text-color);
   }
   .socialIcons {
     display: none;
@@ -583,11 +579,6 @@
     padding: 60px;
     margin-left: 30px;
   }
-
-  /* .servicesRD .firstUL .secondUL {
-    padding: 0;
-    margin-left: -10px;
-  } */
 
   .servicesRD .firstUL .secondUL {
     text-align: left;

@@ -101,7 +101,7 @@
     35%
   ); /* Azul grisaceo #44606f */
   --profile-link-color: #ff4c00;
-  --footer-text-color: #fff;
+  --footer-color: hsl(var(--hue-color), 100%, 99%); /* Casi blanco #fafdfe */
   --footer-bg-color: rgba(40, 60, 72, 0.5);
   --white-color: #fff;
 
@@ -169,6 +169,7 @@ body.dark-theme {
 
   --swiper-bg-color: hsl(var(--hue-color), 8%, 75%); /* Gris claro #bac1c4 */
   --muro-color: hsl(var(--hue-color), 8%, 75%); /* Gris claro #bac1c4 */
+  --footer-color: hsl(var(--hue-color), 8%, 75%); /* Gris claro #bac1c4 */
   --elegantShadow-color: hsl(
     var(--hue-color),
     29%,
@@ -2095,6 +2096,7 @@ h2.elegantshadow {
   flex-wrap: wrap;
   flex-direction: row;
   background-color: var(--footer-bg-color);
+  color: var(--footer-color);
   padding: 0 50px;
 }
 
@@ -2103,8 +2105,7 @@ h2.elegantshadow {
 }
 .main .contenedor h2 {
   position: relative;
-  /* color: #fff; */
-  color: var(--muro-color);
+  color: var(--footer-color);
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 15px;
@@ -2122,8 +2123,6 @@ h2.elegantshadow {
   text-align: justify;
   line-height: 24px;
   font-size: 0.9rem;
-  color: var(--muro-color);
-  /* color: var(--footer-text-color); */
 }
 
 .linkSecundarios {
@@ -2136,8 +2135,7 @@ h2.elegantshadow {
   list-style: none;
 }
 .linkSecundarios ul li a {
-  /* color: var(--footer-text-color); */
-  color: var(--muro-color);
+  color: var(--footer-color);
   text-decoration: none;
   margin-bottom: 20px;
   display: inline-block;
@@ -2197,18 +2195,13 @@ h2.elegantshadow {
   margin-bottom: 16px;
 }
 .contactos .informacion li span:nth-child(1) {
-  /* color: var(--footer-text-color); */
-  color: var(--muro-color);
   margin-right: 10px;
 }
-.contactos .informacion li span {
-  /* color: var(--footer-text-color); */
-  color: var(--muro-color);
+.contactos .informacion li span { 
   line-height: 24px;
 }
 .contactos .informacion li a {
-  /* color: var(--footer-text-color); */
-  color: var(--muro-color);
+  color: var(--footer-color);
   text-decoration: none;
 }
 .contactos .informacion li a:hover {
