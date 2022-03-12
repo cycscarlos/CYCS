@@ -2016,7 +2016,8 @@ h2.elegantshadow {
   font-weight: 100;
   line-height: 1.6;
   letter-spacing: normal;
-  max-width: 550px;
+  /* max-width: 550px; */
+  max-width: 450px;
   margin: 20px 0;
   color: var(--text-color);
   font-family: var(--font-texto);
@@ -2024,7 +2025,9 @@ h2.elegantshadow {
 
 .profile-details a {
   text-decoration: underline;
-  color: var(--profile-link-color);
+  /* color: var(--profile-link-color); */
+  color: var(--text-color);
+  font-weight: 600;
 }
 .profile-details span {
   font-size: 0.8em;
@@ -2042,16 +2045,10 @@ h2.elegantshadow {
   max-width: 200px;
   max-height: 300px;
   margin-top: 70px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 50%;
 }
 
-.profile-img-line {
-  /*background-color: var(--color-pagina);
-  */
+/* .profile-img-line {
   background-color: var(--color-logo);
   height: 15px;
   position: absolute;
@@ -2060,7 +2057,7 @@ h2.elegantshadow {
   bottom: 0;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-}
+} */
 
 /* -----------*/
 /*: FOOTER    */
@@ -2197,7 +2194,7 @@ h2.elegantshadow {
 .contactos .informacion li span:nth-child(1) {
   margin-right: 10px;
 }
-.contactos .informacion li span { 
+.contactos .informacion li span {
   line-height: 24px;
 }
 .contactos .informacion li a {
