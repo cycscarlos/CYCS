@@ -10,12 +10,12 @@ sr.reveal(`.cards, .security, .muro, .footer`, {
   interval: 100,
 });
 
-sr.reveal(`.ctrlAcceso, .aboutUs, .galeria`, {
+sr.reveal(`.ctrlAcceso, .aboutUs`, {
   origin: "left",
   interval: 100,
 });
 
-sr.reveal(`.telco, .clients, .servicesRD, .profile`, {
+sr.reveal(`.telco, .servicesRD`, {
   origin: "right",
   interval: 100,
 });
