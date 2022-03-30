@@ -6,7 +6,7 @@
 
 <br>
 
-![Website banner!](img/readme8.png)
+![Website banner!](img/readme16.png)
 
 <br>
 
