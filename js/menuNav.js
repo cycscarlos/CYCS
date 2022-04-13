@@ -1,4 +1,4 @@
-//: SHOW MENU */
+// SHOW MENU */
 
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -12,7 +12,7 @@ if (navToggle) {
   });
 }
 
-//: MENU HIDDEN  */
+// MENU HIDDEN  */
 /* Validate if constant exists */
 if (navClose) {
   navClose.addEventListener("click", () => {
@@ -20,7 +20,7 @@ if (navClose) {
   });
 }
 
-//: REMOVE MENU MOBILE  */
+// REMOVE MENU MOBILE  */
 const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
