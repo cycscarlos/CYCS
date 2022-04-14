@@ -262,3 +262,37 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 } */
+
+/* -----------*/
+/*: FOOTER    */
+/* -----------*/
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: var(--font-texto);
+}
+
+.copyrightTexto {
+  width: 100%;
+  padding: 8px 100px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--color-header);
+  font-size: 0.7rem;
+}
+
+.copyrightTexto span {
+  font-weight: 100;
+  font-style: italic;
+}
+
+/*: Footer Responsive Design */
+@media (max-width: 991px) {
+  .copyrightTexto {
+    padding: 8px 40px;
+  }
+}
