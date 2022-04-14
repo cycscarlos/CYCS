@@ -84,10 +84,6 @@
       rel="stylesheet"
     />
 
-    <!-- Swiper Library -->
-    <link rel="stylesheet" href="Swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="Swiper/swiper-bundle.min.css" />
-
     <!--: CSS General Styles -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -109,16 +105,21 @@
               <li class="nav__item">
                 <a href="index.html" class="nav__link">Inicio</a>
               </li>
-              <li class="nav__item">
+              <!-- <li class="nav__item">
                 <a href="servicios.html" class="nav__link oculto__services"
                   >Servicios</a
                 >
+              </li> -->
+              <li class="nav__item">
+                <a href="clients.html" class="nav__link"
+                  >Clientes & Proyectos</a
+                >
               </li>
               <li class="nav__item">
-                <a href="clients.html" class="nav__link">Clientes & Proyectos</a>
+                <a href="galeria.html" class="nav__link">Obras</a>
               </li>
               <li class="nav__item">
-                <a href="galeria.html" class="nav__link">Fotos de Obras</a>
+                <a href="nosotros.html" class="nav__link">Nosotros</a>
               </li>
               <li class="nav__item">
                 <a href="index.html#footer" class="nav__link">Contacto</a>
@@ -134,7 +135,7 @@
             <!--: Theme change button -->
 
             <div class="nav__dark">
-              <span class="change-theme-name">Modo Obscuro</span>
+              <span class="change-theme-name"></span>
               <i class="ri-moon-line change-theme" id="theme-button"></i>
             </div>
 
@@ -557,5 +558,21 @@
         </div>
       </section>
     </div>
+
+    <!--: CSS Animation for Galeria de fotos de Obras -->
+    <script src="js/mouseHover.js"></script>
+
+    <!--: Change header background color when scroll -->
+    <script src="js/scrollHeader.js"></script>
+
+    <!--: Menu navegation for responsive design -->
+    <script src="js/menuNav.js"></script>
+
+    <!--: Dark Mode -->
+    <script src="js/darkTheme.js"></script>
+
+    <!--: Scroll Reveal animation library -->
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/scrollReveal.js"></script>
   </body>
 </html>

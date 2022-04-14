@@ -1,0 +1,74 @@
+/* --------------------------------*/
+/*: GALERÍA Fotos Obras Realizadas */
+/* --------------------------------*/
+[id="galeria"] {
+  scroll-margin-top: 7ex;
+}
+
+.galeria {
+  width: 100%;
+  max-width: 1200px;
+  min-height: var(--section-height);
+  margin: auto;
+  padding: 10px;
+}
+
+.galeria .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.galeria .title h2 {
+  font-family: var(--font-titulos);
+  color: var(--text-color);
+  background-color: transparent;
+  margin-top: 2rem;
+}
+.galeria .title h2 span {
+  font-size: 0.5em;
+}
+
+.container_Galeria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 200px;
+  grid-gap: 2px;
+  grid-auto-flow: dense;
+}
+
+.container_Galeria:hover .gallery-container:not(.hover) {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+.container_Galeria .gallery-container {
+  transition: 0.7s;
+}
+.container_Galeria .gallery-container:nth-child(1),
+.container_Galeria .gallery-container:nth-child(6),
+.container_Galeria .gallery-container:nth-child(11) {
+  grid-row: span 2;
+}
+.container_Galeria .gallery-container:nth-child(2),
+.container_Galeria .gallery-container:nth-child(7) {
+  grid-column: span 2;
+}
+.container_Galeria .gallery-container .gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container_Galeria .gallery-container .gallery-item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container_Galeria .gallery-container .gallery-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  transition: 0.7s ease-in-out;
+}
