@@ -263,11 +263,8 @@
   border-bottom-right-radius: 5px;
 } */
 
-/* -----------*/
-/*: FOOTER    */
-/* -----------*/
-
-.footer {
+/*: copyright   */
+.copyright {
   display: flex;
   justify-content: flex-end;
   align-items: center;

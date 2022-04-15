@@ -3,22 +3,26 @@
 /* --------------------------- */
 
 [id="services"] {
-  scroll-margin-top: 0;
+  scroll-margin-top: 7ex;
 }
 
-section.servicios {
-  padding-top: 2.5rem; /* 72px */
-  /* padding-bottom: 1.25rem; 20px */
-}
+/* padding-bottom: 1.25rem; 20px */
+/* section.servicios {
+  padding-top: 2.5rem; 
+} */
 
 .servicios {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  height: var(--section-height);
-  /* min-height: var(--section-height); */
-  overflow: hidden;
-  margin: 0 auto;
+  /* height: var(--section-height); */
+  /* overflow: hidden;
+  margin: 0 auto; */
+
+  /* News! */
+  min-height: var(--section-services-height);
+  margin: auto;
+  padding: 10px;
 }
 .servicios .title h2 {
   font-family: var(--font-titulos);
@@ -27,9 +31,9 @@ section.servicios {
   /* margin-top: 4.5rem; */
   margin: 2.5rem 0;
 }
-.servicios .textBx {
+/* .servicios .textBx {
   position: relative;
-}
+} */
 .servicios .clickText {
   position: absolute;
   top: 35%;
@@ -199,7 +203,8 @@ section.servicios {
 
 .lightbox {
   position: fixed;
-  top: 250px;
+  /* top: 250px; */
+  top: 200px;
   right: 100px;
   transition: transform 1.5s ease-in-out;
   transform: scale(0);
@@ -344,11 +349,8 @@ section.servicios {
   display: none;
 }
 
-/* -----------*/
-/*: FOOTER    */
-/* -----------*/
-
-.footer {
+/*: Copyright */
+.copyright {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -371,7 +373,7 @@ section.servicios {
   font-style: italic;
 }
 
-/*: Footer Responsive Design */
+/*: Copyright Responsive Design */
 @media (max-width: 991px) {
   .copyrightTexto {
     padding: 8px 40px;

@@ -1,0 +1,148 @@
+/*--------------*/
+/*: Security     */
+/* --------------*/
+
+.security {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  min-height: var(--section-height);
+  margin: auto;
+}
+.security .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.security .title h2 {
+  font-family: var(--font-titulos);
+  color: var(--text-color);
+  background-color: transparent;
+  margin-top: 2rem;
+}
+.security .row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.security .row .col50 {
+  position: relative;
+  width: 48%;
+}
+.security .row .col50 h3 {
+  color: var(--text-color);
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.5;
+}
+.security .row .col50 h3 span {
+  color: var(--color-pagina);
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.security .row .col50 ul {
+  text-align: center;
+  font-size: 1.5em;
+  color: var(--text-color);
+  text-decoration: none;
+  list-style: none;
+  line-height: 45px;
+}
+.security .row .col50 ul li span {
+  color: var(--color-pagina);
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.security .row .col50 p {
+  text-align: center;
+  font-size: 1.3em;
+  color: var(--text-color);
+}
+.security .row .col50 p span {
+  color: var(--color-pagina);
+  font-weight: 700;
+  font-size: 1em;
+}
+.security .row .col50 .secondaryUL {
+  text-align: left;
+  margin-left: 220px;
+  font-size: 1.2em;
+  color: var(--text-color);
+  list-style: square;
+  line-height: 30px;
+}
+.security .row .col50 .secondaryUL li span {
+  color: var(--color-pagina);
+  font-weight: 700;
+  font-size: 1em;
+}
+.security .row .col50 .imgBx {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+.security .row .col50 .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------------------*/
+/*: Security Swiper Effect    */
+/* ---------------------------*/
+
+.security .slideshow2 {
+  position: absolute;
+  top: 0;
+  padding-top: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.security .slideshow2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+}
+
+.security .slideshow2 .swiper-slide img {
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+.security .swiper-container-horizontal {
+  position: relative;
+}
+
+/* .security .swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 120px;
+} */
+
+.security .swiper-button-next,
+.security .swiper-button-prev {
+  color: var(--swiper-bg-color);
+  position: absolute;
+  top: 35%;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.security .swiper-button-next::after,
+.security .swiper-button-prev::after {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.security .swiper-container-horizontal > .swiper-pagination-fraction {
+  color: var(--swiper-bg-color);
+  font-weight: 700;
+  position: absolute;
+  bottom: 140px;
+}

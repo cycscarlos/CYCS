@@ -115,11 +115,8 @@
   font-size: 8px;
 }
 
-/* -----------*/
-/*: FOOTER    */
-/* -----------*/
-
-.footer {
+/* Copyright    */
+.copyright {
   display: flex;
   justify-content: flex-end;
   align-items: center;

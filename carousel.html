@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CYCS & Co. | Servicios</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO & Google Crowlers Analitics  -->
+    <meta name="author" content="https://carlos-colmenares-a.netlify.app" />
+
+    <meta
+      name="description"
+      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes, marketing y desarrollo web & social media"
+    />
+    <meta name="sitedomain" content="https://cycs.netlify.app" />
+    <meta name="organization" content="CYCS & Co." />
+
+    <!-- Meta tags usadas por los buscadores de Google -->
+    <meta name="robots" content="index, follow, all" />
+    <meta name="googlebot" content="index, follow, all" />
+    <meta name="google" content="translate" />
+    <meta name="revisit-after" content="7days" />
+    <meta name="theme-color" content="#ff4c00" />
+    <meta
+      name="google-site-verification"
+      content="google-site-verification=wMVhkMD8X0AHtR33pE_heSfV6RWTk6LfdV9-KZdiV-E"
+    />
+
+    <!-- Meta tags usadas por Apple -->
+    <link
+      rel="apple-touch-icon"
+      href="https://cycs.netlify.app/img/favicon.png"
+    />
+
+    <!-- Meta tags usadas por Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@cycsingenieria" />
+    <meta name="twitter:title" content="CYCS! & Co. | Ingeniería y Proyectos" />
+    <meta name="twitter:creator" content="Ing. Carlos Colmenares A." />
+    <meta
+      name="twitter:description"
+      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes, marketing y desarrollo web & social media"
+    />
+    <meta
+      name="twitter:image"
+      content="https://cycs.netlify.app/img/about.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Esto es lo que somos.. ¡Trabajo, Seriedad y Responsabilidad!"
+    />
+
+    <!-- Meta tags usadas por LinkedIn e Instagram (Open Graph) -->
+    <meta property="og:url" content="https://cycs.netlify.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CYCS! & Co. | Ingeniería y Proyectos" />
+    <meta
+      property="og:description"
+      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes, marketing y desarrollo web & social media"
+    />
+    <meta
+      property="og:image"
+      content="https://cycs.netlify.app/img/about.png"
+    />
+    <meta property="og:site" content="@cycsingenieria" />
+
+    <!-- Meta tags de Datos Estructurados -->
+    <meta itemprop="name" content="CYCS! & Co. | Ingeniería y Proyectos" />
+
+    <meta
+      itempro="description"
+      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes, marketing y desarrollo web & social media"
+    />
+    <meta itemprop="image" content="https://cycs.netlify.app/img/about.png" />
+    <link rel="canonical" href="https://cycs.netlify.app" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- Remix Icons  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--: CSS General Styles -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/assets/carousel.css" />
+    <!-- <link rel="stylesheet" href="css/mediaQueries.css" /> -->
+  </head>
+  <body>
+    <div class="mainBox" id="home">
+      <!-------------------->
+      <!-- HEADER & LOGO  -->
+      <!-------------------->
+
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#" class="nav__logo">CYCS <span>& Co.</span></a>
+
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">Inicio</a>
+              </li>
+              <!-- <li class="nav__item">
+                <a href="servicios.html" class="nav__link oculto__services"
+                  >Servicios</a
+                >
+              </li> -->
+              <li class="nav__item">
+                <a href="clients.html" class="nav__link"
+                  >Clientes & Proyectos</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="galeria.html" class="nav__link">Obras</a>
+              </li>
+              <li class="nav__item">
+                <a href="nosotros.html" class="nav__link">Nosotros</a>
+              </li>
+              <li class="nav__item">
+                <a href="index.html#footer" class="nav__link">Contacto</a>
+              </li>
+              <!--* Hidden Navegation -->
+              <li class="nav__item">
+                <a href="#servicesRD" class="nav__link oculto__servicesRD"
+                  >Servicios</a
+                >
+              </li>
+            </ul>
+
+            <!--: Theme change button -->
+
+            <div class="nav__dark">
+              <span class="change-theme-name"></span>
+              <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+
+            <!-- Responsive close (X) button -->
+            <i class="ri-close-line nav__close" id="nav-close"></i>
+          </div>
+
+          <!-- Responsive navigation menu button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </nav>
+      </header>
+
+      <!--------------------------->
+      <!-- Social medias icons  -->
+      <!--------------------------->
+
+      <div class="social_Icon">
+        <a
+          href="https://twitter.com/@cycsingenieria?lang=en"
+          target="_blank"
+          class="social_Icon_Link"
+          ><span class="fab fa-twitter"></span
+        ></a>
+        <a
+          href="https://www.instagram.com/webzcoder"
+          target="_blank"
+          class="social_Icon_Link"
+          ><span class="fab fa-instagram"></span
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/carlos-colmenares-a-5a717375/"
+          target="_blank"
+          class="social_Icon_Link"
+          ><span class="fab fa-linkedin-in"></span
+        ></a>
+      </div>
+
+      <!----------------------->
+      <!-- whatsapp icon     -->
+      <!----------------------->
+
+      <div class="banner_Icon whatsapp_Texto">
+        <span>¡Envíanos un whatsapp!</span>
+        <a
+          href="https://api.whatsapp.com/send?phone=584143246396&text=¡Escríbenos un mensaje y te contactaremos... Saludos!"
+          target="_blank"
+        >
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <!------------------------------------->
+      <!--: Sección Carrousel de Servicios -->
+      <!------------------------------------->
+
+      <section class="servicios" id="services">
+        <!-- <div class="textBx"> -->
+        <div class="title">
+          <h2 class="scroll-title">Servicios</h2>
+        </div>
+        <!-- </div> -->
+
+        <div class="container-all">
+          <div class="container-carrousel">
+            <figure>
+              <a href="#imagen1">
+                <img
+                  loading="auto"
+                  itemprop="image"
+                  src="img/security/telco14.png"
+                  alt="instalacion de antenas microondas para enlaces de internet"
+                />
+                <h6>Sistemas Telecomunicaciones</h6>
+              </a>
+            </figure>
+
+            <figure>
+              <a href="#imagen2">
+                <img
+                  loading="auto"
+                  itemprop="image"
+                  src="img/security/alarma4.png"
+                  alt="instalacion de sistema de alarmas y deteccion de intrusos para hogares"
+                />
+                <h6>Sistemas de Alarmas</h6>
+              </a>
+            </figure>
+
+            <figure>
+              <a href="#imagen3">
+                <img
+                  loading="auto"
+                  itemprop="image"
+                  src="img/security/cerco2.png"
+                  alt="instalacion de cercos electricos perimetrales contra instruccion no deseada"
+                />
+                <h6>Cercos Eléctricos</h6>
+              </a>
+            </figure>
+
+            <figure>
+              <a href="#imagen4">
+                <img
+                  loading="auto"
+                  itemprop="image"
+                  src="img/security/videoPortero2.png"
+                  alt="instalacion de video porteros para control de acceso controlado en hogares u oficinas"
+                />
+                <h6>Vídeo Porteros</h6>
+              </a>
+            </figure>
+
+            <figure>
+              <a href="#imagen5">
+                <img
+                  loading="auto"
+                  itemprop="image"
+                  src="img/security/biometrico1.png"
+                  alt="instalacion de sistemas biometricos de control de acceso"
+                />
+                <h6>Control Acceso Biométrico</h6>
+              </a>
+            </figure>
+
+            <figure>
+              <a href="#imagen6">
+                <img
+                  loading="auto"
+                  itemprop="image"
+                  src="img/security/barrier4.png"
+                  alt="instalacion de barreras vehiculares de control de acceso en condominios residenciales u oficinas"
+                />
+                <h6>Control Acceso Vehicular</h6>
+              </a>
+            </figure>
+
+            <figure>
+              <a href="#imagen7">
+                <img
+                  loading="auto"
+                  itemprop="image"
+                  src="img/security/torniquete16.png"
+                  alt="instalacion de torniquetes de control de acceso en edificio de oficinas o torres empresariales"
+                />
+                <h6>Control Acceso Peatonal</h6>
+              </a>
+            </figure>
+
+            <figure>
+              <a href="#imagen8">
+                <img
+                  loading="auto"
+                  itemprop="image"
+                  src="img/security/cctvPTZ3.png"
+                  alt="instalacion profesional de video camaras de seguridad en exteriores con calidad industrial"
+                />
+                <h6>Vídeo Cámaras Seguridad</h6>
+              </a>
+            </figure>
+
+            <!-- Esta sería la imagen que falta en el carousel, y que genera el vacio entre las imagenes -->
+
+            <figure>
+              <!-- <a href="#imagen9">
+                  <img itemprop="image" src="img/servicios/z-barrera4.png" />
+                  <h6>xxxxxxxx</h6>
+                </a> -->
+            </figure>
+          </div>
+        </div>
+
+        <!-- Este sería la icono de la flecha hacia abajo dentro de un circulo, para indicar "avanzar" -->
+
+        <!-- <i class="fas fa-arrow-circle-down"></i> -->
+
+        <!------------------------------------->
+        <!--: Carrousel Servicios -lightbox   -->
+        <!------------------------------------->
+
+        <article class="lightbox" id="imagen1">
+          <div class="box-texto">
+            <h3>Telecomunicaciones<br />Microondas</h3>
+            <p class="telco">
+              <span>.</span>Estudios de factibilidad: Site survey, barridos de
+              frecuencia, análisis de espectro, planimetría de sitios<br />
+              <span>.</span>Instalamos y mantenemos en torre; radio bases GSM,
+              3G/4G, UTMS, enlaces PDH/SDH y última milla<br />
+              <span>.</span>Instalamos enlaces microondas para redes LAN/WAN con
+              servicios de voz, data, Internet, WiFi, cámaras de seguridad y/o
+              monitoreo de alarmas<br />
+              <span>.</span>Nuestro personal está certificado para trabajar en
+              torres > a 3m de altura<br />
+            </p>
+          </div>
+          <a href="#container-carrousel" class="close">X</a>
+        </article>
+
+        <article class="lightbox" id="imagen2">
+          <div class="box-texto">
+            <h3>Alarmas contra Robo</h3>
+            <p class="alarma">
+              Los ladrones nunca descansan, por eso tampoco debería hacerlo su
+              protección<br /><br />
+              La seguridad del hogar o negocio debe ser una prioridad, y
+              significa que no solo sus posesiones materiales están a salvo sino
+              su familia.<br /><br />
+              Gracias a nuestra experiencia, sabemos a ciencia cierta que tras
+              un robo en casa, nadie descansa igual.<br />
+              <span>.</span>Detección temprana contra instrusos e integración
+              con CCTV<br />
+              <span>.</span>Activacion/Desactivación remota<br />
+              <span>.</span>Notificación simultánea en varios celulares<br />
+            </p>
+          </div>
+          <a href="#container-carrousel" class="close">X</a>
+        </article>
+
+        <article class="lightbox" id="imagen3">
+          <div class="box-texto">
+            <h3>Cercos Eléctricos</h3>
+            <p class="cerco">
+              Proteja su perímetro del ingreso de personas no deseadas<br />
+              <span>.</span>Cuando las alarmas y las rejas ya no son
+              suficientes, el cerco eléctrico es una excelente alternativa. La
+              descarga que emite es de alto voltaje pero de corta duración, por
+              lo que no hace peligrar la vida de las personas, más allá del
+              fuerte impacto que genera.<br />
+              <span>.</span>El cerco eléctrico actúa como una barrera
+              psicológica y no requiere de púas en el alambre ni grandes obras
+              para ser efectiva.<br />
+              <span>.</span>Instalaciones profesionales y estéticas<br />
+            </p>
+          </div>
+          <a href="#container-carrousel" class="close">X</a>
+        </article>
+
+        <article class="lightbox" id="imagen4">
+          <div class="box-texto">
+            <h3>Vídeo Porteros</h3>
+            <p class="portero">
+              Poder observar desde el interior, quien toca la puerta, otorga
+              mucha seguridad antes de abrir<br /><br />
+              Permite la visualización y apertura automática de puertas de
+              manera local, a través de un monitor instalado en el interior de
+              su casa u oficina o de manera remota, desde un smartphone
+              autorizado.<br />
+              <span>.</span>Son sistemas equipados con cámaras HD y lente gran
+              angular para proveer una visión pereferica de 180°<br />
+              <span>.</span>Integración a cualquier sistema de control de acceso
+              o CCTV.
+            </p>
+          </div>
+          <a href="#container-carrousel" class="close">X</a>
+        </article>
+
+        <article class="lightbox" id="imagen5">
+          <div class="box-texto">
+            <h3>Sistemas Biométricos</h3>
+            <p class="biometrico">
+              <span>.</span>No más traspaso de tarjetas ni contraseñas!<br />
+              <span>.</span>Previene el fraude, registro de jornadas laborales
+              de forma rápida y eficaz e integración con sistemas de nómina<br />
+              <span>.</span>Control de acceso autorizado por huella dactilar,
+              clave o ambas!<br />
+              <span>.</span>Funciona de manera autónoma o integrado a sistemas
+              avanzados de Control de Accesos<br />
+              <span>.</span>Uso en interiores o a la intemperie<br />
+            </p>
+          </div>
+          <a href="#container-carrousel" class="close">X</a>
+        </article>
+
+        <article class="lightbox" id="imagen6">
+          <div class="box-texto">
+            <h3>Control Vehicular<br />Barreras</h3>
+            <p class="vehicular">
+              Regulan la circulación de vehículos en espacios privados,
+              restringiendo el acceso de aquellos no autorizados.<br />
+              <span>.</span>Los sistemas de C/A vehicular integran el uso de
+              plumas de acceso electromecánicas con mecanismos de identificación
+              electrónica<br />
+              <span>.</span>La identificación va desde la autenticación con
+              huellas dactilares, claves, tarjetas de proximidad, reconocimiento
+              de placas, identificación por RFid, hasta la integración con
+              sistemas de tickets, muy usados en estacionamientos privados y
+              públicos<br />
+              <span>.</span>Nuestros procesos de instalación están apegados a
+              las normas del fabricante y a los estándares industriales
+              COVENIN<br />
+            </p>
+          </div>
+          <a href="#container-carrousel" class="close">X</a>
+        </article>
+
+        <article class="lightbox" id="imagen7">
+          <div class="box-texto">
+            <h3>Control Peatonal<br />Torniquetes</h3>
+            <p class="torniquete">
+              Estos equipos son un método rápido y fiable para garantizar el
+              control de acceso a áreas restringidas<br /><br />
+              Se activan mediante diversos sistemas, como: lectores de tarjetas,
+              equipos biométricos o paneles de C/A externo (PLC)<br />
+              <span>.</span>Nuestros procesos de instalación están apegados a
+              las normas del fabricante y a los estándares industriales
+              COVENIN<br />
+              <span>.</span>Tenemos vasta experiencia en la instalación de
+              torniquetes mecánicos, de trípode, electrónicos y flap
+              barriers.<br />
+            </p>
+          </div>
+          <a href="#container-carrousel" class="close">X</a>
+        </article>
+
+        <article class="lightbox" id="imagen8">
+          <div class="box-texto">
+            <h3>Vídeo Cámaras Seguridad</h3>
+            <p class="camara">
+              Protega su Hogar, Oficina o Negocio, instalando un sistema de
+              video-vigilancia basado en cámaras de seguridad, lo que le
+              permitira:<br />
+              <span>.</span>Monitorear local o remoto, y en tiempo real lo que
+              ocurre en el entorno vigilado<br />
+              <span>.</span>Grabar dichas imágenes local o en nube (método
+              seguro), para su posterior revisión<br />
+              <span>.</span>Para el sector Industria; instalamos soluciones
+              avanzadas con sistemas analíticos de conteos de personas,
+              detección de rostros, sensores de movimientos y cercos
+              electrónicos<br />
+              <span>.</span>Nuestros procesos de instalación, son totalmente
+              profesionales y están sujetos a las normas de instalación y
+              estándares industriales de COVENIN<br />
+            </p>
+          </div>
+          <a href="#container-carrousel" class="close">X</a>
+        </article>
+
+        <div class="clickText">
+          <h4>
+            <!-- CLICK<span> sobre la lámina</span>
+          <i class="fas fa-arrow-right"></i> -->
+            <span>C</span><span>L</span><span>I</span><span>C</span
+            ><span>K</span> <i class="fas fa-arrow-right"></i>
+          </h4>
+        </div>
+      </section>
+
+      <!------------------------------------------->
+      <!-- Sección Servicios RESPONSIVE DESIGN ---->
+      <!------------------------------------------->
+
+      <section class="servicesRD" id="servicesRD">
+        <div class="title">
+          <h2 class="scroll-title">Servicios</h2>
+          <br /><br />
+        </div>
+
+        <div class="lista">
+          <!-- <h3>
+          <b class="subtitle">INSTALACIÓN</b><br />
+          SISTEMAS DE <span>S</span>EGURIDAD
+        </h3> -->
+          <h2><b>INSTALACIÓN</b></h2>
+          <h3>SISTEMAS DE <span>S</span>EGURIDAD</h3>
+          <ul class="firstUL">
+            <li>Torniquetes</li>
+            <li>Vídeo Porteros</li>
+            <li>Cercos Eléctricos</li>
+            <li>Sistemas de Alarmas</li>
+            <li>Barreras Vehiculares</li>
+            <li>Vídeo Cámaras de Seguridad</li>
+            <li>Sistemas Biométricos para:</li>
+            <ul class="secondUL">
+              <br />
+              <li>Manos libres para identificación de <span>P</span>ersonas</li>
+              <li>
+                Manos libres para identificación de <span>V</span>ehiculos
+              </li>
+              <li>Gestión de <span>F</span>lotas de vehiculos y camiones</li>
+              <li>Solución de <span>P</span>esajes de vehiculos en romana</li>
+              <li>
+                Control de bienes y personas con <span>D</span>iscapacidad
+              </li>
+            </ul>
+            <br />
+            <!-- <div class="title2"> -->
+            <div>
+              <!-- <h3>
+              <b class="subtitle">INSTALACIÓN</b>
+              <br />
+              <span>T</span>ELECOMUNICACIONES y REDES <span>M</span>ICROONDAS
+            </h3> -->
+              <h2>
+                <b>INSTALACIÓN</b>
+              </h2>
+              <h3>
+                <span>T</span>ELECOMUNICACIONES y REDES <span>M</span>ICROONDAS
+              </h3>
+            </div>
+
+            <br />
+            <li>Site Survey y Barridos de Frecuencia</li>
+            <li>Factibilidad e Ingeniería de Detalle</li>
+            <li>
+              Radio Bases y enlaces wireless de <br />
+              última milla para:
+              <ul class="secondUL">
+                <br />
+                <li>Conformación de Spots <span>W</span>iFi</li>
+                <li>Centros de <span>M</span>onitoreo Remoto</li>
+                <li>Propagación de <span>S</span>eñal de internet</li>
+                <li>Interconexión de <span>R</span>edes LAN/WAN</li>
+                <li>
+                  Transmisión de Vídeo de <span>C</span>ámaras de Seguridad
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="copyright" id="copyright">
+        <div class="copyrightTexto">
+          <p>Copyright &copy; Carlos Colmenares A. | Derechos Reservados</p>
+        </div>
+      </div>
+    </div>
+
+    <!--: CSS Animation for Galeria de fotos de Obras -->
+    <script src="js/mouseHover.js"></script>
+
+    <!--: Change header background color when scroll -->
+    <script src="js/scrollHeader.js"></script>
+
+    <!--: Menu navegation for responsive design -->
+    <script src="js/menuNav.js"></script>
+
+    <!--: Dark Mode -->
+    <script src="js/darkTheme.js"></script>
+
+    <!--: Scroll Reveal animation library -->
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/scrollReveal.js"></script>
+  </body>
+</html>
