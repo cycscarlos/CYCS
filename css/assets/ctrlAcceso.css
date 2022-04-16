@@ -2,6 +2,10 @@
 /*: Access Control      */
 /* ---------------------*/
 
+section.ctrlAcceso {
+  padding-top: 2.5rem; /* 40px */
+}
+
 .ctrlAcceso {
   position: relative;
   width: 100%;
@@ -142,4 +146,11 @@
   font-weight: 700;
   position: absolute;
   bottom: 180px;
+}
+
+@media screen and (min-width: 769px) {
+  .nav__list {
+    flex-direction: row;
+    column-gap: 1rem; /* Espacio entre enlaces */
+  }
 }

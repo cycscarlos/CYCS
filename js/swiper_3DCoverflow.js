@@ -4,9 +4,13 @@ var swiper = new Swiper(".slideshow1", {
   centeredSlides: true,
   slidesPerView: "auto",
   coverflowEffect: {
+    // rotate: 20,
+    // stretch: 0,
+    // depth: 200,
+    // modifier: 1,
     rotate: 20,
     stretch: 0,
-    depth: 200,
+    depth: 100,
     modifier: 1,
     slideShadows: true,
   },
@@ -21,6 +25,6 @@ var swiper = new Swiper(".slideshow1", {
   loop: true,
   autoplay: {
     delay: 2000,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
 });

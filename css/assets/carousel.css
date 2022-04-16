@@ -379,3 +379,10 @@
     padding: 8px 40px;
   }
 }
+
+@media screen and (min-width: 769px) {
+  .nav__list {
+    flex-direction: row;
+    column-gap: .5rem; /* Espacio entre enlaces */
+  }
+}

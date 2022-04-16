@@ -10,7 +10,7 @@ sr.reveal(`.cards, .security, .muro, .footer`, {
   interval: 100,
 });
 
-sr.reveal(`.ctrlAcceso, .aboutUs`, {
+sr.reveal(`.ctrlAcceso, .equipo`, {
   origin: "left",
   interval: 100,
 });

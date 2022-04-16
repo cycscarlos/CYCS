@@ -1,3 +1,115 @@
+/* ---------------------------------- */
+/*: Nosotros. Mosaico de Fotos  */
+/* ---------------------------------- */
+
+.equipo {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  min-height: var(--section-height);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  /* margin: auto;
+  background-image: url(./../img/about.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0 0 0; */
+}
+
+.equipo .imgBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipo .titulo {
+  position: relative;
+  width: 100%;
+}
+
+.equipo .titulo h2 {
+  flex-direction: column;
+  font-family: var(--font-titulos);
+  letter-spacing: 2.5px;
+
+  color: var(--text-color);
+  padding: 0;
+  background-color: transparent;
+}
+
+.equipo .titulo span {
+  color: var(--text-color);
+  opacity: 0.5;
+}
+
+.equipo .fas.fa-arrow-circle-down {
+  position: absolute;
+  right: 0;
+  bottom: 15%;
+  /* right: 47.2%;
+  bottom: 8.5%; */
+  margin: auto;
+  font-size: 35px;
+  background: transparent;
+  /* color: var(--text-color); */
+  color: var(--color-pagina);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: none;
+}
+
+/* Sub-rutina para colocar un Titulo centrado al medio de la página con animación aparecer/desaparecer */
+
+/* .equipo .subtitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipo .subtitulo h3 {
+  position: relative;
+  top: 200px;
+  font-size: 40px;
+  letter-spacing: 6px;
+  color: rgba(255, 73, 0, 0.5);
+  -webkit-text-stroke: 0.3vw rgba(28, 54, 67, 0.2);
+  text-transform: uppercase;  
+}
+
+.equipo .subtitulo h3::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #fff;
+  -webkit-text-stroke: 0vw rgba(28, 54, 67, 0.2);
+  border-right: 4px solid rgb(255, 73, 0);
+  overflow: hidden;
+  animation: textAnimate 6s linear infinite;
+}
+
+@keyframes textAnimate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+} */
+
 /* ------------------------------*/
 /*: Muro "Oficina de Proyectos"  */
 /* ------------------------------*/
@@ -74,110 +186,6 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-
-/* ---------------------------------- */
-/*: Quienes somos?  Mosaico de Fotos  */
-/* ---------------------------------- */
-
-.aboutUs {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  min-height: var(--section-height);
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-
-  /* margin: auto;
-  background-image: url(./../img/about.png);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  padding: 60px 0 0 0; */
-}
-
-.aboutUs .imgBx {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.aboutUs .titulo {
-  position: relative;
-  width: 100%;
-}
-
-.aboutUs .titulo h2 {
-  flex-direction: column;
-  font-family: var(--font-titulos);
-  letter-spacing: 2.5px;
-
-  color: var(--text-color);
-  padding: 0;
-  background-color: transparent;
-}
-
-.aboutUs .titulo span {
-  color: var(--text-color);
-  opacity: 0.5;
-}
-
-.aboutUs .fas.fa-arrow-circle-down {
-  position: absolute;
-  right: 47.2%;
-  bottom: 8.5%;
-  margin: auto;
-  font-size: 35px;
-  background: transparent;
-  color: var(--text-color);
-  border-radius: 50%;
-}
-
-/* Sub-rutina para colocar un Titulo centrado al medio de la página con animación aparecer/desaparecer */
-
-/* .aboutUs .subtitulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.aboutUs .subtitulo h3 {
-  position: relative;
-  top: 200px;
-  font-size: 40px;
-  letter-spacing: 6px;
-  color: rgba(255, 73, 0, 0.5);
-  -webkit-text-stroke: 0.3vw rgba(28, 54, 67, 0.2);
-  text-transform: uppercase;  
-}
-
-.aboutUs .subtitulo h3::before {
-  content: attr(data-text);
-  position: absolute;
-  left: 0;
-  width: 0;
-  height: 100%;
-  color: #fff;
-  -webkit-text-stroke: 0vw rgba(28, 54, 67, 0.2);
-  border-right: 4px solid rgb(255, 73, 0);
-  overflow: hidden;
-  animation: textAnimate 6s linear infinite;
-}
-
-@keyframes textAnimate {
-  0%,
-  10%,
-  100% {
-    width: 0;
-  }
-  70%,
-  90% {
-    width: 100%;
-  }
-} */
 
 /* --------------*/
 /*: Profile CEO  */
@@ -291,5 +299,12 @@
 @media (max-width: 991px) {
   .copyrightTexto {
     padding: 8px 40px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .nav__list {
+    flex-direction: row;
+    column-gap: 1.5rem; /* Espacio entre enlaces */
   }
 }

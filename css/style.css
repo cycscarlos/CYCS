@@ -451,7 +451,8 @@ input {
   .nav__list {
     display: flex;
     flex-direction: column;
-    row-gap: 2.5rem;
+    /* row-gap: 2.5rem; */
+    row-gap: 0.5rem;
   }
   .nav__link {
     color: var(--color-logo);
@@ -673,7 +674,8 @@ input {
 
 .slideshow1 .swiper-button-next,
 .slideshow1 .swiper-button-prev {
-  color: var(--swiper-bg-color-show1);
+  /* color: var(--swiper-bg-color-show1); */
+  color: var(--color-pagina);
   position: absolute;
   top: 50%;
   margin-left: -8px;
@@ -708,6 +710,9 @@ h2.elegantshadow {
 /* --------------*/
 /*: Cards        */
 /* --------------*/
+section.cards {
+  padding-top: 2.5rem; /* 40px */
+}
 
 .cards {
   position: relative;
@@ -723,13 +728,18 @@ h2.elegantshadow {
   align-items: center;
   flex-direction: column;
 }
+.cards .title h3 {
+  margin: 0 auto;
+  background-color: none;
+}
 .cards .title h2 {
-  width: 30%;
+  width: 15%;
   color: #fff;
   font-size: 35px;
   background: var(--animation-bg-color);
   font-family: var(--font-titulos);
   margin-top: 2rem;
+  border-radius: 3%;
 }
 
 .cards__subtitle {
@@ -827,8 +837,8 @@ h2.elegantshadow {
   text-decoration: none;
   text-align: center;
   border-radius: 5px;
-  background: rgba(39, 59, 71, 0.3);
-  color: var(--white-color);
+  background: rgba(39, 59, 71, 0.8);
+  color: var(--color-pagina);
   cursor: pointer;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -837,6 +847,7 @@ h2.elegantshadow {
 }
 .cards .cardsBx .card .boton_mostrar:hover {
   background-image: linear-gradient(to top, #ff4900 0%, #ffb199 100%);
+  color: var(--white-color);
 }
 
 /*: Aqui iban los estilos de servicios  */
@@ -847,11 +858,201 @@ h2.elegantshadow {
 
 /*: Aqui iban los estilos de Telecomunicaciones */
 
-/*: Aqui estaban clientes */
+/*: Aqui iba clientes */
+/* --------------------------*/
+/*: CLIENTES y PROYECTOS     */
+/* --------------------------*/
 
-/*: Aqui estaban galería */
+.clientes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  margin: auto;
+  min-height: var(--section-height);
+  width: 100%;
+  max-width: 1200px;
+}
+.clients .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.clients .title h2 {
+  font-family: var(--font-titulos);
+  color: var(--text-color);
+  background-color: transparent;
+  margin-top: 2rem;
+}
+.clients .title h2 span {
+  font-size: 0.5em;
+}
+.clientes .card {
+  position: relative;
+  margin: 20px 30px 20px 5px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  width: 160px;
+  height: 160px;
+}
 
-/*: Aqui estaban Muro, Quienes somos (mosaico de fotos) y profile */
+.clientes .card .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 1s ease;
+}
+
+.clientes .card:hover .box {
+  transform: rotateY(180deg);
+}
+
+.clientes .card .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.clientes .card .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clientes .card .box .contentBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-azulMedio);
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+.clientes .card .box .contentBx div {
+  transform-style: preserve-3d;
+  padding: 3px;
+  background: linear-gradient(45deg, #83c2c7, #fff);
+  transform: translateZ(100px);
+
+  /*: ¡OJoooo! Estas dos instrucciones son nuevas -No existian */
+  width: 100%;
+  height: 75%;
+}
+
+.clientes .card .box .contentBx div h2 {
+  margin-bottom: 2px;
+  color: #000;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 10px;
+}
+
+.clientes .card .box .contentBx div p {
+  padding: 3px;
+  letter-spacing: 0.4px;
+  color: #000;
+  font-family: var(--font-proyectos);
+  font-weight: 500;
+  text-transform: none;
+  line-height: 1.4em;
+  text-align: justify;
+  font-size: 8px;
+}
+
+/*: Aqui iba galería */
+/* --------------------------------*/
+/*: GALERÍA Fotos Obras Realizadas */
+/* --------------------------------*/
+[id="galeria"] {
+  scroll-margin-top: 7ex;
+}
+
+.galeria {
+  width: 100%;
+  max-width: 1200px;
+  min-height: var(--section-height);
+  margin: auto;
+  padding: 10px;
+}
+
+.galeria .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.galeria .title h2 {
+  font-family: var(--font-titulos);
+  color: var(--text-color);
+  background-color: transparent;
+  margin-top: 2rem;
+}
+.galeria .title h2 span {
+  font-size: 0.5em;
+}
+
+.container_Galeria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 200px;
+  grid-gap: 2px;
+  grid-auto-flow: dense;
+}
+
+.container_Galeria:hover .gallery-container:not(.hover) {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+.container_Galeria .gallery-container {
+  transition: 0.7s;
+}
+.container_Galeria .gallery-container:nth-child(1),
+.container_Galeria .gallery-container:nth-child(6),
+.container_Galeria .gallery-container:nth-child(11) {
+  grid-row: span 2;
+}
+.container_Galeria .gallery-container:nth-child(2),
+.container_Galeria .gallery-container:nth-child(7) {
+  grid-column: span 2;
+}
+.container_Galeria .gallery-container .gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container_Galeria .gallery-container .gallery-item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container_Galeria .gallery-container .gallery-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  transition: 0.7s ease-in-out;
+}
+
+/*: Aqui iban Muro, Quienes somos (mosaico de fotos) y profile */
 
 /* -----------*/
 /*: FOOTER    */

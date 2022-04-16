@@ -300,7 +300,7 @@
   }
   .nav__list {
     flex-direction: column;
-    row-gap: 2.5rem;
+    row-gap: 2.5rem;  
   }
   .nav__item {
     padding: 0.75rem;
@@ -730,7 +730,8 @@
   }
   .nav__list {
     flex-direction: row;
-    column-gap: 1.5rem; /* Espacio entre enlaces */
+    /* column-gap: 1.5rem; /* Espacio entre enlaces */
+    column-gap: .5rem; 
   }
   .nav__toggle,
   .nav__close {

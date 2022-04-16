@@ -1,6 +1,9 @@
 /* ----------------------*/
 /*: Telecommunication    */
 /* ----------------------*/
+section.telco {
+  padding-top: 2.5rem; /* 40px */
+}
 
 .telco {
   position: relative;
@@ -130,4 +133,11 @@
   font-weight: 700;
   position: absolute;
   bottom: 320px;
+}
+
+@media screen and (min-width: 769px) {
+  .nav__list {
+    flex-direction: row;
+    column-gap: 1rem; /* Espacio entre enlaces */
+  }
 }
