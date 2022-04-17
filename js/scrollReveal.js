@@ -5,27 +5,17 @@ const sr = ScrollReveal({
   // reset: true,
 });
 
-sr.reveal(`.cards, .security, .muro, .footer`, {
+sr.reveal(`.telco, .muro`, {
   origin: "top",
   interval: 100,
 });
 
-sr.reveal(`.ctrlAcceso, .equipo`, {
+sr.reveal(`.galeria, .ctrlAcceso, .equipo`, {
   origin: "left",
   interval: 100,
 });
 
-sr.reveal(`.telco, .servicesRD`, {
+sr.reveal(`.clients, .security, .servicesRD`, {
   origin: "right",
   interval: 100,
 });
-
-// sr.reveal(
-//   `.about__img-overlay,
-//            .video__content,
-//            .subscribe__form`,
-//   {
-//     origin: "right",
-//     interval: 100,
-//   }
-// );

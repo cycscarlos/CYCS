@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CYCS & Co. | Nosotros</title>
+    <title>CYCS & Co. | Contacto</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
 
     <meta
       name="description"
-      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes, marketing y desarrollo web & social media"
+      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes de telecomunicaciones"
     />
     <meta name="sitedomain" content="https://cycs.netlify.app" />
     <meta name="organization" content="CYCS & Co." />
@@ -40,7 +40,7 @@
     <meta name="twitter:creator" content="Ing. Carlos Colmenares A." />
     <meta
       name="twitter:description"
-      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes, marketing y desarrollo web & social media"
+      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes de telecomunicaciones"
     />
     <meta
       name="twitter:image"
@@ -48,7 +48,7 @@
     />
     <meta
       name="twitter:image:alt"
-      content="Esto es lo que somos.. ¡Trabajo, Seriedad y Responsabilidad!"
+      content="Esto es lo que somos.. ¡Excelencia, Seriedad y Responsabilidad!"
     />
 
     <!-- Meta tags usadas por LinkedIn e Instagram (Open Graph) -->
@@ -57,7 +57,7 @@
     <meta property="og:title" content="CYCS! & Co. | Ingeniería y Proyectos" />
     <meta
       property="og:description"
-      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes, marketing y desarrollo web & social media"
+      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes de telecomunicaciones"
     />
     <meta
       property="og:image"
@@ -70,7 +70,7 @@
 
     <meta
       itempro="description"
-      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes, marketing y desarrollo web & social media"
+      content="Suministro, instalación y mantenimiento de sistemas de seguridad electrónica, control de accesos, tecnología y redes de telecomunicaciones"
     />
     <meta itemprop="image" content="https://cycs.netlify.app/img/about.png" />
     <link rel="canonical" href="https://cycs.netlify.app" />
@@ -84,11 +84,16 @@
       rel="stylesheet"
     />
 
-    <!--: CSS General Styles -->
+    <!-- Iconscout CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+
+    <!-- CSS General Styles -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/assets/nosotros.css" />
-    <!-- <link rel="stylesheet" href="css/mediaQueries.css" /> -->
+    <link rel="stylesheet" href="css/assets/contacto.css" />
   </head>
   <body>
     <div class="mainBox" id="home">
@@ -105,21 +110,27 @@
               <li class="nav__item">
                 <a href="index.html" class="nav__link">Inicio</a>
               </li>
-              <li class="nav__item">
-                <a href="carousel.html" class="nav__link oculto__services"
+              <!-- <li class="nav__item">
+                <a href="servicios.html" class="nav__link oculto__services"
                   >Servicios</a
                 >
-              </li>
+              </li> -->
               <li class="nav__item">
-                <a href="clients.html" class="nav__link"
-                  >Clientes & Proyectos</a
+                <a href="security.html" class="nav__link"
+                  >Sistemas de Seguridad</a
                 >
               </li>
               <li class="nav__item">
-                <a href="galeria.html" class="nav__link">Obras</a>
+                <a href="ctrlAcceso.html" class="nav__link"
+                  >Control de Acceso</a
+                >
               </li>
               <li class="nav__item">
-                <a href="contacto.html" class="nav__link">Contacto</a>
+                <a href="telco.html" class="nav__link">Telecomunicaciones</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="index.html#footer" class="nav__link">Contacto</a>
               </li>
               <!--* Hidden Navegation -->
               <li class="nav__item">
@@ -132,7 +143,7 @@
             <!--: Theme change button -->
 
             <div class="nav__dark">
-              <span class="change-theme-name">Modo Obscuro</span>
+              <span class="change-theme-name"></span>
               <i class="ri-moon-line change-theme" id="theme-button"></i>
             </div>
 
@@ -186,110 +197,119 @@
         </a>
       </div>
 
-      <!-------------------------->
-      <!-- Muro de Presentación -->
-      <!-------------------------->
-      <section class="muro" id="muro">
-        <div class="box_muro">
-          <div class="box_textos_muro">
-            <h2 class="muro-subtitulo">Oficina de Proyectos</h2>
-
-            <p class="muro-parrafo">
-              <span>* </span>+20 años de experiencia y una sólida cartera de
-              clientes
+      <!------------------------------>
+      <!--: Formulario de Contacto  -->
+      <!------------------------------>
+      <section class="contact" id="contact">
+        <div class="containerForm contact__container">
+          <aside class="contact__aside">
+            <div class="aside__image">
+              <img src="./img/contact.svg" alt="" />
+            </div>
+            <h2>Contact Us</h2>
+            <p>
+              Diseñamos e instalamos sistemas de seguridad, control de acceso y
+              redes de telecomunicaciones, bajo estrictos estándares de calidad!
             </p>
-            <br />
+            <ul class="contact__details">
+              <li>
+                <i class="uil uil-phone-times"></i>
+                <h5><a href="Phone:+584143246396">(+58) 414 324 63 96</a></h5>
+              </li>
+              <li>
+                <i class="uil uil-envelope"></i>
+                <h5>
+                  <a
+                    href="mailto:cycs.ingenieria@gmail.com?&subject=Requerimiento/Contacto%20proveniente%20del%20Website!"
+                    >cycs.ingenieria@gmail.com</a
+                  >
+                </h5>
+              </li>
+              <li>
+                <i class="uil uil-location-point"></i>
+                <h5>
+                  Av. Veracruz, c/Auyantepuy, Edif. PWC, Ofic. 7-A, Chuao, Urb.
+                  Las Mercedes, Caracas
+                </h5>
+              </li>
+            </ul>
+            <ul class="contact__socials">
+              <li>
+                <a
+                  href="https://twitter.com/@cycsingenieria?lang=en"
+                  target="_blank"
+                >
+                  <i class="uil uil-twitter"></i>
+                </a>
+              </li>
 
-            <p class="muro-parrafo">
-              <span>* </span
-              ><i>
-                Suministramos, instalamos y proveemos mantenimiento a sistemas
-                de...</i
-              >
-            </p>
-            <br />
-            <p class="muro-parrafo muro-parrafo-span">
-              <span>I. </span>Seguridad Electrónica
-            </p>
+              <li>
+                <a
+                  href="https://www.instagram.com/carlos_colmenares_alvarez/?hl=es"
+                  target="_blank"
+                >
+                  <i class="uil uil-instagram"></i>
+                </a>
+              </li>
 
-            <p class="muro-parrafo muro-parrafo-span">
-              <span>II. </span>Control de Accesos peatonal y vehicular
-            </p>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/carlos-colmenares-a-5a717375/"
+                  target="_blank"
+                >
+                  <i class="uil uil-linkedin-alt"></i>
+                </a>
+              </li>
 
-            <p class="muro-parrafo muro-parrafo-span">
-              <span>III. </span>Telecomunicaciones y Redes Microondas
-            </p>
-            <br />
+              <li>
+                <a
+                  href="https://api.whatsapp.com/send?phone=584143246396&text=¡Escríbenos un mensaje y te contactaremos... Saludos!"
+                  target="_blank"
+                >
+                  <i class="uil uil-whatsapp"></i>
+                </a>
+              </li>
+            </ul>
+          </aside>
 
-            <p class="muro-lema">Excelencia, Seriedad, Responsabilidad</p>
-          </div>
-        </div>
-        <i class="fas fa-arrow-circle-down"></i>
-      </section>
+          <form
+            action="https://formspree.io/f/xbjwzpzl"
+            method="POST"
+            data-netlify="true"
+            class="contact__form"
+          >
+            <div class="form__name">
+              <input
+                type="text"
+                name="First Name"
+                placeholder="First Name"
+                required
+              />
 
-      <!---------------------------------------->
-      <!--  Nosotros.  Mosaico de Fotos       -->
-      <!---------------------------------------->
+              <input
+                type="text"
+                name="Last Name"
+                placeholder="Last Name"
+                required
+              />
+            </div>
 
-      <section class="equipo" id="equipo">
-        <div class="titulo">
-          <h2 class="scroll-title">...Seriedad y Responsabilidad.!</h2>
-        </div>
-        <div class="imgBx">
-          <img
-            loading="auto"
-            src="img/about.png"
-            alt="Foto de equipo de trabajo en obra"
-          />
-        </div>
+            <input
+              type="email"
+              name="Email Address"
+              placeholder="Your Email Address"
+              required
+            />
 
-        <i class="fas fa-arrow-circle-down"></i>
-      </section>
+            <textarea
+              name="Message"
+              rows="7"
+              placeholder="Your Message"
+              required
+            ></textarea>
 
-      <!----------------------------->
-      <!--  Nosotros.  Profile CEO       -->
-      <!----------------------------------->
-
-      <section class="profile" id="profile">
-        <div class="profile-info">
-          <h1 class="profile-title">
-            <span>Co-founder & CEO</span>
-            <div class="name">Carlos Colmenares A.</div>
-          </h1>
-          <p class="profile-details">
-            Trabajó por más de 20 años como ingeniero de software en tecnologías
-            IBM Mainframe; implementando proyectos de alto nivel técnico, en más
-            de 25 empresas corporativas; incluyendo 12 bancos nacionales y uno
-            en el exterior. Posteriormente desarrolló una exitosa carrera como
-            ingeniero de proyectos, en las áreas de telecomunicaciones
-            (especialización académica) y sistemas de seguridad electrónica;
-            implementando infinidad de proyectos en más de 30 industrias y
-            empresas corporativas; algunas de la talla de PDVSA, Cargill de
-            Venezuela, Metro de Caracas, CANTV, Movistar, entre muchas otras. En
-            paralelo, como web developer, desarrolla software para web, Apps
-            mobiles y servidores. Sus proyectos en esta área pueden pueden ser
-            vistos en los siguientes enlaces:
-            <a href="https://github.com/cycscarlos" target="_blank"
-              >https://github.com/cycscarlos</a
-            >
-            |
-            <a
-              href="https://cycscarlos.github.io/Carlos_Colmenares_A/"
-              target="_blank"
-              >https://carlos-colmenares-a.netlify.app</a
-            >
-          </p>
-        </div>
-        <div class="profile-img-section">
-          <img
-            loading="auto"
-            width="288"
-            height="384"
-            class="profile-img"
-            src="./img/mainFoto.png"
-            alt="software engineer"
-          />
-          <!-- <div class="profile-img-line"></div> -->
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
         </div>
       </section>
 
@@ -300,20 +320,16 @@
       </div>
     </div>
 
-    <!--: CSS Animation for Galeria de fotos de Obras -->
+    <!------------------------->
+    <!--: Rutinas Javascript -->
+    <!------------------------->
+
     <script src="js/mouseHover.js"></script>
-
-    <!--: Change header background color when scroll -->
     <script src="js/scrollHeader.js"></script>
-
-    <!--: Menu navegation for responsive design -->
     <script src="js/menuNav.js"></script>
-
-    <!--: Dark Mode -->
     <script src="js/darkTheme.js"></script>
-
-    <!--: Scroll Reveal animation library -->
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/scrollReveal.js"></script>
+    <script src="js/formspree.js"></script>
   </body>
 </html>

@@ -8,7 +8,7 @@ var swiper = new Swiper(".slideshow1", {
     // stretch: 0,
     // depth: 200,
     // modifier: 1,
-    rotate: 20,
+    rotate: 40,
     stretch: 0,
     depth: 100,
     modifier: 1,
@@ -23,8 +23,8 @@ var swiper = new Swiper(".slideshow1", {
     prevEl: ".swiper-button-prev",
   },
   loop: true,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: true,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: true,
+  // },
 });
