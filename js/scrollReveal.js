@@ -5,7 +5,7 @@ const sr = ScrollReveal({
   // reset: true,
 });
 
-sr.reveal(`.telco, .muro`, {
+sr.reveal(`.proveedores, .telco, .muro`, {
   origin: "top",
   interval: 100,
 });
