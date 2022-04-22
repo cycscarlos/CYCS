@@ -168,7 +168,7 @@ textarea {
   color: var(--white-color);
 }
 
-/* Responsive for Tablets */
+/* Responsive for Tablets landscape mode */
 @media screen and (max-width: 1024px) {
   .contact {
     padding-bottom: 0;
@@ -193,6 +193,12 @@ textarea {
   }
 }
 
+/* Responsive for Tablets portrait mode */
+@media screen and (max-width: 768px) {
+  .nav__list {
+    row-gap: 4rem; /* Espacio entre enlaces */
+  }
+}
 /* Responsive for Mobiles */
 @media screen and (max-width: 600px) {
   .contact__container {

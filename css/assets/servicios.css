@@ -5,22 +5,11 @@
 [id="services"] {
   scroll-margin-top: 7ex;
 }
-
-/* padding-bottom: 1.25rem; 20px */
-/* section.servicios {
-  padding-top: 2.5rem; 
-} */
-
 .servicios {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  /* height: var(--section-height); */
-  /* overflow: hidden;
-  margin: 0 auto; */
-
-  /* News! */
-  min-height: var(--section-services-height);
+  min-height: var(--section-height);
   margin: auto;
   padding: 10px;
 }
@@ -28,12 +17,14 @@
   font-family: var(--font-titulos);
   color: var(--text-color);
   background-color: transparent;
-  /* margin-top: 4.5rem; */
   margin: 2.5rem 0;
 }
-/* .servicios .textBx {
-  position: relative;
-} */
+
+/* Solo usado en modo responsive */
+.rd__clickText {
+  display: none;
+}
+
 .servicios .clickText {
   position: absolute;
   top: 35%;
@@ -42,7 +33,6 @@
 
 .servicios .clickText h4 {
   width: 100%;
-  /* background: var(--text-color); */
   background: var(--animation-bg-color);
   font-size: 2em;
   padding: 0 20px;
@@ -55,7 +45,6 @@
   letter-spacing: 0.1em;
 }
 .servicios .clickText h4 .fa-arrow-right {
-  /* margin: 0 10px; */
   font-size: 0.7em;
   color: var(--white-color);
 }
@@ -341,16 +330,8 @@
   transform: scale(1);
 }
 
-/* ----------------------------------*/
-/*: Responsive Design -Servicios     */
-/* ----------------------------------*/
-
-.servicesRD {
-  display: none;
-}
-
 /*: Copyright */
-.copyright {
+/* .copyright {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -371,19 +352,262 @@
 .copyrightTexto span {
   font-weight: 100;
   font-style: italic;
+} */
+
+.servicesRD {
+  display: none;
 }
 
-/*: Copyright Responsive Design */
-@media (max-width: 991px) {
-  .copyrightTexto {
-    padding: 8px 40px;
+/*! iPad Pro o iPad in landscape mode  */
+@media screen and (max-width: 1024px) {
+  .nav {
+    padding: 0 40px;
+  }
+
+  .servicios .scroll-title {
+    font-size: 4rem;
+  }
+  .nav__menu {
+    background: var(--color-header);
+  }
+  .nav__list {
+    row-gap: 4rem;
+  }
+  .nav__link {
+    margin: 10px;
+  }
+  .servicios {
+    min-height: var(--section-height);
+  }
+  .clickText {
+    display: none;
+  }
+  .rd__clickText {
+    display: block;
+  }
+  .servicios .rd__clickText {
+    position: absolute;
+    top: 30%;
+    left: 42.5%;
+    transform: translate(-30% -42.5%);
+  }
+  .servicios .rd__clickText {
+    width: 10rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .servicios .rd__clickText h4 {
+    width: 100%;
+    background: var(--animation-bg-color);
+    font-size: 2rem;
+  }
+  .servicios .rd__clickText h4 span {
+    font-size: 0.75em;
+    color: var(--white-color);
+    letter-spacing: 0.1em;
+  }
+  .servicios .rd__clickText h4 .fa-arrow-down {
+    font-size: 0.7em;
+    color: var(--white-color);
+  }
+
+  /*_ Click & Arrow animation routine  */
+  .servicios .rd__clickText h4 span {
+    animation: click 2.25s linear infinite;
+    -webkit-animation: click 2.25s linear infinite;
+  }
+  .servicios .rd__clickText h4 span:nth-child(1) {
+    animation-delay: 0.25s;
+  }
+  .servicios .rd__clickText h4 span:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  .servicios .rd__clickText h4 span:nth-child(3) {
+    animation-delay: 0.75s;
+  }
+  .servicios .rd__clickText h4 span:nth-child(4) {
+    animation-delay: 1s;
+  }
+  .servicios .rd__clickText h4 span:nth-child(5) {
+    animation-delay: 1.25s;
+  }
+  @keyframes click {
+    0%,
+    100% {
+      color: #fff;
+      filter: blur(2px);
+      text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+        0 0 80px #00b3ff;
+    }
+    5%,
+    95% {
+      color: var(--color-pagina);
+      filter: blur(0px);
+      text-shadow: none;
+    }
+  }
+  /*_ Ends Click & Arrow animation routine */
+
+  .servicios .container-all {
+    position: absolute;
+    width: 210px;
+    top: 45%;
+    left: 50%;
+  }
+  .lightbox {
+    top: 50%;
+    left: 40%;
+    transform: translate(-50% -40%);
   }
 }
 
-@media screen and (min-width: 769px) {
+/*! iPad in Portrait mode  */
+
+/*! Samsung Galaxy J2 */
+@media screen and (max-width: 540px) {
+  .servicios .title h2 {
+    font-size: 2.5rem;
+  }
+
+  .servicios .rd__clickText {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: translate(-25% -35%);
+  }
+  .social_Icon,
+  .banner_Icon {
+    right: 70px;
+  }
+  .lightbox {
+    top: 45%;
+    left: 30%;
+    transform: translate(-45% -30%);
+  }
+}
+
+/*! PC in smallest viewport mode */
+@media screen and (max-width: 500px) {
+  .servicios .scroll-title {
+    font-size: 2rem;
+  }
+  .servicios .rd__clickText h4 {
+    font-size: 1.5rem;
+  }
+  .servicios .rd__clickText {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-25% -30%);
+  }
+  .social_Icon,
+  .banner_Icon {
+    right: 75px;
+  }
+  .lightbox {
+    top: 50%;
+    left: 25%;
+    transform: translate(-50% -25%);
+  }
+}
+
+/*! iPhone XS Max */
+@media screen and (max-width: 414px) {
+  .services {
+    width: 100%;
+    height: 100vh;
+  }
+  .nav__menu {
+    width: 90%;
+    padding: 4rem 2rem 2rem;
+  }
+  .servicios .title h2.scroll-title {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 2rem;
+  }
+  .social_Icon,
+  .banner_Icon {
+    right: 25px;
+  }
+  .servicios .rd__clickText {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-25% -30%);
+  }
+  .lightbox {
+    top: 42.5%;
+    left: 23.5%;
+    transform: translate(-42.5% -23.5%);
+  }
+}
+
+/*! iPhone 12 Pro */
+@media screen and (max-width: 390px) {
+  .nav__menu {
+    width: 80%;
+    padding: 1rem;
+  }
+  .servicios .title h2.scroll-title {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 2rem;
+  }
+  .servicios .rd__clickText {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-25% -30%);
+  }
+  .lightbox {
+    top: 42.5%;
+    left: 23.5%;
+    transform: translate(-42.5% -23.5%);
+  }
+}
+/*! iPhone 6/7/8 */
+@media screen and (max-width: 375px) {
+  .nav__menu {
+    width: 80%;
+    padding: 1rem;
+  }
+  .servicios .rd__clickText {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-25% -30%);
+  }
+  .lightbox {
+    top: 42.5%;
+    left: 23.5%;
+    transform: translate(-42.5% -23.5%);
+  }
+}
+/*! samsung Galaxy S5 */
+@media screen and (max-width: 360px) {
+  .nav__menu {
+    width: 80%;
+    padding: 1rem;
+  }
+  .servicios .rd__clickText {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-25% -30%);
+  }
+  .lightbox {
+    top: 42.5%;
+    left: 23.5%;
+    transform: translate(-42.5% -23.5%);
+  }
+}
+
+/*! Media Query for laptops & PC styles */
+@media screen and (min-width: 768px) {
   .nav__list {
     flex-direction: row;
     column-gap: 0.5rem; /* Espacio entre enlaces */
   }
 }
-

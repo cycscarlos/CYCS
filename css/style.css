@@ -354,7 +354,7 @@ input {
   background-color: var(--color-header);
 }
 
-/*: NAV */
+/*: Navigation menu */
 .nav {
   height: var(--header-height);
   display: flex;
@@ -408,7 +408,7 @@ input {
   display: none;
 }
 
-/*: Estilos Responsive Design para disposivos "Smartphone o iPad" solamente!!! */
+/*! Estilos Responsive Design para disposivos "Smartphone o iPad" solamente!!! */
 @media screen and (max-width: 768px) {
   .nav__logo {
     font-size: var(--h2-font-size);
@@ -650,9 +650,9 @@ input {
   opacity: 1;
   visibility: visible;
 }
-/* ------------------------------------------------*/
-/*: Social Icons Media queries & Responsive Design */
-/* ------------------------------------------------*/
+/* ---------------------------------------------------*/
+/*! Media queries & Responsive Design -Social Icons   */
+/* ---------------------------------------------------*/
 @media screen and (max-width: 1024px) {
   .banner_Icon {
     top: 470px;
@@ -701,11 +701,9 @@ input {
 .slideshow1 .swiper-slide img {
   border-radius: 5px;
 }
-
 .slideshow1 .swiper-container-horizontal {
   position: relative;
 }
-
 .slideshow1 .swiper-button-next,
 .slideshow1 .swiper-button-prev {
   position: absolute;
@@ -713,18 +711,39 @@ input {
   margin-left: 35px;
   margin-right: 35px;
   color: var(--white-color);
-  z-index: 1001;
+  z-index: 2;
 }
 .slideshow1 .swiper-button-next::after,
 .slideshow1 .swiper-button-prev::after {
   font-size: 2.5em;
   font-weight: 900;
 }
-
 .swiper-pagination-bullet {
   background: var(--color-pagina);
 }
-
+.slideshow1 .sombra__swiper-button-prev {
+  background: rgba(39, 96, 124, 0.5);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 45%;
+  margin-left: 35px;
+  margin-right: 35px;
+  z-index: 1;
+  border-radius: 50%;
+}
+.slideshow1 .sombra__swiper-button-next {
+  background: rgba(39, 96, 124, 0.5);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  top: 45%;
+  margin-left: 35px;
+  margin-right: 35px;
+  z-index: 1;
+  border-radius: 50%;
+}
 .mainTitle {
   display: none;
 }
@@ -742,33 +761,8 @@ h2.elegantshadow {
   letter-spacing: 0.15em;
 }
 
-.slideshow1 .sombra__swiper-button-prev {
-  background: rgba(39, 96, 124, 0.5);
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  top: 45%;
-  margin-left: 35px;
-  margin-right: 35px;
-  z-index: 1000;
-  border-radius: 50%;
-}
-.slideshow1 .sombra__swiper-button-next {
-  background: rgba(39, 96, 124, 0.5);
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  right: 0;
-  top: 45%;
-  margin-left: 35px;
-  margin-right: 35px;
-  z-index: 1000;
-  border-radius: 50%;
-}
 
-/* --------------------------------------------------*/
-/*: Swiper Media queries & responsive design         */
-/* --------------------------------------------------*/
+/*! Media queries & responsive design  -Swiper   */
 
 @media screen and (max-width: 768px) {
   .slideshow1 .swiper-button-next,
@@ -812,7 +806,7 @@ section.cards {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  /* min-height: var(--section-height); */
+  /* min-height: var(--section-height); 100vh */
   min-height: 100%;
   margin: auto;
 }
@@ -835,11 +829,11 @@ section.cards {
   margin-top: 2rem;
   border-radius: 3%;
 }
-
 .cards__subtitle {
   font-size: 1.5rem;
   font-style: italic;
 }
+
 /* --------------------------------- */
 /*: Card title animation routine     */
 /* --------------------------------- */
@@ -944,15 +938,6 @@ section.cards {
   color: var(--white-color);
 }
 
-/*: Aqui iban los estilos de servicios  */
-
-/*: Aqui iban los estilos de Security */
-
-/*: Aqui iban los estilos de Access Control */
-
-/*: Aqui iban los estilos de Telecomunicaciones */
-
-/*: Aqui iba clientes */
 /* --------------------------*/
 /*: CLIENTES y PROYECTOS     */
 /* --------------------------*/
@@ -1070,7 +1055,7 @@ section.cards {
   font-size: 8px;
 }
 
-/*: Aqui iba galería */
+
 /* --------------------------------*/
 /*: GALERÍA Fotos Obras Realizadas */
 /* --------------------------------*/
@@ -1195,6 +1180,8 @@ article.proveedor {
   transform: scale(1.1);
   border: 1px solid transparent;
 }
+
+/*! Media queries & Responsive Design -Proveedores */
 
 @media screen and (max-width: 1024px) {
   .proveedores__container {
@@ -1372,9 +1359,9 @@ article.proveedor {
   font-style: italic;
 }
 
-/*: Footer Media queries & Responsive Design */
+/*! Media queries & Responsive Design -Footer */
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   .main .contenedor {
     margin: 20px 20px 0 20px;
   }

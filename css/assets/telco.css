@@ -135,7 +135,8 @@ section.telco {
   bottom: 320px;
 }
 
-@media screen and (min-width: 769px) {
+/*: Media Query for laptops & PC styles */
+@media screen and (min-width: 768px) {
   .nav__list {
     flex-direction: row;
     column-gap: 1rem; /* Espacio entre enlaces */
@@ -232,6 +233,9 @@ section.proveedores {
   }
 }
 @media screen and (max-width: 768px) {
+  .nav__list {
+    row-gap: 4rem; /* Espacio entre enlaces */
+  }
   section.telco {
     min-width: 100%;
     min-height: auto;
@@ -289,15 +293,46 @@ section.proveedores {
   .telco .swiper-button-next,
   .telco .swiper-button-prev {
     top: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 8px;
+    margin-right: 8px;
     color: #fff;
-    border-radius: 40%;
+    z-index: 2;
+  }
+  .telco .sombra__swiper-button-prev {
+    background: rgba(39, 96, 124, 0.5);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 42.5%;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  .telco .sombra__swiper-button-next {
+    background: rgba(39, 96, 124, 0.5);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 42.5%;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 1;
+    border-radius: 50%;
   }
   .telco .swiper-container-horizontal > .swiper-pagination-fraction {
     color: var(--swiper-bg-color);
     font-weight: 700;
     position: absolute;
     bottom: 0;
+  }
+}
+/* Samsumg Galaxy J2  Pro */
+@media screen and (max-width: 540px) {
+  .telco .swiper-button-next,
+  .telco .swiper-button-prev {
+    top: 51%;
   }
 }
 
@@ -307,5 +342,9 @@ section.proveedores {
   }
   .proveedores .title {
     font-size: 0.75rem;
+  }
+  .telco .swiper-button-next,
+  .telco .swiper-button-prev {
+    top: 53%;
   }
 }
