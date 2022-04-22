@@ -152,7 +152,7 @@
   --transition: all 400ms ease;
 }
 
-/*: Sizes to Desktop viewport */
+/*! Desktop viewport styles */
 
 @media screen and (min-width: 968px) {
   :root {
