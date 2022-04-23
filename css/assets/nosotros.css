@@ -312,12 +312,12 @@
     padding: 20px;
     margin-bottom: 3rem;
   }
-  .nav__menu {
+  /* .nav__menu {
     background: var(--color-header);
   }
   .nav__list {
     row-gap: 4rem;
-  }
+  } */
 }
 
 /*! PC styles  */
@@ -325,22 +325,22 @@
   .copyrightTexto {
     padding: 8px 40px;
   }
-  .nav__menu {
+  /* .nav__menu {
     background: var(--color-header);
   }
   .nav__list {
     row-gap: 4rem;
-  }
+  } */
 }
 
 /*! iPad Pro o iPad in Portrait mode  */
 @media (max-width: 768px) {
-  .nav__menu {
+  /* .nav__menu {
     background: var(--color-header);
   }
   .nav__list {
     row-gap: 4rem;
-  }
+  } */
   .box_muro {
     width: 90%;
     height: auto;
@@ -360,36 +360,36 @@
 }
 
 /*! Samsung Galaxy J2 */
-@media screen and (max-width: 540px) {
+/* @media screen and (max-width: 540px) {
   .nav__menu {
     background: var(--color-header);
   }
   .nav__list {
     row-gap: 4rem;
   }
-}
+} */
 
 /*! PC in smallest viewport mode */
 @media (max-width: 500px) {
   .equipo .titulo h2 {
     font-size: 1.5rem;
   }
-  .nav__menu {
+  /* .nav__menu {
     background: var(--color-header);
   }
   .nav__list {
     row-gap: 4rem;
-  }
+  } */
 }
 
 /*! iPhone XS Max */
 @media (max-width: 414px) {
-  .nav__menu {
+  /* .nav__menu {
     background: var(--color-header);
   }
   .nav__list {
     row-gap: 4rem;
-  }
+  } */
   .muro-subtitulo {
     font-size: 1.5rem;
   }
@@ -413,7 +413,7 @@
 }
 
 /*! iPhone 12 Pro */
-@media screen and (max-width: 390px) {
+/* @media screen and (max-width: 390px) {
   .nav__menu {
     background: var(--color-header);
     width: 80%;
@@ -422,10 +422,10 @@
   .nav__list {
     row-gap: 4rem;
   }
-}
+} */
 
 /*! iPhone 6/7/8 */
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   .nav__menu {
     width: 80%;
     padding: 1rem;
@@ -434,17 +434,17 @@
   .nav__list {
     row-gap: 4rem;
   }
-}
+} */
 
 /*! Samsung Galary S5 */
-@media screen and (max-width: 360px) {
+/* @media screen and (max-width: 360px) {
   .nav__menu {
     background: var(--color-header);
   }
   .nav__list {
     row-gap: 4rem;
   }
-}
+} */
 
 /*! Laptops & PC responsive styles */
 @media screen and (min-width: 769px) {

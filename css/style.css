@@ -404,9 +404,9 @@ input {
   color: var(--text-color);
 }
 
-.oculto__servicesRD {
+/* .oculto__servicesRD {
   display: none;
-}
+} */
 
 /*! Estilos Responsive Design para disposivos "Smartphone o iPad" solamente!!! */
 @media screen and (max-width: 768px) {
@@ -473,12 +473,12 @@ input {
     opacity: 0.65;
   }
 
-  .oculto__services {
+  /* .oculto__services {
     visibility: hidden;
-  }
-  .oculto__servicesRD {
+  } */
+  /* .oculto__servicesRD {
     display: block;
-  }
+  } */
 }
 
 /*: Change background header JS function */
@@ -488,14 +488,12 @@ input {
   box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, 0.15);
 }
 .scroll-header .nav__logo {
-  /* color: var(--color-pagina); */
   color: var(--color-logo);
 }
 .scroll-header .nav__logo span {
   color: var(--color-logo);
 }
-.scroll-header .nav__toggle {
-  /* color: var(--text-color); */
+.scroll-header .nav__toggle { 
   color: var(--color-logo);
 }
 .scroll-header .nav__link {

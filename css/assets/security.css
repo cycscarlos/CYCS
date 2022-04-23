@@ -155,7 +155,7 @@ section.security {
 @media screen and (min-width: 769px) {
   .nav__list {
     flex-direction: row;
-    column-gap: 1rem; /* Espacio entre enlaces */
+    column-gap: 1rem;
   }
 }
 
@@ -247,12 +247,12 @@ section.proveedores {
     min-width: 100%;
     min-height: auto;
   }
-  .nav__menu {
+  /* .nav__menu {
     background: var(--color-header);
   }
   .nav__list {
     row-gap: 4rem;
-  }
+  } */
 }
 
 /*! iPad Pro o iPad in Portrait mode  */
@@ -261,12 +261,12 @@ section.proveedores {
     min-width: 100%;
     min-height: auto;
   }
-  .nav__menu {
+  /* .nav__menu {
     background: var(--color-header);
   }
   .nav__list {
     row-gap: 4rem;
-  }
+  } */
   .security .title h2 {
     font-size: 2rem;
   }
@@ -293,23 +293,23 @@ section.proveedores {
 }
 
 /*! Samsung Galaxy J2 */
-@media screen and (max-width: 540px) {
+/* @media screen and (max-width: 540px) {
   .nav__menu {
     background: var(--color-header);
   }
   .nav__list {
     row-gap: 4rem;
   }
-}
+} */
 
 /*! PC in smallest viewport mode */
 @media screen and (max-width: 500px) {
-  .nav__menu {
+  /* .nav__menu {
     background: var(--color-header);
   }
   .nav__list {
     row-gap: 4rem;
-  }
+  } */
   .security .title h2 {
     font-size: 1.5rem;
   }
@@ -376,12 +376,12 @@ section.proveedores {
 
 /*! iPhone XS Max */
 @media screen and (max-width: 414px) {
-  .nav__menu {
+  /* .nav__menu {
     background: var(--color-header);
   }
   .nav__list {
     row-gap: 4rem;
-  }
+  } */
   .security .title h2 {
     font-size: 1.75rem;
   }
@@ -397,7 +397,7 @@ section.proveedores {
 }
 
 /*! iPhone 12 Pro */
-@media screen and (max-width: 390px) {
+/* @media screen and (max-width: 390px) {
   .nav__menu {
     background: var(--color-header);
     width: 80%;
@@ -406,10 +406,10 @@ section.proveedores {
   .nav__list {
     row-gap: 4rem;
   }
-}
+} */
 
 /*! iPhone 6/7/8 */
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   .nav__menu {
     width: 80%;
     padding: 1rem;
@@ -418,16 +418,16 @@ section.proveedores {
   .nav__list {
     row-gap: 4rem;
   }
-}
+} */
 
 /*! Samsung Galary S5 */
 @media screen and (max-width: 360px) {
-  .nav__menu {
+  /* .nav__menu {
     background: var(--color-header);
   }
   .nav__list {
     row-gap: 4rem;
-  }
+  } */
   .security .swiper-button-next,
   .security .swiper-button-prev {
     top: 53%;
