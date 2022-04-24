@@ -22,7 +22,7 @@ section.telco {
   font-family: var(--font-titulos);
   color: var(--text-color);
   background-color: transparent;
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 .telco .row {
   position: relative;

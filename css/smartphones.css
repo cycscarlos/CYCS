@@ -12,10 +12,10 @@
 
 /*! iPad in Portrait mode  */
 @media screen and (max-width: 768px) {
-  section {
+  /* section {
     padding-top: 0;
     padding-bottom: 1.25rem;
-  }
+  } */
   h2.elegantshadow {
     font-size: 2rem;
   }

@@ -17,7 +17,7 @@
   font-family: var(--font-titulos);
   color: var(--text-color);
   background-color: transparent;
-  margin: 2.5rem 0;
+  margin: 6rem 0 2.5rem 0;
 }
 
 /* usado solo en modo responsive */
@@ -27,7 +27,7 @@
 
 .servicios .clickText {
   position: absolute;
-  top: 35%;
+  top: 45%;
   left: 0.5em;
 }
 
@@ -92,7 +92,7 @@
 .servicios .container-all {
   position: absolute;
   width: 210px;
-  top: 35%;
+  top: 45%;
   left: 50%;
   transform: translateX(-50%) translateY(-35%);
   perspective: 1000px;
