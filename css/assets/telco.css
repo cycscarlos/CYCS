@@ -107,12 +107,6 @@ section.telco {
   position: relative;
 }
 
-/* .telco .swiper-container-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: 300px;
-} */
-
 .telco .swiper-button-next,
 .telco .swiper-button-prev {
   color: var(--swiper-bg-color);
@@ -166,7 +160,7 @@ section.proveedores {
   background-image: url("../../img/bg-texture.jpg");
 }
 
-/* Rutina de Animacion */
+/*: Rutina de Animacion */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -231,22 +225,10 @@ section.proveedores {
     min-width: 100%;
     min-height: auto;
   }
-  /* .nav__menu {
-    background: var(--color-header);
-  }
-  .nav__list {
-    row-gap: 4rem;
-  } */
 }
 
 /*! iPad Pro o iPad in Portrait mode  */
 @media screen and (max-width: 768px) {
-  /* .nav__menu {
-    background: var(--color-header);
-  }
-  .nav__list {
-    row-gap: 4rem; 
-  } */
   section.telco {
     min-width: 100%;
     min-height: auto;
@@ -277,12 +259,6 @@ section.proveedores {
 
 /*! Samsung Galaxy J2 */
 @media screen and (max-width: 540px) {
-  /* .nav__menu {
-    background: var(--color-header);
-  }
-  .nav__list {
-    row-gap: 4rem;
-  } */
   .telco .swiper-button-next,
   .telco .swiper-button-prev {
     top: 51%;
@@ -291,12 +267,6 @@ section.proveedores {
 
 /*! PC in smallest viewport mode */
 @media screen and (max-width: 500px) {
-  /* .nav__menu {
-    background: var(--color-header);
-  }
-  .nav__list {
-    row-gap: 4rem;
-  } */
   .telco .title h2 {
     font-size: 1.5rem;
   }
@@ -363,12 +333,6 @@ section.proveedores {
 
 /*! iPhone XS Max */
 @media screen and (max-width: 414px) {
-  /* .nav__menu {
-    background: var(--color-header);
-  }
-  .nav__list {
-    row-gap: 4rem;
-  } */
   .telco .title h2 {
     font-size: 1.75rem;
   }
@@ -380,37 +344,3 @@ section.proveedores {
     top: 53%;
   }
 }
-
-/*! iPhone 12 Pro */
-/* @media screen and (max-width: 390px) {
-  .nav__menu {
-    background: var(--color-header);
-    width: 80%;
-    padding: 1rem;
-  }
-  .nav__list {
-    row-gap: 4rem;
-  }
-} */
-
-/*! iPhone 6/7/8 */
-/* @media screen and (max-width: 375px) {
-  .nav__menu {
-    width: 80%;
-    padding: 1rem;
-    background: var(--color-header);
-  }
-  .nav__list {
-    row-gap: 4rem;
-  }
-} */
-
-/*! Samsung Galary S5 */
-/* @media screen and (max-width: 360px) {
-  .nav__menu {
-    background: var(--color-header);
-  }
-  .nav__list {
-    row-gap: 4rem;
-  }
-} */

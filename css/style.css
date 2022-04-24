@@ -257,11 +257,6 @@ input {
   outline: none;
 }
 
-/* Reusable CSS classes */
-/* .section {
-  padding: 4.5rem 0 2.5rem;
-} */
-
 .section__title {
   font-size: var(--h2-font-size);
   color: var(--title-color);
@@ -305,7 +300,6 @@ input {
   font-size: var(--small-font-size);
 }
 
-/*: Scrollreveals JS function */
 .main {
   overflow-x: hidden;
 }
@@ -314,7 +308,6 @@ input {
   color: var(--white-color);
 }
 
-/*: Website's specfic and internals classes */
 .scroll-title {
   background: var(--body-color);
   margin-bottom: 30px;
@@ -427,9 +420,9 @@ input {
     box-shadow: -1px 0 4px hsla(var(--hue-color), 64%, 15%, 0.15);
     padding: 3rem;
     transition: 1s;
-    /** Configuración temporal, solo al inicio*/
+    /* Configuración temporal, solo al inicio*/
     /* right: 0; */
-    /** Ocultamos el menu y se manipula con JS en conjunto con la clase "show-menu" */
+    /* Ocultamos el menu y se manipula con JS en conjunto con la clase "show-menu" */
     right: -100%;
     transition: 0.4s;
   }
@@ -460,7 +453,6 @@ input {
   .nav__list {
     display: flex;
     flex-direction: column;
-    /* row-gap: 2.5rem; */
     row-gap: 0.5rem;
   }
   .nav__link {
@@ -472,13 +464,6 @@ input {
   .nav__link:hover {
     opacity: 0.65;
   }
-
-  /* .oculto__services {
-    visibility: hidden;
-  } */
-  /* .oculto__servicesRD {
-    display: block;
-  } */
 }
 
 /*: Change background header JS function */
@@ -629,7 +614,6 @@ input {
 .whatsapp_Texto span {
   position: fixed;
   top: 80%;
-  /* left: 20px; */
   right: 5px;
   width: 200px;
   background-color: var(--color-pagina);
@@ -753,8 +737,7 @@ h2.elegantshadow {
   text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
-  color: var(--color-logo);
-  /* background-color: #e7e5e4; */
+  color: var(--color-logo); 
   background-color: var(--elegantShadow-bg-color);
   letter-spacing: 0.15em;
 }
@@ -804,7 +787,6 @@ section.cards {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  /* min-height: var(--section-height); 100vh */
   min-height: 100%;
   margin: auto;
 }
@@ -1026,8 +1008,6 @@ section.cards {
   padding: 3px;
   background: linear-gradient(45deg, #83c2c7, #fff);
   transform: translateZ(100px);
-
-  /*: ¡OJoooo! Estas dos instrucciones son nuevas -No existian */
   width: 100%;
   height: 75%;
 }
@@ -1130,8 +1110,6 @@ section.cards {
   transition: 0.7s ease-in-out;
 }
 
-/*: Aqui iban Muro, Quienes somos (mosaico de fotos) y profile */
-
 /* --------------------------------*/
 /*: GALERÍA Fotos de proveedores   */
 /* --------------------------------*/
@@ -1165,8 +1143,6 @@ article.proveedor {
   width: 80px;
   height: 80px;
   transition: var(--transition);
-
-  /* centrar la imagen */
   display: grid;
   justify-content: center;
   align-items: center;
@@ -1264,11 +1240,6 @@ article.proveedor {
   margin-top: 30px;
 }
 .linkSecundarios {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
-
   position: relative;
   width: 25%;
   font-size: 0.9rem;
@@ -1319,8 +1290,6 @@ article.proveedor {
   color: #ff0000;
 }
 .contactos {
-  /* width: calc(35% - 60px);
-  margin-right: 0 !important; */
   font-size: 0.9rem;
 }
 .contactos .informacion {

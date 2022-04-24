@@ -246,17 +246,6 @@
   border-radius: 50%;
 }
 
-/* .profile-img-line {
-  background-color: var(--color-logo);
-  height: 15px;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-} */
-
 /*: copyright   */
 .copyright {
   display: flex;
@@ -287,7 +276,6 @@
     max-width: 100%;
     min-height: 400px;
     margin: 6rem auto 3rem auto;
-    /* margin-bottom: 3rem; */
   }
   section.equipo {
     max-width: 100%;
@@ -376,6 +364,6 @@
 @media screen and (min-width: 769px) {
   .nav__list {
     flex-direction: row;
-    column-gap: 1.5rem; /* Espacio entre enlaces */
+    column-gap: 1.5rem;
   }
 }
