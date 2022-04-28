@@ -337,6 +337,9 @@
   .servicios {
     min-height: var(--section-height);
   }
+  .servicios .title h2 {
+    margin: 8rem 0 0 0;
+  }
   .clickText {
     display: none;
   }
@@ -345,9 +348,9 @@
   }
   .servicios .rd__clickText {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 42.5%;
-    transform: translate(-30% -42.5%);
+    transform: translate(-20% -42.5%);
   }
   .servicios .rd__clickText {
     width: 10rem;
@@ -410,6 +413,30 @@
   .servicios .container-all {
     position: absolute;
     width: 210px;
+    top: 35%;
+    left: 50%;
+  }
+  .lightbox {
+    top: 50%;
+    left: 40%;
+    transform: translate(-50% -40%);
+  }
+}
+
+/*! iPad Portrait mode */
+@media screen and (max-width: 768px) {
+  .servicios .title h2 {
+    margin: 8rem 0 0 0;
+  }
+  .servicios .rd__clickText {
+    position: absolute;
+    top: 30%;
+    left: 42.5%;
+    transform: translate(-30% -42.5%);
+  }
+  .servicios .container-all {
+    position: absolute;
+    width: 210px;
     top: 45%;
     left: 50%;
   }
@@ -444,8 +471,10 @@
 
 /*! PC in smallest viewport mode */
 @media screen and (max-width: 500px) {
-  .servicios .scroll-title {
-    font-size: 2rem;
+  .servicios .title h2 {
+    margin: 3rem 0 0 0;
+    font-size: 1.5rem;
+    text-align: center;
   }
   .servicios .rd__clickText h4 {
     font-size: 1.5rem;
@@ -453,12 +482,12 @@
   .servicios .rd__clickText {
     position: absolute;
     top: 25%;
-    left: 30%;
-    transform: translate(-25% -30%);
+    left: 35%;
+    transform: translate(-25% -35%);
   }
   .social_Icon,
   .banner_Icon {
-    right: 75px;
+    right: 60px;
   }
   .lightbox {
     top: 50%;
@@ -471,12 +500,13 @@
 @media screen and (max-width: 414px) {
   .services {
     width: 100%;
-    height: 100vh;
+    height: 896px;
+    min-height: 100vh;
   }
-  .servicios .title h2.scroll-title {
+  .servicios .title h2 {
     text-align: center;
-    margin: 40px auto;
     font-size: 2rem;
+    margin: 6rem 0 2.5rem 0;
   }
   .social_Icon,
   .banner_Icon {
@@ -497,9 +527,11 @@
 
 /*! iPhone 12 Pro */
 @media screen and (max-width: 390px) {
-  .servicios .title h2.scroll-title {
+  .servicios {
+    height: 844px;
+  }
+  .servicios .title h2 {
     text-align: center;
-    margin: 40px auto;
     font-size: 2rem;
   }
   .servicios .rd__clickText {
@@ -517,6 +549,15 @@
 
 /*! iPhone 6/7/8 */
 @media screen and (max-width: 375px) {
+  .services {
+    height: 667px;
+    min-height: 100vh;
+  }
+  .servicios .title h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 4rem 0 2.5rem 0;
+  }
   .servicios .rd__clickText {
     position: absolute;
     top: 25%;
@@ -531,6 +572,10 @@
 }
 /*! samsung Galaxy S5 */
 @media screen and (max-width: 360px) {
+  .services {
+    height: 640px;
+    min-height: 100vh;
+  }
   .servicios .rd__clickText {
     position: absolute;
     top: 25%;
