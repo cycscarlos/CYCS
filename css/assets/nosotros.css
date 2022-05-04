@@ -343,6 +343,9 @@
   .muro-parrafo {
     line-height: 2;
   }
+  .muro-lema {
+    font-size: 1.2rem;
+  }
   .equipo .titulo h2 {
     font-size: 1.5rem;
   }
@@ -365,7 +368,7 @@
     line-height: 1.5;
   }
   .muro-lema {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0 0 10px 0;
   }
   .equipo .titulo h2 {
