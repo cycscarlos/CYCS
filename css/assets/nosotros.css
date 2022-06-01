@@ -247,6 +247,7 @@
   max-height: 300px;
   margin-top: 70px;
   border-radius: 50%;
+  box-shadow: 0 5px 25px 10px rgba(0, 0, 0, 0.5);
 }
 
 /*: copyright   */
