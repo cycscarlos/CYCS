@@ -478,7 +478,7 @@ input {
 .scroll-header .nav__logo span {
   color: var(--color-logo);
 }
-.scroll-header .nav__toggle { 
+.scroll-header .nav__toggle {
   color: var(--color-logo);
 }
 .scroll-header .nav__link {
@@ -737,11 +737,10 @@ h2.elegantshadow {
   text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
-  color: var(--color-logo); 
+  color: var(--color-logo);
   background-color: var(--elegantShadow-bg-color);
   letter-spacing: 0.15em;
 }
-
 
 /*! Media queries & responsive design  -Swiper   */
 
@@ -1033,7 +1032,6 @@ section.cards {
   font-size: 8px;
 }
 
-
 /* --------------------------------*/
 /*: GALERÍA Fotos Obras Realizadas */
 /* --------------------------------*/
@@ -1214,6 +1212,11 @@ article.proveedor {
   color: var(--footer-color);
   padding-top: 20px;
 }
+
+.main .contenedor .comun {
+  margin: 0 80px 0 40px;
+}
+
 .main .contenedor .comun.nosotros {
   width: 30%;
 }
