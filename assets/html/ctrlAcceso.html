@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CYCS & Co. | Seguridad</title>
+    <title>CYCS & Co. | Control de Acceso</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -76,7 +76,11 @@
     <link rel="canonical" href="https://cycs.netlify.app" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.png"
+      type="image/x-icon"
+    />
 
     <!-- Remix Icons  -->
     <link
@@ -85,14 +89,15 @@
     />
 
     <!-- Swiper Library loaded from inside project-->
-    <link rel="stylesheet" href="Swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="Swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/Swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="/assets/Swiper/swiper-bundle.min.css" />
 
     <!--: CSS General Styles -->
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/smartphones.css" />
-    <link rel="stylesheet" href="css/assets/security.css" />
+    <link rel="stylesheet" href="/assets/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/smartphones.css" />
+    <!-- <link rel="stylesheet" href="/assets/css/assets/ctrlAcceso.css" /> -->
+    <link rel="stylesheet" href="/assets/css/ctrlAcceso.css" />
   </head>
   <body>
     <div class="mainBox" id="home">
@@ -107,7 +112,7 @@
           <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="index.html" class="nav__link">Inicio</a>
+                <a href="../../index.html" class="nav__link">Inicio</a>
               </li>
               <!-- <li class="nav__item">
                 <a href="carousel.html" class="nav__link oculto__services"
@@ -118,8 +123,8 @@
                 <a href="servicios.html" class="nav__link">Servicios</a>
               </li>
               <li class="nav__item">
-                <a href="ctrlAcceso.html" class="nav__link"
-                  >Control de Acceso</a
+                <a href="security.html" class="nav__link"
+                  >Sistemas de Seguridad</a
                 >
               </li>
               <li class="nav__item">
@@ -193,14 +198,14 @@
         </a>
       </div>
 
-      <!------------------------------->
-      <!-- Sección Security         -->
-      <!------------------------------->
+      <!---------------------------------->
+      <!-- Sección Control de Acceso ----->
+      <!---------------------------------->
 
-      <section id="security" class="security">
+      <section class="ctrlAcceso" id="ctrlAcceso">
         <div class="title">
           <h2 class="scroll-title">
-            <span>P</span>rotegemos su empresa, su oficina...su Hogar
+            Controlamos ferreamente sus <span>A</span>ccesos
           </h2>
           <br /><br />
         </div>
@@ -208,115 +213,127 @@
           <div class="col50">
             <br />
             <h3>
-              INSTALAMOS POTENTES<br />
-              SISTEMAS DE <span>S</span>EGURIDAD
+              INSTALAMOS ROBUSTOS<br />
+              SISTEMAS DE CONTROL DE <span>A</span>CCESO
             </h3>
             <br /><br />
             <ul class="mainUL">
-              <li>Vídeo Porteros</li>
-              <li>Cercos Eléctricos</li>
-              <li>Vídeo Cámaras de Seguridad</li>
-              <li>Sistemas de Alarmas y Detección de Intrusos</li>
+              <li>Torniquetes</li>
+              <li>Barreras Vehiculares</li>
+              <li>Sistemas de Identificación Biométrica</li>
+              <li>
+                Sistemas de Identificación por Radio Frecuencia o RFid:<br /><br />
+                <ul class="secondaryUL">
+                  <li>
+                    Manos libres para identificación de <span>P</span>ersonas
+                  </li>
+                  <li>
+                    Manos libres para identificación de <span>V</span>ehiculos
+                  </li>
+                  <li>
+                    Gestión de <span>F</span>lotas de vehiculos y camiones
+                  </li>
+                  <li>
+                    Solución de <span>P</span>esajes de vehiculos en romana
+                  </li>
+                  <li>
+                    Control de bienes y personas con <span>D</span>iscapacidad
+                  </li>
+                </ul>
+              </li>
             </ul>
             <br /><br />
-
-            <p>
-              Todos nuestros sistemas pueden ser monitoreados de manera
-              <span> REMOTA </span> a través de:
-            </p>
-            <p><br /></p>
-            <ul class="secondaryUL">
-              <li><span>I</span>nternet</li>
-              <li>Redes LAN <span>P</span>rivadas</li>
-              <li>Plataformas <span>C</span>elulares (Android o Iphone)</li>
-            </ul>
           </div>
           <div class="col50">
+            <!-- Swiper -->
+
             <div class="swiper-container slideshow2">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
                     loading="auto"
                     itemprop="image"
-                    src="img/security/cctv1b.png"
-                    alt="instalacion de video camaras de seguridad para exteriores"
+                    src="/assets/img/security/torniquete14.png"
+                    alt="instalacion de torniquetes para centros empresariales"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
                     loading="auto"
                     itemprop="image"
-                    src="img/security/alarma.png"
-                    alt="instalacion de sistema de alarmas comunitarias"
+                    src="/assets/img/security/torniquete10.png"
+                    alt="instalacion de torniquetes para clinicas y centros de salud"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
                     loading="auto"
                     itemprop="image"
-                    src="img/security/alarma3.png"
-                    alt="instalacion de sistema de alarmas contra robo para empresas"
+                    src="/assets/img/security/torniquete15.png"
+                    alt="instalacion de torniquetes en fabricas e industrias "
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
                     loading="auto"
                     itemprop="image"
-                    src="img/security/alarma4.png"
-                    alt="instalacion de sistema de alarmas contra robo para hogares"
+                    src="/assets/img/security/barrera13.png"
+                    alt="instalacion de barreras vehiculares para centros empresariales"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
                     loading="auto"
                     itemprop="image"
-                    src="img/security/cerco3.jpg"
-                    alt="instalacion de cercos electricos"
+                    src="/assets/img/security/barrera11.png"
+                    alt="instalacion de barreras vehiculares para fabricas"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
                     loading="auto"
                     itemprop="image"
-                    src="img/security/cerco9.png"
-                    alt="instalacion de cercos perimetrales"
+                    src="/assets/img/security/barrera12.png"
+                    alt="instalacion de barreras vehiculares para empresas"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
                     loading="auto"
                     itemprop="image"
-                    src="img/security/videoPortero3.png"
-                    alt="instalacion de sistema control de acceso para empresas"
+                    src="/assets/img/security/RFID10.jpg"
+                    alt="instalacion de sistemas de control de acceso inalambricos para vehiculos"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
                     loading="auto"
                     itemprop="image"
-                    src="img/security/cctv1.png"
-                    alt="instalacion de video camaras de seguridad para interiores"
+                    src="/assets/img/security/RFID11.jpg"
+                    alt="instalacion de sistemas de control de acceso inalambricos para vehiculos de carga"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
                     loading="auto"
                     itemprop="image"
-                    src="img/security/cctvBox4.png"
-                    alt="instalacion de video camaras de seguridad profesionales"
+                    src="/assets/img/security/accessCard.png"
+                    alt="instalacion de sstemas de control de acceso inalambricos"
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
                     loading="auto"
                     itemprop="image"
-                    src="img/security/cctv3a.png"
-                    alt="instalacion de video camaras de seguridad con calidad industrial"
+                    src="/assets/img/security/biometrico2.png"
+                    alt="instalacion de sistemas de control de acceso biometricos"
                   />
                 </div>
               </div>
+
               <!-- Add Pagination -->
               <div class="swiper-pagination"></div>
+
               <!-- Add Arrows -->
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
@@ -343,7 +360,7 @@
                   <img
                     loading="lazy"
                     itemprop="image"
-                    src="img/proveedores/optex.png"
+                    src="/assets/img/proveedores/optex.png"
                     alt="logo"
                   />
                 </div>
@@ -354,7 +371,7 @@
                   <img
                     loading="lazy"
                     itemprop="image"
-                    src="img/proveedores/airlive.png"
+                    src="/assets/img/proveedores/anviz.png"
                     alt="logo"
                   />
                 </div>
@@ -365,7 +382,7 @@
                   <img
                     loading="lazy"
                     itemprop="image"
-                    src="img/proveedores/avtech.png"
+                    src="/assets/img/proveedores/epcom.png"
                     alt="logo"
                   />
                 </div>
@@ -376,7 +393,7 @@
                   <img
                     loading="lazy"
                     itemprop="image"
-                    src="img/proveedores/dahua.png"
+                    src="/assets/img/proveedores/henfor.png"
                     alt="logo"
                   />
                 </div>
@@ -387,7 +404,7 @@
                   <img
                     loading="lazy"
                     itemprop="image"
-                    src="img/proveedores/epcom.png"
+                    src="/assets/img/proveedores/hikvision.png"
                     alt="logo"
                   />
                 </div>
@@ -398,7 +415,7 @@
                   <img
                     loading="lazy"
                     itemprop="image"
-                    src="img/proveedores/hikvision.png"
+                    src="/assets/img/proveedores/kocom.png"
                     alt="logo"
                   />
                 </div>
@@ -409,7 +426,7 @@
                   <img
                     loading="lazy"
                     itemprop="image"
-                    src="img/proveedores/syscom.png"
+                    src="/assets/img/proveedores/lenel.png"
                     alt="logo"
                   />
                 </div>
@@ -420,7 +437,29 @@
                   <img
                     loading="lazy"
                     itemprop="image"
-                    src="img/proveedores/videocomm.png"
+                    src="/assets/img/proveedores/rosslare.png"
+                    alt="logo"
+                  />
+                </div>
+              </article>
+
+              <article class="proveedor slide">
+                <div class="proveedor__image">
+                  <img
+                    loading="lazy"
+                    itemprop="image"
+                    src="/assets/img/proveedores/syscom.png"
+                    alt="logo"
+                  />
+                </div>
+              </article>
+
+              <article class="proveedor slide">
+                <div class="proveedor__image">
+                  <img
+                    loading="lazy"
+                    itemprop="image"
+                    src="/assets/img/proveedores/zkteco.png"
                     alt="logo"
                   />
                 </div>
@@ -430,35 +469,38 @@
         </div>
       </section>
 
+      <!----------------------->
+      <!-- Copyright         -->
+      <!----------------------->
       <div class="copyright" id="copyright">
         <div class="copyrightTexto">
           <p>Copyright &copy; Carlos Colmenares A. | Derechos Reservados</p>
         </div>
       </div>
+
+      <!--: swiper library-->
+      <script src="/assets/Swiper/swiper-bundle.js"></script>
+      <script src="/assets/Swiper/swiper-bundle.min.js"></script>
+      <!--: swiper API for sliders -->
+      <script src="/assets/js/swiper_3DCoverflow.js"></script>
+      <!-- <script src="/assets/js/swiper_slides.js"></script> -->
+      <script src="/assets/js/swiper_pagination-fraction.js"></script>
+
+      <!--: CSS Animation for Galeria de fotos de Obras -->
+      <script src="/assets/js/mouseHover.js"></script>
+
+      <!--: Change header background color when scroll -->
+      <script src="/assets/js/scrollHeader.js"></script>
+
+      <!--: Menu navegation for responsive design -->
+      <script src="/assets/js/menuNav.js"></script>
+
+      <!--: Dark Mode -->
+      <script src="/assets/js/darkTheme.js"></script>
+
+      <!--: Scroll Reveal animation library -->
+      <script src="/assets/js/scrollreveal.min.js"></script>
+      <script src="/assets/js/scrollReveal.js"></script>
     </div>
-
-    <!--: swiper library-->
-    <script src="Swiper/swiper-bundle.js"></script>
-    <script src="Swiper/swiper-bundle.min.js"></script>
-    <!--: swiper API for sliders -->
-    <script src="js/swiper_3DCoverflow.js"></script>
-    <!-- <script src="js/swiper_slides.js"></script> -->
-    <script src="js/swiper_pagination-fraction.js"></script>
-
-    <!--: CSS Animation for Galeria de fotos de Obras -->
-    <script src="js/mouseHover.js"></script>
-
-    <!--: Change header background color when scroll -->
-    <script src="js/scrollHeader.js"></script>
-
-    <!--: Menu navegation for responsive design -->
-    <script src="js/menuNav.js"></script>
-
-    <!--: Dark Mode -->
-    <script src="js/darkTheme.js"></script>
-
-    <!--: Scroll Reveal animation library -->
-    <script src="js/scrollreveal.min.js"></script>
-    <script src="js/scrollReveal.js"></script>
   </body>
 </html>
