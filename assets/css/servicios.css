@@ -556,11 +556,13 @@
   .servicios .title h2 {
     text-align: center;
     font-size: 2rem;
-    margin: 4rem 0 2.5rem 0;
+    /* margin: 4rem 0 2.5rem 0; */
+    margin: 2.5rem 0 1rem 0;
   }
   .servicios .rd__clickText {
     position: absolute;
-    top: 25%;
+    /* top: 25%; */
+    top: 15%;
     left: 30%;
     transform: translate(-25% -30%);
   }
