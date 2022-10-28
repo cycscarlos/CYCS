@@ -779,7 +779,7 @@ h2.elegantshadow {
 /*: Cards        */
 /* --------------*/
 section.cards {
-  padding-top: 2.5rem; /* 40px */
+  padding-top: 2.5rem; 
 }
 
 .cards {
@@ -822,7 +822,7 @@ section.cards {
 /*: Card title animation routine     */
 /* --------------------------------- */
 /*! display: table-cell; */
-/* .cards .title h2 span {
+.cards .title h2 span {
   animation: animate 2s linear infinite;
 }
 .cards .title h2 span:nth-child(1) {
@@ -851,7 +851,7 @@ section.cards {
     filter: blur(0px);
     text-shadow: none;
   }
-}*/
+}
 /*: Ends Card title animation routine */
 
 .cards .cardsBx {
@@ -878,8 +878,7 @@ section.cards {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: rgba(39, 59, 71, 0.2); */
-  background: rgba(31, 146, 218, 0.3);
+  background: rgba(39, 59, 71, 0.2);
 }
 
 .cards .cardsBx .card h3 {
@@ -890,16 +889,11 @@ section.cards {
   color: var(--white-color);
   text-align: center;
 }
+
 .cards .cardsBx .card h3 span {
   color: var(--color-pagina);
   font-size: 2em;
   font-weight: 700;
-}
-.cards .cardsBx .card h3.telco-subtitulo {
-  font-size: 1.5em;
-}
-.cards .cardsBx .card h3.telco-subtitulo span {
-  font-size: 2em;
 }
 
 .cards .cardsBx .card .boton_mostrar {
@@ -1090,10 +1084,6 @@ section.cards {
   filter: grayscale(100%);
 }
 
-/* .container_Galeria:hover{
-  transform: scale(1.2);
-} */
-
 .container_Galeria .gallery-container {
   transition: 0.7s;
 }
@@ -1148,7 +1138,8 @@ section.proveedores {
   grid-template-columns: repeat(7, 80px);
   grid-auto-rows: max-content;
   gap: 3rem;
-  background-image: url("../img/bg-texture.jpg");
+  background-image: url("../../img/bg-texture.jpg");
+
   justify-content: center;
   align-items: center;
 }
@@ -1227,8 +1218,6 @@ article.proveedor {
   flex-direction: row;
   color: var(--footer-color);
   padding-top: 20px;
-  margin: 10px 0;
-  overflow: hidden;
 }
 
 .main .contenedor .comun {
@@ -1236,7 +1225,7 @@ article.proveedor {
 }
 
 .main .contenedor .comun.nosotros {
-  width: 25%;
+  width: 30%;
 }
 .main .contenedor h2 {
   position: relative;
@@ -1261,9 +1250,8 @@ article.proveedor {
   margin-top: 30px;
 }
 .linkSecundarios {
-  position: relative;
+  position: relative; 
   font-size: 0.9rem;
-  width: 20%;
 }
 .linkSecundarios ul li {
   list-style: none;
@@ -1310,21 +1298,8 @@ article.proveedor {
   top: 240px;
   color: #ff0000;
 }
-.mapa {
-  margin: 0 auto;
-  /* width: 300px; */
-  width: 35%;
-  height: 300px;
-}
-.mapa iframe {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  box-shadow: 10px 10px 10px black;
-}
 .contactos {
   font-size: 0.9rem;
-  width: 20%;
 }
 .contactos .informacion {
   position: relative;
@@ -1360,38 +1335,6 @@ article.proveedor {
   font-style: italic;
 }
 
-/** SCROLL UP (Icono flecha subir) */
-.scrollup {
-  position: fixed;
-  right: 1rem;
-  /*_ El bottom:5px; es Temporal, y solo se utiliza para codificar bien el botón, luego se esconde y manipula con JS y la clase "show-scroll" */
-  /* bottom: -20%; */
-  top: -20%;
-  background-color: var(--color-azulObscuro);
-  border-radius: 50%;
-  padding: 0.5rem;
-  display: flex;
-  opacity: 0.9;
-  z-index: var(--z-tooltip);
-  transition: 0.6s;
-}
-
-.scrollup:hover {
-  background-color: var(--color-azulClaro);
-  opacity: 1;
-}
-
-.scrollup__icon {
-  color: var(--white-color);
-  font-size: 1.2rem;
-}
-
-/** Show scroll */
-.show-scroll {
-  /* bottom: 5rem; */
-  top: 10rem;
-}
-
 /*! Media queries & Responsive Design -Footer */
 
 @media screen and (max-width: 1024px) {
@@ -1423,12 +1366,8 @@ article.proveedor {
   }
   .main .contenedor .comun.nosotros,
   .linkSecundarios,
-  .mapa,
   .contactos {
     width: 100%;
-  }
-  .main .contenedor .comun.mapa iframe {
-    padding-top: 20px;
   }
   .linkSecundarios ul {
     margin-top: 15px;

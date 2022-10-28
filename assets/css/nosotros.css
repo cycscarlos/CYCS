@@ -44,7 +44,8 @@
   margin-bottom: 10px;
 }
 .muro-parrafo span {
-  color: var(--muro-color);
+  /* color: var(--muro-color); */
+  color: var(--color-pagina);
   font-size: 1em;
   line-height: 7px;
   text-align: center;
