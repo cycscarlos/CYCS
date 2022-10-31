@@ -226,14 +226,12 @@
 }
 
 .profile-details a {
-  /* text-decoration: underline; */
-  /* color: var(--text-color); */
-  color: var(--color-linkedin);
-  /* font-weight: 500; */
+  color: var(--color-pagina);
+  font-style: italic;
+
 }
 .profile-details span {
   font-size: 0.5rem;
-  /* font-style: italic; */
 }
 
 .profile-img-section {
