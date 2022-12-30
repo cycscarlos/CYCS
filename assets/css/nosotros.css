@@ -226,9 +226,11 @@
 }
 
 .profile-details a {
-  color: var(--color-pagina);
+  /* color: var(--color-pagina); */
   font-style: italic;
-
+}
+.profile-details a:hover {
+  color: var(--color-pagina);  
 }
 .profile-details span {
   font-size: 0.5rem;
