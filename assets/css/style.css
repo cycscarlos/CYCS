@@ -1260,6 +1260,11 @@ article.proveedor {
   font-size: 0.9rem;
   margin-top: 30px;
 }
+.main .contenedor .nosotros p span {
+  color: var(--color-logo);
+  font-weight: 500;
+  font-size: 1em;
+}
 .linkSecundarios {
   position: relative;
   font-size: 0.9rem;
@@ -1276,7 +1281,9 @@ article.proveedor {
   margin-left: 15px;
 }
 .linkSecundarios ul li a:hover {
-  color: #999;
+  /* color: #999; */
+  color: var(--color-pagina);
+  opacity: 0.35;
 }
 .linkSecundarios ul li a.uno {
   margin-top: 20px;
