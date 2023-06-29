@@ -70,6 +70,23 @@
 /*: Base styles  */
 
 :root {
+  /* Custom properties */
+  --step--5: clamp(0.48rem, 0.47rem + 0.06vw, 0.51rem);
+  --step--4: clamp(0.58rem, 0.55rem + 0.12vw, 0.64rem);
+  --step--3: clamp(0.69rem, 0.65rem + 0.21vw, 0.8rem);
+  --step--2: clamp(0.75rem, 0.71rem + 0.27vw, 0.9rem);
+  --step--1: clamp(0.83rem, 0.77rem + 0.33vw, 1rem);
+  --step-0: clamp(1rem, 0.9rem + 0.49vw, 1.25rem);
+  --step-1: clamp(1.2rem, 1.06rem + 0.71vw, 1.56rem);
+  --step-2: clamp(1.44rem, 1.24rem + 1vw, 1.95rem);
+  --step-3: clamp(1.73rem, 1.45rem + 1.39vw, 2.44rem);
+  --step-4: clamp(2.07rem, 1.69rem + 1.91vw, 3.05rem);
+  --step-5: clamp(2.49rem, 1.97rem + 2.59vw, 3.82rem);
+  --h2: clamp(1rem, 0.0282rem + 3.7559vw, 2rem); /* 2em */
+  --subtitle: clamp(0.4rem, -0.007rem + 1.57vw, 1rem); /* .4em */
+  --hero: clamp(0.625rem, 0.519rem + 0.41vw, 0.781rem); /* 0.75em; */
+  --h4: clamp(0.875rem, 0.722rem + 0.59vw, 1.1rem); /* 1.1em; */
+
   --header-height: 3rem;
   --section-height: 100vh;
   --section-services-height: 35.1875rem; /* 563px */

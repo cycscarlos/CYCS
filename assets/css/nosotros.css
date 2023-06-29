@@ -6,6 +6,114 @@
   margin: 0;
 }
 
+/* ---------------------------------- */
+/*: Nosotros. Mosaico de Fotos        */
+/* ---------------------------------- */
+
+.equipo {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  min-height: var(--section-height);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.equipo .imgBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipo .imgBx img{
+  width:85%;
+  height:85%;
+}
+
+.equipo .titulo {
+  position: relative;
+  width: 100%;
+}
+
+.equipo .titulo h2 {
+  flex-direction: column;
+  /* font-family: var(--font-titulos); */
+  /* color: var(--text-color); */
+  font-family: var(--font-muro);
+  color: var(--color-logo);
+  letter-spacing: 2.5px;
+  padding: 0;
+  background-color: transparent;
+  /* font-size: 2rem; */
+  font-size: var(--h2);
+  margin: 2rem auto;
+}
+
+.equipo .titulo span {
+  color: var(--text-color);
+  opacity: 0.5;
+}
+
+.equipo .fas.fa-arrow-circle-down {
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  margin: auto;
+  font-size: 35px;
+  background: transparent;
+  color: var(--color-pagina);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: none;
+}
+
+/* Sub-rutina para colocar un Titulo centrado al medio de la página con animación aparecer/desaparecer */
+
+/* .equipo .subtitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipo .subtitulo h3 {
+  position: relative;
+  top: 200px;
+  font-size: 40px;
+  letter-spacing: 6px;
+  color: rgba(255, 73, 0, 0.5);
+  -webkit-text-stroke: 0.3vw rgba(28, 54, 67, 0.2);
+  text-transform: uppercase;  
+}
+
+.equipo .subtitulo h3::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #fff;
+  -webkit-text-stroke: 0vw rgba(28, 54, 67, 0.2);
+  border-right: 4px solid rgb(255, 73, 0);
+  overflow: hidden;
+  animation: textAnimate 6s linear infinite;
+}
+
+@keyframes textAnimate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+} */
+
 /* ------------------------------*/
 /*: Muro "Oficina de Proyectos"  */
 /* ------------------------------*/
@@ -19,6 +127,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 .box_muro {
   width: 750px;
@@ -78,105 +187,6 @@
   -o-border-radius: 50%;
 }
 
-/* ---------------------------------- */
-/*: Nosotros. Mosaico de Fotos  */
-/* ---------------------------------- */
-
-.equipo {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  min-height: var(--section-height);
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-.equipo .imgBx {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.equipo .titulo {
-  position: relative;
-  width: 100%;
-}
-
-.equipo .titulo h2 {
-  flex-direction: column;
-  font-family: var(--font-titulos);
-  letter-spacing: 2.5px;
-  color: var(--text-color);
-  padding: 0;
-  background-color: transparent;
-}
-
-.equipo .titulo span {
-  color: var(--text-color);
-  opacity: 0.5;
-}
-
-.equipo .fas.fa-arrow-circle-down {
-  position: absolute;
-  /* right: 0;
-  bottom: 15%; */
-  right: 30px;
-  bottom: 0;
-  margin: auto;
-  font-size: 35px;
-  background: transparent;
-  color: var(--color-pagina);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border: none;
-}
-
-/* Sub-rutina para colocar un Titulo centrado al medio de la página con animación aparecer/desaparecer */
-
-/* .equipo .subtitulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.equipo .subtitulo h3 {
-  position: relative;
-  top: 200px;
-  font-size: 40px;
-  letter-spacing: 6px;
-  color: rgba(255, 73, 0, 0.5);
-  -webkit-text-stroke: 0.3vw rgba(28, 54, 67, 0.2);
-  text-transform: uppercase;  
-}
-
-.equipo .subtitulo h3::before {
-  content: attr(data-text);
-  position: absolute;
-  left: 0;
-  width: 0;
-  height: 100%;
-  color: #fff;
-  -webkit-text-stroke: 0vw rgba(28, 54, 67, 0.2);
-  border-right: 4px solid rgb(255, 73, 0);
-  overflow: hidden;
-  animation: textAnimate 6s linear infinite;
-}
-
-@keyframes textAnimate {
-  0%,
-  10%,
-  100% {
-    width: 0;
-  }
-  70%,
-  90% {
-    width: 100%;
-  }
-} */
 
 /* --------------*/
 /*: Profile CEO  */
@@ -226,11 +236,11 @@
 }
 
 .profile-details a {
-  /* color: var(--color-pagina); */
+  color: var(--color-logo);
   font-style: italic;
 }
 .profile-details a:hover {
-  color: var(--color-pagina);  
+  opacity: 0.5;
 }
 .profile-details span {
   font-size: 0.5rem;
@@ -324,9 +334,9 @@
     min-height: 80%;
     margin: 3rem auto 3rem auto;
   }
-  .equipo .titulo h2 {
+  /* .equipo .titulo h2 {
     font-size: 2rem;
-  }
+  } */
   .equipo .fas.fa-arrow-circle-down {
     right: 30px;
     bottom: 0;
@@ -348,17 +358,17 @@
   .muro-lema {
     font-size: 1.2rem;
   }
-  .equipo .titulo h2 {
+  /* .equipo .titulo h2 {
     font-size: 1.5rem;
-  }
+  } */
 }
 
 /*! PC in smallest viewport mode */
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .equipo .titulo h2 {
     font-size: 1.5rem;
   }
-}
+} */
 
 /*! iPhone XS Max */
 @media (max-width: 414px) {
@@ -373,9 +383,9 @@
     font-size: 1rem;
     margin: 0 0 10px 0;
   }
-  .equipo .titulo h2 {
+  /* .equipo .titulo h2 {
     font-size: 1rem;
-  }
+  } */
   .profile-title .name {
     font-size: 1.2rem;
   }
