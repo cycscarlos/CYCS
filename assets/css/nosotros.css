@@ -26,9 +26,9 @@
   align-items: center;
 }
 
-.equipo .imgBx img{
-  width:85%;
-  height:85%;
+.equipo .imgBx img {
+  width: 85%;
+  height: 85%;
 }
 
 .equipo .titulo {
@@ -38,14 +38,11 @@
 
 .equipo .titulo h2 {
   flex-direction: column;
-  /* font-family: var(--font-titulos); */
-  /* color: var(--text-color); */
   font-family: var(--font-muro);
   color: var(--color-logo);
   letter-spacing: 2.5px;
   padding: 0;
   background-color: transparent;
-  /* font-size: 2rem; */
   font-size: var(--h2);
   margin: 2rem auto;
 }
@@ -186,7 +183,6 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-
 
 /* --------------*/
 /*: Profile CEO  */
@@ -378,6 +374,9 @@
   .muro-parrafo {
     font-size: 0.8rem;
     line-height: 1.5;
+  }
+  h2.muro-lema {
+    font-size: 0.8rem;
   }
   .muro-lema {
     font-size: 1rem;
