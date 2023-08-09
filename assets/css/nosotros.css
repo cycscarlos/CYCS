@@ -382,7 +382,8 @@
     line-height: 1.5;
   }
   h2.muro-lema {
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
+    display: none;
   }
   .muro-lema {
     font-size: 1rem;
