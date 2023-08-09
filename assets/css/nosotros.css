@@ -231,13 +231,19 @@
   font-family: var(--font-texto);
 }
 
+.profile-details small {
+  color: var(--color-logo);
+}
+
 .profile-details a {
   color: var(--color-logo);
   font-style: italic;
 }
+
 .profile-details a:hover {
-  opacity: 0.5;
+  text-decoration: underline;
 }
+
 .profile-details span {
   font-size: 0.5rem;
 }
