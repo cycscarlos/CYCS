@@ -69,7 +69,7 @@
 
 /*: Base styles  */
 
-:root {
+footer:root {
   /* Custom properties */
   --step--5: clamp(0.48rem, 0.47rem + 0.06vw, 0.51rem);
   --step--4: clamp(0.58rem, 0.55rem + 0.12vw, 0.64rem);
@@ -1203,6 +1203,7 @@ article.proveedor {
 @media screen and (max-width: 600px) {
   .proveedores__container {
     grid-template-columns: repeat(3, 1fr);
+    /* display: none; */
   }
 }
 
@@ -1278,7 +1279,8 @@ article.proveedor {
   margin-top: 30px;
 }
 .main .contenedor .nosotros p span {
-  color: var(--color-logo);
+  /* color: var(--color-logo); */
+  color: var(--footer-color);
   font-weight: 500;
   font-size: 1em;
 }
