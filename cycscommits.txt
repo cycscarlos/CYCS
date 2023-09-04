@@ -1,0 +1,1230 @@
+commit b125b40fa60f0f9b9f02cc2ab4660ea93acee2d5
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Mon Sep 4 15:26:26 2023 -0400
+
+    ultimo commit
+
+commit 37a88fddb86e27ff03361083692aa6d86d0798e8
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Mon Sep 4 15:02:40 2023 -0400
+
+    Se revirtieron los cambios del commit anterior
+
+commit f794dbfb6ef0e8c6d975fe2ae7733e167abd257f
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Mon Sep 4 12:51:59 2023 -0400
+
+    Ajustes varios para smartphones
+
+commit d5de22b24ccd97f5858e1bcf1272792c511c32d5
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sun Aug 13 20:39:48 2023 -0400
+
+    profile content
+
+commit 286b1efa9113c6995328576993a2bd303118e360
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Aug 9 16:56:07 2023 -0400
+
+    Se eliminó el h2 de la sección nosotros en modo smartphone
+
+commit 2ecb7081ab48e8a52ed2061e03cae40a5fd95853
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Aug 9 16:48:30 2023 -0400
+
+    Ajustes al contenido de nosotros
+
+commit 5022122c7f02f3ffba49ea8b338e66d4837f4788
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Jul 12 19:03:35 2023 -0400
+
+    Ajustes al contenido del profile sección Nosotros
+
+commit 2fa57c28baf5f3224fa8314d66a1dcc0b6bc1a38
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Mon Jul 10 15:22:16 2023 -0400
+
+    Contenido de Nosotros
+
+commit c5fcecccf7f318deb3b154ec09ecef13ed4483b8
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Jun 29 07:23:06 2023 -0400
+
+    Modificación integral a la sección Muro
+
+commit 762c832c75a63b46a7f3a5ef69e595a7b6238607
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Jun 21 21:54:47 2023 -0400
+
+    subtitulos de las secciones Clientes y Fotos
+
+commit 6e973837e4e8aa37b4847515811ffebd71ac879c
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Jun 21 21:10:37 2023 -0400
+
+    Profile content
+
+commit 3c9358adbf8deb1aa7831907899faa0fa5d21fed
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Tue May 9 19:58:04 2023 -0400
+
+    Nosotros section adjustments
+
+commit fabce4a180011259122c098151df27860d4fcc81
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sun Apr 30 19:49:48 2023 -0400
+
+    AJustes al contenido del profile en la sección nosotros
+
+commit 7a0c2e0007f5a848307f738e8e72e20e8e14c8cc
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sat Apr 22 16:16:00 2023 -0400
+
+    technologies review
+
+commit f007740e63fefa6dacde0c4148f217bfac646060
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Tue Apr 18 09:21:47 2023 -0400
+
+    Overhauling del contenido de la sección Nosotros
+
+commit 874ba31a4ecf24435f86d2e3f13de30ff720a55e
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Feb 9 09:06:00 2023 -0400
+
+    Ajustes al profile de nosotros
+
+commit feb151736c735e82c0a3e9b5ad9a6c7fb0bc6305
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Tue Feb 7 14:49:39 2023 -0400
+
+    Ajustes generales a la página principal
+
+commit 6bb58f836392a61d2981f9e70b81a1563a910744
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Tue Feb 7 14:19:17 2023 -0400
+
+    Ajustes al contenido del profile
+
+commit e3f1ddb3635981bfd8e9e2725ad96885daea26d3
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Dec 29 21:20:12 2022 -0400
+
+    Perfil de Nosotros
+
+commit 252cc7b1bf1ad22635b6421ec499d03ece8fc74b
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Nov 3 20:20:56 2022 -0400
+
+    Adecuación del website
+
+commit 64a4b2ee5b7b8981d40b0ec6749ab026ced4a184
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Nov 3 17:39:47 2022 -0400
+
+    Ajustes al profile de Nosotros
+
+commit c8adccd170cb34aa3d9b1c567986114e677a00aa
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Nov 3 17:27:06 2022 -0400
+
+    Ajustes a la sección Nosotros
+
+commit c2d579bfb839cacbdf8e3cc2f0ea9be6a5ce5ef8
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Mon Oct 31 19:51:31 2022 -0400
+
+    Modificación a la sección CEO-Nosotros
+
+commit 22359fe2bda578ed2b264a6b9e61c20850d38090
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Fri Oct 28 13:07:14 2022 -0400
+
+    Cambios múltiples y radicales a la página principal del website
+
+commit 922d7fcfe5f3d03dabab2a9c2bc7fa7bdc4a47a0
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Oct 12 16:34:06 2022 -0400
+
+    Ajustes a los titulos dntro del footer
+
+commit 23574200b8fd45f63d9d5c532215123a490cd1eb
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Oct 12 13:30:12 2022 -0400
+
+    se modifico el menu de navegación secundario
+
+commit 93f188334388f74fb48f958b21db4417a501c331
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Oct 5 20:44:32 2022 -0400
+
+    Se corrigió error de path con imagen telco8
+
+commit 4f55e500626902f71b561e2aea09f029fc141a74
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Sep 29 18:23:15 2022 -0400
+
+    Se cambió el h2 de la sección cards
+
+commit ff17ef5e106bd006005cc3be96b39677f51c0efd
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sun Jul 31 12:43:02 2022 -0400
+
+    Ajustes al profile de nosotros
+
+commit b8917ad9e0204be0e3432f776d8d47502a2ac02b
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Tue Jul 5 15:47:19 2022 -0400
+
+    Reubicación de cards de clientes
+
+commit 443c9cd2d060192db9565adff2c3c3aa13d1c0a0
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Mon Jul 4 09:33:13 2022 -0400
+
+    Se incorporó el servicio de Chatbot de Chaport
+
+commit 9915644c56e73c1d08ece9e4793bb068544a8551
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Tue Jun 28 07:58:39 2022 -0400
+
+    Posicionamiento del carrousel de servicios en iPhones 6/7/8
+
+commit 1c3e33b92fdc56ecd5aa74ad4d56d2d1fb93788c
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Tue Jun 28 07:55:18 2022 -0400
+
+    Responsive design servicios para iPhone 6/7/8
+
+commit cfe8c4b223dc6fceb3e4d4d539957adb76171244
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sun Jun 26 14:40:22 2022 -0400
+
+    Ajustes varios y menores a todas las páginas
+
+commit 02960c9d3f7cbe7a5aee9c0ad0b7b86456b39690
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Jun 23 15:17:31 2022 -0400
+
+    Ajustes al contenido del profile
+
+commit 79fe8f1b79decdbbc3f88221067ad81badf740ff
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Jun 16 12:36:28 2022 -0400
+
+    Se reestructuraron las carpetas del proyecto
+
+commit 5418e0ca17f8615ea2aa78aae709669105b745d5
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sat Jun 11 13:19:20 2022 -0400
+
+    Ajustes al contenido del profle de la sección nosotros
+
+commit ad75e942c99d999e32d73ec8982e5b12c4aa5963
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sat Jun 11 13:11:07 2022 -0400
+
+    Ajustes al contenido del profile de nosotros
+
+commit 9cd28199c3b4b2f80f9711b892c27dcadd8f768b
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sat Jun 11 11:48:41 2022 -0400
+
+    Ajustes al contenido de la sección nosotros
+
+commit d8ef72981d8b4f736ac259c3973a37ad2d86f75a
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Fri Jun 10 15:51:17 2022 -0400
+
+    reordenamiento de la seccion de proveedores
+
+commit b2bac743854de3d586e3c6ab70d29f89c04fa883
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Jun 1 16:56:51 2022 -0400
+
+    box-shadow a la imagen de nosotros
+
+commit 22ce6363fed4de67b16bc7ae54d959fb588cb2c4
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Jun 1 16:07:14 2022 -0400
+
+    Ajustes al contenido de nosotros en contacto
+
+commit 32302babe7aecfa14058570f64d589e2112a4c41
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Jun 1 15:56:05 2022 -0400
+
+    Se cambió el contenido de contacto
+
+commit f37e06c9f2b8b6d8ba54262a31b6965ae24e3267
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed May 4 14:20:26 2022 -0400
+
+    Modificación contenido lema del muro
+
+commit 06d5c035e6a12f18d987eb07c24da6062380acc5
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sat Apr 30 10:04:44 2022 -0400
+
+    Ajustes al contenido del perfil de la nosotros
+
+commit cf778559b667a6b465ba37c0c1c47e6444778078
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 28 12:34:33 2022 -0400
+
+    margin-top de title h2 en las multi-pages
+
+commit 53314a9baca63a2aa8a2afc3f52032194a00ad9e
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Tue May 10 23:44:11 2022 -0400
+
+    Se ajustaron márgenes de la sección nosotros
+
+commit 624148f25bfa40cd795baf8e92702f0ce281de5a
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sun Apr 24 16:34:01 2022 -0400
+
+    Ajustes al Margin-top de title h2
+
+commit b4786aa3ad0cd994536c6ca09a782930d20fc522
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sun Apr 24 13:11:31 2022 -0400
+
+    upload a Producción
+
+commit 509cf15cf4eea2b4b67124008327923b9098f8c1
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sun Apr 24 13:03:25 2022 -0400
+
+    Se depuró el código al 100% y upload a producción
+
+commit 8cea74497eb49c10356aadfb15dbd53471bcd9d4
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sat Apr 23 20:57:39 2022 -0400
+
+    Se ajustaron mediaqueries sección Muro
+
+commit b1890b2efeb4bd68781194c0aea465ce7c871dc7
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sat Apr 23 14:23:37 2022 -0400
+
+    se incorporó smartphones.css a todos los multipages
+
+commit e1b20b8a61ca36d9b3833ede70b8a92cf2c556ed
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Fri Apr 22 16:41:51 2022 -0400
+
+    reajustes de los mediaqueries de las multipages. listo en un 99%
+
+commit 5e410b673241c8b8f6d7709441e5d9ad515286e8
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Fri Apr 22 12:40:09 2022 -0400
+
+    Se ajustaron en un 98% los mediaqueries del website
+
+commit 14c607edcdb7af4a992afd456980a0f842acc6a9
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Tue Apr 19 16:39:13 2022 -0400
+
+    se ajustarón todos los @mediaqueries - El website esta listo!
+
+commit d57eb8c05ee3cf5db9c6a74b2ae6df56bb8d482b
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sun Apr 17 19:29:25 2022 -0400
+
+    Se hicieron casi todos (99%) de los cambios requeridos para el multipage
+
+commit a4b08698b069cb159a5a839c67dcc4402cc71557
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Fri Apr 15 21:19:03 2022 -0400
+
+    Las secciones clientes y galeria se colocaron de nuevo en el root, y se colocó lazy a las imagénes
+
+commit d6eef760d4b027a048bf8f2c1353f6d009f36982
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Fri Apr 15 14:29:50 2022 -0400
+
+    se crearon las páginas security, ctrlAcceso y telecomunicaciones
+
+commit 1d9e620418d3d091a9ede62965e182d4f1386b88
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Apr 13 21:10:26 2022 -0400
+
+    se añadio el copyright
+
+commit 78d94ff45c248730f0c9af0c3a73abe620bf140b
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Apr 13 20:47:51 2022 -0400
+
+    se reestructuró el website a multi-pages
+
+commit ec67cec590e618ecbbfb472b96d8466ac839789d
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Apr 13 18:53:42 2022 -0400
+
+    servicios.html
+
+commit 6e0c61d18704564904dbbd25f8092132c603d3b6
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Apr 13 09:18:48 2022 -0400
+
+    Cambios varios
+
+commit bdf26bb60cc97d7333ec768412efcd0c349520cc
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 7 09:38:16 2022 -0400
+
+    link del profile
+
+commit 0515c75381a4787f547270fef99cdb9a1a8f73f0
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 7 09:34:20 2022 -0400
+
+    En el profile, se sustituyó el enlace de netlify por github
+
+commit 9fc0906f75aeb64983f66925d0dbce59c47b0ad5
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 7 08:42:31 2022 -0400
+
+    corrección a un dedocheck en el profile
+
+commit de7756b89ffaef7a8fb462585cd27ed6676890f4
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 7 08:38:35 2022 -0400
+
+    se sutituyó loading='' por loading='auto'
+
+commit 694af24fff3942e7c87fbf14468a2fc41aae0d24
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 7 08:06:50 2022 -0400
+
+    Se eliminó el loading=lazy en la imágenes
+
+commit 686fa782bd1907509b909d2c8cf0c59eda6a4dc8
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 7 07:59:50 2022 -0400
+
+    Ajustes al contenido del profile
+
+commit e7956bdca7718aa215f3f4888aa484f8aca24c51
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 7 07:48:15 2022 -0400
+
+    Ajustes al contenido del profile
+
+commit 84dd93b910d4bed6a7b8f2573d9dd6713d1c8867
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 7 07:42:32 2022 -0400
+
+    Ajustes al contenido del perfil
+
+commit 977108b91c6c1309704d1f2fb783a776688a8590
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Mar 30 17:51:46 2022 -0400
+
+    readme update
+
+commit 2e6e9c2cd1e4e9d68712989aa5d4bfd87da0cff4
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Mar 30 17:50:00 2022 -0400
+
+    readme update
+
+commit cc711af7dd22bf568187c6b56f8465c928af72eb
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Mar 30 17:48:02 2022 -0400
+
+    readme update
+
+commit 9937ffb57b8aa472a6a77c9d7cc875b08aa1eb4b
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Mar 30 17:10:38 2022 -0400
+
+    readme update
+
+commit fcab587698431a5f61153b91aae3f798b139af88
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Fri Mar 25 15:09:58 2022 -0400
+
+    Copyright
+
+commit 75d4f4a9c9f3b3a8262b84d61cfa0bd0c0d578fa
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Thu Mar 17 20:07:25 2022 -0400
+
+    Resolución error en loading lazy en una image de clientes
+
+commit 0beabfb523889b6049fa1ddc0e1191ddd677cbbc
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Wed Mar 16 22:13:57 2022 -0400
+
+    se habilitó el loading lazy en todas las imágenes
+
+commit acdb285ff56fb71ee54025b65f11be3e6a48587d
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Wed Mar 16 05:01:14 2022 -0400
+
+    Se eliminó el scroll Reveal de clients, galeria y Profile
+
+commit 1128414218243e0d8e682b6f173f74bfe7e9c09c
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Sat Mar 12 19:11:54 2022 -0400
+
+    Ajustes al profile
+
+commit 444d9a664766f1834caf1f3238349a7b0fcca377
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Thu Mar 3 17:56:48 2022 -0400
+
+    Ajustes al background y color del Footer
+
+commit 787680d487e38c4e0994bcc1cb95f71c1b3cc468
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Thu Mar 3 15:06:23 2022 -0400
+
+    Ajustes al background del footer
+
+commit 2836accbc6f27cd06b14abf4c45e58683684563f
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Thu Mar 3 14:57:23 2022 -0400
+
+    Ajustes al color del contenido del footer en Responsive Design
+
+commit ba6daf5b678b0bf668ad9b0c4afffdc75b76dbb2
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Thu Mar 3 11:28:44 2022 -0400
+
+    overhauling
+
+commit 9f545f855cb2c665a98e6117d58a5425d51562ad
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Mar 1 18:35:32 2022 -0400
+
+    overhauling
+
+commit 5cbd23d077bc5f0e5304b4153366c715ac5309c9
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Mar 1 18:15:43 2022 -0400
+
+    Overhauling
+
+commit 7db898c913efacd630e01cca00682284bd7b92f3
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Mar 1 16:36:29 2022 -0400
+
+    overhauling al 1Marzo2022
+
+commit 9744dda2c6119057a419ca3f7d379f63594fc1ba
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Wed Feb 23 20:16:01 2022 -0400
+
+    Overhauling 1st stage
+
+commit ac4ae58dcbe2072bf33c18bd4654a1b10cdc7858
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Feb 15 10:43:14 2022 -0400
+
+    ajustes
+
+commit 9db8e5901b040de7dbc903b2157ef20916044cdc
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Feb 15 10:40:51 2022 -0400
+
+    ajustes
+
+commit 202a42649cfc1853a249cfcdb29483b35c6c4df2
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Feb 15 10:38:22 2022 -0400
+
+    Ajustes
+
+commit e4718158b52e6a35b4373516008885820ae855e0
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Feb 15 10:34:23 2022 -0400
+
+    Ajustes
+
+commit 53c48b29ab2b32fb9b2b3d63208c13e707f2a60b
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Feb 15 10:31:22 2022 -0400
+
+    Ajustes varios
+
+commit 387711d9237aae86852c6ae79db383d4d7aa8098
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Feb 15 07:21:11 2022 -0400
+
+    Ajustes contenido
+
+commit cec29d0fa4ccbc7e9e980b89004110161c33334b
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Feb 14 18:21:33 2022 -0400
+
+    Ajustes al nav__list en 375px
+
+commit d1ad81f6a9ad2c63d28bdbd7718dec26c984a35c
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Feb 14 18:09:53 2022 -0400
+
+    Ajustes al contenido del Muro
+
+commit 19d3a4094c7ee3e23652f5126c5dba21c3ebac41
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Feb 14 18:06:18 2022 -0400
+
+    Se ajustó el row-gap en nav__list para moviles < 375px
+
+commit fa911c3e1124942c14bb9b6b8cf933f5614ff2cd
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Feb 14 17:49:17 2022 -0400
+
+    Ajustes al contenido del profile
+
+commit a5cb249a548ebf2d5848bc20d6eee3d96fbe5dc5
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Wed Feb 9 09:51:05 2022 -0400
+
+    Abrir link en otras pestañas
+
+commit f87018de43cc2fbd5611605498c4043a0f6423a5
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Wed Feb 9 09:02:36 2022 -0400
+
+    sustitución de link de cv
+
+commit 713942d331ef699e3cd8e70fc7074fd3dda450b7
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Feb 8 20:06:56 2022 -0400
+
+    Ajustes al color del logo y links en el header
+
+commit e6b772f54d9c7f8459961fa544f36d1616a12ad7
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Sat Feb 5 12:00:16 2022 -0400
+
+    Nuevo link a carlos-colmenares-alvarez@netlify.app
+
+commit cfbc673d9af0703567cd0fefc0fa22c4a3d35e57
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Wed Nov 24 18:43:04 2021 -0400
+
+    Eliminación de servicios de scroll-reveal
+
+commit 269594fd4b5543a12f405592058c2184f2e04f37
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Sun Nov 21 12:33:07 2021 -0400
+
+    Ajustes al contenido del profile
+
+commit 66e18a8d58a91bbbbcbb34dce7ced7b44bde899a
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Fri Nov 19 18:22:36 2021 -0400
+
+    Ajustes al contenido del profile
+
+commit afbcb60c9fb524fd2649100bbe4a8be629ac82d0
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Fri Nov 19 12:07:58 2021 -0400
+
+    Incorporación del profile section al responsive mode
+
+commit 0f45c7cf13e4388069993ec10415e8e0caa1baed
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Fri Nov 19 10:50:40 2021 -0400
+
+    Ajustes al contenido del profile
+
+commit 0236039fb427b4171938f0d2faf0ca420d9a0f32
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Fri Oct 29 17:39:51 2021 -0400
+
+    Refactoring Breakpoint 375px
+
+commit 4ae9e09e19c492bf431b04d775b599a11156538b
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Fri Oct 29 17:33:10 2021 -0400
+
+    Refactoring breakpoint 375px
+
+commit bf3038d0fb2257ffc2dfdcac03ce17e8d0882024
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Fri Oct 29 17:22:47 2021 -0400
+
+    Continuación del seriado de refactoring al breakpoint 375px
+
+commit 6b44a9f8ab3f677fff302b4a7b04d584597e7f08
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Fri Oct 29 17:05:15 2021 -0400
+
+    Continuación del seriado de refactoring al breakpoint 375px
+
+commit ccfb2c081326d481227f922b37f9247df0cd2a57
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Fri Oct 29 16:56:58 2021 -0400
+
+    Ajustes Breakpoint Max-width:375px
+
+commit 7969493c308a4db2bf69f9fd150fe69fc2f237e4
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Fri Oct 29 16:45:41 2021 -0400
+
+    Ajustes al breakpoint max-width: 375px
+
+commit e2d040c69293615845c22a3d1c8cc65579dbc5d3
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Wed Oct 27 17:20:43 2021 -0400
+
+    Ajustes al breakpoint servicesRD para viewport 540px
+
+commit 70a8ef437f6daa64d963ddec29ec90a08d2f16df
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Wed Oct 27 14:40:48 2021 -0400
+
+    Incorporacion de nuevos viewport sizes en RD
+
+commit 10b512b9507fb13738110e80dac64173adf054f9
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Wed Oct 27 12:20:16 2021 -0400
+
+    Ajustes generales a los breakpoints
+
+commit 65fcde90a75ac8cf93d09782e340cd23567c6b21
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Wed Oct 27 10:42:12 2021 -0400
+
+    Incorporación de barra de colores a serviciosRD
+
+commit f253a96e909ba1d21fdb7006e3be51a952e0b0ec
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Oct 26 19:50:01 2021 -0400
+
+    Se ajustó el ID scroll, el color del icono Darkmode en header scroll  y contenido wn el footer
+
+commit 8abdb0c9e6d1e5bd59539036310f948eebf2b925
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Oct 26 18:20:07 2021 -0400
+
+    Ajustes finales al RD
+
+commit a4a78252d68dbc27c68b86f299a47b0b30851568
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Oct 26 17:35:25 2021 -0400
+
+    Ajustes al Dark Theme y Responsive Design en el titulo de Galeria
+
+commit 2b032e3749703d35153f82151562577f35d12b58
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Oct 25 22:58:46 2021 -0400
+
+    Ajustes para habilitar el Dark Theme
+
+commit 6bca1e5678966ad591d0c75356f31dbba1d39b50
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Fri Oct 22 11:57:53 2021 -0400
+
+    Ajustes generales al Responsive Design del website
+
+commit 42a3eef1d42e991884aa3c6493166e9c93dafe51
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Fri Oct 22 07:47:26 2021 -0400
+
+    Reconfiguracion del website para responsive
+
+commit e46ae0f9f1ee774778ff91424d22b94081450480
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Oct 19 19:31:26 2021 -0400
+
+    Se añadió un dummy style para el modo responsive
+
+commit 8926e420da1e4fc6bead80eb8ab797ba81421a63
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Tue Oct 19 19:11:34 2021 -0400
+
+    Se eliminó el responsive design de este website
+
+commit 005ed0715786f14b32c06c2eef112deae2d8656c
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Oct 11 21:02:24 2021 -0400
+
+    cards height
+
+commit 8271c7f6ba3b4f58aa2df11218d80be960d580cc
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Oct 11 20:57:38 2021 -0400
+
+    cards padding
+
+commit e9ec20b77c1fd30fdf1bcce3b84b52f3b72556ba
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Oct 11 20:55:45 2021 -0400
+
+    cards en 768px
+
+commit 1c540dca1950c5c865f1357101b25f3cfd690606
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Oct 11 20:22:28 2021 -0400
+
+    ajustes generales al 768px
+
+commit 159f398c582f86c3fdbcf755d6b6c68aa97fecc9
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Oct 11 20:15:43 2021 -0400
+
+    Margin in cards
+
+commit 8f26613282888df6a659a5b52c47c536d45fa26c
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Oct 11 19:57:56 2021 -0400
+
+    Ajustes al breakPoint768
+
+commit 0c77754e40f2acd7b4ef3586ea2ac9f0daa6d797
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Oct 11 19:02:31 2021 -0400
+
+    Se agregaron los media queries para 768px
+
+commit d896e03b852c0f01ec23329f9dbef72e7d534438
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Oct 11 17:53:05 2021 -0400
+
+    Se redujó a 4 columna las sección galería en mediaQueries
+
+commit de9258d691630d0df8531872dbd86738a09b4786
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Oct 11 17:41:52 2021 -0400
+
+    Overhauling al mediaQueries
+
+commit 726d43c2ec5d42d474b9eae57e8cf80cf5adafa3
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Sat Oct 9 07:26:26 2021 -0400
+
+    Ajuste al max-width de la media query a 1024px
+
+commit 61bd3951a7664c541ad2e70eb6f56061725d8308
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Fri Oct 8 19:57:46 2021 -0300
+
+    Cambios masivos al website
+
+commit ab759c86575f50c2b89d986679b32425f5412b7c
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Wed Oct 6 19:32:39 2021 -0300
+
+    Redefinición del website -overhauling
+
+commit 63be2bf75006d9a6393180025be47df8ee12ba9a
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Mon Sep 27 18:56:43 2021 -0400
+
+    restablecer el orden
+
+commit 3d8ff6ade3289bcab29bf33d918e8c5a8440346f
+Author: cycscarlos <cycs.ingenieria@gmail.com>
+Date:   Thu Sep 23 19:43:41 2021 -0400
+
+    1er commit del overhauling del website
+
+commit de82824004de6c3ecce10eb67f6a21b292518dbc
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Wed Aug 4 17:33:40 2021 -0400
+
+    Update to SEO Policies
+
+commit 4213e3da9dbac5fc13c43b163365df8c661ea593
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Fri Jul 9 20:28:46 2021 -0400
+
+    1er ajuste al modo Desktop
+
+commit 9fa443b31ca075fb38c97471deca00dc8ce67f9f
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Wed Jul 7 22:11:11 2021 -0400
+
+    Se modificó el contenido del profile
+
+commit 12daeada5aeae75cd2ba216be4f9e9c16a4c4300
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Thu Jul 1 21:54:03 2021 -0400
+
+    Súper ajustes a todos los modos responsivese
+
+commit d282ccb5bcf08be0c19a698b4c102ae23f279495
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Thu Jul 1 09:36:51 2021 -0400
+
+    Cambio de background en contact y centrado de header en modo iPhone X
+
+commit 547519ab0c3daf666eee33582363d7af88e60078
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Wed Jun 30 23:33:49 2021 -0400
+
+    Ajustes a los tamaños de contactos en modo iPhone X
+
+commit 5a9501678dc3bb6f30f5315f773e74dc4e3fd1c4
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Wed Jun 30 22:42:35 2021 -0400
+
+    Ajustes finales al modo iPhone X
+
+commit 8a4e45a34dffaf86297208f359e6eb5e4d013e8b
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Wed Jun 30 22:19:59 2021 -0400
+
+    Ajustes varios al modo iPhone XX
+
+commit d9b1ad91917e954fc46d2b045a5e3d76898b9745
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Wed Jun 30 21:46:08 2021 -0400
+
+    Ajustes al modo iPhone 10
+
+commit eabea4052436f7438ac07ccef4bbaeea769a582a
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Wed Jun 30 15:00:19 2021 -0400
+
+    A lot of unknown changes
+
+commit a07a0a496e40e8fbdc3edef8abf4ddb644b3d1d3
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Mon Jun 28 22:26:19 2021 -0400
+
+    Ajuste varios al modo Portrait
+
+commit c99c3b6abebf0c8df2ac3a21895734202e5f312a
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Mon Jun 28 20:33:16 2021 -0400
+
+    Se Habilitó el modo iPad Portrait
+
+commit 4ee30804bdd7e19b06025cc8512668f70a83d0b2
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Mon Jun 28 15:20:03 2021 -0400
+
+    Se aplicaron muchísimos ajustes generales y se añadió el profile CEO
+
+commit f52a7e29d8ae58c685b48bb2c0fe888c4686eeda
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Fri Jun 25 22:46:06 2021 -0400
+
+    Overhauling del Modo Desktop y re-configuración del Modo Landscape
+
+commit fc929d4bf7ddf146cd5a978b9cb7857771028da0
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Thu Jun 24 19:42:20 2021 -0400
+
+    Se eliminó el lightbox de Servicios de los iPhone devices
+
+commit 9cff2c5b37612d6970275f792e2fe281a38afc06
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Thu Jun 24 15:09:24 2021 -0400
+
+    se revirtieron los cambios anteriores
+
+commit 6788ff8602314b62e3294e4cbf459a944b6052a1
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Thu Jun 24 15:02:07 2021 -0400
+
+    se añadió lightboxBx
+
+commit 7c94b8ebc2393c55cfb55e96bfdccea79cf971cb
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Thu Jun 24 13:59:59 2021 -0400
+
+    Ajustes finales al posicionamiento del lightbox en modo landscape
+
+commit 818daa45c457c7b0d3626a76385a058e7e62a81f
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Thu Jun 24 13:42:00 2021 -0400
+
+    Ajuste n-1 al posicionamiento del lightbox en modo landscapea
+
+commit caa6218045801842e8c1e07dc02e8b8d39871cc6
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Thu Jun 24 13:31:10 2021 -0400
+
+    Ajustes al posicionamiento del lightbox en modo landscape
+
+commit 38f0cb58eafca982657606c7fc7f85de68c950bb
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Thu Jun 24 13:28:35 2021 -0400
+
+    Ajustes al posicionamiento del lightbox en modo landscapem
+
+commit 0b77dd14881879316a32c7d8e7b7b7278759c68d
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Thu Jun 24 13:25:01 2021 -0400
+
+    ajuste posicionamiento lightbox en landscapeo
+
+commit a25bf7a876b6fe0d9ac302c02986b72ee794b338
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Thu Jun 24 13:21:43 2021 -0400
+
+    Reajuste a Servicios y Lightbox tanto en Desktop como Landscape
+
+commit d842c2595285f4ef78b7296efc5f47baef583d5e
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Thu Jun 24 10:04:50 2021 -0400
+
+    cambios en landscape
+
+commit 58f1e730950422b15d4de4ccdf3d75455045d52c
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Wed Jun 23 22:50:53 2021 -0400
+
+    Se modificó el color del número de teléfono
+
+commit 97b571bcf7788447e39611f75dd05dd6e11d6918
+Author: Carlos Colmenares A <62079092+cycscarlos@users.noreply.github.com>
+Date:   Wed Jun 23 22:42:20 2021 -0400
+
+    Se modificó la estructura de contactInfo_Box
+
+commit c3a31904affc26e07640f8da99fd52d8cb86f08e
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sat Jun 12 02:45:33 2021 -0400
+
+    Modificación Title
+
+commit 786715eb1160c9dd29243dd7fe87b688a23b205d
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Tue Apr 13 22:01:53 2021 -0400
+
+    Corrección de error en SEO Itemscope Itemtype - faltó name
+
+commit 2cde42019188f8522f961c2d177fc2d336cc1fc7
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sun Apr 11 21:15:26 2021 -0400
+
+    Actualización Media Queries
+
+commit 5e18bbb61650fd7afc6fbb9fa61a5fc3498b172f
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sat Apr 10 12:34:51 2021 -0400
+
+    Continuación de actualizaciones generales
+
+commit 8cd6dcf8ee0e5d6a18f9551fe82b1e77cacb0d5a
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 8 22:47:41 2021 -0400
+
+    Modificaciones al Header, footer y texto del lightbox
+
+commit 779ff952dd930318b902ad556d760db517e02aab
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 8 18:44:43 2021 -0400
+
+    Actualización SEO
+
+commit c959189b398b6f8f2697a0f990e34afd9d8aaa17
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 8 17:47:05 2021 -0400
+
+    Actualizacion SEO
+
+commit 0d19e4ce1855264313c51eb66a2aea505280cd0f
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 8 12:37:37 2021 -0400
+
+    Actualización SEO v2
+
+commit 45a81d1594c1cb773b4cfefb75ea6d15d068ac97
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 8 10:59:17 2021 -0400
+
+    Actualización SEO v1
+
+commit 65a071f36717ecec75038e82b018c2bdf0822291
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Apr 7 20:29:23 2021 -0400
+
+    Depuración SEO v6
+
+commit 3165015c6f27f596df2aa797b2faf416f5ae79a3
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Apr 7 20:12:37 2021 -0400
+
+    Depuracion SEO v5
+
+commit c811ccc687b6ae56e93c5edc7da1726fc13d6b67
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Apr 7 16:14:32 2021 -0400
+
+    depuracion SEO v5
+
+commit 8f13c9ad9ef74eff77cd033d40d973ca5a0cf370
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Apr 7 15:20:07 2021 -0400
+
+    Depuración SEO v4
+
+commit e9db0f1eded0f0d93aec6ca1471ce4cbd0c313d4
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Apr 7 15:03:23 2021 -0400
+
+    Depuración SEO v3
+
+commit dbb4c2d3411d1142e3d47328fcb64ad7d71bedc0
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Tue Apr 6 21:13:38 2021 -0400
+
+    depuración de errores SEO parte II
+
+commit f722c320353c325401f5f3847daf3b19a02e6f70
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Tue Apr 6 21:08:01 2021 -0400
+
+    Depuración de errores SEO
+
+commit 5448dcaf82225d2717f6b804217912a0f85c5b1e
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Tue Apr 6 20:59:54 2021 -0400
+
+    Incorporando nuevo modulo de SEO JSON-LD buscando posicionamiento de Google
+
+commit 2b700bfc838958f2a16704efc4ac7ae23593d69e
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Fri Apr 2 20:08:20 2021 -0400
+
+    Reducción de tamaño de fotos
+
+commit a8933d06d764d3b82f3e7fb4be414257173fce34
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 1 19:41:26 2021 -0400
+
+    add html required by google search console
+
+commit d0e584c4d4913bae51834816da70fae35edb9ab1
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Apr 1 18:06:26 2021 -0400
+
+    Multiple SEOS Updates
+
+commit 65ee72196a325ad12f7f60dc9bbe3ca1a0352972
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Mar 31 17:48:40 2021 -0400
+
+    Incorporación Datos Estructurados: webpage y twitter
+
+commit e72b3e6e50f019077857fd1ae2e582d8910f1ed9
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Mar 31 12:29:39 2021 -0400
+
+    Incorporación de script generado por Schema Markup Generator
+
+commit 493b4f91e518b33ad811a44a8816735b1aaa4d1a
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Tue Mar 30 19:55:35 2021 -0400
+
+    Actualización Meta Etiquetas para SEO
+
+commit b4bedcd637c90dba751463e3f0db700ebb72bc66
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Mon Mar 29 21:58:44 2021 -0400
+
+    Actualización estilos del modo responsive
+
+commit aad95d0753f37e0a71370bb83176419762fbe03c
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sun Mar 28 18:02:47 2021 -0400
+
+    Incluir todos los CSS en un solo archivo
+
+commit 39a7ef4f9a6632f4fb36d14174d8b88ebff1c367
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sun Mar 28 16:20:00 2021 -0400
+
+    Updates to modo de carga de la Fonts con -font-display
+
+commit a31da478490c2599b4516af7d5390b07e63f7fdf
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sat Mar 27 21:07:57 2021 -0400
+
+    cambio de librerias swipes inside project por CDN
+
+commit f9dc7f8248aff3c4b5fd2b6a55691b9c035e61ff
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Sat Mar 27 18:16:57 2021 -0400
+
+    Modificación Menu secundario del modo Responsive Design
+
+commit 317fc610bb074ec1e5f71cc05876f72d53868ecc
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Fri Mar 26 19:21:58 2021 -0400
+
+    Actualizacion de fonts y depuracion de comentarios
+
+commit fb12bce6ba206959e463fdb6362c5abe6f909c04
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Mar 25 21:28:20 2021 -0400
+
+    Depuración de carga de fuentes no utilizadas
+
+commit 4bd9f556f9094452b5a7489b90c316dfe8655114
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Mar 25 21:10:30 2021 -0400
+
+    Actualizacion menu footer
+
+commit 22617b32f807752382391dfb03d15a4696a9b895
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Mar 25 18:31:31 2021 -0400
+
+    Reubicación de AboutUs y Nosotros, algo de copyright
+
+commit 1c3dd1204f406fec1fbdbb6908ecc842ff6fa0e1
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Thu Mar 25 16:33:54 2021 -0400
+
+    Unificación de tipo y tamaño de fuentes de letras
+
+commit 8d6f451d544bacc26b2ec117d56bc403d87f6741
+Author: zCoder <cycs.ingenieria@gmail.com>
+Date:   Wed Mar 24 23:45:55 2021 -0400
+
+    Actualizaciones multiples a iconos, footer, menu y header
+
+commit c3e7f206a6e62de0de1e0dc4b4f6ef473e14ba53
+Author: z_Coder! <cycs.ingenieria@gmail.com>
+Date:   Wed Feb 24 12:04:11 2021 -0400
+
+    Menu buttoms style updates
+
+commit 5b27372573a730fa42d93f9962fc9abe34234ca3
+Author: z_Coder! <cycs.ingenieria@gmail.com>
+Date:   Sun Feb 21 20:35:16 2021 -0400
+
+    massive updates at header area; logo, phone and menu
+
+commit 5816bb64db4c98da029e30c93a484a6add053f9c
+Author: z_Coder! <cycs.ingenieria@gmail.com>
+Date:   Wed Feb 10 17:29:45 2021 -0400
+
+    Incorporación de los Meta tags, scroll-margin y behavior: smooth attributes
+
+commit d48cca67da5df1f4f90cc26339768bcb718be63d
+Author: z_Coder! <cycs.ingenieria@gmail.com>
+Date:   Fri Dec 18 13:14:42 2020 -0400
+
+    The last fonts and articles featurin or modifications
+
+commit 934183b6e557dd0457a67aaa3945fada4731963f
+Author: z_Coder! <cycs.ingenieria@gmail.com>
+Date:   Fri Dec 18 07:44:34 2020 -0400
+
+    Whatsapp link was featured
+
+commit 92e3e3238839baf23051b0776027714d38d60ed7
+Author: z_Coder! <cycs.ingenieria@gmail.com>
+Date:   Thu Dec 17 21:27:38 2020 -0400
+
+    Fix: The iPhone.css was modified to solve the social icons positions
+
+commit ec29df6a83a44280dddab761740b7710f967f680
+Author: z_Coder! <cycs.ingenieria@gmail.com>
+Date:   Tue Dec 15 20:32:09 2020 -0400
+
+    Chore: First commit of CYCS Ingenieria e Instalaciones website
+    was commited by Carlos Colmenares A., from CYCSWeb
