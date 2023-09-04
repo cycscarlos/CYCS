@@ -1202,8 +1202,8 @@ article.proveedor {
 
 @media screen and (max-width: 600px) {
   .proveedores__container {
-    /* grid-template-columns: repeat(3, 1fr); */
-    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    /* display: none; */
   }
 }
 
@@ -1279,8 +1279,8 @@ article.proveedor {
   margin-top: 30px;
 }
 .main .contenedor .nosotros p span {
-  /* color: var(--color-logo); */
-  color: var(--footer-color);
+  color: var(--color-logo);
+  /* color: var(--footer-color); */
   font-weight: 500;
   font-size: 1em;
 }

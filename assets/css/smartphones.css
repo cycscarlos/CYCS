@@ -218,7 +218,7 @@
     font-family: var(--font-titulos);
     font-weight: 700;
     /* font-size: var(--biggest-font-size); */
-    font-size: var(--h2-font-size);
+    font-size: var(--exception-font-size);
     line-height: 40px;
     color: var(--color-texto-RD);
     align-self: center;
@@ -241,7 +241,7 @@
     font-family: var(--font-titulos);
     font-weight: 700;
     /* font-size: var(--biggest-font-size); */
-    font-size: var(--h2-font-size);
+    font-size: var(--exception-font-size);
     line-height: 40px;
     color: var(--color-texto-RD);
     align-self: center;
