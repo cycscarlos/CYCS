@@ -17,7 +17,7 @@
   font-family: var(--font-titulos);
   color: var(--text-color);
   background-color: transparent;
-  margin: 6rem 0 2.5rem 0;
+  margin: 6rem 0 2.5rem 0; 
 }
 
 /* usado solo en modo responsive */
@@ -47,7 +47,7 @@
 .servicios .clickText h4 .fa-arrow-right {
   font-size: 0.7em;
   color: var(--white-color);
-}
+} 
 
 /* --------------------------------- */
 /*: Click & Arrow animation routine  */
