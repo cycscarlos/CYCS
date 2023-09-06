@@ -770,6 +770,9 @@ h2.elegantshadow {
   .slideshow1 .sombra__swiper-button-prev {
     top: 30%;
   }
+  h2.elegantshadow {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 414px) {
