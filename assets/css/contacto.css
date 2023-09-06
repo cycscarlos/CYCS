@@ -114,7 +114,10 @@ section.contact {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  margin-right: 4rem;
+
+  height: 30rem;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);  
 }
 
 .form__name {
@@ -134,6 +137,11 @@ textarea {
   background: var(--color-azulObscuro);
   color: var(--white-color);
 }
+input::placeholder,
+textarea::placeholder {
+  color: var(--footer-color);
+  opacity: 0.5;
+}
 
 .contact .btn {
   display: inline-block;
@@ -141,7 +149,7 @@ textarea {
   border: 1px solid transparent;
   font-weight: 500;
   border-radius: 5px;
-  transition: (--transiction);
+  transition: (--transition);
 }
 
 .contact .btn {

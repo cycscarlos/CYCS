@@ -632,10 +632,13 @@ input {
   position: fixed;
   top: 80%;
   right: 5px;
-  width: 200px;
-  background-color: var(--color-pagina);
+  /* width: 200px; */
+  width: 140px;
+  /* background-color: var(--color-pagina); */
+  background-color: var(--color-whatsapp);
   color: var(--white-color);
-  padding: 5px 3px 5px 3px;
+  /* padding: 5px 3px 5px 3px; */
+  padding: 5px 0;
   border-radius: 15px;
   text-align: center;
   letter-spacing: 0.5px;
