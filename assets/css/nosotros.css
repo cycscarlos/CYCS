@@ -59,7 +59,8 @@
   margin: auto;
   font-size: 35px;
   background: transparent;
-  color: var(--color-pagina);
+  /* color: var(--color-pagina); */
+  color: var(--text-color);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -329,7 +330,8 @@
     right: 40px;
     bottom: 0;
     background: transparent;
-    color: var(--color-pagina);
+    /* color: var(--color-pagina); */
+    color: var(--text-color);
   }
   section.equipo {
     max-width: 90%;
