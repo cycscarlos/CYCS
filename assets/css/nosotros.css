@@ -232,9 +232,9 @@
   font-family: var(--font-texto);
 }
 
-.profile-details small {
+/* .profile-details small {
   color: var(--color-logo);
-}
+} */
 
 .profile-details a {
   color: var(--color-logo);
