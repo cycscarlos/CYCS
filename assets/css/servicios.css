@@ -17,11 +17,14 @@
   font-family: var(--font-titulos);
   color: var(--text-color);
   background-color: transparent;
-  margin: 6rem 0 2.5rem 0; 
+  margin: 6rem 0 2.5rem 0;
+}
+.servicios .title h5 {
+  text-align: center;
 }
 
 /* usado solo en modo responsive */
-.rd__clickText {
+/* .rd__clickText {
   display: none;
 }
 
@@ -47,13 +50,13 @@
 .servicios .clickText h4 .fa-arrow-right {
   font-size: 0.7em;
   color: var(--white-color);
-} 
+}  */
 
 /* --------------------------------- */
 /*: Click & Arrow animation routine  */
 /* --------------------------------- */
 
-.servicios .clickText h4 span {
+/* .servicios .clickText h4 span {
   animation: click 2.25s linear infinite;
   -webkit-animation: click 2.25s linear infinite;
 }
@@ -86,7 +89,7 @@
     filter: blur(0px);
     text-shadow: none;
   }
-}
+} */
 /*: Ends Click & Arrow animation routine */
 
 .servicios .container-all {
@@ -340,7 +343,10 @@
   .servicios .title h2 {
     margin: 8rem 0 0 0;
   }
-  .clickText {
+  .servicios .title h5 {
+    margin: 3rem 0 0 0;
+  }
+  /* .clickText {
     display: none;
   }
   .rd__clickText {
@@ -371,10 +377,10 @@
   .servicios .rd__clickText h4 .fa-arrow-down {
     font-size: 0.7em;
     color: var(--white-color);
-  }
+  } */
 
   /*: Click & Arrow animation routine  */
-  .servicios .rd__clickText h4 span {
+  /* .servicios .rd__clickText h4 span {
     animation: click 2.25s linear infinite;
     -webkit-animation: click 2.25s linear infinite;
   }
@@ -407,7 +413,7 @@
       filter: blur(0px);
       text-shadow: none;
     }
-  }
+  } */
   /*: Ends Click & Arrow animation routine */
 
   .servicios .container-all {
@@ -428,12 +434,12 @@
   .servicios .title h2 {
     margin: 8rem 0 0 0;
   }
-  .servicios .rd__clickText {
+  /* .servicios .rd__clickText {
     position: absolute;
     top: 30%;
     left: 42.5%;
     transform: translate(-30% -42.5%);
-  }
+  } */
   .servicios .container-all {
     position: absolute;
     width: 210px;
@@ -452,12 +458,12 @@
   .servicios .title h2 {
     font-size: 2.5rem;
   }
-  .servicios .rd__clickText {
+  /* .servicios .rd__clickText {
     position: absolute;
     top: 25%;
     left: 35%;
     transform: translate(-25% -35%);
-  }
+  } */
   .social_Icon,
   .banner_Icon {
     right: 70px;
@@ -476,7 +482,7 @@
     font-size: 1.5rem;
     text-align: center;
   }
-  .servicios .rd__clickText h4 {
+  /* .servicios .rd__clickText h4 {
     font-size: 1.5rem;
   }
   .servicios .rd__clickText {
@@ -484,7 +490,7 @@
     top: 25%;
     left: 35%;
     transform: translate(-25% -35%);
-  }
+  } */
   .social_Icon,
   .banner_Icon {
     right: 60px;
@@ -512,12 +518,12 @@
   .banner_Icon {
     right: 25px;
   }
-  .servicios .rd__clickText {
+  /* .servicios .rd__clickText {
     position: absolute;
     top: 25%;
     left: 30%;
     transform: translate(-25% -30%);
-  }
+  } */
   .lightbox {
     top: 42.5%;
     left: 23.5%;
@@ -534,12 +540,12 @@
     text-align: center;
     font-size: 2rem;
   }
-  .servicios .rd__clickText {
+  /* .servicios .rd__clickText {
     position: absolute;
     top: 25%;
     left: 30%;
     transform: translate(-25% -30%);
-  }
+  } */
   .lightbox {
     top: 42.5%;
     left: 23.5%;
@@ -559,13 +565,12 @@
     /* margin: 4rem 0 2.5rem 0; */
     margin: 2.5rem 0 1rem 0;
   }
-  .servicios .rd__clickText {
-    position: absolute;
-    /* top: 25%; */
+  /* .servicios .rd__clickText {
+    position: absolute;   
     top: 15%;
     left: 30%;
     transform: translate(-25% -30%);
-  }
+  } */
   .servicios .container-all {
     position: absolute;
     width: 210px;
@@ -584,12 +589,12 @@
     height: 640px;
     min-height: 100vh;
   }
-  .servicios .rd__clickText {
+  /* .servicios .rd__clickText {
     position: absolute;
     top: 25%;
     left: 30%;
     transform: translate(-25% -30%);
-  }
+  } */
   .lightbox {
     top: 42.5%;
     left: 23.5%;
