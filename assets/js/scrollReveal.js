@@ -5,17 +5,11 @@ const sr = ScrollReveal({
   // reset: true,
 });
 
-sr.reveal(`.proveedores, .telco, .muro`, {
+sr.reveal(`.texto`, {
   origin: "top",
   interval: 100,
 });
-
-sr.reveal(`.galeria, .ctrlAcceso, .equipo`, {
+sr.reveal(`.scrollDown`, {
   origin: "left",
-  interval: 100,
-});
-
-sr.reveal(`.clients, .security, .servicesRD`, {
-  origin: "right",
-  interval: 100,
+  interval: 300,
 });

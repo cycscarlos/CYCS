@@ -6,11 +6,11 @@
 
 <br>
 
-![Website banner!](./assets/img/readme16.png)
+![Website banner!](assets/img/readme.jpg)
 
 <br>
 
-Take a look at the website at the following link [Github Pages] (https://cycscarlos.github.io/CYCS):
+Take a look at the website at the following link [Github Pages] (https://cycscarlos.github.io/zCoder):
 
 <br>
 
@@ -23,18 +23,11 @@ Take a look at the website at the following link [Github Pages] (https://cycscar
 <br>
 
 <ul>
-<li>Background images</li>
-<li>Change menu navigation background color on scroll</li>
-<li>Using of several CSS animation libraries for hover effects</li>
-<li>Using of several JavaScript libraries for smooth scrolling, animations, etc.</li>
+<li>Using of the Reveals on scroll and the tagCloud CSS animation libraries</li>
 <li>Social media icons definitons</li>
 <li>Use of Flexbox & Grid technics</li>
-<li>HTML Form for contact management through 3er-parties</li>
-<li>Contact form validation</li>
 <li>CSS Custom properties for a lot of effects, like colors, font-size, etc.</li>
-<li>Contact form email sending through external API</li>
+<li>Contact form email sending through external API (FormSubmit library)</li>
 <li>Responsive design using Media Queries</li>
 <li>Responsive techniques for different devices, usng a CSS Clamp custom properties</li>
-<li>Definitions of Google Analytics for Crowlers, and much more...</li>
-<li>Dark mode for the website</li>
 </ul>
