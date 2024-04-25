@@ -1,6 +1,13 @@
 /* Desktop styles */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;700&family=Gelasio:wght@400;600&Poppins:wght@400;500;600;700display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;700&family=Gelasio:wght@100;200;400;600&Poppins:wght@400;500;600;700display=swap");
+
+@font-face {
+  font-family: "DancingScript";
+  font-display: swap;
+  font-weight: 400;
+  src: url(../fonts/DancingScript-Medium.ttf);
+}
 
 :root {
   --step--4: clamp(0.48rem, 0.47rem + 0.06vw, 0.51rem);
@@ -38,6 +45,7 @@
   --z-fixed: 100;
   --color-azulObscuro: #27607c;
   --color-azulClaro: #1e5271;
+  --font-specialist: "DancingScript", sans-serif;
 }
 * {
   padding: 0;
@@ -70,8 +78,26 @@ body {
   height: 100%;
 } */
 
+.specialist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  position: relative;
+}
+.specialist h2 {
+  color: var(--white);
+  font-size: var(--step-5);
+  font-family: var(--font-specialist);
+}
+.specialist span {
+  color: var(--secondary-color);
+  font-family: "Gelasio", sans-serif;
+  font-size: var(--step-3);
+}
+
 /* Botón Ingles/Español para PC & Tablets in landscape mode */
-.lenguaje {
+/* .lenguaje {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,7 +139,7 @@ body {
   margin: 0 0.5rem;
   font-size: var(--step--2);
   color: var(--white);
-}
+} */
 .profile__container {
   position: relative;
   width: 100%;
@@ -135,7 +161,8 @@ body {
 .texto {
   width: 40%;
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
+  top: 60%;
   left: 15%;
   transform: translate(-15%, -50%);
   color: white;
@@ -147,23 +174,25 @@ body {
   align-items: flex-start;
   margin-bottom: 20px;
 }
-.texto_titles h1 {
+.texto_titles .nombre {
   font-size: var(--step-2);
   margin-bottom: 10px;
+  font-weight: 100;
 }
-.texto_titles h2 {
-  font-size: var(--step-0);
+.texto_titles .academia {
+  font-size: var(--step--1);
+  font-weight: 100;
   margin-bottom: 10px;
   text-align: initial;
 }
-.texto_titles h3 {
+.texto_titles .certificados {
   font-size: var(--step--2);
   margin-bottom: 10px;
   text-align: initial;
   font-family: open sans condensed;
   font-weight: 100;
 }
-.texto_titles h4 {
+.texto_titles .especializacion {
   color: var(--secondary-color);
   font-size: var(--step--2);
 }
@@ -297,7 +326,7 @@ button {
   align-items: center;
   flex-direction: row;
 }
-.sphere__container .sphere_title h4 {
+/* .sphere__container .sphere_title h4 {
   font-size: var(--step--1);
   color: var(--white);
   font-weight: 100;
@@ -308,10 +337,11 @@ button {
   color: var(--secondary-color);
   font-style: normal;
   margin-left: 20px;
-}
+} */
 .sphere__container .tagcloud {
-  font-size: var(--step-0);
+  font-size: var(--step--0);
 
+  /* font-size: var(--step-0); */
   /* font-weight: 650; */
   /* margin-left: 30%; */
   /* margin-top: 5%; */
@@ -376,7 +406,8 @@ button {
 }
 .footer__details p:nth-child(2) {
   font-style: italic;
-  font-size: var(--step--2);
+  font-size: var(--step--3);
+  /* font-size: var(--step--2); */
 }
 .footer__details p:nth-child(2) span {
   font-size: var(--step--0);
@@ -508,7 +539,7 @@ button {
 }
 
 /* iPad styles */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .overlay {
     background-color: rgba(0, 0, 0, 0.5);
   }
@@ -532,7 +563,7 @@ button {
   }
 }
 /* Up to Windows view and smartphone styles */
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .overlay {
     background-color: rgba(0, 0, 0, 0.7);
   }
@@ -554,19 +585,17 @@ button {
     flex-direction: column;
     margin-top: 2rem;
   }
-  .lenguaje {
+
+  /* .lenguaje {
     position: absolute;
-    /* top: 10px;
-    right: 10px; */
     top: 60px;
     right: 10px;
-  }
+  } */
   .footer__form :is(input, textarea) {
-    /* background-color: rgb(80, 80, 80); */
     background-color: #515151;
   }
   .copyrightTexto {
-    font-size: var(--step--3);
+    font-size: var(--step--4);
     padding: 8px 0;
     text-align: center;
   }

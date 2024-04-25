@@ -1,67 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./assets/img/favicon.png"
+      href="./../assets/img/favicon.png"
       type="image/x-icon"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./../assets/css/style.css" />
     <title>CYCS & Co. | website</title>
     <style></style>
   </head>
   <body>
-    <!-- <div class="videoBx">
-      <video autoplay="autoplay">
-        <source src="assets/video/video3.mp4" type="video/mp4" />
-      </video>
-    </div> -->
-
     <section class="section__container profile__container">
       <div class="overlay"></div>
-      <div class="lenguaje">
-        <span class="english">English</span>
-        <input class="check" type="checkbox" />
-        <span class="spanish">Spanish</span>
+
+      <!-- <div class="lenguaje">
+        <span class="spanish">Español</span>
+        <input class="check" type="checkbox" checked />
+        <span class="english">Inglés</span>
+      </div> -->
+      <div class="specialist">
+        <h2><span>Tú</span><small> Especialista</small></h2>
       </div>
       <div class="texto">
         <div class="texto_titles">
-          <h1>Carlos Colmenares A.</h1>
-          <h2>Electronic Engineer</h2>
-          <h3>
-            Certified in USA by Computer Associates, Applied Data Research,
-            Cisco, IBM, and Platzi (Vzla).
+          <h1 class="nombre">Carlos Colmenares A.</h1>
+          <h3 class="academia">Ingeniero Electrónico</h3>
+          <h3 class="certificados">
+            Certificado en USA por Computer Associates, Applied Data Research,
+            Cisco, IBM y Platzi.
           </h3>
-          <h4>
-            Specialized in
-            <span
-              >Artificial Intelligence, and Software Engineering<br />
-            </span>
+          <h4 class="especializacion">
+            Especializado en
+            <span>Ingeniería de Software y AI<br /></span>
           </h4>
         </div>
         <p class="texto_profile">
-          More than 40 companies have hired me as a project engineer and system
-          integrator to support them in the developing and implementing of
-          complex technical projects involving software engineering for IBM
-          mainframes, networking, and electronics security systems. Some of
-          these companies are as prestigious as the National Registry of Costa
-          Rica (San Jose, Costa Rica), Banco Invercredito (Bogota, Colombia),
-          and PDVSA, Cargill, CANTV, CVG, Metro de Caracas, as well as thirteen
-          (13) financial banks in Venezuela. In my free time, I develop websites
-          and software apps for PCs and smartphones.<br /><br />Click on the
-          following link to see my
+          Ha sido contratado como ingeniero de proyectos por decenas de empresas
+          <small><i>(..detalles más abajo)</i></small> para la implementación de
+          complejos proyectos técnicos en las áreas de ingeniería de software
+          para Mainframes IBM, redes por microondas y sistemas electrónicos de
+          seguridad. Estas son algunas de las prestigiosas empresas que lo han
+          contratado:
+          <small
+            >El Registro Nacional de Costa Rica (San José, Costa Rica), Banco
+            Invercredito (Bogotá, Colombia) y en Venezuela: PDVSA, Cargill,
+            CANTV, CVG, Metro de Caracas, así como trece (13) bancos
+            financieros</small
+          >. Como complemento profesional, y activo software developer,
+          desarrolla software y sitios web para PCs y celulares.<br /><br />
           <button class="button-82-pushable" role="button">
             <span class="button-82-shadow"></span>
             <span class="button-82-edge"></span>
             <span class="button-82-front text">
               <a href="https://cycsco.netlify.app" target="_blank">
-                SERVICES</a
+                Mis SERVICIOS</a
               ></span
             >
           </button>
@@ -73,22 +72,24 @@
       class="section__container sphere__container"
       id="sphere__container"
     >
-      <div class="sphere_title">
-        <h4>...some of the clients who <span>¡Hired Me!</span></h4>
-      </div>
+      <!-- <div class="sphere_title">
+        <h4><span>¡Empresas!</span></h4>
+      </div> -->
       <div class="content" id="content"></div>
+      <i class="ri-arrow-down-circle-line"></i>
     </section>
 
     <footer>
       <div class="section__container footer__container">
         <div class="footer__content">
-          <h2 class="footer__title">Contact <span>Me!</span></h2>
-          <p class="footer__subtitle">If you have any project in your mind</p>
+          <h2 class="footer__title">Contácta<span>me!</span></h2>
+          <p class="footer__subtitle">Si tienes algún proyecto en mente</p>
           <div class="footer__details">
             <p>
-              You can reach me through the contact form provided on this
-              website. Simply fill out the form with your name, email address,
-              and message, and I will get back to you as soon as possible.
+              Puedes contactarlo a través del formulario de contacto
+              proporcionado en este sitio web. Simplemente completa el
+              formulario con tu nombre, correo electrónico y mensaje, y el<br />
+              se pondrá en contacto contigo tan pronto como sea posible.
             </p>
             <p>
               <span>CYCS <strong>&</strong> Co.</span> Ingenieria e
@@ -119,75 +120,74 @@
           </div>
         </div>
         <form
-          target="_blank"
           action="d6d904e1a72f513c29dd41f58e8068e8"
           method="POST"
+          target="_blank"
           data-netlify="true"
           class="footer__form"
         >
           <input
             type="hidden"
             name="_subject"
-            value="¡Email sent from zCoder website!"
+            value="¡Correo enviado desde zCoder website!"
           />
           <input
             type="hidden"
             name="_autoresponse"
-            value="¡Hi! Thanks a lot for your message... Best regards!"
+            value="¡Hola! Muchisímas Gracias por contáctarme..Saludos!"
           />
           <input type="hidden" name="_captcha" value="false" />
 
           <label for="nombre"></label>
           <input
             id="nombre"
-            name="Full Name"
+            name="Nombre y Apellido"
             type="text"
-            placeholder="Full Name"
-            title="Only accepts letters and white spaces"
-            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            placeholder="Nombre y Apellido"
             required
+            title="Solo acepta letras y espacios en blanco"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
           />
-
           <label for="correo"></label>
           <input
             id="correo"
-            name="Electronic Email"
+            name="Correo Electrónico"
             type="email"
-            placeholder="Your Email Address"
-            title="Wrong Email Address"
+            placeholder="Correo Electrónico"
+            title="Email incorrecto"
             pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
             required
           />
           <label for="telefono"></label>
           <input
             id="telefono"
-            name="Phone Number"
+            name="Número de Teléfono"
             type="tel"
-            placeholder="Your Phone Number"
-            title="Only accepts numbers and up to a maximum of 11 characters"
-            pattern="^[0123456789]{1,11}"
+            placeholder="Número de Teléfono"
             required
+            title="Solo acepta números y hasta un máximo de 11 carácteres"
+            pattern="^[0123456789]{1,11}"
           />
-          <label for="message"></label>
+          <label for="mensaje"></label>
           <textarea
-            id="message"
-            name="Message"
+            id="mensaje"
+            name="Mensaje"
             cols="30"
             rows="10"
             placeholder="Tú Idea"
             required
           ></textarea>
-          -->
-          <button type="submit" class="footer__btn">Send Message</button>
+
+          <button type="submit" class="footer__btn">Enviar Mensaje</button>
         </form>
 
         <div id="gracias" class="modal">
           <div class="modal-content">
             <article class="contact-form-response">
               <h3>
-                ¡Thank You!
+                ¡Muchas Gracias!
                 <br />
-                for your contact..
+                por contáctarme..
               </h3>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -212,18 +212,18 @@
     <section>
       <div class="copyrightTexto">
         <p>
-          Copyright &copy; developed by Carlos Colmenares A. | All rights
-          reserved
+          Copyright &copy; Desarrollado por Carlos Colmenares A. | Derechos
+          Reservados
         </p>
       </div>
     </section>
 
     <!-- Javascript animation libraries -->
-    <script src="./assets/js/scrollreveal.min.js"></script>
-    <script src="./assets/js/scrollReveal.js"></script>
+    <script src="./../assets/js/scrollreveal.min.js"></script>
+    <script src="./../assets/js/scrollReveal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-    <script src="./assets/js/script_tagCloud.js"></script>
-    <script src="./assets/js/emailForm.js"></script>
-    <script src="./assets/js/lenguaje.js"></script>
+    <script src="./../assets/js/script_tagCloud.js"></script>
+    <script src="./../assets/js/emailForm.js"></script>
+    <!-- <script src="./../assets/js/lenguaje_v2.js"></script> -->
   </body>
 </html>
