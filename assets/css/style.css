@@ -540,6 +540,12 @@ button {
 
 /* iPad styles */
 @media screen and (max-width: 768px) {
+  .specialist {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-5%, -50%);
+  }
   .overlay {
     background-color: rgba(0, 0, 0, 0.5);
   }
