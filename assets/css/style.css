@@ -45,6 +45,7 @@
   --z-fixed: 100;
   --color-azulObscuro: #27607c;
   --color-azulClaro: #1e5271;
+  --text-color-small: rgb(126, 123, 123);
   --font-specialist: "DancingScript", sans-serif;
 }
 * {
@@ -192,7 +193,9 @@ body {
   text-align: initial;
   font-family: open sans condensed;
   font-weight: 100;
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
+  background-color: var(--text-color-small);
+  color: var(--white);
 }
 .texto_titles .especializacion {
   color: var(--secondary-color);
@@ -207,6 +210,11 @@ body {
 
 .texto_profile small {
   color: var(--secondary-color);
+}
+
+.texto_profile small.empresas {
+  background-color: var(--text-color-small);
+  color: white;
 }
 
 /* Botón de servicios */
