@@ -62,9 +62,8 @@ const myTags = [
 // var tagCloud = TagCloud(".content", myTags);
 
 // Config the tag cloud by overriding the default parameters
-var tagCloud = TagCloud(".content", myTags, {
+var tagCloud = TagCloud(".sphere", myTags, {
   // radius in px
-  // radius: 300,
   radius: 300,
 
   // animation speed
@@ -86,4 +85,4 @@ var tagCloud = TagCloud(".content", myTags, {
 // This creates a basic cloud of words. If you want to change the color of words randomly after each reload, add this small JavaScript code at the end.
 var colors = ["#34A853", "#FBBC05", "#4285F4", "#7FBC00", "FFBA01", "01A6F0"];
 var random_color = colors[Math.floor(Math.random() * colors.length)];
-document.querySelector(".content").style.color = random_color;
+document.querySelector(".sphere").style.color = random_color;

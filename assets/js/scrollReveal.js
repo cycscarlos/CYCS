@@ -5,11 +5,11 @@ const sr = ScrollReveal({
   // reset: true,
 });
 
-sr.reveal(`.texto`, {
+sr.reveal(`.article`, {
   origin: "top",
   interval: 100,
 });
-sr.reveal(`.scrollDown`, {
-  origin: "left",
-  interval: 300,
-});
+// sr.reveal(`.sphere`, {
+//   origin: "left",
+//   interval: 300,
+// });
