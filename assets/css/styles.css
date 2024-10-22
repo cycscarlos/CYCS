@@ -462,8 +462,9 @@ h1.title {
     max-width: 95%;
   }
   .article {
-    height: max-content;
+    height: min-content;
   }
+
   .title {
     font-size: var(--step-2);
   }
