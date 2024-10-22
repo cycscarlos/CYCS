@@ -458,6 +458,12 @@ h1.title {
 
 /* Up to Windows view and smartphone styles */
 @media (max-width: 500px) {
+  body {
+    max-width: 95%;
+  }
+  .article {
+    height: 100vh;
+  }
   .title {
     font-size: var(--step-2);
   }
