@@ -5,6 +5,12 @@
   src: url(../fonts/DancingScript-Medium.ttf);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --header-height: 5.5rem;
 
