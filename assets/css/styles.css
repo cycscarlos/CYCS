@@ -14,6 +14,30 @@
 :root {
   --header-height: 5.5rem;
 
+  /* Nuevas variables de Geminis */
+  /* Variables originales */
+  --step--6: clamp(0.58rem, 0.55rem + 0.12vw, 0.64rem);
+  --step--5: clamp(0.69rem, 0.65rem + 0.21vw, 0.8rem);
+
+  /* Valores máximos y mínimos */
+  --step--6-min: 0.58rem;
+  --step--6-max: 0.64rem;
+  --step--5-min: 0.69rem;
+  --step--5-max: 0.8rem;
+
+  /* Cálculo de los valores medios */
+  --step--x-min: calc((var(--step--6-min) + var(--step--5-min)) / 2);
+  --step--x-max: calc((var(--step--6-max) + var(--step--5-max)) / 2);
+
+  /* Nueva variable con la media */
+  --step--x: clamp(
+    var(--step--x-min),
+    calc(var(--step--x-min) + 0.165vw),
+    var(--step--x-max)
+  );
+
+  /* ---------------------------------. */
+
   --step--4: clamp(0.48rem, 0.47rem + 0.06vw, 0.51rem);
   --step--3: clamp(0.58rem, 0.55rem + 0.12vw, 0.64rem);
   --step--2: clamp(0.69rem, 0.65rem + 0.21vw, 0.8rem);
@@ -185,6 +209,10 @@ h1.title {
   text-align: justify;
 }
 
+.article p i {
+  font-size: var(--step--x);
+}
+
 /* Personalización de la barra de desplazamiento */
 .article::-webkit-scrollbar {
   width: 8px; /* Ancho de la barra de desplazamiento */
@@ -203,7 +231,7 @@ h1.title {
   padding: 1rem;
 }
 .article .proyectos li {
-  font-size: var(--step--3);
+  font-size: var(--step--2);
   line-height: 1.5;
   text-align: justify;
 }
@@ -253,7 +281,7 @@ h1.title {
 .footer__subtitle {
   font-size: 1rem;
   font-weight: 500;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .footer__btn {
@@ -467,12 +495,13 @@ h1.title {
 
 /* Up to Windows view and smartphone styles */
 @media (max-width: 500px) {
+  :root {
+    --step--2: clamp(0.83rem, 0.77rem + 0.33vw, 1rem);
+  }
   body {
     max-width: 100%;
   }
-  header {
-    width: 80%;
-  }
+
   .article {
     height: min-content;
   }
