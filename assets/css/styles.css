@@ -51,6 +51,7 @@ body {
 }
 
 header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -198,6 +199,9 @@ h1.title {
   background: #e0e0e0; /* Color de fondo de la barra de desplazamiento */
 }
 
+.article ul.proyectos {
+  padding: 1rem;
+}
 .article .proyectos li {
   font-size: var(--step--3);
   line-height: 1.5;
@@ -464,7 +468,10 @@ h1.title {
 /* Up to Windows view and smartphone styles */
 @media (max-width: 500px) {
   body {
-    max-width: 95%;
+    max-width: 100%;
+  }
+  header {
+    width: 80%;
   }
   .article {
     height: min-content;
