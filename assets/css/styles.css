@@ -263,6 +263,7 @@ h1.title {
   justify-content: center;
   align-items: center;
   max-width: 60%;
+  margin: 0 auto;
 }
 
 .footer__container {
@@ -511,6 +512,7 @@ h1.title {
 @media (max-width: 500px) {
   :root {
     --step--2: clamp(0.83rem, 0.77rem + 0.33vw, 1rem);
+    --max-width: 95%;
   }
 
   .content {
