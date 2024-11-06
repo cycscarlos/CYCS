@@ -545,4 +545,12 @@ h1.title {
     padding: 8px 0;
     text-align: center;
   }
+
+  .sphere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  margin: 0 auto;
+}
 }
