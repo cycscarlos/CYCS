@@ -262,6 +262,7 @@ h1.title {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: var(--max-width);
 }
 
 .footer__container {
@@ -511,7 +512,7 @@ h1.title {
   :root {
     --step--2: clamp(0.83rem, 0.77rem + 0.33vw, 1rem);
   }
-  
+
   .content {
     margin: 5px;
   }
