@@ -173,6 +173,13 @@ header {
   color: var(--color-linkedin);
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
 h1.title {
   margin: 0;
 }
@@ -252,7 +259,7 @@ h1.title {
 
 .button-container {
   text-align: center;
-  margin: 2rem 0 0 0;
+  margin: 4rem 0 0 0;
 }
 
 .button-container a {
@@ -548,7 +555,7 @@ h1.title {
     text-align: center;
   }
   .sphere {
-    width:100%;
+    width: 100%;
     background-color: white;
   }
 }
