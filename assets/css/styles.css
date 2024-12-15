@@ -230,9 +230,9 @@ h1.title {
   text-align: justify;
 }
 
-.article p i {
+/* .article p i {
   font-size: var(--step--x);
-}
+} */
 
 /* Personalización de la barra de desplazamiento */
 .article::-webkit-scrollbar {
