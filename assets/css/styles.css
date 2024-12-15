@@ -502,7 +502,8 @@ h1.title {
   }
 
   .article {
-    width: 90%;
+    /*width: 90%;*/
+    width: calc(90% - 40px); /* Resta espacio para los márgenes */
     margin-bottom: 20px;
   }
 
@@ -526,9 +527,13 @@ h1.title {
 
   .content {
     margin: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .article {
+    width: 100%;
     height: min-content;
   }
 
