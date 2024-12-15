@@ -524,7 +524,9 @@ h1.title {
     --step--2: clamp(0.83rem, 0.77rem + 0.33vw, 1rem);
     --max-width: 95%;
   }
-
+  body {
+    width: 100%;
+  }
   .content {
     margin: 5px;
     width: 100%;
@@ -535,6 +537,7 @@ h1.title {
   .article {
     width: 100%;
     height: min-content;
+    font-size: var(--step--1);
   }
 
   .title {
