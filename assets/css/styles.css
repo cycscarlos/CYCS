@@ -177,7 +177,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 h1.title {
@@ -556,6 +556,7 @@ h1.title {
   }
   .sphere {
     width: 100%;
-    background-color: white;
+    /*background-color: white;*/
+    background-color: transparent;
   }
 }
