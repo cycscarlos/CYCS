@@ -70,8 +70,7 @@
 
 body {
   width: 100%;
-  /* max-width: var(--max-width); */
-  max-width: 80%;
+  max-width: var(--max-width); 
   margin: 0 auto;
   overflow-x: hidden;
   padding: 0;
@@ -503,7 +502,7 @@ h1.title {
 
   .article {
     /*width: 90%;*/
-    width: calc(90% - 40px); /* Resta espacio para los márgenes */
+    /* width: calc(90% - 40px); /* Resta espacio para los márgenes */
     margin-bottom: 20px;
   }
 
