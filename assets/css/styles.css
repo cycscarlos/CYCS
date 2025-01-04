@@ -63,14 +63,15 @@
   --black: #000000;
   --white: #ffffff;
   --text-light: #9ca3af;
-  --text-dark: #0d1319;
+  /* --text-dark: #0d1319; */
+  --text-dark: #141b22;
   --black-color-opacity: rgba(0, 0, 0, 0.5);
   --white-color-opacity: rgba(255, 255, 255, 0.3);
 }
 
 body {
   width: 100%;
-  max-width: var(--max-width); 
+  max-width: var(--max-width);
   margin: 0 auto;
   overflow-x: hidden;
   padding: 0;
@@ -226,7 +227,7 @@ h1.title {
 .article p {
   font-size: var(--step--2);
   line-height: 1.5;
-  text-align: initial;
+  text-align: justify;
 }
 
 /* .article p i {
