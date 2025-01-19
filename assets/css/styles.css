@@ -219,7 +219,7 @@ h1.title {
   color: var(--secondary-color);
   padding: 20px;
   /* width: 45%; */
-  width: calc(45% - 40px); /* Resta espacio para los márgenes */
+  width: calc(80% - 40px); /* Resta espacio para los márgenes */
   height: 300px; /* ajustar altura según necesidad */
   overflow: auto;
 }
