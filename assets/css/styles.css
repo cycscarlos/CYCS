@@ -99,8 +99,8 @@ header {
 
 .logo img {
   max-width: 100%;
-  width: 96px;
-  height: 72px;
+  /* width: 96px;
+  height: 72px; */
   border-radius: 50%;
   margin: 10px 0;
 }
