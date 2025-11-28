@@ -30,11 +30,9 @@
   --step--x-max: calc((var(--step--6-max) + var(--step--5-max)) / 2);
 
   /* Nueva variable con la media */
-  --step--x: clamp(
-    var(--step--x-min),
-    calc(var(--step--x-min) + 0.165vw),
-    var(--step--x-max)
-  );
+  --step--x: clamp(var(--step--x-min),
+      calc(var(--step--x-min) + 0.165vw),
+      var(--step--x-max));
 
   /* ---------------------------------. */
 
@@ -159,14 +157,12 @@ header {
   border-radius: 50px;
   color: var(--white);
   background: #d6249f;
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+  background: radial-gradient(circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%);
 }
 
 .header-content .social__icons .ri-linkedin-fill:hover {
@@ -190,21 +186,30 @@ h1.title {
   font-size: 2.5em;
   color: var(--white);
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2),
-    /* Sombra suave */ 4px 4px 0 rgba(0, 0, 0, 0.15),
-    /* Sombra más pronunciada */ 6px 6px 0 rgba(0, 0, 0, 0.1); /* Sombra más lejana */
+    /* Sombra suave */
+    4px 4px 0 rgba(0, 0, 0, 0.15),
+    /* Sombra más pronunciada */
+    6px 6px 0 rgba(0, 0, 0, 0.1);
+  /* Sombra más lejana */
 
-  background: linear-gradient(
-    135deg,
-    #ffffff,
-    #9d8d6c
-  ); /* Gradiente de fondo */
-  background-clip: text; /* Clip del fondo para el texto */
-  -webkit-background-clip: text; /* Clip del fondo para el texto */
-  -webkit-text-fill-color: transparent; /* Relleno del texto transparente */
-  padding: 10px; /* Espaciado alrededor del texto */
-  border-radius: 10px; /* Bordes redondeados */
-  max-width: var(--max-width); /* Controla el ancho en pantallas pequeñas */
-  margin: 0 auto; /* Centra el título */
+  background: linear-gradient(135deg,
+      #ffffff,
+      #9d8d6c);
+  /* Gradiente de fondo */
+  background-clip: text;
+  /* Clip del fondo para el texto */
+  -webkit-background-clip: text;
+  /* Clip del fondo para el texto */
+  -webkit-text-fill-color: transparent;
+  /* Relleno del texto transparente */
+  padding: 10px;
+  /* Espaciado alrededor del texto */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  max-width: var(--max-width);
+  /* Controla el ancho en pantallas pequeñas */
+  margin: 0 auto;
+  /* Centra el título */
 }
 
 .content {
@@ -216,11 +221,14 @@ h1.title {
 
 .article {
   background-color: var(--text-dark);
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
+  color: var(--white);
   padding: 20px;
   /* width: 45%; */
-  width: calc(80% - 40px); /* Resta espacio para los márgenes */
-  height: 300px; /* ajustar altura según necesidad */
+  width: calc(80% - 40px);
+  /* Resta espacio para los márgenes */
+  height: 300px;
+  /* ajustar altura según necesidad */
   overflow: auto;
 }
 
@@ -236,16 +244,20 @@ h1.title {
 
 /* Personalización de la barra de desplazamiento */
 .article::-webkit-scrollbar {
-  width: 8px; /* Ancho de la barra de desplazamiento */
+  width: 8px;
+  /* Ancho de la barra de desplazamiento */
 }
 
 .article::-webkit-scrollbar-thumb {
-  background-color: #555; /* Color del "thumb" (parte que se arrastra) */
-  border-radius: 10px; /* Bordes redondeados */
+  background-color: #555;
+  /* Color del "thumb" (parte que se arrastra) */
+  border-radius: 10px;
+  /* Bordes redondeados */
 }
 
 .article::-webkit-scrollbar-track {
-  background: #e0e0e0; /* Color de fondo de la barra de desplazamiento */
+  background: #e0e0e0;
+  /* Color de fondo de la barra de desplazamiento */
 }
 
 /* .article ul.proyectos {
@@ -382,25 +394,25 @@ h1.title {
   border-radius: 50px;
   color: var(--white);
   background: #d6249f;
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+  background: radial-gradient(circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%);
 }
 
 .footer__content .social__icons .ri-linkedin-fill:hover {
   color: var(--color-linkedin);
 }
+
 .footer__form {
   display: grid;
   gap: 1rem;
   z-index: 999;
   margin: 0 6rem 0 0;
 }
+
 .footer__form :is(input, textarea) {
   padding: 1rem;
   background-color: var(--text-dark);
@@ -409,10 +421,12 @@ h1.title {
   border: none;
   border-radius: 5px;
 }
+
 .footer__form textarea {
   resize: none;
   font-family: "Poppins", sans-serif;
 }
+
 .footer__form button {
   width: max-content;
 }
@@ -525,9 +539,11 @@ h1.title {
     --step--2: clamp(0.83rem, 0.77rem + 0.33vw, 1rem);
     --max-width: 95%;
   }
+
   body {
     width: 100%;
   }
+
   .content {
     margin: 5px;
     width: 100%;
@@ -563,6 +579,7 @@ h1.title {
     padding: 8px 0;
     text-align: center;
   }
+
   .sphere {
     width: 100%;
     /*background-color: white;*/
