@@ -4,6 +4,11 @@
   font-weight: 400;
   src: url(../fonts/DancingScript-Medium.ttf);
 }
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url(../fonts/OpenSans-Regular.ttf), url(../fonts/OpenSans-SemiBold.ttf);
+}
 
 *,
 *::before,
@@ -52,6 +57,7 @@
   --color-bg: #29445a;
   --color-phone: whitesmoke;
   --font-header: "Times New Roman", cursive;
+  --font-h4: "OpenSans", cursive;
   --color-whatsapp: #00bd2c;
   --color-instagram: #833ab4;
   --color-linkedin: #0a66c2;
@@ -210,6 +216,10 @@ h1.title {
   /* Controla el ancho en pantallas pequeñas */
   margin: 0 auto;
   /* Centra el título */
+}
+
+h4.subtitle {
+  font-family: var(--font-h4);  
 }
 
 .content {
