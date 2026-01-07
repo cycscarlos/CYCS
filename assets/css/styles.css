@@ -58,6 +58,7 @@
   --color-phone: whitesmoke;
   --font-header: "Times New Roman", cursive;
   --font-h4: "OpenSans", cursive;
+  --font-text: "lato", cursive;
   --color-whatsapp: #00bd2c;
   --color-instagram: #833ab4;
   --color-linkedin: #0a66c2;
@@ -222,6 +223,7 @@ h4.subtitle {
   font-family: var(--font-h4);  
 }
 
+
 .content {
   display: flex;
   justify-content: space-around;
@@ -245,7 +247,7 @@ h4.subtitle {
 .article p {
   font-size: var(--step--2);
   line-height: 1.5;
-  text-align: justify;
+  text-align: justify; 
 }
 
 /* .article p i {
@@ -273,6 +275,12 @@ h4.subtitle {
 /* .article ul.proyectos {
   padding: .5rem;
 } */
+.article p.description {
+  font-family: lato; 
+  line-height: 1.8; 
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 .article .proyectos li {
   font-size: var(--step--2);
