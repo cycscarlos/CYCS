@@ -357,10 +357,12 @@ h4.subtitle {
 }
 
 .footer__btn:hover {
+  box-shadow: 0 10px 0 #1d475f, 0 16px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
   /* background-color: var(--footer-color-dark); */
-  box-shadow: inset 0 0 7px rgba(158, 141, 107, 0.4),
+  /* box-shadow: inset 0 0 7px rgba(158, 141, 107, 0.4),
     rgba(158, 141, 107, 0.4) 0px 0px 5px;
-    transform: translateY(-4px);
+    transform: translateY(-4px); */
 }
 
 .footer__btn:active {
