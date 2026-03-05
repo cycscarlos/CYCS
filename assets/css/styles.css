@@ -237,7 +237,7 @@ h4.subtitle {
   padding: 20px;
   /* width: 45%; */
  /* width: calc(80% - 40px); */
-  width: calc(80% - 15px);
+  width: calc(80% - 20px);
   /* Resta espacio para los márgenes */
   height: 300px;
   /* ajustar altura según necesidad */
