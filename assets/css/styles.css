@@ -232,12 +232,12 @@ h4.subtitle {
 }
 
 .article {
-  background-color: var(--text-dark);
-  /* color: var(--secondary-color); */
+  background-color: var(--text-dark); 
   color: var(--white);
   padding: 20px;
   /* width: 45%; */
-  width: calc(80% - 40px);
+ /* width: calc(80% - 40px); */
+  width: calc(80% - 15px);
   /* Resta espacio para los márgenes */
   height: 300px;
   /* ajustar altura según necesidad */
@@ -278,8 +278,8 @@ h4.subtitle {
 .article p.description {
   font-family: lato; 
   line-height: 1.8; 
-  margin-left: 50px;
-  margin-right: 50px;
+  /* margin-left: 50px;
+  margin-right: 50px; */
 }
 
 .article .proyectos li {
