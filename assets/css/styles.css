@@ -75,11 +75,17 @@
    --btn-base: #27607c;
 }
 
+html {
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+
 body {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
   overflow-x: hidden;
+  overscroll-behavior-x: none;
   padding: 0;
   background-color: var(--black);
   font-family: Arial, sans-serif;
@@ -452,7 +458,7 @@ h4.subtitle {
   display: grid;
   gap: 1rem;
   z-index: 999;
-  margin: 0 6rem 0 0;
+  margin: 0 min(6rem, 10%) 0 0;
 }
 
 .footer__form :is(input, textarea) {
@@ -539,7 +545,7 @@ h4.subtitle {
 
 .copyrightTexto {
   width: 100%;
-  padding: 8px 100px;
+  padding: 8px min(100px, 5%);
   text-align: center;
   color: var(--text-light);
   background-color: transparent;
